@@ -1,0 +1,22 @@
+---
+import "./ContentCollection.scss";
+import ContentCard from "../../components/ContentCard/ContentCard.astro";
+
+interface Props {
+  items: any[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="ContentCollection">
+  {
+    items.map((page) => (
+      <ContentCard
+        title={page.data.title}
+        description={page.data.description}
+        link={page.data.link}
+      />
+    ))
+  }
+</div>

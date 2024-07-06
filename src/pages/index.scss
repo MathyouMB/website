@@ -1,0 +1,99 @@
+.button {
+  border-radius: 0.5rem;
+  border-width: 0px;
+  background-color: #50b9fa;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.15s;
+  padding: 0.75rem 1.5rem;
+  width: fit-content;
+  cursor: pointer;
+  margin-top: 1.1rem;
+
+  &:hover {
+    background-color: #3ca0df;
+  }
+}
+
+.Home__profile {
+  width: 10rem;
+  margin-top: 0rem;
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+// #jobber {
+//   color: #84ea00;
+// }
+
+// #shopify {
+//   color: #96bf47;
+// }
+
+// #rbc {
+//   color: #005eaa;
+// }
+
+// #kinaxis {
+//   color: #e30614;
+// }
+
+// #htt {
+//   color: #8c65fe;
+// }
+
+// #ccss {
+//   color: #d7242a;
+// }
+
+// #carleton {
+//   color: #d7242a;
+// }
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    color: rgb(77, 183, 245);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__name {
+    &__h1 {
+      margin: 0;
+      font-variation-settings: "wght" 500;
+      letter-spacing: -0.1px;
+      margin-bottom: 1.1rem;
+      width: 100%;
+      font-size: 2.3rem;
+    }
+
+    &__h2 {
+      margin: 0;
+      opacity: 0.44;
+      font-variation-settings: "wght" 400;
+      letter-spacing: -0.1px;
+      font-family: GeistMonovf;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      &__h1 {
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &__h2 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

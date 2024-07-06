@@ -1,0 +1,27 @@
+---
+import Layout from "../Layout.astro";
+import "./Thin.scss";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<Layout title={title}>
+  <div class="Navbar">
+    <a href="/">Home</a>
+    <!-- <a href="/projects">Projects</a>
+    <a href="/blog">Blog</a> -->
+    <a href="/presentations">Presentations</a>
+    <a href="/pdfs/resumes/Matthew_MacRaeBovell_Resume_April2023.pdf">Resume</a>
+  </div>
+  <div class="Thin">
+    <slot />
+  </div>
+  <footer class="Footer">
+    <p>© {currentYear} Matthew MacRae Bovell</p>
+  </footer>
+</Layout>

@@ -1,0 +1,57 @@
+.Thin {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: auto;
+  width: 33rem;
+  padding: 1rem;
+  min-height: 80vh;
+
+  letter-spacing: -0.1px;
+  font-family: Geistvf, sans-serif;
+
+  @media (max-width: 768px) {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-variation-settings: "wght" 500;
+    letter-spacing: -0.1px;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-variation-settings: "wght" 500;
+    letter-spacing: -0.1px;
+  }
+}
+
+.Navbar {
+  margin-top: 1rem;
+  display: flex;
+  width: 98%;
+  justify-content: flex-end;
+  font-family: Geistvf, sans-serif;
+  gap: 1rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  opacity: 0.7;
+}

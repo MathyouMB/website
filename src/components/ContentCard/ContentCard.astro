@@ -1,0 +1,17 @@
+---
+import "./ContentCard.scss";
+
+interface Props {
+  title: string;
+  description: string;
+  link: string;
+}
+
+const { title, description, link } = Astro.props;
+---
+
+<div class="ContentCard">
+  <div class="ContentCard__title">{title}</div>
+  <p class="ContentCard__description">{description}</p>
+  <a href={link}><button class="ContentCard__button">Learn More</button></a>
+</div>

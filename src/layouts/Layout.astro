@@ -1,6 +1,8 @@
 ---
+import "@fontsource/geist-sans";
+
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,44 +10,57 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  :root {
+    --blue-grey-bg: rgba(11, 53, 81, 0.03);
+    --black-4: rgba(0, 0, 0, 0.1);
+    --black-2: rgba(0, 0, 0, 0.5);
+    --black: black;
+    --white: white;
+    --medium-sea-green: #008d3e;
+    --black-3: rgba(0, 0, 0, 0.4);
+    --black-5: rgba(0, 0, 0, 0.8);
+    --white-smoke: #f7f7f7;
+    --red: #e91a03;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: sans-serif;
+  }
+
+  @font-face {
+    font-family: "Geistvf";
+    src: url("./fonts/GeistVF.woff");
+  }
+
+  @font-face {
+    font-family: "GeistMonovf";
+    src: url("./fonts/GeistMonoVF.woff");
+  }
+
+  body {
+    color: var(--black);
+    /* font-variation-settings: "wght" 400; */
+    cursor: default;
+    background-image: none;
+    background-position: 0 0;
+    font-family: Geistvf, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+  }
 </style>

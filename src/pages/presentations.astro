@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import ContentCollection from "../components/ContentCollection/ContentCollection.astro";
+import { default as Layout } from "../layouts/Thin/Thin.astro";
+import "./index.scss";
+
+const presentations = await getCollection("presentations");
+const orderedPresentations = presentations.sort((a, b) => {
+  return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+});
+
+const featuredPresentations = orderedPresentations.filter((presentation) => {
+  return presentation.data.featured;
+});
+
+const nonFeaturedPresentations = orderedPresentations.filter((presentation) => {
+  return !presentation.data.featured;
+});
+---
+
+<Layout title="Presentations">
+  <h1>Presentations</h1>
+  <p>Presentations, talks, and workshops I've given over the years.</p>
+  <h3>Featured</h3>
+  <ContentCollection items={featuredPresentations} />
+  <br />
+  <h3>Presentations</h3>
+  <ContentCollection items={nonFeaturedPresentations} />
+</Layout>

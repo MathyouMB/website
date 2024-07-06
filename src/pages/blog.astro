@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+import ContentCollection from "../components/ContentCollection/ContentCollection.astro";
+import { default as Layout } from "../layouts/Thin/Thin.astro";
+import "./index.scss";
+
+const articles = await getCollection("articles");
+---
+
+<Layout title="Blog">
+  <h3>Blog</h3>
+  <p>(coming soon)</p>
+  <ContentCollection items={articles} />
+</Layout>

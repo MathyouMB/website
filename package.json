@@ -7,11 +7,20 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "prettier --check '**/*.{css,scss,html,js,md,ts,tsx,astro,svelte}'",
+    "format": "prettier --write '**/*.{css,scss,html,js,md,ts,tsx,astro,svelte}'"
   },
   "dependencies": {
-    "astro": "^4.11.5",
     "@astrojs/check": "^0.7.0",
+    "@fontsource/geist-sans": "^5.0.3",
+    "astro": "^4.11.5",
+    "geist": "^1.3.0",
     "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "prettier-plugin-astro": "^0.14.0",
+    "sass": "^1.77.6"
   }
 }
