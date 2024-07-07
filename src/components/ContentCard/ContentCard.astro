@@ -5,12 +5,20 @@ interface Props {
   title: string;
   description: string;
   link: string;
+  date: string;
 }
 
-const { title, description, link } = Astro.props;
+const { title, description, link, date } = Astro.props;
+const dateObj = new Date(date);
+const formattedDate = dateObj.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
 ---
 
 <div class="ContentCard">
+  <div class="ContentCard__date">{formattedDate}</div>
   <div class="ContentCard__title">{title}</div>
   <p class="ContentCard__description">{description}</p>
   <a href={link}><button class="ContentCard__button">Learn More</button></a>

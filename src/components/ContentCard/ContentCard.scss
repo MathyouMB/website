@@ -16,6 +16,13 @@
       0 0 0 1px rgba(0, 0, 0, 0.1);
   }
 
+  &__date {
+    color: #2e3233ab;
+    font-size: 0.7rem;
+    font-variation-settings: "wght" 500;
+    margin-bottom: 0.5rem;
+  }
+
   &__title {
     color: #2e3233;
     font-variation-settings: "wght" 500;
