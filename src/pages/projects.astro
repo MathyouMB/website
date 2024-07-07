@@ -5,11 +5,14 @@ import { default as Layout } from "../layouts/Thin/Thin.astro";
 import "./index.scss";
 
 const projects = await getCollection("projects");
+const orderedProjects = projects.sort((a, b) => {
+  return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+});
 ---
 
 <Layout title="Projects">
   <h1>Projects</h1>
   <p>Various personal and professional projects I've worked on.</p>
   <div style="margin-bottom: 1rem;"></div>
-  <ContentCollection items={projects} />
+  <ContentCollection items={orderedProjects} />
 </Layout>
