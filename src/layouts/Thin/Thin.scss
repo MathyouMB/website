@@ -41,6 +41,11 @@
   gap: 1rem;
   margin-bottom: 2rem;
 
+  @media (max-width: 768px) {
+    justify-content: left;
+    margin-left: 1.25rem;
+  }
+
   a {
     text-decoration: none;
     color: inherit;
