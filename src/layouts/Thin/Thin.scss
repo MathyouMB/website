@@ -39,11 +39,11 @@
   justify-content: flex-end;
   font-family: Geistvf, sans-serif;
   gap: 1rem;
-  //   margin-bottom: 1rem;
 
   @media (max-width: 768px) {
     justify-content: left;
     margin-left: 1.25rem;
+    margin-bottom: 1rem;
 
     &__desktop {
       display: none;
