@@ -1,0 +1,79 @@
+.Article {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  hr {
+    border-color: #f5f5f52a;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    line-height: normal;
+  }
+
+  &__title {
+    font-weight: 900;
+    margin: 1rem 0;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    color: #6b6b6b;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 1.4rem;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 50%;
+      margin-bottom: 0;
+    }
+
+    &__name {
+      font-size: 0.8rem;
+      a {
+        color: #000000e2;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__date {
+      margin-top: -0.3rem;
+      color: #6b6b6b;
+
+      //   font-variation-settings: "wght" 400;
+      //   font-family: GeistMonovf;
+    }
+
+    &__left {
+      display: flex;
+      align-items: center;
+    }
+
+    &__right {
+      font-size: 0.7rem;
+      display: flex;
+      flex-direction: column;
+      div {
+        height: fit-content;
+      }
+    }
+  }
+}

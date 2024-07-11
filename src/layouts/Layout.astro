@@ -4,11 +4,15 @@ import "@fontsource/geist-sans";
 interface Props {
   title: string;
   description?: string;
+  imageUrl?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, imageUrl } = Astro.props;
 const defaultDescription =
   description || "Matthew MacRae Bovell's personal website";
+
+const defaultImgUrl = imageUrl || "/images/headshot.png";
+const img = `https://matthewmacraebovell.com${defaultImgUrl}`;
 ---
 
 <!doctype html>
@@ -26,23 +30,17 @@ const defaultDescription =
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://matthewmacraebovell.com/" />
+    <meta property="og:url" content={img} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={defaultDescription} />
-    <meta
-      property="og:image"
-      content="https://matthewmacraebovell.com/images/headshot.png"
-    />
+    <meta property="og:image" content={img} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="http://matthewmacraebovell.com/" />
+    <meta property="twitter:url" content={img} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={defaultDescription} />
-    <meta
-      property="twitter:image"
-      content="https://matthewmacraebovell.com/images/headshot.png"
-    />
+    <meta property="twitter:image" content={img} />
   </head>
   <body>
     <slot />
