@@ -1,14 +1,38 @@
 ---
 import { getCollection } from "astro:content";
-import ContentCollection from "../components/ContentCollection/ContentCollection.astro";
 import { default as Layout } from "../layouts/Thin/Thin.astro";
-import "./index.scss";
+import "./blog.scss";
 
 const articles = await getCollection("articles");
 ---
 
 <Layout title="Blog">
-  <h3>Blog</h3>
-  <p>(coming soon)</p>
-  <ContentCollection items={articles} />
+  <h1>Blog</h1>
+  <div style="margin-top: 1rem"></div>
+  <div>
+    {
+      articles.map((article) => (
+        <a href={`/blog/${article.slug}`}>
+          <div class="Blog__preview">
+            <div>
+              <div class="Blog__preview__date">
+                {new Date(article.data.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </div>
+              <div class="Blog__preview__title">{article.data.title}</div>
+              <div class="Blog__preview__description">
+                {article.data.description}
+              </div>
+            </div>
+            <div class="Blog__preview__image">
+              <img src={article.data.image} alt={article.data.title} />
+            </div>
+          </div>
+        </a>
+      ))
+    }
+  </div>
 </Layout>
