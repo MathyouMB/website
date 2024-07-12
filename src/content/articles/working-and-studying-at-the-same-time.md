@@ -13,11 +13,11 @@ Have you ever seen an entry level job posting asking for 1-4 years of experience
 
 <i>(Not that I agree with that as a hiring practice...)</i>
 
-During my second year of university, COVID hit and everything went remote including both courses and tech internships.
+When COVID hit and the world went remote, it became possible to complete courses and work internships at the same time.
 
-I quickly realized <i>"why couldn't I just work and study at the same time?"</i>
+By working and studying, I was able to obtain 4+ years of work experience before my planned graduation date.
 
-<b>So I did</b> and I’m here to tell the tale.
+This article is everything I learned along the way in case you want to try something similar.
 
 <!-- # Background
 
@@ -33,17 +33,17 @@ I started Carleton University’s computer science program in fall 2018.
 
 In this program, students with the co-op option are recommended to complete 40 credits (where normally a course is 1 credit) over 5 years.
 
-This is the typically sequence in which these students are recommended to complete "work" and "study" terms:
+This is the typically sequence in students are recommended to complete "work" and "study" terms:
 
 ![working-and-studying](/images/articles/2023/work-study-pattern.png)
 
-I got completed my first "work term" as a Student Developer with the Bank of Canada in the summer of my first year.
+I completed my first "work term" as a Student Developer with the Bank of Canada in the summer of my first year.
 
-After that summer, I was offered to stay on part-time for both fall 2019 and winter 2020. So I worked part-time while taking five courses during both 2nd year fall and winter terms. Sometime during my second year, I secured an internship for summer 2020 and was starting to begin thinking about fall 2020.
+After that summer, I was offered to stay on part-time for both fall and winter of my 2nd year. So I worked part-time while taking five courses during both terms.
 
 <b>Then COVID happened. Everything changed.</b>
 
-My summer 2020 internship went remote. Suddenly all the time I would have used to commute was freed up and I had way more energy to burn. I realized I could easily complete a course or two while doing my internship.
+My 2nd year summer internship went remote. Suddenly all the time I would have used to commute was freed up and I had way more energy to burn. I realized I could easily complete a course or two while doing my internship.
 
 At the time, this is where I was at in my progression through the program:
 
@@ -67,13 +67,11 @@ So I did another full year of remote work. This time I even managed to complete 
 
 ![working-and-studying](/images/articles/2023/my-work-study-3.png)
 
-Finally in fall of my 5th year, things we’re looking like they we’re going back to in person. At the time, I’d been working at Shopify (a fully remote company) for about a year and knew that there was potential for continuing in-person school while continuing to work for them remotely.
+Finally in fall of my 5th year, it looked like we'd be going back to in person. At the time, I’d been working at Shopify (a fully remote company) for about a year and knew that there was potential for continuing in-person school while continuing to work for them remotely.
 
-I registered for two courses I knew would be recorded, so I never had to attend a lecture and just had the occasional in-person assessment. I would mostly just work remotely from quiet places on campus and it all worked out pretty well.
+I registered for two courses I knew would be recorded so I never had to attend a lecture and just had the occasional in-person assessment. I would mostly just work remotely from quiet places on campus.
 
 I kept working for them for the fall and winter of my 5th year, bringing me up to four years of industry software development experience.
-
-Normally students who had started at the same time as me would graduate at this point, but I did not. Being in person definitely was a bit more of an energy sink and I decided I wanted to spend more time with friends due to COVID, so I only completed 3 courses during those terms. Meaning after 5 years, this is the full number of credits and experience I'd gained:
 
 ![working-and-studying](/images/articles/2023/my-work-study-4.png)
 
@@ -121,7 +119,7 @@ Althought some classes are online, there are definitely still courses that have 
 
 For individual assessments, you can probably just tell your manager about it. It’s not that different from if you were sick or had a dentist appointment you had scheduled months in advance.
 
-If it’s going to be a recurring weekly in-person commitment during your work hours, that may be more of a problem. However, most remote workplaces are very flexible on hours as it’s likely there are team members working in other time zones.
+If it’s going to be a recurring weekly in-person commitment during your work hours, that may be more of a problem. However, most remote workplaces are flexible on hours as it’s likely you'll have team members working in other time zones.
 
 ### 5. It can be a lot of work sometimes.
 
@@ -137,9 +135,9 @@ I personally am not one to focus heavily on grades and am very content not getti
 
 # The Benefits
 
-### 1. Income, experience, etc…. (The obvious stuff)
+### 1. Income, Experience, etc.
 
-Yes. Being able to have sustainable income and graduate with experience has made a big difference. During COVID, I was even able to save enough money for a down payment on a house. I think this one speaks for itself.
+Being able to have sustainable income and graduate with experience has made a big difference for me. I was even able to save enough money for a down payment on a house. I think this one speaks for itself.
 
 ### 2. Offers for Intermediate roles, not just new grad roles
 
@@ -149,25 +147,23 @@ Most places I interview see me above Junior / L4 / new grad / (whatever fancy le
 
 ### 3. Full-time work is less cognitive load than full-time school
 
+In my opinion, school has a higher cognitive load than a 9-5 job.
+
 When you’re working, you get to clock out when your done and do whatever you want after work completely guilt free.
 
-When you’re a student, you are constantly thinking of whats due next week. Working on weekends to get school work done. Constantly thinking whether you’d rather get a head start on your next assignment instead of hanging out with friends.
-
-<b>In my opinion, school has a higher cognitive load than a 9-5 job.</b>
+When you’re a student, you are constantly thinking of whats due next week, studying on weekends, and thinking whether you’d rather get a head start on your next assignment instead of hanging out with friends.
 
 With work having less cognitive load, there definitely is room for courses if thats what you want to do.
 
 ### 4. I learned more from my courses
 
+By having less courses to focus on at the same time, I felt like I got more out of the few courses I did take.
+
 My experience doing five courses a semester usually involved having 1–2 assignments due each week at minimum.
 
 With that much cognitive load and constant work, I often felt like I was just doing what I had to do to get by and not actually processing, materializing, or learning the intended outcomes of the courses I was paying for.
 
-With 1–2 courses I was having maybe an assignment due every third week in each course giving me proper time to focus and not feel overwhelmed.
-
-I actually felt like I was learning stuff (wow).
-
-When I talk about “learning” I am not referring to grades, I am referring to my own growth. As mentioned in the negatives, I do not really focus on grades.
+With 1-2 courses instead of 5, I had less context switching and felt like I could more easily focus.
 
 # Conclusion
 
