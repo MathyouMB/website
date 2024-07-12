@@ -13,19 +13,11 @@ Have you ever seen an entry level job posting asking for 1-4 years of experience
 
 <i>(Not that I agree with that as a hiring practice...)</i>
 
-When COVID hit and the world went remote, it became possible to complete courses and work internships at the same time.
+When COVID hit and the world went online, it became possible to complete courses while working full-time remotely.
 
 By working and studying, I was able to obtain 4+ years of work experience before my planned graduation date.
 
 This article is everything I learned along the way in case you want to try something similar.
-
-<!-- # Background
-
-TLDR: After my second year of university, I took 1–3 courses per semester while working full-time remotely.
-
-Here is the normal expected “work-study” sequence for my program:
-
-This is what I’ve done and where I’ve worked so far: -->
 
 # Background
 
