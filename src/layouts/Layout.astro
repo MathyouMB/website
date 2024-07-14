@@ -13,6 +13,7 @@ const defaultDescription =
 
 const defaultImgUrl = imageUrl || "/images/headshot.png";
 const img = `https://matthewmacraebovell.com${defaultImgUrl}`;
+const production = true;
 ---
 
 <!doctype html>
@@ -41,11 +42,27 @@ const img = `https://matthewmacraebovell.com${defaultImgUrl}`;
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={defaultDescription} />
     <meta property="twitter:image" content={img} />
+
+    <!-- Shynet -->
+    {
+      production && (
+        <>
+          <noscript>
+            <img src="https://shynet-mpb4.onrender.com/ingress/345502f1-3264-4423-bd99-5313dfd8a181/pixel.gif" />
+          </noscript>
+          <script
+            defer
+            src="https://shynet-mpb4.onrender.com/ingress/345502f1-3264-4423-bd99-5313dfd8a181/script.js"
+          />
+        </>
+      )
+    }
   </head>
-  <body>
-    <slot />
-  </body>
 </html>
+<body>
+  <slot />
+</body>
+
 <style is:global>
   :root {
     --blue-grey-bg: rgba(11, 53, 81, 0.03);
