@@ -30,7 +30,9 @@ const { title, description, date, imageUrl } = Astro.props;
     </div>
     <hr />
     <div style="margin-top: 2.5rem;"></div>
-    <slot />
+    <div class="Article__content">
+      <slot />
+    <div>
     <div></div>
   </div></Layout
 >

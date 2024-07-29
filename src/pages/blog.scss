@@ -1,4 +1,9 @@
 .Blog {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1.5rem;
+  }
   &__preview {
     display: flex;
     justify-content: space-between;
@@ -23,9 +28,9 @@
     }
 
     &__image {
-      width: 100%;
       img {
         width: 100%;
+        width: 10rem;
         object-fit: cover;
       }
     }

@@ -9,7 +9,7 @@ const articles = await getCollection("articles");
 <Layout title="Blog">
   <h1>Blog</h1>
   <div style="margin-top: 1rem"></div>
-  <div>
+  <div class="Blog__items">
     {
       articles.map((article) => (
         <a href={`/blog/${article.slug}`}>
