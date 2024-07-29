@@ -6,6 +6,16 @@
     margin-bottom: 0.4rem;
   }
 
+  &__content {
+    hr {
+      margin-top: 2rem;
+    }
+  }
+
+  a {
+    color: var(--theme);
+  }
+
   img {
     object-fit: cover;
     width: 100%;
@@ -15,6 +25,12 @@
 
   h1 {
     line-height: normal;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin-top: 2rem;
   }
 
   &__title {
