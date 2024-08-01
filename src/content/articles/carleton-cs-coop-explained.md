@@ -54,9 +54,9 @@ In the real world, job seekers never have to think twice before applying to a po
 
 Another reason the policy is a detriment to students is because it makes the assumption that a student is able to identify that a job is one "they are certain they want" before they've actually had the interview.
 
-If a student receives an offer, but after the interview realized they wouldn't want to work on the project or team they're now aware of, they either have to use their "one decline" and risk unemployment or take an offer for a **job they don't want**.
+If after an interview a student realizes they wouldn't want to work on the project or team they interviewed for, but receive an offer of employment, they either have to use their "one decline" and risk unemployment or take an offer for a **job they don't want**.
 
-_Here's an interesting example:_
+_Let's take a look at a problematic edge case:_
 
 You interview with _company (a)_ and _company (b)_ and realize you'd hate to work for both of them after the interviews.
 
@@ -64,7 +64,7 @@ However, both companies make you offers of employment.
 
 Unless you receive another offer within 48 hours, you'll have **no choice** but to take a job **you dont want** or else you'll be kicked out of the co-op program.
 
-I'd even argue that this case is one that is not in the best interest of employers as I'm sure some % end up with students who presented nicely during the interview, but were forced to take the offer out of obligation to Carleton's policies.
+I'd even argue that this case is one that is not in the best interest of employers as I'm sure some percentage end up with students who presented nicely during the interview, but were forced to take the offer out of obligation to Carleton's policies.
 
 ### Forced Offers Acceptances
 
