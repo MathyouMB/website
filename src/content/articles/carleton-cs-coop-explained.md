@@ -8,7 +8,7 @@ draft: true
 
 For computer science majors, the quality of a university's co-op program is a key factor in picking where you go to school.
 
-Especially in the current job market filled with large tech layoffs, more early-talent initiatives being shutdown, and an increasing struggle for new grads to find employment, you would be **foolish** to not complete some kind of work experience before you graduate.
+Especially in today's tech job market where we're seeing large tech layoffs, more early-talent initiatives being shutdown, and an increasing struggle for new grads to find employment, you would be **foolish** to not complete some kind of work experience before you graduate.
 
 With the sizeable [25%-30% refundable tax credit](https://www.ontario.ca/page/co-operative-education-tax-credit#:~:text=The%2025%2D30%25%20refundable%20tax,each%20work%20placement%20is%20%243%2C000.) employers receive when hiring accredited co-op program students, you would imagine that being in a co-op program would be more important than ever... _right?_
 
