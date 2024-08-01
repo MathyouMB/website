@@ -12,7 +12,7 @@ Especially in today's tech job market where we're seeing large tech layoffs, mor
 
 With the sizeable [25%-30% refundable tax credit](https://www.ontario.ca/page/co-operative-education-tax-credit#:~:text=The%2025%2D30%25%20refundable%20tax,each%20work%20placement%20is%20%243%2C000.) employers receive when hiring accredited co-op program students, you would imagine that being in a co-op program would be more important than ever... _right?_
 
-If that's the case, why are many compsci students at Carleton so critical of our co-op program and why do so many end up dropping out of co-op?
+If that's the case, why do so many computer science students at Carleton openly criticize or even decide to drop out of our co-op program?
 
 **The Answer:** Carleton University's [Co-op Participation Agreement](https://carleton.ca/co-op/rules-regulations/co-op-participation-agreement/) blatantly prioritizes employer partnerships over what's in the best interests of students.
 
