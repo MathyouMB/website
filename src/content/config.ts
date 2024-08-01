@@ -7,6 +7,7 @@ const articlesCollection = defineCollection({
     description: z.string(),
     image: z.string(),
     date: z.date(),
+    draft: z.boolean(),
   }),
 });
 

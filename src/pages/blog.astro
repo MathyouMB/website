@@ -4,6 +4,7 @@ import { default as Layout } from "../layouts/Thin/Thin.astro";
 import "./blog.scss";
 
 const articles = await getCollection("articles");
+const nonDraftArticles = articles.filter((article) => !article.data.draft);
 ---
 
 <Layout title="Blog">
@@ -11,7 +12,7 @@ const articles = await getCollection("articles");
   <div style="margin-top: 1rem"></div>
   <div class="Blog__items">
     {
-      articles.map((article) => (
+      nonDraftArticles.map((article) => (
         <a href={`/blog/${article.slug}`}>
           <div class="Blog__preview">
             <div>
