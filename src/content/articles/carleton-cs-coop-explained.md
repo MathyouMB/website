@@ -1,40 +1,44 @@
 ---
 title: "Carleton Computer Science: Explaining Co-op Criticism"
 description: Why are so many computer science students so critical of Carleton's co-op program?
-date: 2024-07-30
+date: 2024-08-02
 image: "/images/articles/2023/working-and-studying2.png"
 draft: true
 ---
 
-For computer science majors, the quality of a university's co-op program is a key factor in picking where you go to school.
+In today's job market, large tech layoffs, early-talent program closures, and declines in new grads hiring are more prevelant then ever.
 
-Especially in today's tech job market where we're seeing large tech layoffs, more early-talent initiatives being shutdown, and an increasing struggle for new grads to find employment, you would be **foolish** to not complete some kind of work experience before you graduate.
+Having real work experience before you graduate is now an absolute necessity and therefore the quality of a university's co-op program is a key factor in picking where you go to school.
 
-With the sizeable [25%-30% refundable tax credit](https://www.ontario.ca/page/co-operative-education-tax-credit#:~:text=The%2025%2D30%25%20refundable%20tax,each%20work%20placement%20is%20%243%2C000.) employers receive when hiring accredited co-op program students, you would imagine that being in a co-op program would be more important than ever... _right?_
+Enrolling in an accredited university co-op program not only provides exclusive opportunities, but also allows your employer to benefit from a [25%-30% refundable tax credit](https://www.ontario.ca/page/co-operative-education-tax-credit#:~:text=The%2025%2D30%25%20refundable%20tax,each%20work%20placement%20is%20%243%2C000.) on your salary (with a maximum of $3,000 per work placement).
 
-If that's the case, why do so many computer science students at Carleton openly criticize or even decide to drop out of our co-op program?
+With all that in mind, it seems like being in a co-op program would be more important than ever... _right?_
 
-**The Answer:** Carleton University's [Co-op Participation Agreement](https://carleton.ca/co-op/rules-regulations/co-op-participation-agreement/) blatantly prioritizes employer partnerships over what's in the best interests of students.
+So why do so many computer science students at Carleton openly criticize or even decide to drop out of our co-op program?
 
-The "One Decline Policy" coupled with the unreasonable 48-hour acceptance window coerces students to not take full advantage of the advertised "hundreds of Carleton exclusive oppurtunities" they're paying to access.
+--
+
+For those with zero work experience who need to get their foot in the door, I genuinely do recommend initially enrolling in co-op to access the exclusive job opportunities due to the poor state of the job market.
+
+However, you should go into the program without the expectation that their provided resources are going to be enough to get a job or be tailored to the tech industry.
+
+Additionally, It's important you're aware that Carleton University's [Co-op Participation Agreement](https://carleton.ca/co-op/rules-regulations/co-op-participation-agreement/) heavily prioritizes employer partnerships over what's in the best interests of students.
+
+The "One Decline Policy" coupled with the unreasonable 48-hour acceptance window prevent students from taking full advantage of the advertised "hundreds of Carleton exclusive oppurtunities" they're paying to access.
 
 ## The One Decline Policy
 
 The ["One Decline Policy"](https://carleton.ca/co-op/rules-regulations/information-policies-for-graduate-students/#A21) prevents students from declining more than one offer of employment. Additionally, [failure to attend an interview](https://carleton.ca/co-op/rules-regulations/information-policies-for-graduate-students/#A18) will also count as a student’s “one-decline”. Students are also not allowed to conduct any further interviews after accepting an offer.
 
-This policy is highly detrimental to students as it elicits them to **"intentionally not apply"** to certain roles out of fear they will be forced to accept a position they would have otherwise only considered a backup option.
+The policy is detrimental to students as it coerces them to **"intentionally not apply"** to roles out of fear they will be forced to accept a position they would have otherwise only considered a backup option. Despite paying to access these exclusive co-op jobs, they're manipulatesd into only applying to roles they are absolutely certain they want.
 
-This policy effectively **scams** students by coercing them to not actually apply to the advertised: "hundreds of exclusive (non-public) jobs".
+From my point of view, this policy effectively **scams** students or (at the very least) creates an experience that does not match what students believe their paying for: _"the ability to apply to hundreds of exclusive (non public) job opportunities"_.
 
-Instead of freely exploring the wide range of opportunities **they've paid to access**, this policy manipulates students into applying only to roles they are absolutely certain they want.
+The justification for this policy is that it keeps partnered employers happy. Companies do not want to invest time in filtering and interviewing candidates only for those candidates to decline offers. The policy reduces the likelihood of students applying indiscriminately, backing out, and wasting employer time and resources.
 
-### Why It Exists
+It is worth noting that this policy was also designed to prevent certain students from monopolizing interview slots and opportunities. Although at face value this seems like it's in the best interest of students, it's ultimately a byproduct catering to companies by reducing the number of hours companies need to spend interviewing students.
 
-This policy exists primarily to keep partnered employers happy.
-
-Companies do not want to invest time in filtering and interviewing candidates only for those candidates to decline offers.
-
-Additionally, it was likely designed to prevent certain students from monopolizing interview slots and opportunities.
+Other institutions have [alternative systems](#rank--match-systems) where many of these concerns are not present.
 
 ### Conservative Applying
 
@@ -116,6 +120,8 @@ In contrast, Carleton's program policies heavily work in favor of partnered empl
 
 You'll annecdotally hear students complain about the COOP 1000 course and how it's outdated, not tailored to the tech industry, etc.
 
+For the most part, they're not wrong. This course is only going to provide you with the bare minimum and I'd highly recommend all computer science students make the effort to find additional tech industry related career resources.
+
 ### It's Just A Sanity Check
 
 As great as it would be if this course wasn't just some "placeholder template", I think it's fair that today it just acts as a sanity check to make sure students know how the program works and have seen the different components of a job search: what is a resume, what is a cover letter, what is a SAR statement, etc.
@@ -130,7 +136,7 @@ Here is a list of the only contents that seem remotely tailored to the tech indu
 
 - Occasionally in the course content, you'll see a job title placefolder subbed out as something tech related
 
-- We also did a "read a job posting" exercise where the job postings were Software Related.
+- We also did a "read a job posting" exercise where the job postings were Software related
 
 ### Generic Resume Advice
 
@@ -160,7 +166,7 @@ The approximate total cost of co-op fees (so the fees for all 5 years of the pro
 
 If you're making an average tech co-op wage, you'll probably make atleast $10,000 - $13,000 in 4 months before taxes.
 
-So on paper the return on investment of paying co-op fees is **worth while.**
+So on paper the return on investment of paying co-op fees is **worth while.** It's really more of a question of whether you need to pay these fees in the first place.
 
 ### Payment Breakdown
 
@@ -227,13 +233,13 @@ This year, a significantly higher percentage of students were struggling to find
 
 Despite that I've implied students are encouraged to limit their applications on the co-op board, I'm 100% sure there are students who absolutely do apply to every single one of the jobs on the co-op board and still struggle to find an interview or job.
 
-If you're one of these students, the first thing I'd say is that you more than anyone should be upset with the co-op department because ultimately they took your money and their resources, advice, etc litterally didn't work.
+If you're one of these students, the first thing I'd say is that you more than anyone should be upset with the co-op department because ultimately they took your money and their resources and advice didn't work.
 
 I'd also say (in the nicest way possible) that unfortunately, **you're probably doing something wrong**.
 
 Maybe your resume sucks. Maybe you need to do some kind of side project to get some kind of slightly more marketable skill.
 
-I don't know what it is, but if you applied to several hundred jobs and didn't hear back, you need to reevaluate the way your doing your job search.
+I don't know what it is, but if you applied to several hundred jobs and didn't hear back, you need to reevaluate the way you're conducting your job search.
 
 Some of this responsibility should fall on the quality of the resources provided by the co-op department, but a good chunk of it falls on you for not making the neccesary effort to figure it out on your own.
 
@@ -259,6 +265,11 @@ Carleton's co-op program, while designed with good intentions, is systematically
 
 The "One Decline Policy" and the narrow 48-hour acceptance window create a restrictive and stressful environment, pushing students to limit the number of applications they make on a job board they pay to access while sometimes even forcing them to accept roles they don't want.
 
-Carleton's co-op program could greatly improve its student experience by revising its participation agreement to better balance the needs of students and employers. Implementing a more flexible system, similar to the "Rank/Match" models used by other institutions, would allow both students and employers to have more control and satisfaction in the job matching process.
+Carleton's co-op program could greatly improve its student experience by revising its participation agreement to better balance the needs of students and employers.
 
 Despite these criticisms, in the current challenging job market, computer science students with no work experience should still consider starting with the co-op program to gain initial industry exposure. However, they should be prepared to navigate the system strategically and consider transitioning to independent job searches as they gain experience and confidence.
+
+<hr/> 
+<br/>
+
+_Want advice or just interested in chatting? Feel free to book a chat with me [here](https://calendly.com/matthewmacraebovell/chats) to discuss career stuff, jobs searcing, resumes, etc._
