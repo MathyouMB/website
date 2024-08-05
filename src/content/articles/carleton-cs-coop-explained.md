@@ -28,9 +28,9 @@ The "One Decline Policy" coupled with the unreasonable 48-hour acceptance window
 
 ## The One Decline Policy
 
-The ["One Decline Policy"](https://carleton.ca/co-op/rules-regulations/information-policies-for-graduate-students/#A21) prevents students from declining more than one offer of employment. Additionally, [failure to attend an interview](https://carleton.ca/co-op/rules-regulations/information-policies-for-graduate-students/#A18) will also count as a student’s “one-decline”. Students are also not allowed to conduct any further interviews after accepting an offer.
+The ["One Decline Policy"](https://carleton.ca/co-op/rules-regulations/information-policies-for-graduate-students/#A21) prevents students from declining more than one offer of employment per term. Additionally, [failure to attend an interview](<https://carleton.ca/co-op/rules-regulations/information-policies-for-graduate-students/#A18:~:text=Failure%20to%20respond%20to%20an%20interview%20request%20or%20attend%20an%20interview%20will%20count%20as%20a%20student%E2%80%99s%20%E2%80%9Cone%2Ddecline%E2%80%9D%20(see%20%E2%80%9CONE%2DDECLINE%E2%80%9D%20policy%20below)>) will also count as a student’s “one-decline”. Students are also not allowed to conduct any further interviews after accepting an offer.
 
-The policy is detrimental to students as it coerces them to **"intentionally not apply"** to roles out of fear they will be forced to accept a position they would have otherwise only considered a backup option. Despite paying to access these exclusive co-op jobs, they're manipulatesd into only applying to roles they are absolutely certain they want.
+The policy essentially coerces students to **"intentionally not apply"** to roles out of fear they will be forced to accept a position they would have otherwise only considered a backup option. Co-op even encourages students to only apply to roles they are ["absolutely certain they want"](https://carleton.ca/co-op/rules-regulations/information-policies-for-graduate-students/#A21:~:text=Students%20are%20strongly%20encouraged%20to%20review%20job%20descriptions%20carefully%20and%20only%20apply%20to%20the%20positions%20in%20which%20they%20are%20interested) despite paying to access the exclusive job board.
 
 From my point of view, this policy effectively **scams** students or (at the very least) creates an experience that does not match what students believe their paying for: _"the ability to apply to hundreds of exclusive (non public) job opportunities"_.
 
@@ -88,19 +88,13 @@ This short timeframe is unreasonable and **verges on being predatory**.
 
 It preys on students' anxieties about potentially not receiving future offers, effectively coercing them into accepting the current offer to avoid the risk of unemployment.
 
-This coercion arguably also benefits the co-op department by increasing the number of student job matches and reducing the pool of students still seeking placement.
+This coercion arguably benefits the co-op department by increasing the number of student job matches and reducing the pool of students still seeking placement.
 
-Now at face value more job matches sounds like it would also benefit students... _but_
-
-The reason this is just blatantly shitty for students is because outside of the environment that Carleton has facilitated, these employer normally have to give candidates more sufficient time to make decisions.
+Now at face value more job matches sounds like it would also benefit students, but the reason this is just blatantly shitty for students is because outside of the environment that Carleton is facilitating, these employer normally have to give candidates more sufficient time to make decisions.
 
 In the real world, you would be able to easily communicate with recruiters to request additional time or inform them of other pending offers. Plenty of my own internship (outside co-op) offers have allowed me much longer than 48 hours. Based on personal experience, 5 business days to a week feels reasonable to me.
 
 The choice to make the acceptance window only 48 hours is a choice that ultimately caters to employers over advocating to give student candidates sufficient time to make their decision.
-
-Alike to the "One Decline Policy", the short acceptance window is also designed to encourage students to apply only to positions they are genuinely interested in and willing to commit to. Reducing the likelihood of students applying indiscriminately, backing out, and wasting employer time and resources.
-
-There's also an argument that a uniform acceptance window creates a level playing field for all students. If some students were allowed more time to decide, it could create an unfair advantage, particularly for those who can afford to wait for multiple offers. Students who plan to decline offers are essentially denying the 2nd choice candidate from receiving their offer sooner.
 
 ## Rank / Match Systems
 
@@ -122,25 +116,29 @@ You'll annecdotally hear students complain about the COOP 1000 course and how it
 
 For the most part, they're not wrong. This course is only going to provide you with the bare minimum and I'd highly recommend all computer science students make the effort to find additional tech industry related career resources.
 
+Students should recognize that this course is essentially a "template".
+
+It seems each department that has co-op as an option has a slightly modified version of the course with minor changes to the base template to better match the expectations of that industry.
+
 ### It's Just A Sanity Check
 
-As great as it would be if this course wasn't just some "placeholder template", I think it's fair that today it just acts as a sanity check to make sure students know how the program works and have seen the different components of a job search: what is a resume, what is a cover letter, what is a SAR statement, etc.
+Personally, I think students come in with expactations that are way too high for this course when ultimately it's essentially just a "sanity check" the co-op department has to make sure that students know how the program works and have seen the different components of a job search: what is a resume, what is a cover letter, what is a SAR statement, etc.
 
 If you're an incoming student at Carleton, I'd say the course is comparable to Ontario's Grade 10 ["Career Studies" curriculum](https://www.edu.gov.on.ca/eng/curriculum/secondary/career-studies-grade10.pdf).
 
-### Lack Of Tailoring
+<!-- ### Lack Of Tailoring
 
-Here is a list of the only contents that seem remotely tailored to the tech industry in the course.
+Here is a list of the only contents that seem remotely tailored to the tech industry in the course:
 
 - That you should "put projects on your resume"
 
 - Occasionally in the course content, you'll see a job title placefolder subbed out as something tech related
 
-- We also did a "read a job posting" exercise where the job postings were Software related
+- We also did a "read a job posting" exercise where the job postings were Software related -->
 
 ### Generic Resume Advice
 
-A lot of the generic co-op resume advice does not align well with the expectations of modern tech resumes.
+A lot of the "templated" co-op resume advice does not align well with the expectations of modern tech resumes.
 
 It's worth noting that I've heard from students this year that there have been some improvements like recommending to students to use [Jake's Resume](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs), but I still see students make poor choices on their resumes that I know stem from co-op program recommendations.
 
@@ -148,11 +146,13 @@ Here is some surface level advice for students who build their resumes only usin
 
 - If you are an undergrad with zero work experience, you don't need a two page resume. I don't care if the co-op department says otherwise. I've done plenty of internships, jobs etc, and I still get my whole resume on one page.
 
-- Please for the love of god do not use the ["combined" resume template](https://carleton.ca/career/wp-content/uploads/Combined-Resume-Template.pdf). The co-op department recommends you use this when you have little experience, which means that employers will know by virtue of you using this template that you don't actually have any experience.
+- Do not use the ["combined" resume template](https://carleton.ca/career/wp-content/uploads/Combined-Resume-Template.pdf). I dislike the idea of not putting experience at the top of a resume. I find that many students using this template strech out their resume to two pages by having duplicate points between the skills section and experience section. I'm aware that co-op recommends using this template when you have little experience, _but_ wouldn't that mean that by virtue of you using this template that you're essentially telling employers you don't actually have any experience?
 
-- Do not waste space with a career objective section. If you're applying to a position, the objective is obviously that you want the job you applied to...
+- Do not waste space with a career objective section. If you're applying to a position, the objective is obviously that you want the job you applied to. This is wasted resume space.
 
-- Do not write paragraph of text talking about what skills you got out of a specific class. Especially if your a 2nd year, everyone is taking the same classes so obviously you're not going to stick out that way. Include the course title at most.
+- In my opinion, you shouldn't include an "availability section". Co-op recommends you state what length of position you're looking for (4 months, 8 months, etc). Like the career objection, if you're applying to a position that stated the length was 4 months, they should be able to assume you're free for 4 months.
+
+- Do not write paragraph of text talking about what skills you got out of a specific class. Especially if you're a 2nd year and everyone is taking the same classes. Include the course title at most.
 
 Someday I want to write a proper full article on how best to sell yourself as a student with zero work experience. So stay tuned for that.
 
@@ -249,7 +249,7 @@ _Side Note:_ A lot of my criticism of co-op in this article probably seems like 
 
 If you are able to get an offer outside the co-op job board, but don't want to permanently close the door on having access to the co-op job board, you could potentially choose to not inform the co-op office of your placement.
 
-_Note:_ This goes against the [co-op participation agreement](https://carleton.ca/co-op/rules-regulations/co-op-participation-agreement/), but they have no way of knowing your working a job if you never let them know.
+_Note:_ This goes against the [co-op participation agreement](https://carleton.ca/co-op/rules-regulations/co-op-participation-agreement/#:~:text=I%20understand%20that%20if%20I%20obtain%20a%20position%20through%20a%20self%2Ddirected%20job%20search%2C%20I%20will%20submit%20the%20position%20for%20approval%20to%20the%20Co%2Doperative%20Education%20Office.), but they have no way of knowing your working a job if you never let them know.
 
 By not informing the co-op office, you won't have to pay the "co-op work term fee", but also will not receive credit, and you will not be considered a full-time student for that term.
 
