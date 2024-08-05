@@ -6,7 +6,7 @@ image: "/images/articles/2023/working-and-studying2.png"
 draft: true
 ---
 
-In today's job market, large tech layoffs, early-talent program closures, and declines in new grads hiring are more prevelant then ever.
+In today's job market, large tech layoffs, early-talent program closures, and declines in new grads hiring are more prevelant than ever.
 
 Having real work experience before you graduate is now an absolute necessity and therefore the quality of a university's co-op program is a key factor in picking where you go to school.
 
@@ -126,15 +126,21 @@ Personally, I think students come in with expactations that are way too high for
 
 If you're an incoming student at Carleton, I'd say the course is comparable to Ontario's Grade 10 ["Career Studies" curriculum](https://www.edu.gov.on.ca/eng/curriculum/secondary/career-studies-grade10.pdf).
 
-<!-- ### Lack Of Tailoring
+### Lack Of Tailoring
 
-Here is a list of the only contents that seem remotely tailored to the tech industry in the course:
+Many students will comment on the "lack of tailoring" in the course.
+
+It's worth noting that I there is no "public facing" mention that the COOP 1000 course is intended to be tailored.
+
+However, it is worth noting that the goal of the course is to provide students with the resources they need to conduct their job search, and I'd say that the tech industry's job search expectations do not align with what is presented in the "templated" course.
+
+Here is a list of the only contents that seem tailored to the tech industry:
 
 - That you should "put projects on your resume"
 
 - Occasionally in the course content, you'll see a job title placefolder subbed out as something tech related
 
-- We also did a "read a job posting" exercise where the job postings were Software related -->
+- There is a "job decription reading" exercise where the job postings were Software related
 
 ### Generic Resume Advice
 
