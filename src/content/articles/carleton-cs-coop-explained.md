@@ -194,9 +194,9 @@ It's worth noting that I've heard from students this year that there have been s
 
 Here is some surface level advice for students who build their resumes only using the co-op department's advice:
 
-- If you are an undergrad with zero work experience, you don't need a two page resume. I don't care if the co-op department says otherwise. I've done plenty of internships, jobs etc, and I still get my whole resume on one page.
+- If you are an undergrad with zero / little work experience, you don't need a two page resume. Don't duplicate points just to force two pages, there is nothing wrong with a one page resume.
 
-- Do not use the ["combined" resume template](https://carleton.ca/career/wp-content/uploads/Combined-Resume-Template.pdf). I dislike the idea of not putting experience at the top of a resume. I find that many students using this template stretch out their resume to two pages by having duplicate points between the skills section and experience section. I'm aware that co-op recommends using this template when you have little experience, _but_ wouldn't that mean that by virtue of you using this template that you're essentially telling employers you don't actually have any experience?
+- Do not use the ["combined" resume template](https://carleton.ca/career/wp-content/uploads/Combined-Resume-Template.pdf). I dislike the idea of not putting experience at the top of a resume. I find that many students using this template stretch out their resume to two pages by having duplicate points between the skills section and experience section. I'm aware that co-op recommends using this template when you have little experience, _but wouldn't that mean that by virtue of you using this template that you're essentially telling employers you don't actually have any experience?_
 
 - Do not waste space with a career objective section. If you're applying to a position, the objective is obviously that you want the job you applied to. This is wasted resume space.
 
