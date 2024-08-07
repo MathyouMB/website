@@ -142,6 +142,22 @@ There is nothing of note about their co-op policy, I couldn't even find a "you n
 
 <hr/>
 
+## Co-op vs Career Services
+
+Its really important you know that as a Carleton student, you have access to a ton of services through ["Career Services"](https://carleton.ca/career/) **regardless of whether or not you're in co-op.** Career services provides resume / cover letter reviews, mock interviews, job search advice sessions and more.
+
+Co-op offers some additional services, but other than the job board, the only one of note is "One-on-one advising". A full list can be found on [this page](https://carleton.ca/co-op/faculty-co-op-toolkit/) under the "What support is available to co-op students?" section.
+
+Although these services exist, do not use them for anything tech related. The staff providing these services are great for "general advice" related to job searching and best presenting yourself. However, they do not have technical backgrounds and you should not assume their understanding of how to present technical skills, projects, etc is accurate to the expectations of the tech industry.
+
+The "networking events" they list as a service are co-op are 90% of the time open to everyone, however some previous events I've attended have had a "resume bank" where only co-op students could submit.
+
+As someone who has been around since before COVID, I can unfortunately say that the quality of networking events that Carleton has been organizing recently are nowhere near as good as they used to be.
+
+Events that were annual before COVID like ["Net Night"](https://carleton.ca/employers/sent-emails/winter-net-night/) (a networking event dedicated to tech and STEM) no longer exist and all we get now is Carleton's [termly career fair](https://carleton.ca/career/cu-events/fall-career-and-networking-fair/).
+
+Since COVID, Carleton has been opting for "online" networking events that don't actually ever include a "networking component". Normally these events just boil down to a company giving a presentation and maybe answering questions in a chat. These events usually have no oppurtunity to 1-on-1 chat or shake anyone's hand.
+
 ## COOP 1000 Course
 
 You'll annecdotally hear students complain about the COOP 1000 course and how it's outdated, not tailored to the tech industry, etc.
