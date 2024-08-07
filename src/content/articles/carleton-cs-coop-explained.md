@@ -6,7 +6,7 @@ image: "/images/articles/2023/working-and-studying2.png"
 draft: true
 ---
 
-In today's job market, large tech layoffs, early-talent program closures, and declines in new grads hiring are more prevelant than ever.
+In today's job market, large tech layoffs, early-talent program closures, and declines in new grad hiring are more prevelant than ever.
 
 For computer science students, having real work experience before you graduate is now an absolute necessity and therefore the quality of a university's co-op program is a key factor in picking where you go to school.
 
