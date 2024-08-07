@@ -8,7 +8,7 @@ draft: true
 
 In today's job market, large tech layoffs, early-talent program closures, and declines in new grads hiring are more prevelant than ever.
 
-Having real work experience before you graduate is now an absolute necessity and therefore the quality of a university's co-op program is a key factor in picking where you go to school.
+For computer science students, having real work experience before you graduate is now an absolute necessity and therefore the quality of a university's co-op program is a key factor in picking where you go to school.
 
 Enrolling in an accredited university co-op program not only provides exclusive opportunities, but also allows your employer to benefit from a [25%-30% refundable tax credit](https://www.ontario.ca/page/co-operative-education-tax-credit#:~:text=The%2025%2D30%25%20refundable%20tax,each%20work%20placement%20is%20%243%2C000.) on your salary (with a maximum of $3,000 per work placement).
 
