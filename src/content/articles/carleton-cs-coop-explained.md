@@ -277,6 +277,14 @@ As time goes on, you'll also realize that the reality is that "bigger" companies
 
 ## My Advice For Students
 
+### "Is Co-op Worth It"
+
+_If you have zero tech related work experience, see [below](#i-have-zero-work-experience)_
+
+If you have been able to find a tech related job in the past, **co-op is probably not worth it to you.**
+
+The only thing you'll get out of co-op is some additional jobs to apply to and the tax refund eligibility. Having these might be worth you're piece of mind, but if you were also able to find a job on your own without the tax credit being a factor, do you really need them?
+
 ### "I Have Zero Work Experience"
 
 If you have zero relevant work experience, then you should definitely start off in co-op (_despite everything negative I've said_).
