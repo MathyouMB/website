@@ -106,6 +106,8 @@ As a student, I can't access the employer "participation agreement" equivalent, 
 
 ## Other Canadian Co-op Programs
 
+Ultimately, employer / university partnerships are the key to the existence of co-op programs, so inevitably employers will be prioritized over students. Every university does this to some extent. However, Carleton's bias towards employers is particularly egregious and goes beyond the practices happening at other universities.
+
 Carleton's co-op program is the only co-op program I am aware of that has this "One Decline Policy".
 
 After looking at the co-op participation agreements of other Canadian universities, you'll realize that Carleton caters to employers more than any other university in Canada.
@@ -116,9 +118,11 @@ After looking at the co-op participation agreements of other Canadian universiti
 
 At Waterloo, students and employers rank each other by preference after interviewing. On a scheduled date, an algorithm determines job matches for every open position based student and employer rank scores.
 
-In contrast to Carleton, this system gives students who realize they don't want to work for an employer after an interview the chance to rank that employer low.
+Waterloo students can rank up to five jobs as "not interested", effectively declining the job (since ranking an employer last can still get you matched with that employer). In contrast, Carleton's co-op policies (in the worst case) give employers the ability to force desired candidates to work for them.
 
-Carleton's co-op policies (in the worst case) give employers the ability to force desired candidates to work for them.
+It's worth noting that Waterloo students are not able to see how employers rank them unless they are an employer's first ranked choice. If a student is an employer's first choice, then the student **IS** told they've received an offer and can then can rank that employer as their first choice if they want to accept.
+
+Waterloo is also more transparent and allows students to view how many applications a job has received or how many other students are being interviewed for the same job.
 
 If you Google "Waterloo Co-op Reddit", you will definitely be hit with a wall of complaints related to this co-op system, but at the very least this system is more impartial for students.
 
