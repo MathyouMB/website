@@ -108,9 +108,7 @@ As a student, I can't access the employer "participation agreement" equivalent, 
 
 Ultimately, employer / university partnerships are the key to the existence of co-op programs, so inevitably employers will be prioritized over students. Every university does this to some extent. However, Carleton's bias towards employers is particularly egregious and goes beyond the practices happening at other universities.
 
-Carleton's co-op program is the only co-op program I am aware of that has this "One Decline Policy".
-
-After looking at the co-op participation agreements of other Canadian universities, you'll realize that Carleton caters to employers more than any other university in Canada.
+Carleton's co-op program is the only co-op program I am aware of that has a "One Decline Policy" and after looking at the co-op participation agreements of other Canadian universities, you'll realize that Carleton caters to employers more than any other university in Canada.
 
 ### Waterloo & uOttawa - "Rank / Match System"
 
