@@ -230,7 +230,9 @@ Students who are already on the hook for large tuition payments are obviously go
 
 It's worth highlighting that you are paying for more than just the job board. Most students (like most aspects of university) do not take advantage of the services offered and there's many services of varying quality that you gain access to by being in the co-op program.
 
-The approximate total cost of co-op fees (so the fees for all 5 years of the program) for a Carleton computer science student to graduate with co-op distinction (in 2024) is just under $4500, and the cost of acquiring a 4 month placement is about $1000 (one admin fee + one work term fee).
+The approximate total cost of co-op fees (so the fees for all 5 years of the program) for a Carleton computer science student to graduate with co-op distinction (in 2024) is **just under $4500**, and the cost of acquiring a 4 month placement is about $1000 (one admin fee + one work term fee).
+
+According to the [Co-op Salary Survey](<https://carleton.ca/employers/hire-co-op/i-hired-a-co-op-student/co-op-salary-survey/#:~:text=Computer%20Science%20(B.C.S.)>), the minimum computer science co-op hourly salary for 2023-2024 was **$16.35**, the average was **$25.38** and the maximum was **$47.63**.
 
 Minimum wage in Ontario will soon be [$17.20 / hour](https://news.ontario.ca/en/release/1004366/ontario-raising-minimum-wage-to-support-workers) and most entry level tech co-op wages will be atleast a bit more than that. I'd say you'll probably make atleast $12,000 - $15,000 during your first 4 month placement and even more during your later placements.
 
@@ -238,20 +240,24 @@ So on paper the return on investment of paying co-op fees is **worthwhile.** It'
 
 ### Payment Breakdown
 
-Let's assume you're in computer science and follow the recommended study sequence.
+At the time of writing this article, both "co-op admin fees" and "co-op work term fees" cost [$484.25](https://carleton.ca/co-op/program-cost/) each.
+
+It's worth noting that these fees will likely increase during your time in the program. In 2019-2020, both admin and work term fees were **$405.50** each.
+
+Let's assume you're in computer science and follow the recommended [work study sequence](https://carleton.ca/co-op/work-study-sequences/):
 
 ![work-study-sequence](/images/articles/2024/carleton-cs-coop-explained/work-study-sequence.png)
 
 This means you will have paid:
 
-Four co-op admin fees: **$1600-$2000**
+Four co-op admin fees (**Today: $1937**)
 
 - Fall 2nd Year (COMP 1000 course)
 - Winter 2nd Year (Job Search)
 - Winter 3rd Year (Job Search)
 - Fall 4th Year (Job Search)
 
-Five co-op work term fees: **$2000-$2500**
+Five co-op work term fees (**Today: $2421.25**)
 
 - Summer 2nd Year
 - Fall 3rd Year
@@ -259,7 +265,7 @@ Five co-op work term fees: **$2000-$2500**
 - Winter 4th Year
 - Summer 4th Year
 
-_Note_: This assumes you complete two 8-month internships. If you decide you wanted to break one of the 8-month internships into two 4-month internships instead, this would add **additional admin fees**.
+_Note_: This assumes you complete two 8-month internships. If you decide you wanted to break one of the 8-month internships into two 4-month internships instead, this would add **additional admin fees** for any term you also require access to the job board.
 
 ### Paying To Find Your Own Placement
 
