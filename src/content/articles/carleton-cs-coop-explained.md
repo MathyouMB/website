@@ -18,7 +18,7 @@ So why do so many computer science students at Carleton openly criticize or even
 
 --
 
-For those with zero work experience who need to get their foot in the door, I genuinely do recommend initially enrolling in co-op.
+For those with zero relevant work experience who need to get their foot in the door, I genuinely do recommend initially enrolling in co-op.
 
 Although it's possible to find an internship on your own, access to the co-op exclusive job board is worth having given how bad the job market is for students right now.
 
