@@ -1,10 +1,12 @@
 ---
 title: "Carleton Computer Science: Explaining Co-op Criticism"
 description: Why are so many computer science students so critical of Carleton's co-op program?
-date: 2024-08-05
-image: "/images/articles/2023/working-and-studying2.png"
-draft: true
+date: 2024-08-24
+image: "/images/articles/2024/carleton-cs-coop-explained/cover.png"
+draft: false
 ---
+
+![raven-with-briefcase](/images/articles/2024/carleton-cs-coop-explained/cover.png)
 
 In today's job market, large tech layoffs, early-talent program closures, and declines in new grad hiring are more prevalent than ever.
 
