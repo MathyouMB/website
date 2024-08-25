@@ -1,0 +1,161 @@
+---
+title: "Why Computer Science Students Are Struggling To Find Jobs"
+description: How the pandemic, rising enrollment, and AI have reshaped the job market for students.
+date: 2024-08-25
+image: "/images/articles/2023/working-and-studying2.png"
+draft: true
+---
+
+Once seen as a gateway to a "guaranteed job," computer science has become a far less secure path for students and recent graduates. Just a few years ago, when developers were in high demand, landing an internship seemed straightforward—being likable, eager to learn, and maybe having a personal project would often get you in the door.
+
+However, the landscape has shifted dramatically. The pandemic, skyrocketing enrollment in university computer science programs, and the rapid advancement of AI have all converged to reshape the job market.
+
+While these factors may seem distant and beyond students’ control, there’s an uncomfortable truth that has been largely overlooked: the overall quality of student talent appears to be lower than ever before.
+
+It’s not just the changing job market that has made the journey from student to software engineer more challenging—it's also the declining caliber of students themselves. Overcrowded university classrooms, weakened student communities, and the disruptive rise of AI have all contributed to this decline, leaving many students ill-prepared to meet the demands of the tech industry.
+
+<hr>
+
+# What Happened To University?
+
+It’s no secret that the pandemic, AI, etc have all had an immense impact on the current state of university as an institution. However, the reality is that even before the pandemic or AI tools became relevant, computer science was already becoming a saturated program.
+
+The average number of undergraduate CS majors at universities in the U.S. and Canada tripled in the decade after 2005, and it keeps growing. Enrolment in computer science has become an increasingly popular decision due to the public view being that there were lots of jobs in tech.
+
+Additionally, the world has become significantly more technologically literate over the past decade by virtue of having more widespread access to technology.
+
+However, despite there being more access to technology, that doesn’t necessarily mean that the experience of students coming into university has actually gone up overall.
+
+## Increasing Lack of Tech Literacy
+
+The prior technology and programming experience of incoming university students are currently both the lowest and the highest we’ve ever seen.
+
+Although we are seeing increasingly more experienced students enter university programs due to more widespread access to programming at younger ages, what you might not expect is that we are also seeing students with increasing less experience join these programs as well; some who have never even written a line of code.
+
+As technology has become more widespread, it’s also gotten simpler. At Carleton University, I now meet incoming students who have never used Windows or heard of “file explorer”, cannot install required Software on their own, and have only been using ChromeBooks and IPads up until they made it to university.
+
+Although computer science programs have always been structured under the assumption that students have near zero incoming programming experience due to a lack of standard programming education in secondary schools, university has not yet pivoted so far as to accommodate these low levels of experience.
+
+Students who have to struggle through their first year catching up are not going to have the same amount of time as more experienced students to participate in student leadership roles, work on side projects, or many of the activities that can be leveraged in internship applications.
+
+## Problematic Program Design
+
+As previously mentioned, most university computer science programs are designed under the assumption that students have near zero incoming programming experience due to a lack of standard programming education in secondary schools. This means regardless of your previous experience, most programs in the US and Canada start from the “kindergarten” level equivalent of programming.
+
+Many would expect University education to embody a shift from the structured, guided learning often experienced in earlier educational stages to a more open-ended, intellectually challenging environment. One that requires students to engage in deeper levels of critical thinking and critical assessment of ideas instead of completing formulaic assignments.
+
+However, the reality of computer science programs is that students will not have the opportunity to express their own ideas or thoughts until typically the 3rd year of a 3 or 4 year program.
+
+It’s the equivalent of a student going into a music program without ever having played an instrument. With intensive work maybe after a year or two they’d have some unique thoughts, but it’s just not fair to assume they’d be on par with students who have begun playing instruments before university.
+
+The students who do have experience are essentially held back in the sense that they are expected to wait a year for everyone else to “catch up”. These students typically become more arrogant, lazy, and do not build the habits expected for the later stages of university like “going to class” (seriously). Very few programs offer options for students to skip ahead through some of the early / first year courses.
+
+## Impact of Growing Student Enrollment
+
+Over the past decade, the computer student population has tripled in universities across the US and Canada. The surge in enrollment has stretched resources thin, particularly in first and second-year courses, where large class sizes have become the norm. As a result, there is not enough teaching staff or resources to provide the individualized attention that is crucial for fostering deep understanding and critical thinking.
+
+In response to these pressures, the nature of assignments and exams have continued to become increasingly prescriptive and rarely encourage creative problem-solving or open-ended exploration. Faculty and teaching assistants, overwhelmed by the sheer volume of students, design tasks that are straight forward and faster to grade. This often means rigid requirements and little room for students to think outside the box; sacrificing the quality of learning for the sake of manageability.
+
+The result is that students not only miss out on developing critical thinking skills and original ideas about computer science, but they also struggle to distinguish their university education from their high school experience. The lack of depth and engagement in their coursework leaves them unable to fully appreciate the value of higher education, diminishing their ability to make the most of their university years. Without opportunities to explore and challenge ideas, students may leave university unprepared for the complexities of the real world, having merely completed a series of tasks rather than truly engaging with the material.
+
+## Damaged Student Community
+
+The impact of COVID-19 on the student community extends far beyond just missing out on social gatherings or in-person classes; it disrupted one of the most vital aspects of university life—the informal networks and relationships that form the backbone of career development. In many ways, the student community is as crucial, if not more so, than the courses themselves.
+
+Upper-year students serve as mentors, offering job and career advice that goes beyond textbooks. They provide insights into navigating the job market, tips on acing interviews, and even guidance on which faculty to target or avoid. Without these connections, underclassmen miss out on a wealth of knowledge that can be pivotal in securing internships and job offers.
+
+Moreover, fellow students are not just classmates; they are potential future coworkers, business partners, or even the key to your next job opportunity. The value of referrals in the tech industry, for instance, cannot be overstated. Many students find their first roles through peer recommendations, and these relationships can lead to lifelong professional networks.
+
+I would not personally be as successful as I am today without the help and mentorship of those I had around me in first year. When asked “what I’d be doing that upcoming summer” in my first year, I’d initially replied that all I was hoping for was some kind of “unpaid volunteer tech position”. It wasn't until upper year students made it clear that I could achieve more that I did secure a legitimately paid software job that summer.
+
+Students who started in the Fall 2020 and Fall 2021 COVID years, had significantly less chance or ability to meet upper year students the way I did, and as a consequence, they have not inherited the generationally transferred advice one would expect by partaking in a university program. When we returned back to in-person in Fall 2022, most of the students who had this generational advice were nearing or had graduated. There was a significant demographic of students from Fall 2020 and 2021 that had never heard advice about “adding personal projects to your resume” or other essential strategies that can make or break a job application.
+
+This gap in knowledge has left many students unprepared to compete in a job market that increasingly demands not just academic excellence but also practical experience and a well-rounded skill set.
+
+## AI’s Impact On Computer Science Education
+
+TL;DR: The rise of AI tools has led to an increase in academic dishonesty.
+
+The integration of AI into education has brought significant benefits, but it has also led to a surge in cheating, particularly with the aforementioned assignments that are designed to have specific solutions. Tools like AI-powered code generators can produce correct solutions with minimal effort, allowing students to bypass the learning process entirely. As a result, many students are submitting work they did not genuinely understand or complete on their own.
+
+This trend poses a serious challenge for educators who rely on these assignments to assess students' grasp of fundamental concepts. The traditional approaches to grading and evaluation are becoming increasingly ineffective, as it’s harder to distinguish between students who genuinely understand the material and those who simply know how to prompt an AI for the right answers.
+
+In the coming years, it will be pivotal that educators rethink how they design assignments and assessments, emphasizing critical thinking, creativity, and problem-solving over rote memorization or standard solution patterns.
+
+<hr>
+
+# What Happened To The Industry?
+
+## Growth > Profit
+
+Many tech companies rely on business strategies that favor growth over profit. It’s important to understand this as during the pandemic, tech companies saw rapid growth leading to mass hirings, but experienced decreases in growth after the pandemic came to an end, being one of the causes for mass layoffs.
+
+### Market Dominance
+
+In the tech industry, establishing market dominance early is crucial. Companies that can capture a large market share quickly often benefit from network effects, where the value of a product or service increases as more people use it.
+
+For example, social media platforms, e-commerce giants, and cloud service providers gain a competitive advantage as their user base grows, making it harder for competitors to catch up. Focusing on growth allows these companies to build a large customer base quickly, even at the expense of short-term profitability.
+
+### Investor Expectations
+
+Investors in tech startups and high-growth companies typically prioritize future potential over immediate profits. They are often willing to fund companies that are losing money if they believe the company will eventually achieve significant scale and profitability.
+As a result, tech companies often prioritize metrics like user growth, market penetration, and revenue expansion over current profitability. This focus on long-term growth helps them attract and retain investment, enabling further expansion.
+
+### Valuation Multiples
+
+The valuation of tech companies is often based on revenue multiples rather than earnings. This means that a company’s value is determined more by its revenue growth than its profitability.
+Startups and tech firms that demonstrate rapid growth can achieve high valuations, even if they are not yet profitable. This is particularly true for companies in emerging or rapidly evolving markets where the potential for future profits is significant.
+
+### Economies of Scale
+
+Many tech companies operate on business models where profitability improves with scale.
+
+For example, software products have high initial development costs but relatively low costs for additional users.
+
+By focusing on growth, these companies can spread their fixed costs across a larger customer base, eventually achieving economies of scale that lead to higher profitability in the long run. In other words, they need to reach a critical mass before they can turn a profit.
+
+## Debt & Impact of Pandemic Interest Rates
+
+Early in the Pandemic, central banks around the world slashed interest rates to near-zero levels, making borrowing cheap and ultimately encouraging investment in high-growth sectors like tech.
+However, an inevitable post-COVID rise in interest rates occurred quicker than the industry expected, causing difficulties for companies who owed large sums of money, being another reason for eventually mass layoffs.
+
+Several well-known tech companies have taken on significant debt during periods of low interest rates to fund their growth, acquisitions, or other strategic initiatives. Here are some examples:
+
+1. Uber:
+   Uber has taken on substantial debt over the years to fund its aggressive expansion and operations. For example, in 2018, Uber raised $1.5 billion in a leveraged loan as it prepared for its initial public offering (IPO). This debt helped Uber finance its rapid global expansion and compete with rivals in various markets.
+2. Netflix:
+   Netflix is another example of a tech company that relied heavily on debt to fuel its growth. The company has repeatedly issued bonds to raise billions of dollars to fund its content creation strategy. In January 2021, Netflix announced that it had raised another $1 billion in debt, marking its 15th bond offering since 2009. This debt was crucial in enabling Netflix to invest in original content and expand its global subscriber base.
+3. Tesla:
+   Tesla has also utilized debt financing to support its growth, particularly during its early years when it was ramping up production. For instance, in 2014, Tesla issued $2 billion in convertible debt to fund the development of its Gigafactory and Model 3 production. The company has since paid off much of its debt as it became more profitable, but it still serves as an example of a tech company using debt to scale quickly.
+4. Twitter:
+   Before its acquisition by Elon Musk, Twitter had issued significant amounts of debt. In 2014, Twitter issued $1.8 billion in convertible notes to raise capital for various purposes, including potential acquisitions. The company continued to manage its debt levels over the years, even as it struggled with profitability at times.
+5. Apple:
+   Apple, despite being one of the most profitable companies in the world, has taken on debt strategically. In recent years, Apple has issued bonds to finance stock buybacks and dividend payments rather than tapping into its massive cash reserves, which were held overseas to avoid U.S. taxes. For instance, in 2020, Apple issued $14 billion in bonds to take advantage of low interest rates, a move that allowed it to return more capital to shareholders.
+
+## Impact of Mass Layoffs on Young Professionals
+
+The wave of mass layoffs has had far-reaching consequences, particularly for young professionals entering the workforce. As industry giants cut tens of thousands of jobs, many of these displaced workers—often seasoned and highly skilled—shift their focus to smaller tech firms, startups, and mid-sized companies. This creates a ripple effect throughout the job market.
+
+For new graduates, the situation becomes increasingly challenging. Traditionally, smaller companies have been a fertile ground for entry-level opportunities, where fresh talent can learn and grow. However, with the influx of experienced professionals seeking new roles, these positions are now being filled by candidates with years of experience, leaving fewer opportunities for recent graduates.
+
+The competition for entry-level roles intensifies as these seasoned professionals are willing to accept lower pay or junior titles to remain employed, further diminishing the chances for new graduates to secure their first job. This shift exacerbates an already competitive job market, making it harder for young professionals to gain a foothold in the industry.
+
+Additionally, in a world with so many full-time layoffs, it’s extremely difficult for companies to justify hiring interns. When organizations are struggling to retain their full-time staff, offering internships can seem like a luxury they cannot afford. Internships are often seen as a way to build a pipeline of future talent, but in times of economic uncertainty, companies prioritize immediate survival over long-term planning. The budget cuts that accompany layoffs often target non-essential programs first, and unfortunately, internships are frequently among them. This further narrows the path for students and recent graduates, who rely on internships as a critical step toward securing full-time employment.
+
+## Does AI Replace Developers?
+
+The role of AI in software development has sparked significant debate, but the reality is that AI does not fully replace developers—at least, not yet. Instead, AI serves as a powerful tool that enhances developers' capabilities.
+
+According to the 2024 Stack Overflow survey, 81% of developers agree that AI significantly boosts productivity. While AI isn't replicating the exact work developers do, its ability to enhance efficiency means that if developers become x% more productive with AI, companies may start considering reducing their developer headcount by a similar margin.
+
+It's important to note that the work that is possible to automate with AI today is not big picture stuff, the work is typically general programming work that act as tasks possibly delegating to interns and new graduates. This shift could jeopardize the availability of entry-level positions in the future.
+
+<hr>
+
+# Conclusion
+
+The landscape for computer science students and recent graduates has changed dramatically over the past few years. The once straightforward path to securing internships and full-time roles in tech has become increasingly challenging due to a confluence of factors: the pandemic’s long-lasting effects, the explosive growth in student enrollment, the evolving demands of the tech industry, and the rapid integration of AI into education and development.
+
+The decline in the quality of education and student preparedness, coupled with a weakened student community, has left many ill-equipped to navigate this new reality. Additionally, the industry's focus on growth over profit and the resulting economic volatility have compounded these difficulties, making it harder for young professionals to break into the field.
+
+To adapt, students must recognize that the old strategies may no longer suffice. They must proactively seek out opportunities to gain experience, build connections, and develop a deeper understanding of their field. Universities, too, need to reassess their approaches, ensuring that their programs are not just accessible but also rigorous and relevant in a rapidly changing world. Ultimately, those who can navigate these complexities and evolve with the industry will be the ones who succeed in the tech job market of tomorrow.
