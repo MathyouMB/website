@@ -3,7 +3,7 @@ title: "Why Computer Science Students Are Struggling To Find Jobs"
 description: How the pandemic, rising enrollment, and AI have reshaped the job market for students.
 date: 2024-08-25
 image: "/images/articles/2023/working-and-studying2.png"
-draft: false
+draft: true
 ---
 
 Once seen as a gateway to a "guaranteed job," computer science has recently become a far less secure path for students and recent graduates.
