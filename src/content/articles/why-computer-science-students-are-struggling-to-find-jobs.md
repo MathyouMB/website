@@ -77,7 +77,7 @@ Widespread access to technology has led to more students gaining access to progr
 
 Although you'd expect the caliber of students to have grown due to continued societal adoption of technology, I do not believe that is the case.
 
-An increasing number of students are enrolling primarily for financial incentives rather than out of passion. Additionally, the simplification of technology for everyday consumer is leading to a rise in students with low levels of tech literacy entering these programs.
+An increasing number of students are enrolling primarily for financial incentives rather than out of passion. Additionally, the simplification of technology for everyday consumers is leading to a rise in students with low levels of tech literacy entering these programs.
 
 I personally believe that the high enrollments of less capable and less passionate students are crowding classrooms, leading to a strain on resources and faculty time.
 
