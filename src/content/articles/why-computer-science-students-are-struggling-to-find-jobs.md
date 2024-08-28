@@ -66,7 +66,7 @@ While AI isn't replicating the exact work developers do, its ability to enhance 
 
 ## What's Happening To University?
 
-It’s no secret that the pandemic, AI, etc have all had an immense impact on the current state of university as an institution. However, the reality is that even before the pandemic or AI tools became relevant, computer science was already becoming a saturated program.
+Although the pandemic, AI, and other factors have profoundly influenced the current state of universities, computer science was already on its way to becoming an overcrowded program.
 
 The average number of undergraduate CS majors at universities in the U.S. and Canada [tripled](https://cra.org/data/generation-cs/phenomenal-growth-cs-majors-since-2006/) in the decade after 2005 [[3](#sources)], and its only continued to grow. At Carleton University, we've seen the program's population triple from 998 in 2013 to 2791 in 2023 [[8](#sources)]
 
