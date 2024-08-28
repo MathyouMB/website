@@ -1,6 +1,6 @@
 ---
 title: "Why Computer Science Students Are Struggling To Find Jobs"
-description: How the pandemic, rising enrollment, and AI have reshaped the job market for students.
+description: How the pandemic, rising enrollment, and AI have reshaped the job market and led to less capable university graduates.
 date: 2024-08-25
 image: "/images/articles/2023/working-and-studying2.png"
 draft: true
@@ -12,7 +12,7 @@ Just a few years ago, landing a software development internship seemed straightf
 
 However, the effects of the COVID-19 pandemic, skyrocketing enrollment in university computer science programs, and rapid advancement in AI have all converged to reshape the job market.
 
-While these factors may seem distant and beyond students’ control, there’s an uncomfortable truth that has been largely overlooked: despite widespread access to technology, the overall capability of students appears to be the same or possibly even lower on average.
+Though these factors might seem remote and out of students' hands, there's an unsettling reality that has been widely ignored: despite the broad availability of technology, the average capability of students remains unchanged—or may even be declining.
 
 From my experience as a student at Carleton University, I believe it’s more than just the changing job market that has made the journey from student to software engineer more challenging—it's the impact of overcrowded university classrooms, weakened student communities, and impact of AI on education that have all contributed to this decline, leaving many students ill-prepared to meet the demands of the tech industry.
 
@@ -147,7 +147,7 @@ While a computer science degree provides a crucial foundation, the theoretical k
 
 Although there are jobs in tech, the majority of these jobs are for Software Developers, Data Scientists, Security Analysts, etc. _not "computer scientists"._
 
-Computer science is merely the foundation for these fields in the same way math is the foundation for physics and physics is the foundation for chemistry
+Computer science is merely the foundation for these fields in the same way math is the foundation for physics and physics is the foundation for chemistry.
 
 ![foundations](/images/articles/2024/why-computer-science-students-are-struggling-to-find-jobs/foundations.png)
 
