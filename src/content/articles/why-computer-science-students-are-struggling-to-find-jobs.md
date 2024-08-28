@@ -56,9 +56,7 @@ This further narrows the path for students and recent graduates, who rely on int
 
 The reality is that AI does not fully replace developers—at least, not yet.
 
-Today, AI is simple a tool that saves developers time, kind of like how a calculator saves time in performing complex calculations.
-
-According to the [2024 Stack Overflow survey](https://survey.stackoverflow.co/2024/ai#developer-tools-ai-ben), 81% of developers agree that AI significantly boosts productivity [[7](#sources)].
+Today, AI is simple a tool that saves developers time, kind of like how a calculator saves time in performing complex calculations. According to the [2024 Stack Overflow survey](https://survey.stackoverflow.co/2024/ai#developer-tools-ai-ben), 81% of developers agree that AI significantly boosts productivity [[7](#sources)].
 
 Although it does not fully replace the duties of an entry level developer, it is able to generate code that could have previously been delegated to interns or new grad level employees.
 
@@ -66,22 +64,21 @@ While AI isn't replicating the exact work developers do, its ability to enhance 
 
 <hr>
 
-## What Happened To University?
+## What's Happening To University?
 
 It’s no secret that the pandemic, AI, etc have all had an immense impact on the current state of university as an institution. However, the reality is that even before the pandemic or AI tools became relevant, computer science was already becoming a saturated program.
 
-The average number of undergraduate CS majors at universities in the U.S. and Canada [tripled](https://cra.org/data/generation-cs/phenomenal-growth-cs-majors-since-2006/) in the decade after 2005 [[3](#sources)], and its only continued to grow. At Carleton University, we've seen the program's population triple from 998 in 2013 to 2791 in 2023 [[8](#sources)].
+The average number of undergraduate CS majors at universities in the U.S. and Canada [tripled](https://cra.org/data/generation-cs/phenomenal-growth-cs-majors-since-2006/) in the decade after 2005 [[3](#sources)], and its only continued to grow. At Carleton University, we've seen the program's population triple from 998 in 2013 to 2791 in 2023 [[8](#sources)]
 
-<!--
-Widespread access to technology has led to more students gaining access to programming education at younger ages. Additionally, high paying tech salaries and promised job security have brought popularity to the idea of enroling in computer science. -->
+Meanwhile, the increase in the number of tenure-track faculty and teaching faculty [in no way matches the growth](https://cra.org/data/generation-cs/phenomenal-growth-cs-majors-since-2006/#:~:text=The%20increase%20in%20the%20number%20of%20tenure%2Dtrack%20faculty%20and%20teaching%20faculty%20in%20no%20way%20matches%20the%20growth%20in%20the%20number%20of%20undergraduate%20CS%20majors) in the number of undergraduate CS majors [[3](#sources)].
 
-Although you'd expect the caliber of students to have grown due to continued societal adoption of technology, I do not believe that is the case.
+To add more complexity, university programs must now accommodate a broader range of prior programming experience.
 
-An increasing number of students are enrolling primarily for financial incentives rather than out of passion. Additionally, the simplification of technology for everyday consumers is leading to a rise in students with low levels of tech literacy entering these programs.
+The increasing simplification of technology for everyday consumers has led to a surge in students with limited tech literacy entering these programs. Additionally, more students are enrolling primarily for financial incentives rather than out of genuine interest.
 
-I personally believe that the high enrollments of less capable and less passionate students are crowding classrooms, leading to a strain on resources and faculty time.
+The influx of less capable and less motivated students is overcrowding classrooms, straining resources, and stretching faculty time thin. To cope with these overpopulated classrooms, course assesments are often designed to prioritize minimizing marking time over giving students creative freedom or meaningful feedback; diminish the quality of the university experience and leaving students less prepared for the job market.
 
-To manage these overpopulated classrooms, courses are being designed in a way that often degrades university experience; resulting in students less prepared for the job market.
+With limited faculty, it’s nearly impossible to support both students who have never written code and those who started programming at increasingly younger ages. Coupled with university bureaucracy and faculty tenure agreements that protect the right to teach, the reality is that despite rapid industry changes, university curricula have evolved very little.
 
 ### Financial Motivation For Enrollment
 
@@ -119,13 +116,19 @@ Unfortunately, very few programs offer pathways for students to advance beyond t
 
 It is widely recognized that smaller class sizes enable more individualized support, foster stronger connections with faculty and peers, and offer enhanced opportunities for hands-on learning.
 
-As computer science students enrollment has tripled over the past decade, This surge in enrollment has strained resources, particularly in first- and second-year courses, where large class sizes have become the norm.
+As computer science enrollment has grown without a corresponding increase in faculty, the surge has strained resources, particularly in first- and second-year courses, where large class sizes have become the norm.
 
 At Carleton University, all required computer science courses from first to third year now regularly fill 100+ person lecture theaters, with multiple sections for each course. In my first year, the mandatory course "COMP 1405: Introduction to Computer Science" had three sections of over 100 students each; as of 2024, it has expanded to five sections. At Carleton, most students won’t attend a computer science class with fewer than 100 students until third year of a three- or four-year program.
 
-In response to these pressures, the nature of assignments and exams have continued to become increasingly prescriptive and rarely encourage creative problem-solving or open-ended exploration. Faculty and teaching assistants, overwhelmed by the sheer volume of students, design tasks that are straight forward and faster to grade. This often means rigid requirements and little room for students to think outside the box; sacrificing the quality of learning for the sake of manageability.
+In response to these pressures, the nature of assignments and exams for these classes have continued to become increasingly prescriptive and rarely encourage creative problem-solving or open-ended exploration. Overwhelmed by the sheer volume of students, faculty design tasks that are straight forward for teaching assistants to grade and require giving students limited feedback; sacrificing the quality of learning for the sake of manageability.
 
-The result is that students not only miss out on developing critical thinking skills and original ideas about computer science, but they also struggle to distinguish their university education from their high school experience. The lack of depth and engagement in their coursework leaves them unable to fully appreciate the value of higher education, diminishing their ability to make the most of their university years.
+To patch over the shortage of faculty, Carleton resorts to letting undergraduates, some as early as their second year, become teaching assistants purely based on grades, without any interviews to gauge their teaching ability or communication skills.
+
+The result of rigid assesments is that students not only miss out on developing critical thinking skills and original ideas about computer science, but they also struggle to distinguish their university education from their high school experience.
+
+Especially with the pandemic leading to more recorded lectures, the reality is that for introductory level courses, there are hundreds of free better produced pieces of educational content already accesible online. A great example of this would be [Harvard's CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T380F_inVRXMIHCqLaNUd7bN4), a free online introductory computer science course.
+
+The lack of depth and engagement in coursework leaves students unable to fully appreciate the value of higher education, diminishing their ability to make the most of their university years.
 
 Without opportunities to explore and challenge ideas, students may leave university unprepared for the complexities of the real world, and most will graduate today without ever having had an original idea about the field.
 
