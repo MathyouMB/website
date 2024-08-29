@@ -118,7 +118,7 @@ It is widely recognized that smaller class sizes enable more individualized supp
 
 As computer science enrollment has grown without a corresponding increase in faculty, the surge has strained resources, particularly in first- and second-year courses, where large class sizes have become the norm.
 
-At Carleton University, all required computer science courses from first to third year now regularly fill 100+ person lecture theaters, with multiple sections for each course. In my first year, the mandatory course "COMP 1405: Introduction to Computer Science" had three sections of over 100 students each; as of 2024, it has expanded to five sections. At Carleton, most students won’t attend a computer science class with fewer than 100 students until third year of a three- or four-year program.
+At Carleton University, all required computer science courses from first to third year now regularly fill 100+ person lecture theaters, with multiple sections for each course. In my first year, the mandatory course "COMP 1405: Introduction to Computer Science" had three sections of over 100 students each; as of 2024, it has expanded to five sections. **At Carleton, most students won’t attend a computer science class with fewer than 100 students until third or even forth year of a four-year program.**
 
 In response to these pressures, the nature of assignments and exams for these classes have continued to become increasingly prescriptive and rarely encourage creative problem-solving or open-ended exploration. Overwhelmed by the sheer volume of students, faculty design tasks that are straight forward for teaching assistants to grade and require giving students limited feedback; sacrificing the quality of learning for the sake of manageability.
 
