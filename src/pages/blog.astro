@@ -5,6 +5,9 @@ import "./blog.scss";
 
 const articles = await getCollection("articles");
 const nonDraftArticles = articles.filter((article) => !article.data.draft);
+const sortedArticles = nonDraftArticles.sort((a, b) => {
+  return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+});
 ---
 
 <Layout title="Blog">
@@ -12,7 +15,7 @@ const nonDraftArticles = articles.filter((article) => !article.data.draft);
   <div style="margin-top: 1rem"></div>
   <div class="Blog__items">
     {
-      nonDraftArticles.map((article) => (
+      sortedArticles.map((article) => (
         <a href={`/blog/${article.slug}`}>
           <div class="Blog__preview">
             <div>
