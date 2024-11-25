@@ -1,5 +1,5 @@
 ---
-title: "A Hidden Cost Of Remote Work On Developer Growth"
+title: "A Hidden Cost Of Remote Work On Early Developer Growth"
 description: The impact of meeting aversion and isolation on the growth of corporate communication skills
 date: 2024-11-24
 image: "/images/articles/default.png"
@@ -10,11 +10,11 @@ Very recently, I’ve started to reflect on how working remotely as an early-car
 
 Earlier this month, I had the chance to meet my fully remote team in person for the first time during a company onsite. The primary goal of this meetup was to accelerate the early planning stages of our next project.
 
-As you’d expect from the onsite, I was tasked with sharing ideas and providing real-time feedback. However, I noticed something unexpected—my contributions didn’t resonate the way they typically do when I’m speaking with other developers.
+As you’d expect from the onsite, I was tasked with sharing ideas and providing real-time feedback. However, I noticed something unexpected—my contributions were not resonating as strongly with product and customer oriented folks as much as my fellow developers.
 
-At first, I was puzzled. While I wouldn’t call myself an exceptional speaker, I’ve always felt confident in tailoring my message to suit the audience—at least when I’ve had the time to prepare. Upon reflection, I realized that my day-to-day work rarely requires me to adapt my communication **on the fly**, and this lack of practice may be holding me back in situations that demand spontaneity. Most of my normal work interactions are with fellow developers, where the focus is on technical details (something I'm definitely better at) rather than conveying customer or business-facing value.
+At first, I was puzzled. While I wouldn’t call myself an exceptional speaker, I’ve always felt confident in tailoring my message to suit the difference target audiences—at least when I’ve had the time to prepare. Upon reflection, I realized that my day-to-day work rarely requires me to adapt my communication **on the fly**, and this lack of practice may be holding me back in situations that demand spontaneity.
 
-To some extent, this is an expected outcome of remote work, where the casual, spontaneous conversations you'd have in an office setting with members of other departments are largely absent.
+This is partly an expected outcome of remote work, where the casual, spontaneous conversations you might have in an office with people from other departments simply don’t happen.
 
 Althought it's definitely true that in choosing to work remotely, I've choosen to lose the growth I'd get through those hallway style conversations, I think there are some aspects of specifically “developer remote work culture” that have made it even more challenging for individuals at my career stage to practice these skills.
 
