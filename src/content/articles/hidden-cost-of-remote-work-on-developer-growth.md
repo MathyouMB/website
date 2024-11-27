@@ -1,7 +1,7 @@
 ---
 title: "A Hidden Cost Of Remote Work On Early Developer Growth"
 description: The impact of meeting aversion and isolation on the growth of corporate communication skills
-date: 2024-11-24
+date: 2024-11-27
 image: "/images/articles/2024/hidden-cost-of-remote-work-on-developer-growth/cover.png"
 draft: false
 ---
