@@ -2,17 +2,25 @@
 title: "A Hidden Cost Of Remote Work On Early Developer Growth"
 description: The impact of meeting aversion and isolation on the growth of corporate communication skills
 date: 2024-11-24
-image: "/images/articles/default.png"
+image: "/images/articles/2024/hidden-cost-of-remote-work-on-developer-growth/cover.png"
 draft: false
 ---
 
-Very recently, I’ve started to reflect on how working remotely as an early-career developer has shaped my professional growth. While I haven't felt stunted in growing my technical experience, it feels like there are fewer opportunities to develop the non-technical skills that are critical for long-term career progression—skills like understanding broader business goals, and adapting to different audiences.
+![remote-working-creatures](/images/articles/2024/hidden-cost-of-remote-work-on-developer-growth/cover.png)
+
+Very recently, I’ve started to reflect on how **working remotely** as an early-career developer has shaped my professional growth.
+
+While I haven't felt stunted in growing my technical experience, it feels like there are fewer opportunities to develop the non-technical skills that are critical for long-term career progression—skills like understanding broader business goals, and adapting to different audiences.
 
 Earlier this month, I had the chance to meet my fully remote team in person for the first time during a company onsite. The primary goal of this meetup was to accelerate the early planning stages of our next project.
 
 As you’d expect from the onsite, I was tasked with sharing ideas and providing real-time feedback. However, I noticed something unexpected—my contributions were not resonating as strongly with product and customer oriented folks as much as my fellow developers.
 
-At first, I was puzzled. While I wouldn’t call myself an exceptional speaker, I’ve always felt confident in tailoring my message to suit the difference target audiences—at least when I’ve had the time to prepare. Upon reflection, I realized that my day-to-day work rarely requires me to adapt my communication **on the fly**, and this lack of practice may be holding me back in situations that demand spontaneity.
+At first, I was puzzled. While I wouldn’t call myself an exceptional speaker, I’ve always felt confident in tailoring my message to suit the difference target audiences—**at least when I’ve had the time to prepare**.
+
+But that’s exactly the problem… I realized that in my day-to-day work, I’m almost never required to adapt my communication **on the fly**.
+
+The only non discussions I regularly have are updates with our project manager, who primarily shares the outcomes of previous meetings with stakeholders to keep our development team informed. Occasionally, we present directly to stakeholders, but again, those are planned presentations—not moments that call for real-time spontaneity.
 
 This is partly an expected outcome of remote work, where the casual, spontaneous conversations you might have in an office with people from other departments simply don’t happen.
 
@@ -28,10 +36,8 @@ Across all my remote work experience, it feels to me like very few of the organi
 
 While there are valid reasons for this—such as the need to protect developer time (and by extension, reduce costs)—_I can’t help but wonder if it’s also influenced by the developer culture of generally being resistant towards meetings._
 
-For an early-career developer working remotely, the absence of casual “hallway chats” and exclusion from product or customer-oriented meetings leaves almost no opportunities to develop the ability to adapt to different corporate audiences.
+For an early-career developer working remotely, the absence of casual “hallway chats” and exclusion from product or customer-oriented meetings **leaves very few chances** to develop skills for navigating diverse corporate interactions.
 
-Most of my days are spent sitting at my desk, coding in isolation, with standup often being the only interaction I have with coworkers. While I initially appreciated the efficiency this setup offered, I’ve started to question its long-term impact. I now see how this lack of engagement could hinder the development of essential skills and, ultimately, affect the progression of my career.
+While I initially appreciated having my day mostly be spent coding in isolation, I now have the thought in the back of my mind that I've missed out on chances to develop skills I'll need down the road.
 
-This realization doesn’t change the fact that I still enjoy remote work and the flexibility it brings to my life. But it does mean that I need to be more intentional about seeking out opportunities to develop these skills. If I were in an office setting, these moments might occur more naturally, however for someone in my situation, advocating to join customer interviews, product discussions, or stakeholder presentations is essential.
-
-Ultimately, technical expertise will only take you so far. To grow as a developer and a professional, it’s important to step outside the comfort zone of purely technical discussions and engage in conversations that align with broader business goals. Remote work might make this more challenging for those early in their career, but with intentional effort, it’s possible to bridge the gap and ensure you’re building the skills that matter for the long run.
+This realization doesn’t change the fact that I value the flexibility and autonomy remote work brings to my life, but it has shown me the importance of making a conscious effort to seek out opportunities to join meetings like customer interviews, product discussions, and stakeholder presentations. In an office setting, these moments might arise naturally, but as a remote worker, I need to actively pursue them to ensure I don’t fall behind in developing critical skills and continue to grow.
