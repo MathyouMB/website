@@ -18,7 +18,7 @@ This article is intended to serve as a guide for **self-learning**—a roadmap o
 
 To clarify, you definitely don’t need to master everything on this list to secure your first internship. In fact, most computer science programs will probably only touch on 2-3 of the skills listed below, and clearly some population students without these skills are finding employment.
 
-However, the fact that these skills are ones not everyone else will know should speak to exactly why learning these currated skills can give you a competitive edge and help you stand out among the thousands of other students applying for the same roles.
+However, the fact that these skills are ones not everyone else will know is exactly why learning these currated skills will help you stand out among the thousands of other students applying for the same roles.
 
 ## Quick Checklist
 
