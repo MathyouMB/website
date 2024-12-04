@@ -6,15 +6,19 @@ image: "/images/articles/default.png"
 draft: false
 ---
 
-Landing a software development internship as a tech student can feel like an uphill battle. With mass layoffs leading to fewer opportunities and a growing pool of competitors, the process often feels overwhelming and frustrating.
+With recent tech industry mass layoffs leading to fewer opportunities for early talent, finding your first software engineering internship can definitely feel like an uphill battle.
 
-Having reviewed countless student resumes and recently navigated the challenges of university computer science curricula myself, I’ve observed a recurring issue: many students **struggle to showcase** skills relevant to **building production-quality software** or the **daily responsibilities of a full-time** software engineer.
+I often find myself discussing with students how they can stand out among the sea of applications, and one key observation I've made is that many students **struggle to showcase** skills relevant to **building production-quality software** or the **daily responsibilities of a full-time** software engineer.
 
-To help bridge this gap, I’ve compiled a list of often-overlooked and crucial skills that can elevate your resume.
+Now, it might seem obvious that if you're applying for a software engineering position, these are the skills you’d want to highlight. However, students with limited industry experience often lack the knowledge to identify which skills are most relevant in today’s industry or fully understand what’s expected of junior engineers. This knowledge gap leaves many unable to effectively tailor their applications to align with what hiring managers are looking for.
 
-I do not expect students to "just know" most of these skills as you won't get a lot of this from school. This article should serve as a list of next steps for **self learning** if you are struggling to find employment and not sure how to improve your resume.
+To help bridge this gap, **I’ve compiled a list of skills** to emphasize on internship and entry-level resumes that will help you stand out to potential employers.
 
-However, I am confident that if you are a student with zero “real work experience” but can showcase an understanding of most of the skills on this list, then you are more qualified than most new grads looking for junior engineer jobs.
+This article is intended to serve as a guide for **self-learning**—a roadmap of next steps for those struggling to find employment and unsure how to strengthen their resumes.
+
+To clarify, you definitely don’t need to master everything on this list to secure your first internship. In fact, most computer science programs will probably only touch on 2-3 of the skills listed below, and clearly some population students without these skills are finding employment.
+
+However, the fact that these skills are ones not everyone else will know should speak to exactly why learning these currated skills can give you a competitive edge and help you stand out among the thousands of other students applying for the same roles.
 
 ## Quick Checklist
 
@@ -24,7 +28,7 @@ If you’re too busy to read the article, here is a checklist of the skills I be
 - **Collaborative Coding**: Does your resume highlight that you’re able to assist team members through code reviews or pair programming?
 - **Building “CRUD Apps”**: Does your resume showcase your ability to develop a full-stack application using a modern JavaScript framework (e.g., React, Angular, or Vue), a RESTful API, and a relational database (e.g., PostgreSQL or MySQL)?
 - **Observability**: Does your resume reflect an understanding of monitoring and observability concepts to resolve bugs in your deployed system?
-- **Docker**: Does your resume demonstrate experience with Docker? Have you highlighted projects where you containerized applications or used it as a tool to streamline environment setup?
+- **Docker**: Does your resume demonstrate experience with Docker? Have you highlighted projects where you containerized applications or demonstrated an understanding of cloud orchestration?
 - **MVC Web Frameworks**: Does your resume include experience with a large MVC web framework like Django, Ruby on Rails, Spring, or ASP.NET?
 - **Architecture**: Does your resume showcase an understanding of at least one architectural pattern such as microservices, serverless architecture, service-oriented architecture etc.?
 - **Cloud Services**: Does your resume demonstrate familiarity with beginner-friendly cloud services like AWS S3, EC2, or equivalent offerings from Azure or GCP? Have you mentioned deploying applications or utilizing these services in projects?
