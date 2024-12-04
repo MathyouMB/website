@@ -16,9 +16,11 @@ To help bridge this gap, **I’ve compiled a list of skills** to emphasize on in
 
 This article is intended to serve as a guide for **self-learning**—a roadmap of next steps for those struggling to find employment and unsure how to strengthen their resumes.
 
-To clarify, you definitely don’t need to master everything on this list to secure your first internship. In fact, most computer science programs will probably only touch on 2-3 of the skills listed below, and clearly some population students without these skills are finding employment.
+To be clear, you don’t need to master everything on this list to secure your first internship, and I’m not suggesting that every employed student possesses these exact skills.
 
-However, the fact that these skills are ones not everyone else will know is exactly why learning these currated skills will help you stand out among the thousands of other students applying for the same roles.
+In fact, most computer science programs typically only cover 2–3 of the skills listed below, and many students do find jobs based solely on what they’ve learned in school.
+
+However, these skills stand out precisely because not everyone knows them—making them valuable tools to differentiate yourself from the thousands of other students applying for the same roles.
 
 ## Quick Checklist
 
