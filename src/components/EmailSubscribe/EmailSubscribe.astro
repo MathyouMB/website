@@ -1,0 +1,56 @@
+---
+import "./EmailSubscribe.scss";
+
+export interface Props {
+  placeholder?: string;
+}
+
+const { placeholder = "Type your email..." } = Astro.props;
+---
+
+<div class="EmailSubscribe__container">
+  <form class="EmailSubscribe" action="">
+    <input type="email" name="email" placeholder={placeholder} required />
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
+<script>
+  const form = document.querySelector(".EmailSubscribe");
+
+  if (!form) {
+    throw new Error("Form not found.");
+  }
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const emailInput = document.querySelector(
+      "input[name=email]",
+    ) as HTMLInputElement;
+    const email = emailInput.value;
+
+    const response = await fetch(
+      "https://mailing-list-service.onrender.com/api/v1/submissions",
+      {
+        method: "POST",
+        headers: {
+          "X-API-Key":
+            "e826f9e5d15c9f5407c57f2dad7fdbaad78417ac303bca09710ef0c817d696a1",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+        }),
+      },
+    );
+
+    const responseJson = await response.json();
+
+    if (response.ok) {
+      alert("Succesfully subcribed to the mailing list!");
+    } else {
+      alert(responseJson.error);
+    }
+  });
+</script>

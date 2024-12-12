@@ -1,4 +1,5 @@
 ---
+import EmailSubscribe from "../components/EmailSubscribe/EmailSubscribe.astro";
 import Thin from "../layouts/Thin/Thin.astro";
 import "./index.scss";
 ---
@@ -13,6 +14,9 @@ import "./index.scss";
     <div class="Home__name">
       <h1 class="Home__name__h1">Matthew MacRae-Bovell</h1>
       <h2 class="Home__name__h2">developer, creator, speaker</h2>
+    </div>
+    <div class="Home__email">
+      <EmailSubscribe placeholder="Join my mailing list..." />
     </div>
     <div>
       Welcome! I'm a software developer based in <a>Ottawa, Canada</a> with a passion

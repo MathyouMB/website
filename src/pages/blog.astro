@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import { default as Layout } from "../layouts/Thin/Thin.astro";
+import EmailSubscribe from "../components/EmailSubscribe/EmailSubscribe.astro";
 import "./blog.scss";
 
 const articles = await getCollection("articles");
@@ -12,7 +13,9 @@ const sortedArticles = nonDraftArticles.sort((a, b) => {
 
 <Layout title="Blog">
   <h1>Blog</h1>
-  <div style="margin-top: 1rem"></div>
+  <div style="margin-top: 0.5rem"></div>
+  <EmailSubscribe placeholder="Receive blog updates..." />
+  <div style="margin-top: 1.5rem"></div>
   <div class="Blog__items">
     {
       sortedArticles.map((article) => (
