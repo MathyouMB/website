@@ -6,21 +6,13 @@ image: "/images/articles/default.png"
 draft: false
 ---
 
-With recent tech industry mass layoffs leading to fewer opportunities for early talent, finding your first software engineering internship can definitely feel like an uphill battle.
+With recent tech industry layoffs leading to fewer opportunities for early talent, finding your first software engineering internship can definitely feel like an uphill battle.
 
-I often find myself discussing with students how they can stand out among the sea of applications, and one key observation I've made is that many students **struggle to showcase** skills relevant to **building production-quality software** or the **daily responsibilities of a full-time** software engineer.
-
-Now, it might seem obvious that if you're applying for a software engineering position, these are the skills you’d want to highlight. However, students with limited industry experience often lack the knowledge to identify which skills are most relevant in today’s industry or fully understand what’s expected of junior engineers. This knowledge gap leaves many unable to effectively tailor their applications to align with what hiring managers are looking for.
+I often talk to students about how they can stand out in a sea of applications, and one key observation I've made is that many students struggle to showcase skills relevant to **building production-quality software** or the **daily responsibilities of a full-time** software engineer. Without much industry experience, it’s hard for these students know what skills hiring managers value or what’s really expected of entry-level engineers.
 
 To help bridge this gap, **I’ve compiled a list of skills** to emphasize on internship and entry-level resumes that will help you stand out to potential employers.
 
-This article is intended to serve as a guide for **self-learning**—a roadmap of next steps for those struggling to find employment and unsure how to strengthen their resumes.
-
-To be clear, you don’t need to master everything on this list to secure your first internship, and I’m not suggesting that every employed student possesses these exact skills.
-
-In fact, most computer science programs typically only cover 2–3 of the skills listed below, and many students do find jobs based solely on what they’ve learned in school.
-
-However, these skills stand out precisely because not everyone knows them—making them valuable tools to differentiate yourself from the thousands of other students applying for the same roles.
+To be clear, you by no means need to master everything on this list to secure your first internship. Lots of students will secure jobs with just what they've learned in school and most will know a only a small subset of what I've listed below. Think of this article as a guide for **self-learning** or a roadmap of next steps for those unsure how to strengthen their resumes.
 
 ## Quick Checklist
 
@@ -41,7 +33,7 @@ If you’re too busy to read the article, here is a checklist of the skills I be
 
 ## Automated Testing
 
-A strong foundation in automated testing is one of the most essential yet often overlooked skill sets for aspiring software engineers. While many students don’t learn these skills in school, new grad software engineers are 100% expected to write automated tests.
+A strong foundation in automated testing is one of the most essential yet often overlooked skill sets for aspiring software engineers. While many students don’t learn these skills in school, new grad software engineers are almost always expected to write automated tests.
 
 You should be familiar different kinds of tests like unit tests, integration tests, or end-to-end (E2E) tests as well as with the concepts of the **test pyramid** and **code coverage**.
 
@@ -59,7 +51,11 @@ is a good starting point to craft this kind of resume point.
 
 ## Collaborative Coding
 
-Many students want to highlight their familiarity with Git, but using a full resume bullet like “Utilized Git version control to…” can come across as a bit immature. Git is such a foundational skill for software development that it’s often assumed you know it. Simply including a link to your GitHub profile at the top of your resume is enough for an engineering manager to infer your Git proficiency.
+In any software development job, you'll be working with teammates on a shared codebase, participating in code reviews, or pairing up for programming sessions on a regular basis.
+
+On resumes, many students want to highlight their familiarity with Git, but I recommend avoiding using a full resume bullet like “Utilized Git version control to…” as it can come across as a bit immature.
+
+Git is such a foundational skill for software development that it’s often assumed you know it. Simply including a link to your GitHub profile at the top of your resume is enough for an engineering manager to infer your Git proficiency.
 
 Instead of stating the obvious, focus on highlighting experiences like **code reviews** and **pair programming** as these not only imply your Git knowledge but also emphasize your teamwork and leadership. For example, a bullet point like:
 
@@ -107,7 +103,7 @@ Another critical skill often overlooked in academic settings is **database migra
 
 While it is not essential to be familiar with frontend development to become a software engineer, many jobs look for candidates with full-stack experience.
 
-If you want to make yourself slightly more hireable, I’d recommend learning at least one modern frontend library; I'd personally recommend learning **React**. You should learn enough React to be able to create reusable components and utilize the **useState**, **useEffect**, and **useContext** hooks.
+If you want to make yourself slightly more hireable, I’d recommend learning at least one modern frontend library. I'd personally recommend learning **React**. You should learn enough React to be able to create reusable components and utilize the **useState**, **useEffect**, and **useContext** hooks.
 
 While **Angular** and **Vue** are also common, I recommend starting with React because it is simpler and more bare-bones. All three have the same core conepts, so you're not missing out on anything by choosing to learn React over Angular or Vue. In terms of complexity, React is comparable to Express.js, where as Angular and Vue are full-fledged frameworks like Django, Ruby on Rails, or Spring.
 
@@ -125,8 +121,6 @@ Learning observability as a student can feel daunting, but there are simple ways
 
 - **Add logs** (fancier print statements) to your application to track key events and errors.
 - **Create a monitor** to notify you when errors occur in your project.
-
-These small steps can help you begin building a foundation for understanding observability in larger systems.
 
 A feature as simple as "getting an email or discord message" when an error occurs in an application demonstrates awareness of how critical observability is in maintaining system reliability and user trust.
 
