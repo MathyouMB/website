@@ -12,7 +12,7 @@ I often talk to students about how they can stand out in a sea of applications, 
 
 To help bridge this gap, **I’ve compiled a list of skills** to emphasize on internship and entry-level resumes that will help you stand out to potential employers.
 
-To be clear, you by no means need to master everything on this list to secure your first internship. Lots of students will secure jobs with just what they've learned in school and most will know a only a small subset of what I've listed below. Think of this article as a guide for **self-learning** or a roadmap of next steps for those unsure how to strengthen their resumes.
+To be clear, you by no means need to master everything on this list to secure your first internship. Lots of students will secure jobs with just what they've learned in school and most will know only a small subset of what I've listed below. Think of this article as a guide for **self-learning** or a roadmap of next steps for those unsure how to strengthen their resumes.
 
 ## Quick Checklist
 
