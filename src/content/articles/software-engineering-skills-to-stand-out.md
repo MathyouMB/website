@@ -37,8 +37,6 @@ A strong foundation in automated testing is one of the most essential yet often 
 
 You should be familiar different kinds of tests like unit tests, integration tests, or end-to-end (E2E) tests as well as with the concepts of the **test pyramid** and **code coverage**.
 
-Beyond the technical aspects, a familiarity with testing philosophies and methodologies is equally important. Practices like **test-driven development (TDD)**, where tests are written before the code itself, demonstrate a disciplined and professional approach to problem-solving. Similarly, frameworks like **Arrange-Act-Assert** provide structure to your tests, making them clearer and more reliable.
-
 Including at least one bullet point on your resume about automated testing signals to an engineering manager that you can function closer to a regular full-time developer.
 
 For example, something like:
@@ -46,6 +44,8 @@ For example, something like:
 - _Developed unit and integration tests using {testing library here}, improving system reliability and …_
 
 is a good starting point to craft this kind of resume point.
+
+<!-- Long-term, explore practices like **test-driven development (TDD)** and frameworks such as **Arrange-Act-Assert**. -->
 
 ---
 
