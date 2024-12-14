@@ -1,6 +1,6 @@
 ---
-title: "Overlooked Software Skills That Can Secure Your Internship"
-description: A curated list of crucial software engineering skills that many students just aren't aware of.
+title: "Software Skills for Standing Out and Securing an Internship"
+description: A curated list of software engineering skills that many students just aren't aware of.
 date: 2024-12-01
 image: "/images/articles/default.png"
 draft: false
