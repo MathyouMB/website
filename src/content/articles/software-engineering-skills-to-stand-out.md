@@ -1,6 +1,6 @@
 ---
-title: "Software Skills for Standing Out and Securing an Internship"
-description: A curated list of software engineering skills that many students just aren't aware of.
+title: "Software Skills to Stand Out and Land Your Dream Internship"
+description: A roadmap of industry-relevant skills tailored to help students and new grads stand out
 date: 2024-12-01
 image: "/images/articles/default.png"
 draft: false
