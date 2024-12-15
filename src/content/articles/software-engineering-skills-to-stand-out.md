@@ -6,13 +6,13 @@ image: "/images/articles/default.png"
 draft: false
 ---
 
-With recent tech industry layoffs leading to fewer opportunities for early talent, finding your first software engineering internship can definitely feel like an uphill battle.
+With recent tech industry layoffs leading to fewer opportunities for early talent, finding your first software engineering internship can feel like an uphill battle.
 
-I often talk to students about how they can stand out in a sea of applications, and one key observation I've made is that many students struggle to showcase skills relevant to **building production-quality software** or the **daily responsibilities of a full-time** software engineer. Without much industry experience, it’s hard for these students know what skills hiring managers value or what’s really expected of entry-level engineers.
+I often talk to students about how they can stand out in the sea of other applicants, and one key observation I've made is that many students struggle to showcase skills relevant to **building production-quality software** or the **daily responsibilities of a full-time** software engineer. Without industry experience, it’s hard for these students know what skills hiring managers value or what’s really expected of entry-level engineers.
 
 To help bridge this gap, **I’ve compiled a list of skills** to emphasize on internship and entry-level resumes that will help you stand out to potential employers.
 
-To be clear, you by no means need to master everything on this list to secure your first internship. Lots of students will secure jobs with just what they've learned in school and most will know only a small subset of what I've listed below. Think of this article as a guide for **self-learning** or a roadmap of next steps for those unsure how to strengthen their resumes.
+To be clear, you by no means need to master everything on this list to secure your first internship. Lots of students will secure jobs with just what they've learned in school and most will only know a small subset of what I've listed below. Think of this article as a guide for **self-learning** or a roadmap for those unsure how to strengthen their resumes.
 
 ## Quick Checklist
 
@@ -35,7 +35,7 @@ If you’re too busy to read the article, here is a checklist of the skills I be
 
 A strong foundation in automated testing is one of the most essential yet often overlooked skill sets for aspiring software engineers. While many students don’t learn these skills in school, new grad software engineers are almost always expected to write automated tests.
 
-You should be familiar different kinds of tests like unit tests, integration tests, or end-to-end (E2E) tests as well as with the concepts of the **test pyramid** and **code coverage**.
+You should be familiar different kinds of tests like unit tests, integration tests, and end-to-end (E2E) tests as well as with the concepts of the **test pyramid** and **code coverage**.
 
 Including at least one bullet point on your resume about automated testing signals to an engineering manager that you can function closer to a regular full-time developer.
 
