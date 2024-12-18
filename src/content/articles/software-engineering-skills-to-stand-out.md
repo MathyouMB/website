@@ -198,3 +198,18 @@ Here are some easy projects to get started with:
 - **Code Formatting Check**: Set up a GitHub Action to automatically check your code for formatting issues (e.g., with tools like Prettier or ESLint) every time you push a commit.
 
 - **Deploy a Website to GitHub Pages**: Create an action that automatically builds and deploys a static website to GitHub Pages whenever you push changes to the main branch.
+
+---
+
+## Conclusion: Build Real Software
+
+The best way to learn is to build real projects—not just projects that run on your localhost, but fully deployed pieces of software that make use of the skills I’ve mentioned above.
+
+Whether it’s a personal website, a small side hustle, or a fun tool for your friends, the process of deploying an application will teach you more about software engineering than any classroom or tutorial ever could.
+
+By building software while embracing concepts like automated testing, observability, CI/CD, and cloud services, you’ll not only sharpen your technical skills but also set yourself apart as a candidate who can tackle real-world challenges. So, don’t wait—start building and shipping today!
+
+<hr/>
+<br/>
+
+_Want advice or just interested in chatting? Feel free to book a chat with me [here](https://calendly.com/matthewmacraebovell/chats) to discuss career stuff, jobs searcing, resumes, etc._

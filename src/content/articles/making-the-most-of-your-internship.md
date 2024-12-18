@@ -212,3 +212,8 @@ Meetings aren’t just about exchanging information; they’re moments to leave 
 ## Conclusion
 
 Making the most of your software developer internship requires more than just completing assigned tasks—it’s about taking initiative, building relationships, and continuously learning. By asking thoughtful questions, seeking out diverse opportunities, and engaging with your team, you can turn your internship into a valuable stepping stone toward a successful tech career. Remember, an internship isn’t just about proving yourself to a company; it’s also about discovering what you want from your career and setting the foundation for your future growth.
+
+<hr/>
+<br/>
+
+_Want advice or just interested in chatting? Feel free to book a chat with me [here](https://calendly.com/matthewmacraebovell/chats) to discuss career stuff, jobs searcing, resumes, etc._
