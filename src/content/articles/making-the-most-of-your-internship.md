@@ -70,9 +70,11 @@ Your manager or mentor can help you answer these questions. Take notes and revis
 
 Once you’ve completed the initial onboarding process and have begun embedding yourself within your team, it’s a great idea to schedule one-on-one (1:1) meetings with each team member and stakeholder you’ll be working closely with.
 
-This is a great way to introduce yourself and get a better idea of what everyone on your team actually does.
+This is a great way to introduce yourself and get a better idea of what everyone on your team actually does and who to direct questions to on the team. Maybe one team member wrote a specific module or subsystem of the codebase while another is the resident frontend expert.
 
-Don’t wait too long to schedule these meetings. The longer you delay, the harder it can feel to initiate them. It’s easy to fall into the mindset that the "window has passed," but early 1:1s are crucial for building strong connections and gaining the context you need to work effectively.
+Most importantly, properly introducing yourself will make it easier to reach out to them when you will inevitable have a question or have to ask for a favor.
+
+The longer you delay, the harder it can feel to introduce youself properly. It’s easy to fall into the mindset that the "window has passed," but early 1:1s are crucial for building strong connections and gaining the context you need to work effectively.
 
 ---
 
