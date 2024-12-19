@@ -1,6 +1,6 @@
 ---
 title: "Cracking Career Fairs: Strategies For Students In Software"
-description: Tips for students in tech to make the most of career fairs and networking events to jumpstart their careers.
+description: Essential tips for students to navigate career fairs and stand out to recruiters and developers
 date: 2024-12-19
 image: "/images/articles/2024/cracking-career-fairs/cover.png"
 draft: false
@@ -8,11 +8,13 @@ draft: false
 
 ![rat-at-career-fair](/images/articles/2024/cracking-career-fairs/cover.png)
 
-If you’re a student applying for jobs, chances are you’ve heard someone say, “I applied to hundreds of jobs, but only got a few interviews.” This sentiment is frustratingly common, and it highlights a major flaw in how many students approach job applications: relying solely on submitting resumes through online portals.
+If you’re a student applying for jobs, chances are you’ve heard someone say, “I applied to hundreds of jobs, but only got a few interviews.”
 
-The reality is that this “black box” approach is rarely effective. Instead, you should focus on networking and tailoring your interactions with companies. Attending career fairs and preparing strategically can make a huge difference.
+Although this sentiment is frustratingly common, it highlights a major flaw in how many students approach job applications: **relying solely on submitting resumes through online portals.**
 
-Here’s how to maximize your chances.
+The reality is that this “black box” approach is rarely effective. Instead, you should focus on networking and tailoring your interactions with companies.
+
+Career fairs offer a unique opportunity to stand out to recruiters and developers—if you approach them strategically.
 
 ---
 
@@ -156,7 +158,7 @@ Nod to show you are digesting information as they say it.
 
 ---
 
-## Don't Say Your a First Year
+## Don't Say You're a First Year
 
 If you’re a first- or second-year student, avoid explicitly mentioning your year in school unless it becomes absolutely necessary. Here’s why:
 
@@ -165,40 +167,6 @@ Many companies prioritize hiring new graduates or students in their final year o
 If your year standing becomes an issue later in the hiring process, at least you’ll have gained the experience of having had some practice interviews. Plus, you can always follow up with the company when you do meet their year standing requirement down the road.
 
 ---
-
-<!-- ## What Not To Do
-
-Networking is important, but it’s easy to make mistakes that leave the wrong impression. Thoughtless or uninformed questions, self-centered approaches, or treating networking as purely transactional can hurt your chances of building meaningful relationships. Here’s what to avoid and how to reframe your approach to leave a lasting positive impression.
-
-### Don’t Ask Questions You Can Answer Yourself
-
-Asking questions that show a lack of preparation or effort can make you appear unprepared or uninterested. Networking is your chance to demonstrate initiative and thoughtfulness, so avoid these types of questions:
-
-#### Example 1: “What does your company do?”
-
-This question is a red flag that you haven’t done your research. Information about a company’s mission, products, and services is typically easy to find online. Failing to look it up beforehand shows a lack of effort.
-
-**What to do instead:**
-Spend some time researching the company before the conversation. Use what you’ve learned to ask a more thoughtful question, such as:
-“I saw on your website that your company is focused on [specific project or initiative]. Could you tell me more about how that project came to be?”
-
-This demonstrates genuine interest and curiosity while giving the other person something meaningful to respond to.
-
-#### Example 2: “Are you hiring students?”
-
-Jumping straight to asking about job openings can make it seem like you’re only interested in what the other person can offer you, rather than showing an interest in the company itself. It also assumes that the person you’re speaking with is in a position to make hiring decisions.
-
-**What to do instead:**
-Reframe the question to show that you’ve done your homework and want to learn more about opportunities thoughtfully. For example:
-“I noticed there weren’t any student positions listed on your website. Could you share some advice on how students like me can stand out for future opportunities or get involved with your company?”
-
-This approach reflects initiative, effort, and a willingness to engage in a deeper conversation.
-
-### Don’t Immediately Ask About Job Openings
-
-Starting a conversation by asking about job openings can make the interaction feel rushed and transactional. It also doesn’t give the other person a chance to share insights or advice, which could ultimately help you more in the long run.
-
-Additionally, the person you’re speaking with may not be directly involved in hiring, and asking this question can put them in an uncomfortable position. -->
 
 ## Following Up
 
