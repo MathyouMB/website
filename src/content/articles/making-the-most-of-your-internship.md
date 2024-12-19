@@ -157,7 +157,7 @@ It’s tempting to avoid these tickets to avoid slowing down the team or making 
 
 Instead of shying away, consider taking a proactive approach: while continuing to work on tickets within your comfort zone, ask your teammates if it’s possible to pair program on the more challenging tickets.
 
-Especially for tickets like research tasks or spikes, it’s great to pair with so you can observe how they break down ambiguous problems, structure their research, and prioritize key insights.
+Especially for tickets like research tasks or spikes, it’s great to pair with someone so you can observe how they break down ambiguous problems, structure their research, and prioritize key insights.
 
 ---
 
