@@ -1,12 +1,12 @@
 ---
 title: "Why Computer Science Students Are Struggling To Find Jobs"
 description: How the pandemic, rising enrollment, and AI have reshaped the job market and led to less capable university graduates.
-date: 2024-08-25
-image: "/images/articles/2023/working-and-studying2.png"
-draft: true
+date: 2024-09-09
+image: "/images/articles/default.png"
+draft: false
 ---
 
-Once seen as a gateway to a "guaranteed job," computer science has recently become a far less secure path for students and recent graduates.
+Once seen as a gateway to a "guaranteed job," computer science has recently become a seemingly less secure path for students and recent graduates.
 
 Just a few years ago, landing a software development internship seemed straightforward—being likable, eager to learn, and maybe having a personal project would often be enough to get you in the door.
 
@@ -14,11 +14,13 @@ However, the effects of the COVID-19 pandemic, skyrocketing enrollment in univer
 
 Though these factors might seem remote and out of students' hands, there's an unsettling reality that has been widely ignored: despite the broad availability of technology, the average capability of students remains unchanged—or may even be declining.
 
-From my experience as a student at Carleton University, I believe it’s more than just the changing job market that has made the journey from student to software engineer more challenging—it's the impact of overcrowded university classrooms, weakened student communities, and impact of AI on education that have all contributed to this decline, leaving many students ill-prepared to meet the demands of the tech industry.
+From my experience as a student at Carleton University, I believe it’s more than just the changing job market that has made the journey from student to software engineer more challenging—it's the impact of overcrowded university classrooms, weakened student communities, and impact of AI on education that have all contributed to this decline.
+
+Additionally, many computer science students misunderstand how computer science actually connects to the tech industry, confusing it with applications like software engineering or data science. This disconnect leaves them unprepared for industry demands and confused at why having only a computer science background may not be enough to find a job.
 
 <hr>
 
-## Where Did All The Jobs Go?
+<!-- ## Where Did All The Jobs Go?
 
 Even before the pandemic, the tech industry was deeply entrenched in an unsustainable "growth over profitability" mindset. Companies like Netflix, which took on massive debt to churn out original content, and Uber, which operate at a loss to undercut competition and gain market dominance, exemplify this strategy.
 
@@ -36,7 +38,19 @@ Companies with shrinking margins or burdened by massive debt were suddenly force
 
 The following is a graph showing new developer postings on Indeed. Between 2021-2022 we saw a massive spike in new jobs as companies tried to raise headcount to meet newly projected growth. However, as the world returned to normal and the industry experienced mass layoffs, we're now seeing a significant lack of new developer job postings:
 
+[![indeed-jobs](/images/articles/2024/why-computer-science-students-are-struggling-to-find-jobs/indeed-jobs.jpeg)](https://x.com/gaybearres/status/1806375818718753218) -->
+
+## What's Happening To The Industry?
+
+The tech industry has undergone massive changes over the past few years and notably quite a few significant waves of layoffs.
+
+The following is a graph showing new developer postings on Indeed [[6](#sources)]:
+
 [![indeed-jobs](/images/articles/2024/why-computer-science-students-are-struggling-to-find-jobs/indeed-jobs.jpeg)](https://x.com/gaybearres/status/1806375818718753218)
+
+Between 2021-2022 we saw a massive spike in new jobs as companies tried to raise headcount to meet newly projected growth.
+
+However, as the world returned to normal, the industry faced mass layoffs and ushered in a period marked by a significant decline in new developer job postings.
 
 ### Impact of Mass Layoffs on Young Professionals
 
@@ -44,7 +58,7 @@ As industry giants cut tens of thousands of jobs, many of these displaced worker
 
 Traditionally, smaller companies have been a fertile ground for entry-level opportunities. However, with the influx of experienced professionals seeking new roles, these positions are now being filled by candidates with years of experience, leaving fewer opportunities for recent graduates.
 
-In this period of low developer demand, seasoned professionals are willing to accept lower pay or junior titles to remain employed, further diminishing the chances for new graduates to secure their first job. This shift exacerbates an already competitive job market, making it harder for young professionals to gain a foothold in the industry.
+In this period of low developer demand, seasoned professionals are willing to accept lower pay or junior titles to remain employed, further diminishing the chances for new graduates to secure their first job.
 
 Additionally, in a world with so many full-time layoffs, it’s extremely difficult for companies to justify hiring interns.
 
@@ -78,15 +92,17 @@ The increasing simplification of technology for everyday consumers has led to a 
 
 The influx of less capable and less motivated students is overcrowding classrooms, straining resources, and stretching faculty time thin. To cope with these overpopulated classrooms, course assesments are often designed to prioritize minimizing marking time over giving students creative freedom or meaningful feedback; diminish the quality of the university experience and leaving students less prepared for the job market.
 
-With limited faculty, it’s nearly impossible to support both students who have never written code and those who started programming at increasingly younger ages. Coupled with university bureaucracy and faculty tenure agreements that protect the right to teach, the reality is that despite rapid industry changes, university curricula have evolved very little.
+The reality is it with limited resources, it’s nearly impossible to support both students who have never written code and those who started programming at increasingly younger ages.
 
-### Financial Motivation For Enrollment
+<!-- Coupled with university bureaucracy and faculty tenure agreements that protect the right to teach, the reality is that despite rapid industry changes, university curricula have evolved very little. -->
+
+<!-- ### Financial Motivation For Enrollment
 
 In recent years, the motivations driving students to pursue a computer science degree have shifted. While some students are genuinely passionate about programming, many are enrolling in these programs solely for the promise of high-paying jobs.
 
 Students who have a deep passion for programming often enter university with substantial prior experience, having spent years exploring coding as a hobby or through self-taught projects to continuously improve their skills; especially saught after industry skills not present in university curriculum.
 
-On the other hand, students who are drawn to computer science primarily for lucrative career prospects may lack the same level of intrinsic motivation. Without a genuine passion, these students are less likely to self-teach industry relevant skills. In extreme cases, there are students who enrol without any prior experience programming, but just want a high paying job.
+On the other hand, students who are drawn to computer science primarily for lucrative career prospects may lack the same level of intrinsic motivation. Without a genuine passion, these students are less likely to self-teach industry relevant skills. In extreme cases, there are students who enrol without any prior experience programming, but just want a high paying job. -->
 
 ### Increasing Lack of Tech Literacy
 
@@ -118,13 +134,15 @@ It is widely recognized that smaller class sizes enable more individualized supp
 
 As computer science enrollment has grown without a corresponding increase in faculty, the surge has strained resources, particularly in first- and second-year courses, where large class sizes have become the norm.
 
-At Carleton University, all required computer science courses from first to third year now regularly fill 100+ person lecture theaters, with multiple sections for each course. In my first year, the mandatory course "COMP 1405: Introduction to Computer Science" had three sections of over 100 students each; as of 2024, it has expanded to five sections. **At Carleton, most students won’t attend a computer science class with fewer than 100 students until third or even forth year of a four-year program.**
+At Carleton University, all required computer science courses from first to third year have anywhere from 75-100 students to register per section, with multiple sections for most courses.
 
-In response to these pressures, the nature of assignments and exams for these classes have continued to become increasingly prescriptive and rarely encourage creative problem-solving or open-ended exploration. Overwhelmed by the sheer volume of students, faculty design tasks that are straight forward for teaching assistants to grade and require giving students limited feedback; sacrificing the quality of learning for the sake of manageability.
+In my first year, the mandatory course "COMP 1405: Introduction to Computer Science" had three sections of over 100 students each; as of 2024, it has expanded to five sections. **At Carleton, most students won’t attend a computer science class with fewer than 100 students until third or even forth year of a four-year program.**
+
+In response to these pressures, the nature of assignments and exams for these classes have continued to become increasingly prescriptive. To handle the sheer volume of students, faculty design tasks that are straight forward for teaching assistants to grade and require giving students limited feedback; sacrificing the quality of learning for the sake of manageability.
 
 To patch over the shortage of faculty, Carleton resorts to letting undergraduates, some as early as their second year, become teaching assistants purely based on grades, without any interviews to gauge their teaching ability or communication skills.
 
-The result of rigid assesments is that students not only miss out on developing critical thinking skills and original ideas about computer science, but they also struggle to distinguish their university education from their high school experience.
+The result of rigid assesments is that students not only miss out on developing critical thinking skills and original ideas about computer science, but they also struggle to distinguish their university education from their high school experience or what they are able to access for free online.
 
 Especially with the pandemic leading to more recorded lectures, the reality is that for introductory level courses, there are hundreds of free better produced pieces of educational content already accesible online. A great example of this would be [Harvard's CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T380F_inVRXMIHCqLaNUd7bN4), a free online introductory computer science course.
 
@@ -134,35 +152,13 @@ Without opportunities to explore and challenge ideas, students may leave univers
 
 ### AI’s Impact On Computer Science Education
 
-**TL;DR:** The rise of AI tools has led to an increase in academic dishonesty.
-
 The integration of AI into education has brought significant benefits, but it has also led to a surge in cheating, particularly with the aforementioned assignments that are designed to have specific solutions.
 
 Tools like AI-powered code generators can produce correct solutions with minimal effort, allowing students to bypass the learning process entirely. As a result, many students are submitting work they did not genuinely understand or complete on their own.
 
-This trend poses a serious challenge for educators who rely on these assignments to assess students' grasp of fundamental concepts. The traditional approaches to grading and evaluation are becoming increasingly ineffective, as it’s harder to distinguish between students who genuinely understand the material and those who simply know how to prompt an AI for the right answers.
+This poses a serious challenge for educators who rely on assignments that prioritize marking speed to assess students' grasp of fundamental concepts. The traditional approaches to grading and evaluation are becoming increasingly ineffective, as it’s harder to distinguish between students who genuinely understand the material and those who simply know how to prompt an AI for the right answers.
 
 In the coming years, it will be pivotal that educators rethink how they design assignments and assessments, emphasizing critical thinking, creativity, and problem-solving over rote memorization or standard solution patterns.
-
-### Lack of Industry Skills
-
-While a computer science degree provides a crucial foundation, the theoretical knowledge of a cs degree does not give students the industry-specific skills needed in the current job market.
-
-Although there are jobs in tech, the majority of these jobs are for Software Developers, Data Scientists, Security Analysts, etc. _not "computer scientists"._
-
-Computer science is merely the foundation for these fields in the same way math is the foundation for physics and physics is the foundation for chemistry.
-
-![foundations](/images/articles/2024/why-computer-science-students-are-struggling-to-find-jobs/foundations.png)
-
-As a software developer, the way I describe my position is that I'm essentially a **mechanic**. Alike to the way a mechanic builds and repairs a car with various components like wheels, engines, and brakes; Software developers build software by writting code that combines components like user interfaces, databases, and payment systems.
-
-A computer scientist on the otherhand would be the one to develop new optimized algorithms or technique to improve or create new underlaying technologies software developers use.
-
-Today's computer science students are graduating with very little knowledge what "components" make up software.
-
-_A software developer who doesn't know the components of software is like a mechanic who doesn't know what parts make up a car._
-
-The same can be applied for other domains like AI, Networking, and Security.
 
 ### Damaged Student Community
 
@@ -177,6 +173,32 @@ I would not personally be as successful as I am today without the help and mento
 Students who started in the Fall 2020 and Fall 2021 COVID years, had significantly less chance or ability to meet upper year students the way I did, and as a consequence, they have not inherited the generationally transferred advice one would expect by partaking in a university program. When we returned back to in-person in Fall 2022, most of the students who had this generational advice were nearing or had graduated. There was a significant demographic of students from Fall 2020 and 2021 that had never heard advice about “adding personal projects to your resume” or other essential strategies that can make or break a job application.
 
 This gap in knowledge has left many students unprepared to compete in a job market that increasingly demands not just academic excellence but also practical experience and a well-rounded skill set.
+
+---
+
+## CS Is NOT Employable By Default
+
+Many computer science students misunderstand how computer science actually connects to the tech industry and don't understand why having only a computer science background may not be enough to find a job.
+
+While a computer science degree provides a crucial foundation, the theoretical knowledge of a cs degree does not give students the industry-specific skills needed in the current job market.
+
+Although there are jobs in tech, the majority of these jobs are for Software Developers, Data Scientists, Security Analysts, etc. **_not "computer scientists"._**
+
+Computer science is merely the foundation for these fields in the same way math is the foundation for physics and physics is the foundation for chemistry.
+
+![foundations](/images/articles/2024/why-computer-science-students-are-struggling-to-find-jobs/foundations.png)
+
+As a software developer, the way I describe my position is that I'm essentially a **mechanic**.
+
+Alike to the way a mechanic builds and repairs a car with various components like wheels, engines, and brakes; Software developers build software by writing code that combines components like user interfaces, databases, and payment systems.
+
+A computer scientist on the otherhand would be the one to develop new optimized algorithms or technique to improve or create new underlaying components and technologies software developers use.
+
+Today's computer science students are graduating with very little knowledge of what "components" make up software.
+
+You could think of it kinda of like this: _A software developer who doesn't know the components of software is like a mechanic who doesn't know what parts make up a car._ The same can be applied for other domains like AI, Networking, Security, etc.
+
+For computer science students to thrive in today’s job market, **they must recognize that their degree is a starting point, not a destination.** Gaining hands-on experience through internships, side projects, and industry-relevant coursework is essential.
 
 <hr>
 
