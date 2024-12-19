@@ -211,6 +211,14 @@ Meetings aren’t just about exchanging information; they’re moments to leave 
 
 ---
 
+## Keep An Impact Log
+
+An impact log is a record of your contributions and accomplishments throughout your career.
+
+After a long time, you're going to inevitably forget what you worked on, which makes it harder to recall your achievements when updating your resume, writing a performance review, or preparing for interviews. By keeping an impact log, you create a detailed account of your work that you can refer back to whenever needed.
+
+---
+
 ## Conclusion
 
 Making the most of your software developer internship requires more than just completing assigned tasks—it’s about taking initiative, building relationships, and continuously learning. By asking thoughtful questions, seeking out diverse opportunities, and engaging with your team, you can turn your internship into a valuable stepping stone toward a successful tech career. Remember, an internship isn’t just about proving yourself to a company; it’s also about discovering what you want from your career and setting the foundation for your future growth.
