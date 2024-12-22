@@ -150,7 +150,7 @@ Additionally, not everyone you speak to may be directly involved in hiring decis
 
 When you introduce yourself, always shake their hand.
 
-When your talking, maintain eye contact.
+When you're talking, maintain eye contact.
 
 Don't put your hands in your pockets and don't pace around.
 
