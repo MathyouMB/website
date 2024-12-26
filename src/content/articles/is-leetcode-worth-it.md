@@ -8,18 +8,19 @@ draft: false
 
 “Is LeetCode worth it?” is a question a lot of students ask.
 
-The answer is: **it kind of depends.**
-
-
-While algorithm-based questions are common in technical interviews, other aspects, such as your ability to communicate technical concepts, are guaranteed to be a part of **ALL** technical hiring processes.
-
-This is why my personal opinion is that **you should only do LeetCode as much as you have to** and it should not be your only method of interview preperation.
+The real answer is: **it kind of depends on your goal.**
 
 If you’re trying to get into some large tech company with a notable name like Google, Amazon, Microsoft, etc., or some company in the Bay Area of the United States, then yeah… you should probably be following some kind of LeetCode study plan and doing a minimum of 1–2 problems daily.
 
-However, if you are a student trying to find a job in your local city and you’ve never worked before, you need to focus on building practical skills rather than only using your time to grind LeetCode. Employers in your local area are more likely to value hands-on experience and communication skills over your ability to solve obscure algorithm problems.
+However, if you are a student trying to find a job in your local city and you’ve never worked before, you need to also focus on building practical skills rather than only using your time to grind LeetCode.
 
-Yes, many companies have copied the hiring practices of the industry giants, but that percentage is not 100%. It’s important to understand that algorithm-based questions are not the only kind of assessments you'll see. Without a broader approach to interview prep, **endlessly grinding LeetCode isn't going to guarantee you a job.**
+Employers in your local area are more likely to value hands-on experience and communication skills over your ability to solve obscure algorithm problems.
+
+Yes, many companies have copied the hiring practices of the industry giants, but that percentage is not 100%.
+
+While algorithm-based questions are common in technical interviews, other aspects, such as your ability to communicate technical concepts, are guaranteed to be a part of **ALL** technical hiring processes.
+
+Additionally, It’s important to understand that algorithm-based questions are not the only kind of assessments you'll see. Without a broader approach to interview prep, endlessly grinding LeetCode isn't going to guarantee you a job.
 
 ---
 
@@ -72,9 +73,9 @@ I personally almost see it as a red flag if a developer is only doing LeetCode q
 
 Before algorithm-based questions, we had **“brain teasers.”** Questions like _[“How Would You Move Mount Fuji?”](https://www.amazon.com/How-Would-Move-Mount-Fuji/dp/0316778494)_ were used to gauge candidates' creativity, problem-solving skills, adaptability, and capacity to innovate [[1]](#sources).
 
-As newer tech startups emerged, many copied interviewing styles and questions directly from pioneers like Microsoft. This had the effect of transforming somewhat niche and arcane trivia questions into the industry standard [[2]](#sources). However, these questions failed to assess any kind of true technical ability and have largely fallen out of favor [[3]](#sources).
+As newer tech startups emerged, many copied interviewing styles and questions directly from pioneers like Microsoft. This had the effect of transforming somewhat niche and arcane trivia questions into the industry standard [[2]](#sources). However, these questions failed to assess any kind of true technical ability and have largely fallen out of favor [[2]](#sources).
 
-The most common narrative I’ve found online for the creation of LeetCode-style algorithm questions is that large FAANG companies _“determined through their interview research that the smartest candidates were the ones who were best at algorithms. Google wanted to hire the smartest people, not necessarily the best coders, so that’s why their interviews were mostly algorithmic_ [[4]](#sources).”
+The most common narrative I’ve found online for the creation of LeetCode-style algorithm questions is that large FAANG companies _“determined through their interview research that the smartest candidates were the ones who were best at algorithms. Google wanted to hire the smartest people, not necessarily the best coders, so that’s why their interviews were mostly algorithmic_ [[3]](#sources).”
 
 Alike to how the industry copied the trend of using brain teasers to hire, they have since also copy pasted the practice of using these algorithm based questions.
 
@@ -214,6 +215,16 @@ In summary:
 **But**, don’t stop there. Balance your preparation by working on real projects, improving your communication, and familiarizing yourself with alternative interview formats.
 
 Ultimately, a well-rounded approach will better prepare you and give you the confidence to succeed.
+
+---
+
+### Sources:
+
+1. Ryan Loftus, [The Past, Present, and Future of the Technical Interview](https://www.hackerrank.com/blog/past-present-future-technical-interview/?utm_source=chatgpt.com), _HackerRank_.
+
+2. Martha C. White, [No-Brainer: ‘Brainteaser’ Job Interview Questions Don’t Work](https://business.time.com/2012/10/23/no-brainer-brainteaser-job-interview-questions-dont-work/), _Time_.
+
+3. bluehorizon2, [HackerNews Comment](https://www.google.com/url?q=https://news.ycombinator.com/item?id%3D37914154%23:~:text%3DThe%2520initial%2520reason%2520why%2520we,their%2520interviews%2520were%2520mostly%2520algorithmic.&sa=D&source=docs&ust=1735179416854869&usg=AOvVaw1nXUYPnD4qLnjtjEU1Dyus), _Hacker News_
 
 <hr/>
 <br/>
