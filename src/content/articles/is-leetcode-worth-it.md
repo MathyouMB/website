@@ -6,9 +6,7 @@ image: "/images/articles/default.png"
 draft: false
 ---
 
-“Is LeetCode worth it?” is a question a lot of students ask.
-
-The real answer is: **it kind of depends on your goal.**
+“Is LeetCode worth it?” The answer is **it depends on your goal.**
 
 If you’re trying to get into some large tech company with a notable name like Google, Amazon, Microsoft, etc., or some company in the Bay Area of the United States, then yeah… you should probably be following some kind of LeetCode study plan and doing a minimum of 1–2 problems daily.
 
@@ -43,7 +41,7 @@ Since they do not require the supervision of an interviewer and are completely a
 
 Whiteboard-style interviews are conducted in real-time with at least one engineer present. These sessions might take place on a physical whiteboard, a shared document, or an online coding environment.
 
-While they test your ability to solve algorithmic problems under pressure, they are about much more than just finding the correct solution. Interviewers are looking for how you approach the problem:
+While they test your ability to solve algorithmic problems under pressure, interviewers are really looking for how you approach the problem:
 
 - Can you communicate your thought process clearly?
 - Do you ask thoughtful clarifying questions?
@@ -60,8 +58,6 @@ LeetCode questions fail to evaluate a candidate’s domain knowledge or their ab
 If you really think about it, questions focused on optimizing time and space complexity are really just **math problems** in disguise.
 
 While they do help assess a candidate’s knowledge of computer science concepts, the reality is that candidates, driven by the desire to ace interviews, turn to **pattern recognition-based studying** to memorize solutions and guarantee success.
-
-The combination of strict time constraints in online assessments and live interviews, paired with the stress of high-stakes evaluations, pushes candidates to prioritize speed over genuine understanding.
 
 The reality is that if you were to ask a candidate if they could solve a LeetCode hard and they actually knew the answer instantly, they probably memorized the solution.
 
@@ -101,7 +97,7 @@ I can anecdotally say I’ve completed many internship interviews that use this 
 
 ### "Find the Bug" Style Assessments
 
-In these assessments, candidates are given pre-written code containing flaws and tasked with **identifying and fixing the issues.** This approach emphasizes debugging and code comprehension skills.
+In these assessments, candidates are given pre-written code containing flaws and tasked with identifying and fixing the issues. This approach emphasizes debugging and code comprehension skills.
 
 Anecdotally, I’ve only seen this approach used twice as a student, but I’ve seen it multiple times now in interviewing for full time roles.
 
@@ -130,7 +126,9 @@ Examples of system design prompts include:
 
 These interviews focus on assessing a candidate's understanding of system components, their ability to identify key requirements and constraints, and their capacity to account for edge cases that could impact the system's design.
 
-Although rare for students, I was once asked to explain how I’d design an app for managing parking spaces. While these questions can be challenging, demonstrating a clear thought process and structured approach is often more important than arriving at a "perfect" solution.
+Although rare for students, I have definitely seen these questions once or twice. I was once asked to explain how I’d design an app for managing parking spaces as a 2nd year student and was caught off guard because I didn't know how to properly approach the question.
+
+While these questions can be challenging, demonstrating a clear thought process and structured approach is often more important than arriving at a "perfect" solution.
 
 ---
 
@@ -160,9 +158,7 @@ Students often categorize interviews as either "behavioral" or "technical," but 
 
 Questions like “tell me about something you built” or “tell me about this bullet on your resume” are questions that are asked to candidates of ALL job levels, and the way you answer these questions is how an engineering manager is going to peg what “level” they feel you’re at.
 
-There's lots of great videos online about answering technical interview questions. I've found videos on the concept of “not getting down-leveled” to be greally great for highlighting how to present yourself as a more mature developer. "Down-leveling" refers to the challenge of proving your skills during an interview to ensure you’re considered for the same level of responsibility you held at your previous company (especially for senior roles).
-
-I’ve found videos [like the following](https://www.youtube.com/watch?v=hU6BVxtGd5g) with example interviews to be very helpful in trying to improve the way I communicate my technical skills.
+I’ve found videos [like the following](https://www.youtube.com/watch?v=hU6BVxtGd5g) with example interviews have been the most helpful for me personally in trying to improve the way I communicate my technical skills.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hU6BVxtGd5g?si=xoPm_GHgP5Nnt96g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
