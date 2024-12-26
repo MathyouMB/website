@@ -1,12 +1,12 @@
 ---
-title: "Students, Don’t Only Prepare for Interviews Using LeetCode"
+title: "Is LeetCode Worth Doing?"
 description: A breakdown of why LeetCode exists and why it's not the only way you should prepare for interviews
 date: 2024-12-25
 image: "/images/articles/default.png"
 draft: false
 ---
 
-“Is LeetCode worth it?” The answer is **it depends on your goal.**
+“Is LeetCode worth doing?” The answer is **it depends on your goal.**
 
 If you’re trying to get into some large tech company with a notable name like Google, Amazon, Microsoft, etc., or some company in the Bay Area of the United States, then yeah… you should probably be following some kind of LeetCode study plan and doing a minimum of 1–2 problems daily.
 
