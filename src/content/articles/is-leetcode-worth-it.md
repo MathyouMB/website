@@ -1,6 +1,6 @@
 ---
 title: "Students, Don’t Only Prepare for Interviews Using LeetCode"
-description: A breakdown of why LeetCode exists and why it's not the only way you should use to prepare for interviews
+description: A breakdown of why LeetCode exists and why it's not the only way you should prepare for interviews
 date: 2024-12-25
 image: "/images/articles/default.png"
 draft: false
