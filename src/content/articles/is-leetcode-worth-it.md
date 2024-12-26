@@ -10,9 +10,7 @@ draft: false
 
 If you’re trying to get into some large tech company with a notable name like Google, Amazon, Microsoft, etc., or some company in the Bay Area of the United States, then yeah… you should probably be following some kind of LeetCode study plan and doing a minimum of 1–2 problems daily.
 
-However, if you are a student trying to find a job in your local city and you’ve never worked before, you need to also focus on building practical skills rather than only using your time to grind LeetCode.
-
-Employers in your local area are more likely to value hands-on experience and communication skills over your ability to solve obscure algorithm problems.
+However, if you are a student trying to find a job in your local city or you’ve never worked before, the reality is your local area is far more likely to value hands-on experience and communication skills over your ability to solve obscure algorithm problems.
 
 Yes, many companies have copied the hiring practices of the industry giants, but that percentage is not 100%.
 
