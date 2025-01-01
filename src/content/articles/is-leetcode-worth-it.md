@@ -7,27 +7,31 @@ draft: false
 featured: false
 ---
 
-“Is LeetCode worth doing?” The answer is that the amount of LeetCode you should do **is dependant on your goal.**
+_Is LeetCode worth doing?_ I believe that the amount of LeetCode practice you need **depends entirely on your goals**.
 
-If you’re trying to get into some large tech company with a notable name like Google, Amazon, Microsoft, etc., or some company in the Bay Area of the United States, then yeah… you should probably be following some kind of LeetCode study plan and doing a minimum of 1–2 problems daily.
+If your goal is to get into some large tech company with a notable name like Google, Amazon, Microsoft, etc., or some company in the Bay Area of the United States, then yeah… you should follow a LeetCode study plan and do a minimum of 1–2 problems daily because it's very publicly known these larger companies ask these questions.
 
-However, if you are a student trying to find a job in your local city or you’ve never worked before, the reality is you don't need to be regularly able to solve medium-hard LeetCode questions. Your local area is far more likely to value hands-on experience and communication skills over your ability to solve obscure algorithm problems.
+However, if you are a student and your goal is to find a job in your local city or you’ve never worked before, the reality is you don't need to regularly solve medium-hard LeetCode questions. Your local area is far more likely to value communication skills and your ability to build real software over whether you can solve obscure algorithm problems.
 
-_**Here is my interview preperation advice:**_
+Regardless of how much LeetCode you feel you need, it's also important to recognize that **practicing algorithm-based questions is only one aspect** of how you should prepare for technical interviews.
 
-Regardless of your goal, you need to practice enough to confidently code under pressure using one common programming language.
+_*Here is my advice for students regarding technical interview preperation:*_
 
-While algorithm-based questions (like those on LeetCode) will be present in **SOME** technical interviews, other aspects, such as your ability to communicate technical concepts, are guaranteed to be a part of **ALL** technical hiring processes.
+- At the very least, you need to practice enough to confidently code under pressure using one common programming language.
 
-I highly recommend practicing on a variety of platforms instead of just LeetCode to avoid becoming overly comfortable with the LeetCode question style.
+- You should practice code problems on a variety of platforms instead of just LeetCode to avoid becoming overly comfortable with the LeetCode question style.
 
-Additionally, algorithm-based questions are just one type of coding assessment. You will eventually encounter less common formats that you should familiarize yourself with such as debugging tasks, take-home projects, and system design exercises.
+- Most students need to practice technical communication. While algorithm-based questions (like those on LeetCode) will be present in **SOME** technical interviews, your ability to communicate technical concepts, will be assessed in **ALL** technical hiring processes.
+
+- Additionally, algorithm-based questions are just one type of coding assessment. You will eventually encounter less common formats that you should familiarize yourself with such as debugging tasks, take-home projects, and system design exercises.
+
+The goal of this article is to give you a deeper understanding of why LeetCode is emphasized in technical interview preparation and to help you determine how much focus it deserves in your own journey.
 
 ---
 
 ## What is LeetCode?
 
-For those unfamiliar, “LeetCode questions” are designed to evaluate an engineer's understanding of core computer science concepts, such as data structures and algorithms, by asking the participant to complete a code problem with the best possible time and space complexity.
+“LeetCode questions” are designed to evaluate an engineer's understanding of core computer science concepts, such as data structures and algorithms, by asking the participant to complete a code problem with the best possible time and space complexity.
 
 You’re likely to encounter these types of questions in two scenarios:
 
