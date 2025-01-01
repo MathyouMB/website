@@ -362,4 +362,4 @@ Special thanks to <b><a href="https://rkempe.ca/about">Rebecca Kempe</a></b> for
 <hr/>
 <br/>
 
-_Want advice or just interested in chatting? Feel free to book a chat with me [here](https://calendly.com/matthewmacraebovell/chats) to discuss career stuff, jobs searcing, resumes, etc._
+_Want advice or just interested in chatting? Feel free to book a chat with me [here](https://calendly.com/matthewmacraebovell/chats) to discuss career stuff, jobs searching, resumes, etc._

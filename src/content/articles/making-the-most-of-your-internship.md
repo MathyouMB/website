@@ -2,10 +2,12 @@
 title: "Making The Most of Your Software Developer Internship"
 description: A guide to excelling in software developer internships and laying the groundwork for a successful tech career
 date: 2024-12-18
-image: "/images/articles/default.png"
+image: "/images/articles/2024/making-the-most-of-your-internship/cover.png"
 draft: false
 featured: false
 ---
+
+![laptop](/images/articles/2024/making-the-most-of-your-internship/cover.png)
 
 Starting your first internship or job can be both exciting and overwhelming, especially when you’re stepping into an unfamiliar environment with little idea of what to expect.
 
@@ -216,7 +218,7 @@ Meetings aren’t just about exchanging information; they’re moments to leave 
 
 An impact log is a record of your contributions and accomplishments throughout your career.
 
-## After a long time, you're going to inevitably forget what you worked on, which makes it harder to recall your achievements when updating your resume, writing a performance review, or preparing for interviews. By keeping an impact log, you create a detailed account of your work that you can refer back to whenever needed.
+After a long time, you're going to inevitably forget what you worked on, which makes it harder to recall your achievements when updating your resume, writing a performance review, or preparing for interviews. By keeping an impact log, you create a detailed account of your work that you can refer back to whenever needed.
 
 ## Conclusion
 
@@ -225,4 +227,4 @@ Making the most of your software developer internship requires more than just co
 <hr/>
 <br/>
 
-_Want advice or just interested in chatting? Feel free to book a chat with me [here](https://calendly.com/matthewmacraebovell/chats) to discuss career stuff, jobs searcing, resumes, etc._
+_Want advice or just interested in chatting? Feel free to book a chat with me [here](https://calendly.com/matthewmacraebovell/chats) to discuss career stuff, jobs searching, resumes, etc._
