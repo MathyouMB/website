@@ -7,7 +7,7 @@ draft: false
 featured: false
 ---
 
-_Is LeetCode worth doing?_ I believe that the amount of LeetCode practice you need **depends entirely on your goals**.
+_"Is LeetCode worth doing?"_ --The amount of LeetCode practice you need **depends entirely on your goals**.
 
 If your goal is to get into some large tech company with a notable name like Google, Amazon, Microsoft, etc., or some company in the Bay Area of the United States, then yeah… you should follow a LeetCode study plan and do a minimum of 1–2 problems daily because it's very publicly known these larger companies ask these questions.
 
