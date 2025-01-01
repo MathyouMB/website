@@ -7,17 +7,21 @@ draft: false
 featured: false
 ---
 
-“Is LeetCode worth doing?” The answer is **it depends on your goal.**
+“Is LeetCode worth doing?” The answer is that the amount of LeetCode you should do **is dependant on your goal.**
 
 If you’re trying to get into some large tech company with a notable name like Google, Amazon, Microsoft, etc., or some company in the Bay Area of the United States, then yeah… you should probably be following some kind of LeetCode study plan and doing a minimum of 1–2 problems daily.
 
-However, if you are a student trying to find a job in your local city or you’ve never worked before, the reality is your local area is far more likely to value hands-on experience and communication skills over your ability to solve obscure algorithm problems.
+However, if you are a student trying to find a job in your local city or you’ve never worked before, the reality is you don't need to be regularly able to solve medium-hard LeetCode questions. Your local area is far more likely to value hands-on experience and communication skills over your ability to solve obscure algorithm problems.
 
-Yes, many companies have copied the hiring practices of the industry giants, but that percentage is not 100%.
+_**Here is my interview preperation advice:**_
 
-While algorithm-based questions are common in technical interviews, other aspects, such as your ability to communicate technical concepts, are guaranteed to be a part of **ALL** technical hiring processes.
+Regardless of your goal, you need to practice enough to confidently code under pressure using one common programming language.
 
-Additionally, It’s important to understand that algorithm-based questions are not the only kind of assessments you'll see. Without a broader approach to interview prep, endlessly grinding LeetCode isn't going to guarantee you a job.
+While algorithm-based questions (like those on LeetCode) will be present in **SOME** technical interviews, other aspects, such as your ability to communicate technical concepts, are guaranteed to be a part of **ALL** technical hiring processes.
+
+I highly recommend practicing on a variety of platforms instead of just LeetCode to avoid becoming overly comfortable with the LeetCode question style.
+
+Additionally, algorithm-based questions are just one type of coding assessment. You will eventually encounter less common formats that you should familiarize yourself with such as debugging tasks, take-home projects, and system design exercises.
 
 ---
 
@@ -100,7 +104,7 @@ In these assessments, candidates are given pre-written code containing flaws and
 
 Anecdotally, I’ve only seen this approach used twice as a student, but I’ve seen it multiple times now in interviewing for full time roles.
 
-During an OA for Amazon in 2021, I was presented with five bugged pieces of code and given 20 minutes to resolve each of the bugs. The bugs were straightforward, such as a loop iterating one index too far, where the solution was to change the <= operator in the for loop to a <.
+During an OA for an intern position with Amazon in 2021, I was presented with five bugged pieces of code and given 20 minutes to resolve each of the bugs. The bugs were straightforward, such as a loop iterating one index too far, where the solution was to change the <= operator in the for loop to a <.
 
 ### Take-Home Assessments and Presentations
 
