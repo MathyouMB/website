@@ -1,5 +1,5 @@
 ---
-title: "Cracking Career Fairs: Strategies For Students In Software"
+title: "Navigating Career Fairs As A Computer Science Student"
 description: Essential tips for students to navigate career fairs and stand out to recruiters and developers
 date: 2024-12-19
 image: "/images/articles/2024/cracking-career-fairs/cover.png"
@@ -8,14 +8,11 @@ featured: false
 ---
 
 ![rat-at-career-fair](/images/articles/2024/cracking-career-fairs/cover.png)
+Career fairs are a great chance to get an edge the competition and avoid the frustrating process of "black box applying".
 
-If you’re a student applying for jobs, chances are you’ve heard someone say, “I applied to hundreds of jobs, but only got a few interviews.”
+Relying solely on submitting resumes through online portals is not enough and is what leads many to the experience of applying to hundreds of jobs and receiving only a handful of interviews.
 
-Although this sentiment is frustratingly common, it highlights a major flaw in how many students approach job applications: **relying solely on submitting resumes through online portals.**
-
-The reality is that this “black box” approach is rarely effective. Instead, you should focus on networking and tailoring your interactions with companies.
-
-Career fairs offer a unique opportunity to stand out to recruiters and developers—if you approach them strategically.
+To maximize your chances of success, here’s my advice on how to make the most of career fairs if you're a student in tech.
 
 ---
 
@@ -158,6 +155,16 @@ Don't put your hands in your pockets and don't pace around.
 Nod to show you are digesting information as they say it.
 
 ---
+
+<!-- ## How To Handle Group Situations
+
+Ideally you'd get to chat 1:1 at a companies booth, but that is not always immidately possible if a career fair is busy.
+
+First of all, if you can get their early reduce the number of people you have to compete with, that's ideal.
+
+In the event that you're not able to chat 1:1 right away, I recommend listening into the current conversation that an employee is having with another student and loosely nodding along t Once that student leaves, be sure to introduce yourself with a handshake and make sure to not ask duplicate questions of what was just discussed with the previous student.
+
+--- -->
 
 ## Don't Say You're a First Year
 
