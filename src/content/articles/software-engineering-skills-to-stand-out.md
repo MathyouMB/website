@@ -1,9 +1,10 @@
 ---
-title: "Software Skills to Stand Out and Land Your Dream Internship"
+title: "Software Skills to Make Your Student Resume Stand Out"
 description: A roadmap of industry-relevant skills tailored to help students and new grads stand out
 date: 2024-12-01
 image: "/images/articles/default.png"
 draft: false
+featured: false
 ---
 
 With recent tech industry layoffs leading to fewer opportunities for early talent, finding your first software engineering internship can feel like an uphill battle.

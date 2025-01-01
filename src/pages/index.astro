@@ -1,60 +1,94 @@
 ---
+import { getCollection } from "astro:content";
 import EmailSubscribe from "../components/EmailSubscribe/EmailSubscribe.astro";
-import Thin from "../layouts/Thin/Thin.astro";
+import Main from "../layouts/Main/Main.astro";
+import BlogPreview from "../components/BlogPreview/BlogPreview.astro";
 import "./index.scss";
+const articles = await getCollection("articles");
+const nonDraftArticles = articles.filter((article) => !article.data.draft);
+const sortedArticles = nonDraftArticles.sort((a, b) => {
+  return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+});
+
+const featuredArticles = sortedArticles.filter((article) => {
+  return article.data.featured;
+});
 ---
 
-<Thin title="Matthew MacRae-Bovell">
+<Main title="Matthew MacRae-Bovell">
   <div class="Home">
-    <img
-      class="Home__profile"
-      src="/images/me.jpeg"
-      alt="Matthew MacRae-Bovell"
-    />
-    <div class="Home__name">
-      <h1 class="Home__name__h1">Matthew MacRae-Bovell</h1>
-      <h2 class="Home__name__h2">developer, creator, speaker</h2>
+    <div class="Home__left">
+      <img
+        class="Home__profile"
+        src="/images/me2.jpeg"
+        alt="Matthew MacRae-Bovell"
+      />
+      <div class="Home__name">
+        <h1 class="Home__name__h1">Matthew MacRae-Bovell</h1>
+        <h2 class="Home__name__h2">developer, creator, speaker</h2>
+      </div>
+      <div class="Home__email">
+        <EmailSubscribe placeholder="Join my mailing list..." />
+      </div>
+      <div>
+        Welcome! I'm a software developer based in <a>Ottawa, Canada</a> with a passion
+        for building awesome projects and communities.
+      </div>
+      <div>
+        If you're interested in chatting about tech, careers, community
+        building, or anything else, feel free to book a <a
+          href="https://calendly.com/matthewmacraebovell/chats">coffee chat</a
+        > with me!
+      </div>
+      <a href="https://calendly.com/matthewmacraebovell/chats"
+        ><button class="button">Coffee Chats</button></a
+      >
     </div>
-    <div class="Home__email">
-      <EmailSubscribe placeholder="Join my mailing list..." />
+    <div class="Home__right">
+      <h2>About</h2>
+      <div class="Home__about">
+        <div>
+          I'm currently working with the automations team at <a
+            id="jobber"
+            href="https://www.jobber.com/">Jobber</a
+          >, and I've been lucky to work with some great teams at companies like <a
+            id="shopify"
+            href="https://www.shopify.com/">Shopify</a
+          >, <a id="rbc" href="https://www.rbc.com/">RBC</a>,
+          <a id="kinaxis" href="https://www.kinaxis.com/">Kinaxis</a>, and more.
+        </div>
+        <div>
+          Outside of work hours, I love organizing events like <a
+            id="htt"
+            href="https://ccss.carleton.ca/hackthetunnels/">Hack The Tunnels</a
+          > and presenting at conferences or meetups. I'm the previous President
+          of the
+          <a id="ccss" href="https://ccss.carleton.ca/"
+            >Carleton Computer Science Society</a
+          > and I'm always looking for new ways to give back to the community.
+        </div>
+        <div>
+          I also became a home owner at 23 and <a
+            href="https://matthewshouse.notion.site/Matthew-s-House-76ebf7cf587646628078405b66cba5a3"
+            >rent out rooms</a
+          > for affordable prices to university students and young professionals.
+        </div>
+      </div>
+      <div style="margin-top: 0.5rem;"></div>
+      <h2>Blog</h2>
+      {
+        featuredArticles.map((article) => (
+          <a href={`/blog/${article.slug}`}>
+            <BlogPreview
+              date={article.data.date}
+              title={article.data.title}
+              description={article.data.description}
+              image={article.data.image}
+            />
+          </a>
+        ))
+      }
+      <div style="margin-top: 0.5rem;"></div>
     </div>
-    <div>
-      Welcome! I'm a software developer based in <a>Ottawa, Canada</a> with a passion
-      for building awesome projects and communities.
-    </div>
-    <div>
-      I'm currently working with the automations team at <a
-        id="jobber"
-        href="https://www.jobber.com/">Jobber</a
-      >, and I've been lucky to work with some great teams at companies like <a
-        id="shopify"
-        href="https://www.shopify.com/">Shopify</a
-      >, <a id="rbc" href="https://www.rbc.com/">RBC</a>,
-      <a id="kinaxis" href="https://www.kinaxis.com/">Kinaxis</a>, and more.
-    </div>
-    <div>
-      Outside of work hours, I love organizing events like <a
-        id="htt"
-        href="https://ccss.carleton.ca/hackthetunnels/">Hack The Tunnels</a
-      > and presenting at conferences or meetups. I'm the previous President of the
-      <a id="ccss" href="https://ccss.carleton.ca/"
-        >Carleton Computer Science Society</a
-      > and I'm always looking for new ways to give back to the community.
-    </div>
-    <div>
-      I also became a home owner at 23 and <a
-        href="https://matthewshouse.notion.site/Matthew-s-House-76ebf7cf587646628078405b66cba5a3"
-        >rent out rooms</a
-      > for affordable prices to university students and young professionals.
-    </div>
-    <div>
-      If you're interested in chatting about tech, careers, community building,
-      or anything else, feel free to book a <a
-        href="https://calendly.com/matthewmacraebovell/chats">coffee chat</a
-      > with me!
-    </div>
-    <a href="https://calendly.com/matthewmacraebovell/chats"
-      ><button class="button">Coffee Chats</button></a
-    >
   </div>
-</Thin>
+</Main>

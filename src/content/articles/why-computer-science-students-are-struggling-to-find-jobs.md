@@ -4,6 +4,7 @@ description: How the pandemic, rising enrollment, and AI have reshaped the job m
 date: 2024-09-09
 image: "/images/articles/default.png"
 draft: false
+featured: false
 ---
 
 Once seen as a gateway to a "guaranteed job," computer science has recently become a seemingly less secure path for students and recent graduates.

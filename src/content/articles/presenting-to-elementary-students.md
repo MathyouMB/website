@@ -4,6 +4,7 @@ description: How I wrote my elementary school "career day" presentation on softw
 date: 2024-07-24
 image: "/images/articles/2024/presenting-to-elementary-students/cover.png"
 draft: false
+featured: false
 ---
 
 ![working-and-studying](/images/articles/2024/presenting-to-elementary-students/cover.png)

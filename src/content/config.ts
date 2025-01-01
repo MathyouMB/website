@@ -8,6 +8,7 @@ const articlesCollection = defineCollection({
     image: z.string(),
     date: z.date(),
     draft: z.boolean(),
+    featured: z.boolean(),
   }),
 });
 

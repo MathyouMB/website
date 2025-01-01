@@ -4,6 +4,7 @@ description: A breakdown of why LeetCode exists and why it's not the only way yo
 date: 2024-12-25
 image: "/images/articles/default.png"
 draft: false
+featured: false
 ---
 
 “Is LeetCode worth doing?” The answer is **it depends on your goal.**

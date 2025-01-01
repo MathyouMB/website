@@ -4,6 +4,7 @@ description: Essential tips for students to navigate career fairs and stand out 
 date: 2024-12-19
 image: "/images/articles/2024/cracking-career-fairs/cover.png"
 draft: false
+featured: false
 ---
 
 ![rat-at-career-fair](/images/articles/2024/cracking-career-fairs/cover.png)

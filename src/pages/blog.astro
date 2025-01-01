@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import { default as Layout } from "../layouts/Thin/Thin.astro";
 import EmailSubscribe from "../components/EmailSubscribe/EmailSubscribe.astro";
+import BlogPreview from "../components/BlogPreview/BlogPreview.astro";
 import "./blog.scss";
 
 const articles = await getCollection("articles");
@@ -20,24 +21,12 @@ const sortedArticles = nonDraftArticles.sort((a, b) => {
     {
       sortedArticles.map((article) => (
         <a href={`/blog/${article.slug}`}>
-          <div class="Blog__preview">
-            <div>
-              <div class="Blog__preview__date">
-                {new Date(article.data.date).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </div>
-              <div class="Blog__preview__title">{article.data.title}</div>
-              <div class="Blog__preview__description">
-                {article.data.description}
-              </div>
-            </div>
-            <div class="Blog__preview__image">
-              <img src={article.data.image} alt={article.data.title} />
-            </div>
-          </div>
+          <BlogPreview
+            date={article.data.date}
+            title={article.data.title}
+            description={article.data.description}
+            image={article.data.image}
+          />
         </a>
       ))
     }

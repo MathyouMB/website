@@ -22,7 +22,7 @@
       0 0 0 1px rgba(0, 0, 0, 0.1);
 
     button {
-      background-color: var(--theme);
+      background-color: var(--theme-darker);
     }
   }
 
@@ -49,7 +49,8 @@
     border-color: var(--theme);
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    background-color: rgb(116, 124, 134);
+    // background-color: rgb(116, 124, 134);
+    background-color: var(--theme);
     border: none;
     color: #fff;
     font-weight: 500;

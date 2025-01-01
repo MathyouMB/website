@@ -17,17 +17,37 @@
 }
 
 .Home__profile {
-  width: 10rem;
-  margin-top: 0rem;
+  width: 16rem;
+  margin-top: 1rem;
   border-radius: 2rem;
   margin-bottom: 1.5rem;
 }
 
 .Home {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
   margin: auto;
+  width: 75rem;
+  padding: 1rem;
+  min-height: 80vh;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    gap: 1rem;
+    width: 95%;
+    padding: 1rem;
+  }
+
+  h1,
+  h2 {
+    font-variation-settings: "wght" 500;
+    letter-spacing: -0.1px;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-variation-settings: "wght" 500;
+    letter-spacing: -0.1px;
+    margin-bottom: 0.25rem;
+  }
 
   a {
     text-decoration: none;
@@ -35,7 +55,50 @@
     color: var(--theme);
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none !important;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 33rem;
+    position: fixed;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 33rem;
+    height: 100%;
+    float: right;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      color: var(--theme);
+
+      &:hover {
+        text-decoration: underline !important;
+      }
     }
   }
 
@@ -74,6 +137,19 @@
       &__h2 {
         font-size: 1.3rem;
       }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__left {
+      position: relative;
+      width: 100%;
+    }
+
+    &__right {
+      margin-top: 2rem;
+      width: 100%;
+      float: none;
     }
   }
 }

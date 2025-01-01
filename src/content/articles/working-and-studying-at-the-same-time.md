@@ -4,6 +4,7 @@ description: My alternative path to gaining work experience as a student and wha
 date: 2023-05-19
 image: "/images/articles/2023/working-and-studying2.png"
 draft: false
+featured: true
 ---
 
 ![working-and-studying](/images/articles/2023/working-and-studying2.png)

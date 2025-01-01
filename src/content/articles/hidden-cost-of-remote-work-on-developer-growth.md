@@ -4,6 +4,7 @@ description: The impact of meeting aversion and isolation on the growth of corpo
 date: 2024-11-27
 image: "/images/articles/2024/hidden-cost-of-remote-work-on-developer-growth/cover.png"
 draft: false
+featured: true
 ---
 
 ![remote-working-creatures](/images/articles/2024/hidden-cost-of-remote-work-on-developer-growth/cover.png)
