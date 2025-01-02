@@ -1,6 +1,6 @@
 ---
 title: "Software Skills to Make Your Student Resume Stand Out"
-description: A roadmap of industry-relevant skills tailored to help students and new grads stand out
+description: Skills not emphasized in university that will help your resume stand out to developers and hiring managers
 date: 2024-12-01
 image: "/images/articles/2024/software-engineering-skills-to-stand-out/cover.png"
 draft: false
