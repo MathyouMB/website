@@ -8,9 +8,10 @@ featured: false
 ---
 
 ![rat-at-career-fair](/images/articles/2024/cracking-career-fairs/cover.png)
-Career fairs are a great chance to get an edge the competition and avoid the frustrating process of "black box applying".
 
-Relying solely on submitting resumes through online portals is not enough and is what leads many to the experience of applying to hundreds of jobs and receiving only a handful of interviews.
+Career fairs are a great chance to get an edge over other candidates and avoid the frustrating process of "black box applying".
+
+Relying solely on submitting resumes through online portals is rarely enough to secure a job and usually leads to the experience of applying to hundreds of jobs, but receiving only a handful of interviews.
 
 To maximize your chances of success, here’s my advice on how to make the most of career fairs if you're a student in tech.
 
