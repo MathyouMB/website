@@ -9,9 +9,9 @@ featured: false
 
 ![tools](/images/articles/2024/software-engineering-skills-to-stand-out/cover.png)
 
-With recent tech industry layoffs leading to fewer opportunities for early talent, finding your first software engineering internship can feel like an uphill battle.
+Students often ask how to make their resume stand out, and one key observation I've made is that many students struggle to showcase skills relevant to **building production-quality software** or the **daily responsibilities of a full-time** software engineer.
 
-I often talk to students about how they can stand out in the sea of other applicants, and one key observation I've made is that many students struggle to showcase skills relevant to **building production-quality software** or the **daily responsibilities of a full-time** software engineer. Without industry experience, it’s hard for these students know what skills hiring managers value or what’s really expected of entry-level engineers.
+A typical computer science education doesn’t focus much on these areas, so many students simply aren’t aware that many of the following in-demand skills even exist.
 
 To help bridge this gap, **I’ve compiled a list of skills** to emphasize on internship and entry-level resumes that will help you stand out to potential employers.
 
