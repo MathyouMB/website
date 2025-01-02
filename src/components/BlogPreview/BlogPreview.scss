@@ -5,17 +5,17 @@
   gap: 1.5rem;
 
   @media screen and (max-width: 500px) {
-    .Blog__preview__date {
+    .BlogPreview__date {
       font-size: 0.6rem;
     }
-    .Blog__preview__title {
+    .BlogPreview__title {
       font-size: 0.9rem;
       line-height: 0.9rem;
       margin-top: 0rem;
       margin-bottom: 0.75rem;
     }
 
-    .Blog__preview__description {
+    .BlogPreview__description {
       font-size: 0.7rem;
       line-height: 0.7rem;
     }
