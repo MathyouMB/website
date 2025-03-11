@@ -1,6 +1,6 @@
 ---
 title: "How Students Can Get Developer Experience Without a Job"
-description: Strategies for students to gain real-world development without prior work experience
+description: Strategies for students to gain software engineering experience without a formal job
 date: 2025-03-10
 image: "/images/articles/2024/cracking-career-fairs/cover.png"
 draft: true
@@ -9,7 +9,7 @@ featured: false
 
 <!-- ![rat-at-career-fair](/images/articles/2024/cracking-career-fairs/cover.png) -->
 
-In today's crowded tech job market, all student job postings will have applicants who already have hands-on experience.
+In today's crowded tech job market, all internships have applicants who already have hands-on experience.
 
 Meaning, if your resume doesn’t showcase real-world development experience, **it’s unlikely you’ll be considered.**
 
@@ -24,7 +24,7 @@ Unpaid experience can take many forms:
 - **Volunteer work for a university club** – Offer to build or improve their website, automate tasks, or contribute in a technical capacity.
 - **Unpaid freelancing or internships with startups** – Many early-stage startups welcome eager contributors, even if they can't afford salaries yet.
 
-Now, I’m not saying you should let a company exploit your time and skills. But, the reality is that everyone who has a job today got their start by working on something without being paid. =
+Now, I’m not saying you should let a company exploit your time and skills. But, the reality is that everyone who has a job today got their start by working on something without being paid.
 
 The key is to do real work to [showcase skills](https://matthewmacraebovell.com/blog/software-engineering-skills-to-stand-out/) relevant to building production-quality software or the daily responsibilities of a full-time software engineer.
 
@@ -42,6 +42,8 @@ However, the biggest challenge for most students is coming up with ideas.
 
 Here are a few ways to get started:
 
+--
+
 ### "Build Your Own X"
 
 Check out this repository called ["Build Your Own X"](https://github.com/danistefanovic/build-your-own-x).
@@ -55,6 +57,8 @@ It includes guides on how to build a whole bunch of interesting stuff from scrat
 
 Exploring these projects can be an excellent way to dive deep into the fundamentals of technology and gain a comprehensive understanding of how things work under the hood.
 
+--
+
 ### Use New Technology
 
 Is there a new programming language, framework, or tool you've been curious about? Use a personal project as a playground to explore and experiment.
@@ -62,6 +66,8 @@ Is there a new programming language, framework, or tool you've been curious abou
 Not every project idea needs to be original. If you're struggling to pick a unique idea, consider remaking an existing project or taking a common idea like a todo list, weather app, etc., but using new technologies you want to learn.
 
 If you're not sure what technology you'd like to try, I'd recommend [roadmap.sh](https://roadmap.sh/) for suggestions.
+
+--
 
 ### Build For Yourself
 
@@ -75,6 +81,8 @@ Think about your daily routine—what small tasks could be automated? Some examp
 
 If you can build something that genuinely helps you, it'll likely be useful to others too.
 
+--
+
 ### Build For Someone Else
 
 Consider developing something for a friend, family member, or a community you’re part of.
@@ -86,6 +94,8 @@ Examples:
 - A community bulletin board for local events
 
 Working on projects for others not only adds an extra layer of responsibility but also pushes you to polish your work and actually deploy your app.
+
+--
 
 ### Just Add A "Twist"
 
@@ -115,7 +125,7 @@ If you’re in some kind of tech program, it’s more than likely you will have 
 
 Here at **Carleton University**, the computer science student body is represented by the [**Carleton Computer Science Society (CCSS)**](https://ccss.carleton.ca/) which has a collection of [open-source projects](https://github.com/CarletonComputerScienceSociety) that are open for contribution.
 
-Beyond that, several student-led organizations actively work on projects including:
+Beyond that, several student-led organizations actively work on projects including but not limited to:
 
 - [**CuHacking**](https://github.com/cuhacking) – Organizes the university’s annual hackathon, bringing students together to collaborate on innovative projects.
 - [**CuBlueprint**](https://github.com/cublueprint) – A nonprofit student organization that develops pro bono software solutions for charities.
