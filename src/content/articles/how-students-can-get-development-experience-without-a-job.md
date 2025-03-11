@@ -7,7 +7,7 @@ draft: true
 featured: false
 ---
 
-<!-- ![rat-at-career-fair](/images/articles/2024/cracking-career-fairs/cover.png) -->
+![badger-developing](/images/articles/2025/how-students-can-get-development-experience-without-a-job/temp.png)
 
 In today's crowded tech job market, all internships have applicants who already have hands-on experience.
 
