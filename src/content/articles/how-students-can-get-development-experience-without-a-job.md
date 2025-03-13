@@ -2,12 +2,12 @@
 title: "How Students Can Get Developer Experience Without a Job"
 description: Strategies for students to gain software engineering experience without a formal job
 date: 2025-03-10
-image: "/images/articles/2024/cracking-career-fairs/cover.png"
-draft: true
+image: "/images/articles/2025/how-students-can-get-development-experience-without-a-job/cover.png"
+draft: false
 featured: false
 ---
 
-![badger-developing](/images/articles/2025/how-students-can-get-development-experience-without-a-job/temp.png)
+![badger-developing](/images/articles/2025/how-students-can-get-development-experience-without-a-job/cover.png)
 
 In today's crowded tech job market, all internships have applicants who already have hands-on experience.
 
