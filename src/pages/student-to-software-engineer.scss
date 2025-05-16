@@ -1,0 +1,21 @@
+.Seminar {
+  &__title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 1rem 0;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    color: #6b6b6b;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 1.4rem;
+  }
+
+  hr {
+    border-color: rgba(245, 245, 245, 0.1647058824);
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+}

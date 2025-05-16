@@ -9,12 +9,6 @@ featured: true
 
 ![working-and-studying](/images/articles/2023/working-and-studying2.png)
 
-Have you ever seen an entry level job posting asking for 1-4 years of experience?
-
-<b>Well, I'm that guy.</b>
-
-<i>(Not that I agree with that as a hiring practice...)</i>
-
 When COVID hit and the world went online, it became possible to complete courses while working full-time remotely.
 
 By working and studying, I was able to obtain 4+ years of work experience before my planned graduation date.

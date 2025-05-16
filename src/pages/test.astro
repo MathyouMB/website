@@ -1,0 +1,93 @@
+---
+import { getCollection } from "astro:content";
+import Article from "../layouts/Article/Article.astro";
+import "./student-to-software-engineer.scss";
+import BlogPreview from "../components/BlogPreview/BlogPreview.astro";
+const articles = await getCollection("articles");
+const nonDraftArticles = articles.filter((article) => !article.data.draft);
+const sortedArticles = nonDraftArticles.sort((a, b) => {
+  return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+});
+
+const series = [
+  //   "why-computer-science-students-are-struggling-to-find-jobs",
+  "software-engineering-skills-to-stand-out",
+  "carleton-cs-coop-explained",
+  "cracking-career-fairs",
+  "is-leetcode-worth-it",
+  "making-the-most-of-your-internship",
+];
+
+const seriesArticles = series
+  .map((slug) => sortedArticles.find((article) => article.slug === slug))
+  .filter((article) => article !== undefined);
+
+const formattedDate = new Date("2025-01-01").toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const carletonCSArticle = sortedArticles.find(
+  (article) => article.slug === "carleton-cs-coop-explained",
+);
+---
+
+<Article
+  title="Student To Software Engineer"
+  ,
+  description="A collection of articles to help students succesfully navigate the job market and land developer roles"
+  ,
+  date={formattedDate}
+>
+  <!-- <p>
+    It's no secret that it's recently become more difficult for students to find
+    their first software development internships and full-time roles.
+  </p>
+  <p>
+    To help students navigate the job market, make the most of university, and
+    best leverage their time to find their first software position, I've created
+    the "Student to Software Engineer" article series.
+  </p> -->
+  <!-- <br /> -->
+  <div
+    style="display:flex; flex-direction: column; justify-content: center; gap: 1rem;"
+  >
+    {
+      seriesArticles.map((article) => (
+        <div>
+          <a
+            href={`/blog/${article.slug}`}
+            style="text-decoration: none; color: inherit;"
+          >
+            <BlogPreview
+              date={article.data.date}
+              title={article.data.title}
+              description={article.data.description}
+              image={article.data.image}
+            />
+          </a>
+          {/* {seriesArticles.indexOf(article) !== seriesArticles.length - 1 && (
+            <div style="display: flex; justify-content: center;">
+              <div
+                style="border-left: 4px dotted gray; height: 1rem; margin: 1rem 1rem; text-align: center; opacity: 0.5;"
+              ></div>
+            </div>
+          )} */}
+        </div>
+      ))
+    }
+    <p>
+      <!-- {
+        carletonCSArticle && (
+          <BlogPreview
+            date={carletonCSArticle.data.date}
+            title={carletonCSArticle.data.title}
+            description={carletonCSArticle.data.description}
+            image={carletonCSArticle.data.image}
+          />
+        )
+      } -->
+    </p>
+  </div>
+</Article>

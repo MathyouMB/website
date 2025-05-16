@@ -4,7 +4,7 @@ description: A breakdown of why LeetCode exists and why it's not the only way yo
 date: 2024-12-25
 image: "/images/articles/2024/is-leetcode-worth-it/cover2.png"
 draft: false
-featured: true
+featured: false
 ---
 
 ![remote-working-creatures](/images/articles/2024/is-leetcode-worth-it/cover2.png)

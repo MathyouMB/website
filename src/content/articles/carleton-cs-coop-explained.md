@@ -4,7 +4,7 @@ description: Why are so many computer science students so critical of Carleton's
 date: 2024-08-24
 image: "/images/articles/2024/carleton-cs-coop-explained/cover.png"
 draft: false
-featured: true
+featured: false
 ---
 
 ![raven-with-briefcase](/images/articles/2024/carleton-cs-coop-explained/cover.png)

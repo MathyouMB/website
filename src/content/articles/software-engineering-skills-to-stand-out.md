@@ -145,9 +145,9 @@ While tools like Kubernetes (K8s) are popular in industry, I personally believe 
 
 ## MVC Web Frameworks
 
-While lightweight frameworks like Express.js are great for learning, many production systems rely on large MVC Web frameworks such as **Django**, **Ruby on Rails**, **Spring**, or **ASP.NET Core**. These frameworks are designed to minimize the decision-making process by following best practices and conventions, making development faster and more structured.
+While lightweight frameworks like Express.js are a good first step, many production systems rely on large MVC Web frameworks such as **Django**, **Ruby on Rails**, **Spring**, or **ASP.NET Core**. These frameworks are designed to minimize the decision-making process by following best practices and conventions, making development faster and more structured.
 
-Using one of these frameworks in a project demonstrates your ability to work with opinionated tools that enforce patterns like **MVC (Model-View-Controller)** and promote clean separation of concerns. This implies familiarity with advanced concepts like:
+Using one of these frameworks in a project demonstrates your ability to work with opinionated tools that enforce patterns like **MVC (Model-View-Controller)** and promote clean separation of concerns. This implies familiarity with concepts like:
 
 - **ORMs (Object-Relational Mappers)** for interacting with databases.
 - **Migrations** to update database schemas without data loss.

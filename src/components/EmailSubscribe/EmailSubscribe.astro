@@ -48,7 +48,7 @@ const { placeholder = "Type your email..." } = Astro.props;
     const responseJson = await response.json();
 
     if (response.ok) {
-      alert("Succesfully subcribed to the mailing list!");
+      alert("test", "Succesfully subcribed to the mailing list! :)");
     } else {
       alert(responseJson.error);
     }
