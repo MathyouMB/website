@@ -9,13 +9,17 @@ const { placeholder = "Type your email..." } = Astro.props;
 ---
 
 <div class="EmailSubscribe__container">
-  <form class="EmailSubscribe" action="">
+  <form
+    class="EmailSubscribe"
+    action="https://formspree.io/f/mldnoazl"
+    method="POST"
+  >
     <input type="email" name="email" placeholder={placeholder} required />
     <button type="submit">Subscribe</button>
   </form>
 </div>
 
-<script>
+<!-- <script>
   const form = document.querySelector(".EmailSubscribe");
 
   if (!form) {
@@ -53,4 +57,4 @@ const { placeholder = "Type your email..." } = Astro.props;
       alert(responseJson.error);
     }
   });
-</script>
+</script> -->
