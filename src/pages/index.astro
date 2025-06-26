@@ -84,6 +84,15 @@ const featuredArticles = sortedArticles.filter((article) => {
         </div>
       </div>
       <div style="margin-top: 0.5rem;"></div>
+      <h2>Featured</h2>
+      <a href="https://student-to-software-engineer.org/">
+        <BlogPreview
+          date={new Date("2025-06-26")}
+          title="Student To Software Engineer"
+          description="A FREE book for students who want to land their first software job and overcome the saturated job market."
+          image="/images/student-to-software-engineer.png"
+        />
+      </a>
       <h2>Blog</h2>
       {
         featuredArticles.map((article) => (
