@@ -31,4 +31,46 @@
     font-variation-settings: "wght" 500;
     letter-spacing: -0.1px;
   }
+
+  /* Match Screenshot 2 style */
+  pre {
+    background-color: #f9fafb; /* light grey-blue background */
+    color: #111827; /* dark text */
+    padding: 1rem 1.25rem; /* generous padding */
+    border-radius: 0.5rem; /* rounded corners */
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.875rem; /* ~14px */
+    line-height: 1.5;
+    overflow-x: auto;
+    border-left: 4px solid #d1d5db; /* subtle left border (optional) */
+  }
+
+  /* Optional: tweak <code> inside <pre> */
+  pre code {
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+  }
+
+  /* Style <pre> blocks rendered by Astro's code highlighter */
+  .astro-code {
+    background-color: #f9fafb !important;
+    color: #111827 !important;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    font-size: 0.875rem;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    line-height: 1.5;
+    overflow-x: auto;
+    border-left: 4px solid #d1d5db;
+    box-shadow: none;
+  }
+
+  /* Optional: neutralize extra styling that may come from themes */
+  .astro-code code {
+    background: none !important;
+    color: inherit !important;
+    padding: 0;
+  }
 }
