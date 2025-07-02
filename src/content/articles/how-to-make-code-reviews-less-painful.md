@@ -9,22 +9,22 @@ featured: false
 
 ![badger-developing](/images/articles/default.png)
 
-After working with dozens of teams across dozens of organizations, it still surprises me how wildly **inconsistent** code review practices can be.
+After working with dozens of teams across all kinds of organizations, I’m still surprised by how wildly **inconsistent** code review practices can be.
 
-Some of the techniques I’ve picked up over the years seem so obvious that it’s baffling they aren’t standard everywhere.
+Over the years, I’ve picked up a handful of techniques that make reviews faster, clearer, and far less painful — and honestly, some of them feel so obvious that I’m baffled they’re not standard everywhere.
 
-I'm not talking about the advice you see in every article about code reviews, like
+I’m not talking about the usual tips you see in every article like:
 
-- Keep PRs Small and Focused
-- Include Context and Checklists in the PR Description
-- Use Automated Checks to Eliminate Low-Value Review Work
-- Default to Self-Review First
+- Keep PRs small and focused
+- Add context in the PR description
+- Use automated checks to catch low-hanging issues
+- Do a self-review before assigning someone else
 
-I'm talking about the **deeper, practical advice** that make code reviews faster, more constructive, and less frustrating for everyone involved.
+Those are all important — but I want to go deeper.
 
-These aren’t abstract ideas or one-off edge cases — they’re simple, repeatable habits that make code reviews faster, more constructive, and way less frustrating.
+This post is about habits that actually move the needle: the ones that reduce back-and-forth, make feedback easier to act on, and help everyone spend more time focused on the **code itself**.
 
-So here they are in no particular order:
+So here they are — in no particular order:
 
 ---
 
