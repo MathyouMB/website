@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.11.5"><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="expires" content="0"><meta http-equiv="pragma" content="no-cache"><title>How to Make Code Reviews Faster and Less Painful</title><!-- Primary Meta Tags --><meta name="title" content="How to Make Code Reviews Faster and Less Painful"><meta name="description" content="Actual ways to make code reviews less frustrating, giving you more time to focus on the code itself"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://matthewmacraebovell.com/images/articles/default.png"><meta property="og:title" content="How to Make Code Reviews Faster and Less Painful"><meta property="og:description" content="Actual ways to make code reviews less frustrating, giving you more time to focus on the code itself"><meta property="og:image" content="https://matthewmacraebovell.com/images/articles/default.png"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://matthewmacraebovell.com/images/articles/default.png"><meta property="twitter:title" content="How to Make Code Reviews Faster and Less Painful"><meta property="twitter:description" content="Actual ways to make code reviews less frustrating, giving you more time to focus on the code itself"><meta property="twitter:image" content="https://matthewmacraebovell.com/images/articles/default.png"><!-- Shynet --><noscript><img src="https://shynet-mpb4.onrender.com/ingress/345502f1-3264-4423-bd99-5313dfd8a181/pixel.gif"></noscript><script defer src="https://shynet-mpb4.onrender.com/ingress/345502f1-3264-4423-bd99-5313dfd8a181/script.js?v=1"></script><!-- <script src="MeinScript.js?v=1"></script> --><style>.Article{font-family:sohne,Helvetica Neue,Helvetica,Arial,sans-serif}.Article hr{border-color:#f5f5f52a;margin-top:.4rem;margin-bottom:.4rem}.Article__content hr{margin-top:2rem}.Article a{color:var(--theme)}.Article img{object-fit:cover;width:100%;margin:auto;margin-bottom:1rem}.Article h1{line-height:normal}.Article h1,.Article h2,.Article h3{margin-top:2rem}.Article__title{font-weight:900;margin:1rem 0;font-family:sohne,Helvetica Neue,Helvetica,Arial,sans-serif}.Article__description{font-size:1.2rem;color:#6b6b6b;font-family:sohne,Helvetica Neue,Helvetica,Arial,sans-serif;margin-bottom:1.4rem}.Article__author{display:flex;align-items:center;gap:.5rem}.Article__author img{width:2.4rem;height:2.4rem;border-radius:50%;margin-bottom:0}.Article__author__name{font-size:.8rem}.Article__author__name a{color:#000000e2;text-decoration:none}.Article__author__name a:hover{text-decoration:underline}.Article__author__date{margin-top:-.3rem;color:#6b6b6b}.Article__author__left{display:flex;align-items:center}.Article__author__right{font-size:.7rem;display:flex;flex-direction:column}.Article__author__right div{height:fit-content}
+.Thin{display:flex;flex-direction:column;overflow:hidden;margin:auto;width:33rem;padding:.25rem 1rem 1rem;min-height:80vh;letter-spacing:-.1px;font-family:Geistvf,sans-serif}@media (max-width: 768px){.Thin{width:95%;padding:1rem}}.Thin h1{font-variation-settings:"wght" 500;letter-spacing:-.1px;margin-bottom:1rem}.Thin p{margin-top:0;margin-bottom:1rem}.Thin h3{font-variation-settings:"wght" 500;letter-spacing:-.1px}.Thin pre{background-color:#f9fafb;color:#111827;padding:1rem 1.25rem;border-radius:.5rem;font-family:SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.875rem;line-height:1.5;overflow-x:auto;border-left:4px solid #d1d5db}.Thin pre code{background:none;padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;word-break:break-word}.Thin .astro-code{color:#111827!important;border-radius:.5rem;padding:1rem 1.25rem;font-size:.875rem;font-family:SFMono-Regular,Menlo,Monaco,Consolas,monospace;line-height:1.5;overflow-x:auto;border-left:4px solid #d1d5db;box-shadow:none}.Thin .astro-code[data-language=ruby]{background-color:#000;color:#111827;border-left-color:#d1d5db}.Thin .astro-code[data-language=text]{background-color:#f7f7f7!important;color:#111827;border-left-color:#e5e7eb}
+@font-face{font-family:Geist Sans;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/geist-sans-latin-400-normal.gapTbOY8.woff2) format("woff2"),url(/_astro/geist-sans-latin-400-normal.BOaIZNA2.woff) format("woff")}:root{--blue-grey-bg: rgba(11, 53, 81, .03);--black-4: rgba(0, 0, 0, .1);--black-2: rgba(0, 0, 0, .5);--black: black;--white: white;--medium-sea-green: #008d3e;--black-3: rgba(0, 0, 0, .4);--black-5: rgba(0, 0, 0, .8);--white-smoke: #f7f7f7;--red: #e91a03;--theme: #517aff;--theme-darker: #3a5fda}html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-family:sans-serif}@font-face{font-family:Geistvf;src:url(https://matthewmacraebovell.com/fonts/GeistVF.woff)}@font-face{font-family:GeistMonovf;src:url(https://matthewmacraebovell.com/fonts/GeistMonoVF.woff)}body{color:var(--black);cursor:default;background-image:none;background-position:0 0;font-family:Geistvf,sans-serif;font-size:16px;line-height:24px;padding:0;margin:0}.Navbar{margin-top:1rem;display:flex;width:98%;justify-content:flex-end;font-family:Geistvf,sans-serif;gap:1rem}@media (max-width: 768px){.Navbar{justify-content:left;margin-left:1.25rem;margin-bottom:1rem}.Navbar__desktop{display:none}}.Navbar a{text-decoration:none;color:inherit}.Navbar a:hover{text-decoration:underline}footer{text-align:center;margin-bottom:3rem;margin-top:5rem;opacity:.7}
+</style><script type="module">var o=document.cookie.split(";");for(var a=1;a<=o.length;a++){var t=o[a-1],d=t.split("=");document.cookie=d[0]+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"}window.caches.keys().then(function(e){for(let n of e)window.caches.delete(n)});const i=await window.indexedDB.databases();i.forEach(e=>{window.indexedDB.deleteDatabase(e.name)});window.localStorage.clear();window.sessionStorage.clear();
+</script></head> </html> <body>  <div class="Navbar"> <a href="/">Home</a> <a href="/projects">Projects</a> <a href="/blog">Blog</a> <a href="/presentations">Talks</a> <!-- <a
+      class="Navbar__desktop"
+      href="https://matthewshouse.notion.site/Matthew-s-House-76ebf7cf587646628078405b66cba5a3"
+      >House</a
+    > --> <a href="/pdfs/resumes/Matthew_MacRaeBovell_Resume_April2023.pdf">Resume</a> </div>  <div class="Thin">  <div class="Article"> <h1 class="Article__title">How to Make Code Reviews Faster and Less Painful</h1> <div class="Article__description">Actual ways to make code reviews less frustrating, giving you more time to focus on the code itself</div> <hr> <div class="Article__author"> <div class="Article__author__left"> <img src="/images/me2.jpeg" alt="Author"> </div> <div class="Article__author__right"> <div class="Article__author__name"> <a href="/">Matthew MacRae-Bovell</a> </div> <div class="Article__author__date">July 2, 2025</div> </div> </div> <hr> <div style="margin-top: 2.5rem;"></div> <div class="Article__content">  <p><img src="/images/articles/default.png" alt="badger-developing"></p>
+<p>After working with dozens of teams across dozens of organizations, it still surprises me how wildly <strong>inconsistent</strong> code review practices can be.</p>
+<p>Some of the techniques I’ve picked up over the years seem so obvious that it’s baffling they aren’t standard everywhere.</p>
+<p>I’m not talking about the advice you see in every article about code reviews, like</p>
+<ul>
+<li>Keep PRs Small and Focused</li>
+<li>Include Context and Checklists in the PR Description</li>
+<li>Use Automated Checks to Eliminate Low-Value Review Work</li>
+<li>Default to Self-Review First</li>
+</ul>
+<p>I’m talking about the <strong>deeper, practical advice</strong> that make code reviews faster, more constructive, and less frustrating for everyone involved.</p>
+<p>These aren’t abstract ideas or one-off edge cases — they’re simple, repeatable habits that make code reviews faster, more constructive, and way less frustrating.</p>
+<p>So here they are in no particular order:</p>
+<hr>
+<h2 id="1-resolve-comments-with-isolated-commits">1. Resolve Comments with Isolated Commits</h2>
+<p>When you update your code in response to feedback, put that fix in its own separate commit — ideally one per resolved comment or one per logical change.</p>
+<p>Here is an example of how this might look in practice:</p>
+<p><img src="/images/articles/2025/how-to-make-code-reviews-less-painful/resolve-comments-with-isolated-commits.png" alt="badger-developing"></p>
+<p>This makes life easier for the reviewer: instead of <strong>re-reading your entire diff</strong>, they can jump straight to the isolated commit and confirm the fix, dramatically reducing the cognitive load needed to re-review the code.</p>
+<p>This commit acts like a receipt that you did actually address the feedback. It’s clear and shows you actually implemented the reviewer’s suggestions.</p>
+<p>A very common scenario is the PR author resolving a comment without actually making the change the reviewer requested. This practice helps prevent that, as the reviewer can easily see what was changed in response to their feedback.</p>
+<p>The only issue with this strategy is that if you have to rebase, the ids of all your commits will be changed. However, if you feel you’ll need to rebase, do it before you start resolving comments. This way, the commit ids will remain stable, and the reviewer can easily track which comments were addressed in which commits.</p>
+<hr>
+<h2 id="2-designate-blocking-vs-non-blocking-comments">2. Designate Blocking vs. Non-Blocking Comments</h2>
+<p>Sometimes it’s not clear whether a comment <strong>must</strong> be addressed before merging. This causes churn, confusion, and delay.</p>
+<p>That’s why I recommend using a system like <a href="https://conventionalcomments.org/">Conventional Comments</a> — a standard for labeling review comments clearly.</p>
+<p>For example:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>suggestion (non-blocking): Update name for clarity</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Not a big deal, but I think another name like `userList` could improve clarity here.</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>Or:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>issue (blocking): This breaks on null input.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Can we add a check here to avoid the crash?</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>Labels like <code>issue</code>, <code>suggestion</code>, <code>question</code>, and <code>praise</code>, paired with decorations like <code>(blocking)</code> or <code>(non-blocking)</code>, make it crystal clear what kind of feedback you’re leaving — and what needs to be acted on.</p>
+<p>It saves hours of back-and-forth and helps keep reviews focused and respectful.</p>
+<hr>
+<h2 id="3-communicate-where-you-want-feedback">3. Communicate Where You Want Feedback</h2>
+<p>When you submit a PR, be proactive about guiding your reviewers to the parts of the code that need their attention.</p>
+<p>Use comments to:</p>
+<ul>
+<li>Highlight complex or non-obvious decisions.</li>
+<li>Ask questions or surface doubts.</li>
+<li>Direct the reviewer’s attention to specific sections.</li>
+</ul>
+<p>Example:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>thought: This helper feels a bit awkward, but I couldn’t think of a better place to put it. Open to suggestions.</span></span>
+<span class="line"><span></span></span></code></pre>
+<br>
+<p>Especially on drafts where you’re looking for feedback on structure, design, or approach rather than specific implementation details, explicitly say what kind of feedback you’re looking for.</p>
+<p>In your PR description, clearly state what kind of feedback you’re looking for:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>This PR is still a work in progress, but I’d love your thoughts on the structure I've chosen and whether the abstractions make sense. I’ll add tests once we agree on the approach.</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>Additionally, don’t just add your reviewer to the PR, <strong>use @mentions to guide reviewers</strong> to the relevant parts of the code.</p>
+<p>Example:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Hey @janedoe — I’d love your thoughts on whether this abstraction makes sense before I build out the full implementation and write tests.</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>This helps reviewers give more relevant, high-signal feedback — and it prevents frustration on both sides.</p>
+<p>Always mark your PRs as <strong>drafts</strong> if they are still in progress.</p>
+<hr>
+<h2 id="4-prefer-a-specific-solution-suggest-a-git-patch">4. Prefer a Specific Solution? Suggest a Git Patch</h2>
+<p>If you as the reviewer have a strong opinion about how a piece of code should be written, <strong>don’t</strong> just leave a comment…</p>
+<p>Suggest the change directly using a <strong>Git patch</strong>.</p>
+<p>Everyone <strong>hates</strong> comments where a reviewer borderline asks them to rewrite the entire PR.</p>
+<p>While it is the author’s responsibility to avoid getting to that kind of situation through early communication and drafts, it brings code reviews to a grinding halt when a reviewer suggests a change that is not only complex but also requires a lot of back-and-forth discussion.</p>
+<p>Instead of back and forth comments, create a Git patch that implements your suggestion directly.</p>
+<p>Creating a Git patch is also a great <strong>sanity check</strong> — it forces you to think through whether your suggestion is practical or whether it would require the author to rewrite half the codebase.</p>
+<p>Suggesting in-line with <em>```suggestion</em> comments are great, but they don’t work for situations where the change is more complex or requires multiple files to be updated. A Git patch on the other hand, is a complete, self-contained change that the author can apply directly to their branch.</p>
+<p>Is it <strong>too much effort</strong> to create a Git patch? Then maybe your suggestion isn’t as important as you think it is. Or maybe you should just pair program with the author to implement the change together.</p>
+<hr>
+<h2 id="5-include-real-testing-instructions">5. Include Real Testing Instructions</h2>
+<p>When you submit a PR, <strong>don’t assume</strong> the reviewer knows how to test your changes. Unclear or missing testing instructions are only going to make your reviewers job more frustrating and slow down the time it takes to get your PR approved.</p>
+<p>It would be great if text-based step-by-step instructions was enough, but in more complicated apps, your text instructions won’t show “where to click” or “what to look for” in the UI.</p>
+<p>Screenshots, videos, or most ideally a step-by-step guide created using a <strong>FREE</strong> chrome extension like <a href="https://scribehow.com/">Scribe</a> or <a href="https://www.loom.com/">Loom</a>.</p>
+<p>Seriously, using a tool like Scribe only takes seconds to create a complete visual guide showing your reviewer where to click.</p>
+<p>I can’t claim that these are the best two options, but they are the ones I’ve used and they’ve worked for me.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9f2EkvJ_p8Y?si=mq_RlgaGvq6tN4u7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h2 id="6-include-setup-scripts-and-test-data">6. Include Setup Scripts and Test Data</h2>
+<p>Some features rely on very specific data to be testable. Don’t assume the reviewer already has the right setup.</p>
+<p>Make it easy for them by:</p>
+<ul>
+<li>Including scripts or commands to <strong>seed test data</strong> into their environment.</li>
+<li>Sharing <strong>mock files</strong>, <strong>request bodies</strong>, or <strong>fixtures</strong> for API endpoints.</li>
+<li>Calling out any <strong>feature flags</strong> or <strong>env variables</strong> that need to be toggled.</li>
+</ul>
+<p>This reduces frustration and helps the reviewer see the same behavior you’re seeing.</p>
+<h3 id="example-seeding-local-test-data">Example: Seeding Local Test Data</h3>
+<p>If your feature requires specific data to be present, provide a script that sets it up. For example, if you’re working with a Pythin app, you might include script like this in your PR:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#F97583">from</span><span style="color:#E1E4E8"> myapp.models </span><span style="color:#F97583">import</span><span style="color:#E1E4E8"> User, Project, Task</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">user, created </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> User.objects.get_or_create(</span></span>
+<span class="line"><span style="color:#FFAB70">    email</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"reviewer@example.com"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">    defaults</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#9ECBFF">        "name"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"Code Reviewer"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#9ECBFF">        "password"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"securepassword"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">project </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> Project.objects.create(</span></span>
+<span class="line"><span style="color:#FFAB70">    name</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"Test Project for Review"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">    owner</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">user</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">for</span><span style="color:#E1E4E8"> i </span><span style="color:#F97583">in</span><span style="color:#79B8FF"> range</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8">):</span></span>
+<span class="line"><span style="color:#E1E4E8">    Task.objects.create(</span></span>
+<span class="line"><span style="color:#FFAB70">        title</span><span style="color:#F97583">=</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"Sample Task #</span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">i </span><span style="color:#F97583">+</span><span style="color:#79B8FF"> 1}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">        project</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">project,</span></span>
+<span class="line"><span style="color:#FFAB70">        completed</span><span style="color:#F97583">=</span><span style="color:#79B8FF">False</span></span>
+<span class="line"><span style="color:#E1E4E8">    )</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">print</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"✅ Created test project and tasks for </span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">user.email</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+<p>This gives your reviewer an environment that mirrors yours, without needing to guess what to create or click.</p>
+<h3 id="example-sample-api-request-body">Example: Sample API Request Body</h3>
+<p>If you’re building or modifying an endpoint, include a sample payload the reviewer can send via Postman, <code>curl</code>, or whatever tool they prefer:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#E1E4E8">POST /api/v</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">/invite</span></span>
+<span class="line"><span style="color:#E1E4E8">Content-Type: application/json</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#79B8FF">  "emails"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"alice@example.com"</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">"bob@example.com"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#79B8FF">  "role"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"editor"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">  "project_id"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"proj_1234"</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<p>You can even go a step further and include a ready-to-use curl command:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">curl</span><span style="color:#79B8FF"> -X</span><span style="color:#9ECBFF"> POST</span><span style="color:#9ECBFF"> http://localhost:3000/api/v1/invite</span><span style="color:#79B8FF"> \</span></span>
+<span class="line"><span style="color:#79B8FF">  -H</span><span style="color:#9ECBFF"> "Content-Type: application/json"</span><span style="color:#79B8FF"> \</span></span>
+<span class="line"><span style="color:#79B8FF">  -d</span><span style="color:#9ECBFF"> '{</span></span>
+<span class="line"><span style="color:#9ECBFF">    "emails": ["alice@example.com", "bob@example.com"],</span></span>
+<span class="line"><span style="color:#9ECBFF">    "role": "editor",</span></span>
+<span class="line"><span style="color:#9ECBFF">    "project_id": "proj_1234"</span></span>
+<span class="line"><span style="color:#9ECBFF">  }'</span></span>
+<span class="line"></span></code></pre>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>By adopting these practices, you can make code reviews faster, more constructive, and less frustrating for everyone involved. They help ensure that feedback is actionable, clear, and focused on improving the code rather than just nitpicking.</p>
+<p>These techniques have worked well for me and the teams I’ve worked with, and I hope they help you too. If you have any other tips or practices that have worked for you, I’d love to hear them!</p>
+<hr>
+<br>
+<p><em>Want advice or just interested in chatting? Feel free to book a chat with me <a href="https://calendly.com/matthewmacraebovell/chats">here</a> to discuss career stuff, jobs searching, resumes, etc.</em></p>  <div> <div></div> </div> </div> </div> </div>    </body>
