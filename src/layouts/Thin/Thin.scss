@@ -51,11 +51,13 @@
     padding: 0;
     font-size: inherit;
     color: inherit;
+    white-space: pre-wrap; /* wraps lines */
+    word-break: break-word; /* optional: breaks long words */
   }
 
   /* Style <pre> blocks rendered by Astro's code highlighter */
   .astro-code {
-    background-color: #f9fafb !important;
+    //background-color: #f9fafb !important;
     color: #111827 !important;
     border-radius: 0.5rem;
     padding: 1rem 1.25rem;
@@ -67,10 +69,16 @@
     box-shadow: none;
   }
 
-  /* Optional: neutralize extra styling that may come from themes */
-  .astro-code code {
-    background: none !important;
-    color: inherit !important;
-    padding: 0;
+  .astro-code[data-language="ruby"] {
+    background-color: #000000;
+    color: #111827;
+    border-left-color: #d1d5db;
+  }
+
+  /* Text-specific style: white background, still styled */
+  .astro-code[data-language="text"] {
+    background-color: #f7f7f7 !important;
+    color: #111827;
+    border-left-color: #e5e7eb;
   }
 }
