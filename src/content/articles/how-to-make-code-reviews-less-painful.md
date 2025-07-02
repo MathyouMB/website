@@ -26,7 +26,7 @@ This post is about habits that actually move the needle: the ones that reduce ba
 
 So here they are — in no particular order:
 
----
+<br/>
 
 ## 1. Resolve Comments with Isolated Commits
 
@@ -44,9 +44,9 @@ A very common scenario is the PR author resolving a comment without actually mak
 
 The only issue with this strategy is that if you have to rebase, the ids of all your commits will be changed. However, if you feel you'll need to rebase, do it before you start resolving comments. This way, the commit ids will remain stable, and the reviewer can easily track which comments were addressed in which commits.
 
----
+<br/>
 
-## 2. Designate Blocking vs. Non-Blocking Comments
+## 2. Mark Blocking vs. Non-Blocking Comments
 
 Sometimes it's not clear whether a comment **must** be addressed before merging. This causes churn, confusion, and delay.
 
@@ -72,7 +72,7 @@ Labels like `issue`, `suggestion`, `question`, and `praise`, paired with decorat
 
 It saves hours of back-and-forth and helps keep reviews focused and respectful.
 
----
+<br/>
 
 ## 3. Communicate Where You Want Feedback
 
@@ -112,9 +112,9 @@ This helps reviewers give more relevant, high-signal feedback — and it prevent
 
 Always mark your PRs as **drafts** if they are still in progress.
 
----
+<br/>
 
-## 4. Prefer a Specific Solution? Suggest a Git Patch
+## 4. Use a Git Patch for Complex Suggestions
 
 If you as the reviewer have a strong opinion about how a piece of code should be written, **don’t** just leave a comment...
 
@@ -132,7 +132,7 @@ Suggesting in-line with _```suggestion_ comments are great, but they don't work 
 
 Is it **too much effort** to create a Git patch? Then maybe your suggestion isn't as important as you think it is. Or maybe you should just pair program with the author to implement the change together.
 
----
+<br/>
 
 ## 5. Include Real Testing Instructions
 
@@ -148,7 +148,7 @@ I can't claim that these are the best two options, but they are the ones I've us
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9f2EkvJ_p8Y?si=mq_RlgaGvq6tN4u7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
----
+<br/>
 
 ## 6. Include Setup Scripts and Test Data
 
@@ -222,7 +222,7 @@ curl -X POST http://localhost:3000/api/v1/invite \
   }'
 ```
 
----
+<br/>
 
 ## Conclusion
 
