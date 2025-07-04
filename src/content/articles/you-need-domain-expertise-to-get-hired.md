@@ -28,7 +28,7 @@ These roles might sound interchangeable, but these teams aren’t just looking f
 
 A decade ago, being a capable generalist was often enough. Today, it’s different. Developers are not in demand. Hiring managers can be more selective. And the best candidates don’t just know how to code — they already understand the landscape they’re stepping into.
 
-The reality is, if you want to work as a developer at a mid-size or large company today, domain expertise is a must.
+While smaller companies still need generalists who can wear many hats, if you want to work as a developer at a mid-size or large company today, domain expertise is a must.
 
 <br/>
 
