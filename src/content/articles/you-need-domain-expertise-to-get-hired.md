@@ -9,27 +9,38 @@ featured: false
 
 ![badger-developing](/images/articles/default.png)
 
-If you're searching for your first full-time software role, you've probably noticed that many job titles follow a familiar pattern: "Software Engineer, {Domain}".
+If you're searching for your first full-time software role, you've probably noticed many job titles follow this pattern: _"Software Engineer, {Domain}"_.
 
-It might be _Software Engineer, Payments_, _Software Engineer, Growth_, or _Software Engineer, IAM_. The list is endless.
+It might be...
+
+- Software Engineer, Payments
+- Software Engineer, Growth
+- Software Engineer, IAM
+- Software Engineer, Search
+- Software Engineer, Analytics
+- Software Engineer, Developer Tools
+- Software Engineer, Infrastructure
+- Software Engineer, Platform
+
+The list goes on.
 
 These roles might sound interchangeable, but these teams aren’t just looking for someone who can write code — they’re looking for someone who understands the **domain** their team works in and the specific problem space they’re solving.
 
 A decade ago, being a capable generalist was often enough. Today, it’s different. Developers are not in demand. Hiring managers can be more selective. And the best candidates don’t just know how to code — they already understand the landscape they’re stepping into.
 
+The reality is, if you want to work as a developer at a mid-size or large company today, domain expertise is a must.
+
 <br/>
 
 ## What is a Domain?
 
-A domain is the specific area of business or technology a team focuses on.
+A domain is the specific area of business or technology that a team focuses on. As a software engineer, your team's work will usually revolve around solving problems within that domain.
 
-As a software engineer, your team will almost always be working within a specific domain — whether it’s payments, healthcare, identity management, or any number of other specialized areas.
-
-Your team might even work in multiple domains, depending on how your organization is structured.
+Depending on your company’s structure, your team might even operate across multiple domains at once.
 
 Additionally, I like to semantically differentiate between **business domains** and **technical domains**.
 
-A **business domain** refers to the industry or sector, some examples include:
+A **business domain** refers to the industry or sector an organization operates in, some examples include:
 
 - **Healthcare**: Teams working on electronic health records, telemedicine, or patient management systems.
 - **E-commerce**: Teams building online shopping platforms, payment gateways, or inventory management systems
@@ -110,6 +121,24 @@ It's often a better solution to utilize a third-party service built by domain ex
 This means that while your experience in a common domain can open doors, more companies may opt to use third-party solutions instead of building a full system in-house.
 
 This doesn't mean companies don't need in-house expertise in these areas, But it does mean that the demand for in-house teams may not be as high as it is for more specialized domains.
+
+<br/>
+
+## Bigger Companies Hire T-Shaped Engineers
+
+A **T-shaped engineer** is someone with both depth and breadth — deep expertise in one area (the vertical bar of the "T") and a broad understanding across many others (the horizontal bar).
+
+![Image of T-shaped](/images/articles/2025/you-need-domain-expertise-to-get-hired/tshaped.jpeg)
+
+Large companies aren’t looking for the most versatile generalists — they’re looking for specialists who bring deep domain knowledge and can plug into focused teams with complex, established systems.
+
+Think about it, a company like Google probably wants the worlds best search engineers on their Search team, not generalist Software Engineers.
+
+In contrast, smaller companies tend to value generalists who can wear many hats, jump between domains, and adapt quickly to shifting needs.
+
+You'll probably notice **only mid-size and larger companies seem to hire for domain-specific roles**, while smaller startups often look for generalists who can handle a variety of tasks.
+
+Understanding where you fit on that spectrum and where you want to be will should shape how you prepare, how you talk about your experience, and which companies you target in your job search.
 
 <br/>
 
