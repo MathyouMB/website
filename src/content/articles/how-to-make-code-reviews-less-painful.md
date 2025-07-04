@@ -20,11 +20,7 @@ I’m not talking about the usual tips you see in every article like:
 - Use automated checks to catch low-hanging issues
 - Do a self-review before assigning someone else
 
-Those are all important — but I want to go deeper.
-
-This post is about habits that actually move the needle: the ones that reduce back-and-forth, make feedback easier to act on, and help everyone spend more time focused on the **code itself**.
-
-So here they are — in no particular order:
+Those are all important — but I want to go deeper. Here are my tips in no particular order:
 
 <br/>
 
