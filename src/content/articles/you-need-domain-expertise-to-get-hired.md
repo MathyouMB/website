@@ -33,7 +33,7 @@ A decade ago, being a capable generalist was often enough. Today, it’s differe
 
 Although many engineers understand the importance of highlighting common skill based knowledge like programming languages, frameworks, and tools, they often overlook the significance of highlighting common domain knowledge.
 
-I’ve found this to be a major reason **why many candidates are currently struggle to get interviews** or make it through early interview stages.
+I’ve found this to be a major reason **why many candidates are currently struggling to get interviews** or make it through early interview stages.
 
 While smaller companies still need generalists who can wear many hats, if you want to work as a developer at a mid-size or large company today, domain expertise is a must.
 
