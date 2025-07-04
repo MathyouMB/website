@@ -20,13 +20,20 @@ It might be...
 - Software Engineer, Analytics
 - Software Engineer, Developer Tools
 - Software Engineer, Infrastructure
+- Software Engineer, Marketing Automation
 - Software Engineer, Platform
+- Software Engineer, Notifications
+- Software Engineer, Ad Tech
 
 The list goes on.
 
 These roles might sound interchangeable, but these teams aren’t just looking for someone who can write code — they’re looking for someone who understands the **domain** their team works in and the specific problem space they’re solving.
 
 A decade ago, being a capable generalist was often enough. Today, it’s different. Developers are not in demand. Hiring managers can be more selective. And the best candidates don’t just know how to code — they already understand the landscape they’re stepping into.
+
+Although many engineers understand the importance of highlighting common skill based knowledge like programming languages, frameworks, and tools, they often overlook the significance of highlighting common domain knowledge.
+
+I’ve found this to be a major reason **why many candidates are currently struggle to get interviews** or make it through early interview stages.
 
 While smaller companies still need generalists who can wear many hats, if you want to work as a developer at a mid-size or large company today, domain expertise is a must.
 
