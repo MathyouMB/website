@@ -15,8 +15,6 @@ Observability is one of those skills you can’t fully learn from tutorials or j
 
 You only start to understand its value once you’ve worked on real-world systems where things actually go wrong.
 
-The hardest part? You often don’t even know what questions to ask, let alone where to look for answers.
-
 This guide aims to bridge that gap. It will give you the context you need and walk you through the kinds of questions experienced engineers ask when diagnosing system issues.
 
 <br/>
