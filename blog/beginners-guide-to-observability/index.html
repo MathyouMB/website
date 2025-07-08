@@ -1,0 +1,377 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.11.5"><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="expires" content="0"><meta http-equiv="pragma" content="no-cache"><title>How to Diagnose System Issues: A Beginner’s Guide to Observability</title><!-- Primary Meta Tags --><meta name="title" content="How to Diagnose System Issues: A Beginner’s Guide to Observability"><meta name="description" content="Observability can be intimidating for developers early in their career, this guide aims to fix that"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://matthewmacraebovell.com/images/articles/default.png"><meta property="og:title" content="How to Diagnose System Issues: A Beginner’s Guide to Observability"><meta property="og:description" content="Observability can be intimidating for developers early in their career, this guide aims to fix that"><meta property="og:image" content="https://matthewmacraebovell.com/images/articles/default.png"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://matthewmacraebovell.com/images/articles/default.png"><meta property="twitter:title" content="How to Diagnose System Issues: A Beginner’s Guide to Observability"><meta property="twitter:description" content="Observability can be intimidating for developers early in their career, this guide aims to fix that"><meta property="twitter:image" content="https://matthewmacraebovell.com/images/articles/default.png"><!-- Shynet --><noscript><img src="https://shynet-mpb4.onrender.com/ingress/345502f1-3264-4423-bd99-5313dfd8a181/pixel.gif"></noscript><script defer src="https://shynet-mpb4.onrender.com/ingress/345502f1-3264-4423-bd99-5313dfd8a181/script.js?v=1"></script><!-- <script src="MeinScript.js?v=1"></script> --><style>.Article{font-family:sohne,Helvetica Neue,Helvetica,Arial,sans-serif}.Article hr{border-color:#f5f5f52a;margin-top:.4rem;margin-bottom:.4rem}.Article__content hr{margin-top:2rem}.Article a{color:var(--theme)}.Article img{object-fit:cover;width:100%;margin:auto;margin-bottom:1rem}.Article h1{line-height:normal}.Article h1,.Article h2,.Article h3{margin-top:2rem}.Article__title{font-weight:900;margin:1rem 0;font-family:sohne,Helvetica Neue,Helvetica,Arial,sans-serif}.Article__description{font-size:1.2rem;color:#6b6b6b;font-family:sohne,Helvetica Neue,Helvetica,Arial,sans-serif;margin-bottom:1.4rem}.Article__author{display:flex;align-items:center;gap:.5rem}.Article__author img{width:2.4rem;height:2.4rem;border-radius:50%;margin-bottom:0}.Article__author__name{font-size:.8rem}.Article__author__name a{color:#000000e2;text-decoration:none}.Article__author__name a:hover{text-decoration:underline}.Article__author__date{margin-top:-.3rem;color:#6b6b6b}.Article__author__left{display:flex;align-items:center}.Article__author__right{font-size:.7rem;display:flex;flex-direction:column}.Article__author__right div{height:fit-content}
+.Thin{display:flex;flex-direction:column;overflow:hidden;margin:auto;width:33rem;padding:.25rem 1rem 1rem;min-height:80vh;letter-spacing:-.1px;font-family:Geistvf,sans-serif}@media (max-width: 768px){.Thin{width:95%;padding:1rem}}.Thin h1{font-variation-settings:"wght" 500;letter-spacing:-.1px;margin-bottom:1rem}.Thin p{margin-top:0;margin-bottom:1rem}.Thin h3{font-variation-settings:"wght" 500;letter-spacing:-.1px}.Thin pre{background-color:#f9fafb;color:#111827;padding:1rem 1.25rem;border-radius:.5rem;font-family:SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.875rem;line-height:1.5;overflow-x:auto;border-left:4px solid #d1d5db}.Thin pre code{background:none;padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;word-break:break-word}.Thin .astro-code{color:#111827!important;border-radius:.5rem;padding:1rem 1.25rem;font-size:.875rem;font-family:SFMono-Regular,Menlo,Monaco,Consolas,monospace;line-height:1.5;overflow-x:auto;border-left:4px solid #d1d5db;box-shadow:none}.Thin .astro-code[data-language=ruby]{background-color:#000;color:#111827;border-left-color:#d1d5db}.Thin .astro-code[data-language=text]{background-color:#f7f7f7!important;color:#111827;border-left-color:#e5e7eb}
+@font-face{font-family:Geist Sans;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/geist-sans-latin-400-normal.gapTbOY8.woff2) format("woff2"),url(/_astro/geist-sans-latin-400-normal.BOaIZNA2.woff) format("woff")}:root{--blue-grey-bg: rgba(11, 53, 81, .03);--black-4: rgba(0, 0, 0, .1);--black-2: rgba(0, 0, 0, .5);--black: black;--white: white;--medium-sea-green: #008d3e;--black-3: rgba(0, 0, 0, .4);--black-5: rgba(0, 0, 0, .8);--white-smoke: #f7f7f7;--red: #e91a03;--theme: #517aff;--theme-darker: #3a5fda}html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-family:sans-serif}@font-face{font-family:Geistvf;src:url(https://matthewmacraebovell.com/fonts/GeistVF.woff)}@font-face{font-family:GeistMonovf;src:url(https://matthewmacraebovell.com/fonts/GeistMonoVF.woff)}body{color:var(--black);cursor:default;background-image:none;background-position:0 0;font-family:Geistvf,sans-serif;font-size:16px;line-height:24px;padding:0;margin:0}.Navbar{margin-top:1rem;display:flex;width:98%;justify-content:flex-end;font-family:Geistvf,sans-serif;gap:1rem}@media (max-width: 768px){.Navbar{justify-content:left;margin-left:1.25rem;margin-bottom:1rem}.Navbar__desktop{display:none}}.Navbar a{text-decoration:none;color:inherit}.Navbar a:hover{text-decoration:underline}footer{text-align:center;margin-bottom:3rem;margin-top:5rem;opacity:.7}
+</style><script type="module">var o=document.cookie.split(";");for(var a=1;a<=o.length;a++){var t=o[a-1],d=t.split("=");document.cookie=d[0]+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"}window.caches.keys().then(function(e){for(let n of e)window.caches.delete(n)});const i=await window.indexedDB.databases();i.forEach(e=>{window.indexedDB.deleteDatabase(e.name)});window.localStorage.clear();window.sessionStorage.clear();
+</script></head> </html> <body>  <div class="Navbar"> <a href="/">Home</a> <a href="/projects">Projects</a> <a href="/blog">Blog</a> <a href="/presentations">Talks</a> <!-- <a
+      class="Navbar__desktop"
+      href="https://matthewshouse.notion.site/Matthew-s-House-76ebf7cf587646628078405b66cba5a3"
+      >House</a
+    > --> <a href="/pdfs/resumes/Matthew_MacRaeBovell_Resume_April2023.pdf">Resume</a> </div>  <div class="Thin">  <div class="Article"> <h1 class="Article__title">How to Diagnose System Issues: A Beginner’s Guide to Observability</h1> <div class="Article__description">Observability can be intimidating for developers early in their career, this guide aims to fix that</div> <hr> <div class="Article__author"> <div class="Article__author__left"> <img src="/images/me2.jpeg" alt="Author"> </div> <div class="Article__author__right"> <div class="Article__author__name"> <a href="/">Matthew MacRae-Bovell</a> </div> <div class="Article__author__date">July 8, 2025</div> </div> </div> <hr> <div style="margin-top: 2.5rem;"></div> <div class="Article__content">  <p><img src="/images/articles/default.png" alt="badger-developing"></p>
+<p>If you’re a developer early in your career, debugging a performance issue or finding a bug in a large distributed system can feel intimidating.</p>
+<p>Observability is one of those skills you can’t fully learn from tutorials or just reading documentation.</p>
+<p>You only start to understand its value once you’ve worked on real-world systems where things actually go wrong.</p>
+<p>The hardest part? You often don’t even know what questions to ask, let alone where to look for answers.</p>
+<p>This guide aims to bridge that gap. It will give you the context you need and walk you through the kinds of questions experienced engineers ask when diagnosing system issues.</p>
+<br>
+<h2 id="what-is-observability">What Is Observability?</h2>
+<p>Have you ever found yourself asking questions like these?</p>
+<ul>
+<li>Are errors happening in my app?</li>
+<li>Where in my code are they occurring?</li>
+<li>When did they start?</li>
+<li>Why is my app suddenly taking 12 seconds to respond?</li>
+<li>What piece of my system is slow?</li>
+</ul>
+<p>These are real questions you need to be able to answer about your software system.</p>
+<p><strong>Observability</strong> is the concept of “observing” or “watching” your system.</p>
+<p>It is the means to ask those questions and get meaningful answers, using the data your system emits.</p>
+<p>There are <strong>three</strong> kinds of data your system will emit:</p>
+<br>
+<h2 id="1-logs">1. Logs</h2>
+<p>Logs are timestamped text records that describe something your code did.</p>
+<p>They’re great for understanding what happened and when, especially during an error or edge case.</p>
+<p>Logs are essentially structured print statements — but with a key difference: they’re specially formatted so they can be filtered and searched.</p>
+<p>Instead of just dumping text into the console, logs usually include structured metadata like:</p>
+<ul>
+<li>timestamps,</li>
+<li>log levels (e.g. <code>INFO</code>, <code>ERROR</code>, <code>DEBUG</code>),</li>
+<li>service names,</li>
+<li>request IDs, or</li>
+<li>resource identifiers (e.g. user IDs, product IDs)</li>
+</ul>
+<p>This structure allows you to quickly narrow in on relevant messages when debugging.</p>
+<h3 id="example-a-payment-failure">Example: A Payment Failure</h3>
+<p>Imagine a user contacts support asking why their payment failed.</p>
+<p>Let’s imagine you have this code:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#F97583">try</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  await</span><span style="color:#B392F0"> chargeCreditCard</span><span style="color:#E1E4E8">(user.id, paymentDetails);</span></span>
+<span class="line"><span style="color:#E1E4E8">} </span><span style="color:#F97583">catch</span><span style="color:#E1E4E8"> (error) {</span></span>
+<span class="line"><span style="color:#6A737D">  // Log the error with structured metadata</span></span>
+<span class="line"><span style="color:#E1E4E8">  Logger.</span><span style="color:#B392F0">error</span><span style="color:#E1E4E8">(error.message, {</span></span>
+<span class="line"><span style="color:#E1E4E8">    event: </span><span style="color:#9ECBFF">"payment_failed"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    user_id: user.id,</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="typescript"><code><span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> chargeCreditCard</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">userId</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">paymentDetails</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">  if</span><span style="color:#E1E4E8"> (</span><span style="color:#F97583">!</span><span style="color:#E1E4E8">paymentDetails.cardNumber) {</span></span>
+<span class="line"><span style="color:#F97583">    throw</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Error</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"Invalid credit card information"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">  if</span><span style="color:#E1E4E8"> (</span><span style="color:#B392F0">isInvalidUser</span><span style="color:#E1E4E8">(userId)) {</span></span>
+<span class="line"><span style="color:#F97583">    throw</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Error</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"Invalid user ID"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> response</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> paymentService.</span><span style="color:#B392F0">charge</span><span style="color:#E1E4E8">(paymentDetails);</span></span>
+<span class="line"><span style="color:#F97583">  if</span><span style="color:#E1E4E8"> (</span><span style="color:#F97583">!</span><span style="color:#E1E4E8">response.success) {</span></span>
+<span class="line"><span style="color:#F97583">    throw</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Error</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"Payment processing failed"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">    success: </span><span style="color:#79B8FF">true</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    transactionId: </span><span style="color:#9ECBFF">"txn_123456789"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  };</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<p>You can quickly search your logs with their user ID (ex: <em>4523</em>) and find relevant entries.</p>
+<p>Let’s say we find this log entry:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>[2025-07-08T12:31:04Z] level=ERROR service=payments-api event=payment_failed user_id=4523 error="Invalid credit card information"</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>This log entry translates to JSON like this:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>{</span></span>
+<span class="line"><span>  "timestamp": "2025-07-08T12:31:04Z",</span></span>
+<span class="line"><span>  "level": "ERROR",</span></span>
+<span class="line"><span>  "service": "payments-api",</span></span>
+<span class="line"><span>  "event": "payment_failed",</span></span>
+<span class="line"><span>  "user_id": 4523,</span></span>
+<span class="line"><span>  "error": "Invalid credit card information"</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>We can now clearly see that the payment failed because the user provided invalid credit card information.</p>
+<p>Logs are great, but there are other questions that logs alone start to struggle with:</p>
+<ul>
+<li>How many times has this error occurred in the last hour?</li>
+<li>How often does it happen across all users?</li>
+<li>Is the error rate increasing over time?</li>
+</ul>
+<p>You could try to answer these with log searches — but it’s slow, hard to scale, and expensive to do across large volumes of traffic.</p>
+<p>This is where metrics come in.</p>
+<br>
+<h2 id="2-metrics">2. Metrics</h2>
+<p>Metrics are numbers that your system tracks over time.</p>
+<p>They help you see how often something is happening and whether it’s getting better or worse.</p>
+<p>They’re useful for questions like:</p>
+<ul>
+<li>How many payments failed in the last hour?</li>
+<li>How long does the /checkout page usually take to load?</li>
+<li>Is the CPU getting too high on one of our servers?</li>
+<li>Did error rates go up after the last update?</li>
+</ul>
+<p>There are two key kinds of metrics:</p>
+<ul>
+<li><strong>Counters</strong>: These track how many times something has happened. For example, the number of failed payments.</li>
+<li><strong>Gauges</strong>: These track a value at a specific point in time. For example, the average response time of your API.</li>
+</ul>
+<p>Here is an example of a <strong>counter</strong> that tracks payment failures:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="javascript"><code><span class="line"><span style="color:#F97583">try</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  await</span><span style="color:#B392F0"> chargeCreditCard</span><span style="color:#E1E4E8">(user.id, paymentDetails);</span></span>
+<span class="line"><span style="color:#E1E4E8">} </span><span style="color:#F97583">catch</span><span style="color:#E1E4E8"> (error) {</span></span>
+<span class="line"><span style="color:#6A737D">  // Increment a metric for failed payments</span></span>
+<span class="line"><span style="color:#E1E4E8">  paymentFailureCounter.</span><span style="color:#B392F0">increment</span><span style="color:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#E1E4E8">    error_type: error.message,</span></span>
+<span class="line"><span style="color:#E1E4E8">    user_id: user.id,</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<p>Here is an example of a <strong>gauge</strong> that tracks CPU usage before and after an expensive operation:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="javascript"><code><span class="line"><span style="color:#F97583">try</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6A737D">  // Capture CPU usage before the operation</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> cpuBefore</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> getCurrentCpuUsage</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#E1E4E8">  cpuUsageGauge.</span><span style="color:#B392F0">set</span><span style="color:#E1E4E8">({</span><span style="color:#9ECBFF">"before_charge"</span><span style="color:#E1E4E8">}, cpuBefore);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">  await</span><span style="color:#B392F0"> chargeCreditCard</span><span style="color:#E1E4E8">(user.id, paymentDetails);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">  // Capture CPU usage after the operation</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> cpuAfter</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> getCurrentCpuUsage</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#E1E4E8">  cpuUsageGauge.</span><span style="color:#B392F0">set</span><span style="color:#E1E4E8">({</span><span style="color:#9ECBFF">"after_charge"</span><span style="color:#E1E4E8">}, cpuAfter);</span></span>
+<span class="line"><span style="color:#E1E4E8">} </span><span style="color:#F97583">catch</span><span style="color:#E1E4E8"> (error) {</span></span>
+<span class="line"><span style="color:#F97583">  ...</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<h3 id="logs-vs-metrics">Logs vs Metrics</h3>
+<p>Here is the difference between logs and metrics:</p>
+<ul>
+<li><strong>Logs</strong> are great for investigating specific events. Example: “What happened when user 4523’s payment failed?”</li>
+<li><strong>Metrics</strong> are great for understanding trends and patterns over time. Example: “How often do payment failures happen across all users?“</li>
+</ul>
+<br>
+<h2 id="3-traces">3. Traces</h2>
+<p>Sometimes a single request moves through multiple parts of your system — the frontend, backend, third-party APIs, message queues, and more.</p>
+<p>When that request is slow or fails, it’s hard to tell <strong>where</strong> the problem happened just from logs or metrics.</p>
+<p>That’s where <strong>traces</strong> come in.</p>
+<p>A <strong>trace</strong> shows the full journey of a request through your system. It breaks the request into individual steps, called <strong>spans</strong>, and shows how long each step took.</p>
+<p>Traces help you answer questions like:</p>
+<ul>
+<li>Which part of this request took the longest?</li>
+<li>Was the backend slow, or was it waiting on a third-party API?</li>
+<li>Are some user requests consistently slower than others?</li>
+<li>Why is this request timing out, even though every service looks healthy?</li>
+</ul>
+<h3 id="example-a-slow-checkout">Example: A Slow Checkout</h3>
+<p>Imagine a user clicks “Checkout” and it takes 12 seconds to load. Your logs show the request was handled. Your metrics show no errors. But users are still unhappy.</p>
+<p>You pull up a trace and see:</p>
+<p><img src="/images/articles/2025/beginners-guide-to-observability/trace.png" alt="trace-example"></p>
+<p>It turns out the bottleneck wasn’t in your code at all — it was a slow response from a third-party payment provider. And now you know <strong>exactly where</strong> the time is going.</p>
+<p>Without traces, you’d be guessing.</p>
+<h3 id="how-traces-work">How Traces Work</h3>
+<p>Most modern tracing tools (like OpenTelemetry, Jaeger, or Datadog APM) attach a unique <strong>trace ID</strong> to each request. That ID follows the request across services and makes it possible to see the full picture.</p>
+<p>With good tracing:</p>
+<ul>
+<li>Every user request becomes traceable end-to-end</li>
+<li>You can debug complex slowdowns in seconds</li>
+<li>You can correlate logs and metrics to the exact request that triggered them</li>
+</ul>
+<br>
+<h2 id="why-you-need-all-three">Why You Need All Three</h2>
+<p>Logs, metrics, and traces each have their strengths and weaknesses:</p>
+<ul>
+<li><strong>Logs</strong> are great for investigating specific events. They provide detailed context about what happened at a particular point in time.</li>
+<li><strong>Metrics</strong> are useful for understanding trends and patterns over time. They help you see how often something is happening and whether it’s getting better or worse.</li>
+<li><strong>Traces</strong> give you visibility into the full journey of a request through your system. They help you identify bottlenecks and understand the relationships between different services.</li>
+</ul>
+<p>To really understand what’s going on in a complex system, you need all three. But each comes with trade-offs — especially when it comes to cost and performance.</p>
+<br>
+<h2 id="cost-is-a-trade-off">Cost Is a Trade-Off</h2>
+<p>Logs, metrics, and traces all generate <strong>data</strong> — and that data has to go <strong>somewhere</strong>. Whether you’re self-hosting or using a cloud platform, storing and querying observability data can get expensive.</p>
+<p>In general:</p>
+<p><strong>Logs</strong> are the most expensive to store and query because they generate a lot of data. They can quickly balloon in size, especially if you log everything at a high level of detail. To keep costs manageable, you often need to sample logs or set retention policies to delete old logs after a certain period.</p>
+<p><strong>Metrics</strong> are more lightweight and efficient to store. They usually consist of simple numerical values and metadata, so they take up less space. However, if you track a lot of different metrics, the costs can still add up.</p>
+<p><strong>Traces</strong> fall somewhere in between. They provide detailed information about request flows, but they typically generate less data than logs. However, the cost can increase significantly if you have a high volume of requests or if you trace every request in production. Most platforms sample traces by default to keep costs under control.</p>
+<p><strong>What is Sampling?</strong> Instead of storing every single log, metric, or trace, you can choose to <strong>only store a percentages</strong> of them. This reduces the amount of data you need to store and query, but it also means you might miss some important events.</p>
+<p>You will likely need to balance the level of detail you want with the costs you can afford.</p>
+<br>
+<h2 id="where-is-observability-data-stored">Where Is Observability Data Stored?</h2>
+<p>Logs, metrics, and traces each have <strong>unique read and write patterns</strong>, so they’re typically stored in different systems — each optimized for that specific kind of data.</p>
+<p>These systems are just other processes running on your computer or in the cloud — no different than the datastores you already use for your application data.</p>
+<p>Having different stores for different <strong>observability data</strong> is no different than how you might have different datastores for different <strong>application data</strong>.</p>
+<p>Ex: you might use PostgreSQL to store persistent user account data with relationships. But for fast, volatile data like session tokens or rate-limiting counters, you’d use a cache like Redis.</p>
+<p>The same logic applies here: different data types require different storage engines tailored to how that data behaves.</p>
+<h3 id="logs--log-management-systems">Logs → Log Management Systems</h3>
+<p>Logs are unstructured or semi-structured text-based records. They often contain variable fields (e.g. error messages, user IDs, stack traces), which makes them unpredictable in shape but rich in context.</p>
+<p>Log storage systems are optimized for:</p>
+<ul>
+<li>High-volume write ingestion (logs can be extremely chatty)</li>
+<li>Full-text search and filtering</li>
+<li>Fast retrieval by timestamp, log level, service name, etc.</li>
+</ul>
+<p>Popular log storage solutions include:</p>
+<ul>
+<li><a href="https://www.elastic.co/elasticsearch/">Elasticsearch (backbone of the ELK stack)</a></li>
+<li><a href="https://www.splunk.com/">Splunk</a></li>
+<li><a href="https://www.loggly.com/">Loggly</a></li>
+</ul>
+<h3 id="metrics--time-series-databases">Metrics → Time-Series Databases</h3>
+<p>Metrics are structured, numeric data points associated with a timestamp. They’re typically emitted on a regular interval and used to understand system health over time.</p>
+<p>TSDBs are optimized for:</p>
+<ul>
+<li>Efficient compression of repeated time/label/value patterns</li>
+<li>High-throughput writes</li>
+<li>Fast aggregations and rollups (e.g. “avg CPU usage over 5 min”)</li>
+</ul>
+<p>Popular time-series databases include:</p>
+<ul>
+<li><a href="https://prometheus.io/">Prometheus</a> (most widely used in cloud-native environments)</li>
+<li><a href="https://www.influxdata.com/">InfluxDB</a></li>
+<li><a href="https://graphiteapp.org/">Graphite</a></li>
+</ul>
+<h3 id="traces--distributed-tracing-systems">Traces → Distributed Tracing Systems</h3>
+<p>Traces represent the full journey of a request through a system, broken into spans that describe each step.</p>
+<p>Trace data is structured like a tree or graph, and trace systems are optimized for:</p>
+<ul>
+<li>End-to-end request correlation across services</li>
+<li>Hierarchical data storage (spans within spans)</li>
+<li>Low-latency visualization of request timelines</li>
+</ul>
+<p>Popular distributed tracing systems include:</p>
+<ul>
+<li><a href="https://www.jaegertracing.io/">Jaeger</a></li>
+<li><a href="https://zipkin.io/">Zipkin</a></li>
+<li><a href="https://www.honeycomb.io/">Honeycomb</a></li>
+</ul>
+<p>Here’s a well-structured version of the missing <strong>Instrumentation</strong> section:</p>
+<br>
+<h2 id="how-does-data-get-there-instrumentation">How Does Data Get There?: Instrumentation</h2>
+<p>Your application doesn’t automatically emit logs, metrics, or traces — you have to add code (or tooling) that collects and sends this data. That process is called instrumentation.</p>
+<p><strong>Instrumentation</strong> is just a fancy word for how your code talks to your observability tools.</p>
+<p>There are two main types of Instrumentation:</p>
+<h3 id="1-manual-instrumentation">1. <strong>Manual Instrumentation</strong></h3>
+<p>This means you write the code yourself to emit logs, metrics, or traces.</p>
+<p>Examples:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="javascript"><code><span class="line"><span style="color:#6A737D">// Log a user requesting the dashboard</span></span>
+<span class="line"><span style="color:#E1E4E8">Logger.</span><span style="color:#B392F0">info</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"Dashboard requested"</span><span style="color:#E1E4E8">, { user_id: user.id });</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">// Emit a custom metric</span></span>
+<span class="line"><span style="color:#E1E4E8">dashboardLoadCounter.</span><span style="color:#B392F0">increment</span><span style="color:#E1E4E8">({ user_id: user.id });</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">// Start a span for tracing</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> span</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> tracer.</span><span style="color:#B392F0">startSpan</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"render_dashboard"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">// (...) Do some work to render the dashboard</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">span.</span><span style="color:#B392F0">end</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"></span></code></pre>
+<p>Manual instrumentation gives you fine-grained control but takes more effort — and if you’re not careful, you might miss important signals or introduce noise.</p>
+<h3 id="2-automatic-instrumentation">2. <strong>Automatic Instrumentation</strong></h3>
+<p>Many observability platforms offer <strong>auto-instrumentation libraries</strong> that hook into common libraries and frameworks. These tools can automatically emit telemetry without you writing much code at all.</p>
+<p>A common example is using an APM (Application Performance Monitoring) library that automatically instruments your code to capture key events and metrics.</p>
+<p>An APM library or APM agent is just a piece of software that runs alongside your application and automatically collects data about its performance.</p>
+<p>In Node.js, enabling automatic tracing might look like:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="javascript"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#E1E4E8"> { </span><span style="color:#79B8FF">start</span><span style="color:#E1E4E8"> } </span><span style="color:#F97583">=</span><span style="color:#B392F0"> require</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"@opentelemetry/sdk-node"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#B392F0">start</span><span style="color:#E1E4E8">(); </span><span style="color:#6A737D">// sets up auto-instrumentation</span></span>
+<span class="line"></span></code></pre>
+<p>Auto-instrumentation is great for getting started fast, but it won’t capture <strong>business-specific events</strong> like payment failures or user behavior. That’s where manual instrumentation still matters.</p>
+<br>
+<h2 id="what-to-do-with-this-data">What To Do With This Data</h2>
+<p>Once you have logs, metrics, and traces flowing into your observability tools, you can start to make sense of it all.</p>
+<ol>
+<li><strong>Monitoring</strong>: Set up monitors to watch for anomalies and alert you when something in your system goes wrong.</li>
+<li><strong>Dashboards</strong>: Visualize key metrics and logs in real-time.</li>
+<li><strong>Search</strong>: Use full-text search to find specific log entries or trace spans.</li>
+</ol>
+<p>Using these three tools together, you can quickly answer questions like:</p>
+<ul>
+<li>What caused last night’s error spike?</li>
+<li>Does performance drop at certain times?</li>
+<li>Are some endpoints more error-prone?</li>
+<li>Are some users or regions seeing more errors?</li>
+<li>Do certain actions cause slowdowns?</li>
+<li>What service is causing the most latency?</li>
+</ul>
+<h3 id="monitors--alerts">Monitors &#x26; Alerts</h3>
+<p>A monitor is just a tool that watches your system and notifies you when something goes wrong.</p>
+<p>For Example, you might set up a monitor to alert you if:</p>
+<ul>
+<li>The error rate goes above 5% in the last 5 minutes.</li>
+<li>The average response time for the checkout page exceeds 2 seconds.</li>
+<li>The CPU usage on a critical server goes above 80% for more than 5 minutes.</li>
+</ul>
+<p>Monitors are often configured to send alerts via email, Slack, or other communication channels.</p>
+<h3 id="dashboards">Dashboards</h3>
+<p>Dashboards are visual representations of your observability data. They help you see the big picture at a glance.</p>
+<p>You can create dashboards to show:</p>
+<ul>
+<li>Key performance metrics (e.g., response times, error rates)</li>
+<li>System health indicators (e.g., CPU usage, memory consumption)</li>
+<li>Business KPIs (e.g., user signups, revenue)</li>
+</ul>
+<h3 id="search">Search</h3>
+<p>Most observability tools provide powerful search capabilities to help you find specific log entries or trace spans.</p>
+<p>You can search by:</p>
+<ul>
+<li>Keywords in log messages (e.g., “payment failed”)</li>
+<li>Metadata fields (e.g., user ID, service name)</li>
+<li>Time ranges (e.g., “show me logs from the last hour”)</li>
+</ul>
+<br>
+<h2 id="how-to-diagnose-systems-issues">How To Diagnose Systems Issues</h2>
+<p>How you diagnose systems issues depends on the kind of app you’re working on and the tools you have available.</p>
+<p>For example, you might not have access to logs, metrics, or traces in a smaller project.</p>
+<p>In a larger application, you might have access to all three, but they might be stored in different places or require different tools to access.</p>
+<p>The kinds of questions you ask will also depend on the kind of data you have available. You may even have to introduce new instrumentation to get the data you need.</p>
+<h3 id="example-scenario-slow-dashboard-load-time">Example Scenario: Slow Dashboard Load Time</h3>
+<p>Let’s imagine a simple web application with a frontend, backend, and a database.</p>
+<p>Your application is an online store and you have a dashboard that shows common statistics like total sales, active users, and recent orders.</p>
+<p>Your app is simple enough you do not have traces for the dashboard endpoint, but you do have logs and metrics.</p>
+<p>Your users report that the dashboard is taking too long to load. You even receive an alert in slack from one of your monitors that the average response time for the dashboard endpoint has exceeded 3 seconds.</p>
+<p>You need to figure out why the dashboard is slow and how to fix it.</p>
+<h3 id="step-1-check-your-metrics">Step 1: Check Your Metrics</h3>
+<p>For the endpoint <code>/dashboard</code>, you have the following metrics:</p>
+<ul>
+<li>total_duration_s: (average response time in seconds)</li>
+<li>cpu_duration_s: (average CPU time your application (ie your code) spent processing the request)</li>
+<li>db_duration_s: (average time spent waiting for the database)</li>
+</ul>
+<p>You create a simple graph visualization of the average response time for the <code>/dashboard</code> endpoint over the last 24 hours.</p>
+<p>On the x-axis, you have the time (in hours) and on the y-axis, you put total_duration_s, cpu_duration_s, and db_duration_s.</p>
+<p><img src="/images/articles/2025/beginners-guide-to-observability/before.png" alt="before-dashboard-performance"></p>
+<p>You notice that when total_duration_s spikes, so does db_duration_s, but cpu_duration_s remains relatively low.</p>
+<p>This suggests that the bottleneck is likely in <strong>the database, not in your application code.</strong></p>
+<h3 id="step-2-check-your-logs">Step 2: Check Your Logs</h3>
+<p>To confirm your suspicion, you search your logs for database queries related to <code>/dashboard</code>.</p>
+<p>You go to your log management system and search with the following query:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>event=db_query endpoint=/dashboard duration_ms>1000</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>And you find several entries like this:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>[2025-07-08T14:03:17Z] level=INFO endpoint=/dashboard event=db_query query="SELECT * FROM orders WHERE created_at > ..." duration_ms=1423 rows_returned=20384</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>This confirms that a db query is scanning and returning tens of thousands of rows — and that it consistently takes over a second.</p>
+<h3 id="step-3-optimize-the-query">Step 3: Optimize the Query</h3>
+<p>Diving into your code, you find this query:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>SELECT * FROM orders WHERE created_at > NOW() - INTERVAL '30 days'</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>You realize this query is fetching all orders from the last 30 days, which is a lot of data to process and return.</p>
+<p>You also notice that the query is not using any indexes, which is likely causing the database to do a full table scan.</p>
+<p>To optimize this, you can add an index on the <code>created_at</code> column of the <code>orders</code> table. This will allow the database to quickly find the relevant rows without scanning the entire table.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>CREATE INDEX idx_orders_recent ON orders(created_at) WHERE created_at > NOW() - INTERVAL '30 days';</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>You also further optimize the query by only selecting the columns you actually need for the dashboard, rather than using</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>SELECT total_price FROM orders WHERE created_at > NOW() - INTERVAL '30 days'</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>This reduces the amount of data the database has to process and return, further improving performance.</p>
+<h3 id="step-4-deploy-and-monitor">Step 4: Deploy and Monitor</h3>
+<p>After making the changes, you deploy the updated code and look at your graph visualization again.</p>
+<p>You notice that the average response time for the <code>/dashboard</code> endpoint has dropped from 5 seconds to around 0.5 seconds.</p>
+<p><img src="/images/articles/2025/beginners-guide-to-observability/after.png" alt="after-dashboard-performance"></p>
+<p>Congratulations! You’ve successfully diagnosed and fixed a performance issue using observability data.</p>
+<p>You’ll notice that there is still a correlation between total_duration_s and db_duration_s, but the average response time is now much lower.</p>
+<p>You could continue to optimize the database query further, but for now, the dashboard is performing well enough.</p>
+<br>
+<h2 id="conclusion">Conclusion</h2>
+<p>Observability is a powerful tool for diagnosing and fixing issues in your software systems.</p>
+<p>It’s definitely not one that is easily learned by just “following a tutorial” or “reading a book”. It requires a significant amount of context with both the tools your using and the systems you’re working with to be effective.</p>
+<p>It’s a skill I struggled to learn and I find many early in their career shy away from because they feel overwhelmed by the context needed to complete these kinds of tasks.</p>
+<p>I hope this guide has helped you understand the basics of observability and how to use it to diagnose system issues.</p>
+<p>If you want to learn more about observability, I personally found reading the <a href="https://opentelemetry.io/docs/">OpenTelemetry Documentation</a> to be a great resource. It covers the concepts in more detail and presents it in an order that made sense to my brain.</p>
+<hr>
+<br>
+<p><em>Want advice or just interested in chatting? Feel free to book a chat with me <a href="https://calendly.com/matthewmacraebovell/chats">here</a> to discuss career stuff, jobs searching, resumes, etc.</em></p>  <div> <div></div> </div> </div> </div> </div>    </body>
