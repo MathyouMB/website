@@ -4,7 +4,7 @@ description: "Observability can be intimidating for developers early in their ca
 date: 2025-07-08
 image: "/images/articles/default.png"
 draft: false
-featured: true
+featured: false
 ---
 
 ![badger-developing](/images/articles/default.png)
