@@ -2,16 +2,16 @@
 title: "How to Make Code Reviews Faster and Less Painful"
 description: "Actual ways to make code reviews less frustrating, giving you more time to focus on the code itself"
 date: 2025-07-02
-image: "/images/articles/default.png"
+image: "/images/articles/2025/how-to-make-code-reviews-less-painful/cover.png"
 draft: false
 featured: false
 ---
 
-![badger-developing](/images/articles/default.png)
+![Code Review](/images/articles/2025/how-to-make-code-reviews-less-painful/cover.png)
 
 After working with dozens of teams across all kinds of organizations, I’m still surprised by how wildly **inconsistent** code review practices can be.
 
-Over the years, I’ve picked up a handful of techniques that make reviews faster, clearer, and far less painful — and honestly, some of them feel so obvious that I’m baffled they’re not standard everywhere.
+Over the years, I’ve picked up a handful of techniques that make reviews faster, clearer, and far less painful and honestly, some of them feel so obvious that I’m baffled they’re not standard everywhere.
 
 I’m not talking about the usual tips you see in every article like:
 
@@ -20,7 +20,7 @@ I’m not talking about the usual tips you see in every article like:
 - Use automated checks to catch low-hanging issues
 - Do a self-review before assigning someone else
 
-Those are all important — but I want to go deeper. Here are my tips in no particular order:
+Those are all important, but I want to go deeper. Here are my tips in no particular order:
 
 <br/>
 
