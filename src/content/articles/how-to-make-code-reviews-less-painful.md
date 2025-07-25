@@ -4,7 +4,7 @@ description: "Actual ways to make code reviews less frustrating, giving you more
 date: 2025-07-02
 image: "/images/articles/2025/how-to-make-code-reviews-less-painful/cover.png"
 draft: false
-featured: false
+featured: true
 ---
 
 ![Code Review](/images/articles/2025/how-to-make-code-reviews-less-painful/cover.png)
