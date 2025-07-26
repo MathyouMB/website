@@ -1,5 +1,5 @@
 ---
-title: "How to Make Code Reviews Faster and Less Painful"
+title: "Code Review Strategies Every Team Should Be Using"
 description: "Actual ways to make code reviews less frustrating, giving you more time to focus on the code itself"
 date: 2025-07-02
 image: "/images/articles/2025/how-to-make-code-reviews-less-painful/cover.png"
