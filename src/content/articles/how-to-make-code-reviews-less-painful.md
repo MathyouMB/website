@@ -160,7 +160,7 @@ This reduces frustration and helps the reviewer see the same behavior you’re s
 
 ### Example: Seeding Local Test Data
 
-If your feature requires specific data to be present, provide a script that sets it up. For example, if you’re working with a Pythin app, you might include script like this in your PR:
+If your feature requires specific data to be present, provide a script that sets it up. For example, if you’re working with a Python app, you might include script like this in your PR:
 
 ```python
 from myapp.models import User, Project, Task
