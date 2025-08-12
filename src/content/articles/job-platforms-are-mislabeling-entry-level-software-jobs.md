@@ -27,7 +27,7 @@ So what’s actually going on? What is entry-level in software? And why are so m
 
 In software, "internships", "new grad", and "junior" positions are what should be considered "entry-level."
 
-Entry-level is supposed to mean a job you can apply straight out of university with no experience.
+Entry-level should mean a job you can apply for straight out of university, without prior experience.
 
 However, job platforms today seem to be throwing the semantic "entry-level" at anything in the spectrum of 0-5 years of experience, depending on the company, the role, whether they factor in internships, etc.
 
@@ -83,17 +83,9 @@ This is why you'll see more postings for internships than for full-time junior r
 
 ### Not Completing Internships Is a Red Flag
 
-In Software, internships are so normalized that they are an expected part of your career path.
+In software, internships are so common they’ve become an expected step in the career path. Most universities in North America offer co-op programs, allowing students to graduate with 4–16 months of real-world experience.
 
-Most universities in North America offer co-op programs, meaning It's easy to find students graduating with 4 to 16 months of real-world experience.
-
-By the time they apply for full-time jobs, they already have what amounts to one to two years of experience, which gets them into that 1–3 years of experience barrier.
-
-meaning students often graduate with 4 to 16 months of real-world experience. By the time they apply for full-time jobs, they already have what amounts to one to two years of experience.
-
-Internships are so normalized that, for many employers, a student with no internship or co-op experience is a red flag.
-
-Companies want to see that you’ve already been tested in a real work environment.
+These days a new grad without internship or co-op experience is a red flag. Companies want reassurance that you’ve already been tested in a real work environment before they take a chance on you.
 
 ### Internships and New Grad Roles Hire on Seasonal Cycles
 
