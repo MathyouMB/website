@@ -2,18 +2,18 @@
 title: Job Platforms Are Mislabeling "Entry-Level" Software Jobs
 description: Platforms like LinkedIn are misusing the term “entry-level” frustrating job seekers in today’s tech industry
 date: 2025-07-27
-image: "/images/articles/default.png"
+image: "/images/articles/2025/job-platforms-are-mislabeling-entry-level-software-jobs/cover.png"
 draft: false
 featured: false
 ---
 
-![badger-developing](/images/articles/default.png)
+![Job Platforms Are Mislabeling Entry-Level Software Jobs](/images/articles/2025/job-platforms-are-mislabeling-entry-level-software-jobs/cover.png)
 
 I’ve lost count of how many times I’ve heard someone say:
 
 _"How is this an entry-level job if it needs experience? Shouldn’t it be open to anyone starting out?"_
 
-If a job requires 1–3 years of experience, it’s not a new grad position—it’s what most companies would consider a mid-level role.
+If a job requires 1–3 years of experience, it’s not a new grad position, it’s what most companies would consider a mid-level role.
 
 However, this confusion is not the fault of job seekers. It’s a problem with how job platforms like LinkedIn are categorizing roles.
 
@@ -107,7 +107,7 @@ If you are looking for entry level jobs in July, you're likely to find very few 
 
 ## Final Thoughts
 
-If you're struggling to land that first job, it might not be because you're underqualified—it might be because the jobs you're applying for aren’t truly entry-level to begin with.
+If you're struggling to land that first job, it might not be because you're underqualified, it might be because the jobs you're applying for aren’t truly entry-level to begin with.
 
 Want a better shot? Prioritize internships. Even post-graduation, internships remain the best path to breaking in.
 
