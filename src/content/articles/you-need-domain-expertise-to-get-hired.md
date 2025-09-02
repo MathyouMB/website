@@ -2,12 +2,12 @@
 title: Domain Knowledge Is the New Barrier to Full-Time Software Jobs
 description: To get hired, you need to understand the problem space and domain your future team operates in
 date: 2025-07-04
-image: "/images/articles/default.png"
+image: "/images/articles/2025/you-need-domain-expertise-to-get-hired/cover.png"
 draft: false
 featured: false
 ---
 
-![badger-developing](/images/articles/default.png)
+![badger-developing](/images/articles/2025/you-need-domain-expertise-to-get-hired/cover.png)
 
 If you're searching for your first full-time software role, you've probably noticed many job titles follow this pattern: _"Software Engineer, {Domain}"_.
 
@@ -27,9 +27,9 @@ It might be...
 
 The list goes on.
 
-These roles might sound interchangeable, but these teams aren’t just looking for someone who can write code — they’re looking for someone who understands the **domain** their team works in and the specific problem space they’re solving.
+These roles might sound interchangeable, but these teams aren’t just looking for someone who can write code, they’re looking for someone who understands the **domain** their team works in and the specific problem space they’re solving.
 
-A decade ago, being a capable generalist was often enough. Today, it’s different. Developers are not in demand. Hiring managers can be more selective. And the best candidates don’t just know how to code — they already understand the landscape they’re stepping into.
+A decade ago, being a capable generalist was often enough. Today, it’s different. Developers are not in demand. Hiring managers can be more selective. And the best candidates don’t just know how to code, they already understand the landscape they’re stepping into.
 
 Although many engineers understand the importance of highlighting common skill based knowledge like programming languages, frameworks, and tools, they often overlook the significance of highlighting common domain knowledge.
 
@@ -77,7 +77,7 @@ Specializing in a software domain is no different from how doctors, lawyers, or 
 
 In software, it’s the same. You’ll find engineers who focus on payments, identity management, developer tooling, etc. Each domain has its own patterns, jargon, and gotchas.
 
-It's worth noting that as a software engineer, **you likely won't specialize in just one domain** — you might even have to operate across multiple domains on the same team.
+It's worth noting that as a software engineer, **you likely won't specialize in just one domain**, you might even have to operate across multiple domains on the same team.
 
 Each domain is essentially a different system design problem, and as you gain experience, you’ll likely work in multiple domains over time.
 
@@ -85,23 +85,23 @@ Each domain is essentially a different system design problem, and as you gain ex
 
 ## The Shift Toward Domain-First Hiring
 
-Having expertise in a domain is quickly becoming a requirement for many full-time software roles — and frankly, it just makes sense.
+Having expertise in a domain is quickly becoming a requirement for many full-time software roles and frankly, it just makes sense.
 
-Imagine you’re hiring for a team that manages billing infrastructure. Would you rather hire someone who’s worked with Stripe integrations and invoice generation — or someone who’s never touched a payments system before?
+Imagine you’re hiring for a team that manages billing infrastructure. Would you rather hire someone who’s worked with Stripe integrations and invoice generation or someone who’s never touched a payments system before?
 
 Hiring someone who already understands the team's domain is often more efficient than onboarding someone from scratch and domain expertise can be just as valuable as familiarity with the tech stack.
 
 Ramp-up time is expensive and every domain has unique patterns, constraints, and expectations that can’t be learned overnight.
 
-One of the most common mistakes I see from new grads is that they talk about their internships only in terms of the tech stack they used — never the team they were on or the problem they were solving.
+One of the most common mistakes I see from new grads is that they talk about their internships only in terms of the tech stack they used, never the team they were on or the problem they were solving.
 
 <br/>
 
 ## Some Domains Open More Doors Than Others
 
-Let’s be honest — some domains are simply more in-demand than others.
+Let’s be honest, some domains are simply more in-demand than others.
 
-For example, every company needs a payments team, because every business needs to process transactions to make money. But not every company needs a team focused on gaming analytics. That doesn’t mean gaming is a bad domain — just that it’s more niche, and therefore less transferable.
+For example, every company needs a payments team, because every business needs to process transactions to make money. But not every company needs a team focused on gaming analytics. That doesn’t mean gaming is a bad domain, just that it’s more niche, and therefore less transferable.
 
 Think about it. Most modern apps need ways to:
 
@@ -133,11 +133,11 @@ This doesn't mean companies don't need in-house expertise in these areas, But it
 
 ## Bigger Companies Hire T-Shaped Engineers
 
-A **T-shaped engineer** is someone with both depth and breadth — deep expertise in one area (the vertical bar of the "T") and a broad understanding across many others (the horizontal bar).
+A **T-shaped engineer** is someone with both depth and breadth: deep expertise in one area (the vertical bar of the "T") and a broad understanding across many others (the horizontal bar).
 
 ![Image of T-shaped](/images/articles/2025/you-need-domain-expertise-to-get-hired/tshaped.jpeg)
 
-Large companies aren’t looking for the most versatile generalists — they’re looking for specialists who bring deep domain knowledge and can plug into focused teams with complex, established systems.
+Large companies aren’t looking for the most versatile generalists, they’re looking for specialists who bring deep domain knowledge and can plug into focused teams with complex, established systems.
 
 Think about it, a company like Google probably wants the worlds best search engineers on their Search team, not generalist Software Engineers.
 
