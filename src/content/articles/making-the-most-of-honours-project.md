@@ -1,19 +1,30 @@
 ---
 title: "Carleton Computer Science: Maximizing Your Honours Project"
-description: My honours project experience as well as tips and strategies for success in your own honours project
+description: What I learned from my honours project, how you can avoid common mistakes, and get more from yours
 date: 2026-01-01
 image: "/images/articles/default.png"
-draft: true
+draft: false
 featured: true
 ---
 
-![badger-developing](/images/articles/default.png)
+![blank](/images/articles/default.png)
 
-The [Honours Project / Thesis](https://carleton.ca/scs/current-students/undergraduate-students/courses-and-registration/#UG_thesis_project) has the potential to be one of the most rewarding and enriching experiences of your undergraduate degree.
+In Carleton's Computer Science program, the [Honours Project / Thesis](https://carleton.ca/scs/current-students/undergraduate-students/courses-and-registration/#UG_thesis_project) has the potential to be one of the most rewarding and enriching experiences of your undergraduate degree.
 
-Having just completed my own honours project, I wanted to share some insights and strategies as well as all of the **REAL** documents, emails, and deliverables I actually submitted to give you an example of how I made the most of this unique opportunity.
+Having just completed my own honours project, I wanted to share some insights and strategies as well as all of the **REAL** documents, emails, and deliverables I actually submitted to give you an example of how I made the most of the opportunity.
 
-To keep my personal experiences separate from general advice, I have annotated descriptions of "what I did" with ⭐ icons as what I did has flaws and may not be the best approach for everyone.
+To keep my personal experiences separate from general advice, I have annotated descriptions of "what I did" with ⭐ icons as what I did _has flaws_ and may not be the best approach for everyone.
+
+<hr/>
+
+## My Project Deliverables ⭐
+
+Don't have time to read the whole article? Here are all of the **REAL** deliverables I created for my honours project:
+
+- 💡 [Project Proposal](/pdfs/articles/2026/making-the-most-of-honours-project/proposal.pdf)
+- 📝 [Final Project Report](/pdfs/articles/2026/making-the-most-of-honours-project/report.pdf)
+- 💻 [GitHub Repository](https://github.com/MathyouMB/chaos-spec/tree/master)
+- 🎓 [SCS Undergraduate Project Repository Entry](https://report-hub.scs.carleton.ca/projectPage/2848/)
 
 <hr/>
 
@@ -22,7 +33,7 @@ To keep my personal experiences separate from general advice, I have annotated d
 - [First: Decide What You Want Out of It](#first-decide-what-you-want-out-of-it)
   <!-- - [My Motivation ⭐](#my-motivation) -->
 - [Honours Project vs. Thesis](#honours-project-vs-thesis)
-  - [Why I Chose an Honours Project ⭐](#why-i-chose-an-honours-project)
+  <!-- - [Why I Chose an Honours Project ⭐](#why-i-chose-an-honours-project) -->
 - [Coming Up With a Project Topic](#coming-up-with-a-project-topic)
   - [Before Brainstorming Ideas](#before-brainstorming-ideas)
   - [How To Brainstorm Project Ideas](#how-to-brainstorm-project-ideas)
@@ -44,6 +55,8 @@ To keep my personal experiences separate from general advice, I have annotated d
   - [Academic Tool Recommendations ⭐](#academic-tool-recommendations)
   - [My Final Report ⭐](#my-final-report)
   - [My Project Repository ⭐](#my-project-repository)
+  - [What I Learned From My Project ⭐](#what-i-learned-from-my-project)
+  - [What I Would Do Differently ⭐](#what-i-would-do-differently)
 - [Conclusion](#conclusion)
 
 <hr/>
@@ -68,7 +81,7 @@ Some example motivations include:
 
 - Getting some credit with minimal effort (I don’t recommend this one!)
 
-How you answer this question will have a big impact on how you approach the rest of the process, so take some time to reflect on what you want to get out of this experience.
+How you answer this question will impact how you approach the rest of the process.
 
 <!-- ### My Motivation ⭐
 
@@ -86,9 +99,9 @@ Generally speaking, the project is perceived to be more "applied", while the the
 
 What I wanted to throw in here is that while the project is usually implied to be practical, **_there is nothing stopping you from doing research with your honours project_** if that is what you want to do.
 
-As an example, my project ended up having having both practical and research components. By the end, I had established a "novel" software engineering technique, and also implemented a practical reference implementation to demonstrate and evaluate said novel technique.
+As an example, my project ended up having both practical and research components. As you'll see later in the article, I built a practical tool as a means of demonstrating the viability of a solution to a broader research question I was exploring.
 
-### Why I Chose an Honours Project ⭐
+<!-- ### Why I Chose an Honours Project ⭐
 
 At the time of enrolling, I was contemplating the idea of wanting to pursue a Master's degree, but at the time (September) did not have any real demonstrated research experience.
 
@@ -96,7 +109,7 @@ At Carleton, Masters applications are due in early January, meaning that if I ha
 
 Now there is no rule that says you can't apply for a Master's program without research experience, but I felt that having a sample I could show supervisors to demonstrate my research and writing abilities would strengthen my application.
 
-While I missed out on the opportunity to do the defense component of a thesis, looking back I'm happy I went with the shorter project route because in hindsight my idea had some issues which led to some burnout on my part.
+While I missed out on the opportunity to do the defense component of a thesis, looking back I'm happy I went with the shorter project route because in hindsight my idea had some issues which led to some burnout on my part. -->
 
 <hr/>
 
@@ -126,7 +139,7 @@ I'd also recommend [thinking about your goals](#first-decide-what-you-want-out-o
 
 ### My Brainstorming Process ⭐
 
-Before I reached out to my eventual supervisor, I privately brainstormed a few ideas that I thought would be interesting. 
+Before I reached out to my eventual supervisor, I privately brainstormed a few ideas that I thought would be interesting.
 
 For each idea I'd brainstormed, I made a one page document for myself with a brief description of the problem I was trying to solve and what my solution might look like.
 
@@ -152,13 +165,13 @@ ChaosSpec: An Assertion-Based Chaos Testing Framework For Distributed Systems
 
 This idea was born out of a personal pain point.
 
-During one of my internships, I was tasked with verifying that when one of our services experienced failure or significant network latency, the overall system would still meet speed and availability requirements.
+During one of my internships, I was tasked with verifying that when one of our services experienced failure or significant network latency, the overall system would still meet our speed and availability requirements.
 
 For example, say your system had a backend service that relied on a database. You might want to verify that if the database became unavailable, your backend service would still be able to handle requests gracefully without crashing or timing out.
 
 However, simulating these kinds of failures and network conditions in a controlled manner was quite difficult. My team at the time was using a tedious and error-prone manual process and I thought to myself: "There has to be a better way to do this."
 
-However, what I found was that while there were existing testing tools for this kind of problem, they mostly seemed tailored for large-scale enterprise systems, and were not very accessible for smaller teams or individual developers.
+What I found was that while there were existing testing tools for this kind of problem, they mostly seemed tailored for large-scale enterprise systems, and were not very accessible for smaller teams or individual developers.
 
 This led me to the idea of building a more lightweight and developer-friendly testing framework that could easily test these complex network conditions in a more automated way.
 
@@ -192,9 +205,9 @@ For example:
 
 - If your goal is to use this opportunity as a means of building a project you've always wanted to pursue, you should come with a more firm project proposal. If no supervisor is interested in that idea, then it may be a sign that you need to pivot your idea or pursue that project outside of the honours project framework.
 
-Lastly, as mentioned in the "topic brainstorming section", go into reaching out to potential supervisors knowing that your idea and project scope will change once you start discussing it with them. Especially if you're trying to work with a professor whose background is related to your area of interest, as they will likely have valuable insights that shape your project in a better direction.
+Lastly, as mentioned in the "topic brainstorming section", go into reaching out to potential supervisors knowing that your idea and project scope will change once you start discussing it with them. Especially if you're trying to work with a professor whose background is related to your area of interest, as they will likely shape your project in a better direction.
 
-Plenty of students will reach out to professors with one idea, but work with them to mold their idea into something more better.
+Plenty of students will reach out to professors with one idea, but work with them to mold their idea into something better.
 
 ### How I Approached My Supervisor ⭐
 
@@ -235,11 +248,21 @@ After I sent this initial email, I received a response within a few days express
 
 ### My Initial Meeting With My Supervisor ⭐
 
-During our initial meeting, we discussed my proposed ideas in more detail.
+This meeting was my first time meeting my supervisor. During our initial meeting, we discussed my proposed ideas in more detail.
 
-In this meeting we aligned on the idea of ChaosSpec, and my supervisor provided valuable feedback on how to refine the project scope and objectives.
+These were the main outcomes of this meeting were:
 
-He gave some clear direction for what questions and sections he wanted to see in the proposal which made the next steps much clearer.
+- Validate that there was mutual interest in working together
+
+- To align on the project idea that I would pursue
+
+- Determine the project scope and deliverables
+
+- Discuss what my supervisor wanted to see in the proposal
+
+We ultimately aligned on the idea of ChaosSpec, and my supervisor provided helpful feedback on how to refine the project’s scope and objectives.
+
+He also outlined the specific questions and sections he expected in the proposal, which made the next steps much clearer and easier to plan.
 
 <hr/>
 
@@ -249,7 +272,7 @@ Once you and your supervisor have aligned on a project idea, the next step is to
 
 ### What To Include in Your Proposal
 
-The SCS website says the following _"The proposal should give a clear and concise overview of the project, indicating the motivation, main objectives, equipment requirements, a description of what will be implemented, what will be tested, and what analysis will be performed on the results. It must be clear as to what is expected at the end of the project, including the deliverables."_
+The [provided guide](https://carleton.ca/scs/current-students/undergraduate-students/honours-project-and-directed-studies/honours-project-getting-started/) says the following _"The proposal should give a clear and concise overview of the project, indicating the motivation, main objectives, equipment requirements, a description of what will be implemented, what will be tested, and what analysis will be performed on the results. It must be clear as to what is expected at the end of the project, including the deliverables."_
 
 Overall, I found this description to be fairly accurate. However there are a few additional points I'd like to emphasize:
 
@@ -261,7 +284,7 @@ Overall, I found this description to be fairly accurate. However there are a few
 
 ### The Proposal Length
 
-The SCS website says that _"The proposal is usually a two-page document"_. However, my proposal that I made in Google Docs with size 11 font, pictures, tables, and code examples ended up being 6 pages long. However, I believe that if I'd made the same proposal in Latex with a small font, I'd probably be able to fit it into 2 pages.
+The [provided guide](https://carleton.ca/scs/current-students/undergraduate-students/honours-project-and-directed-studies/honours-project-getting-started/) says that _"The proposal is usually a two-page document"_. However, my proposal that I made in Google Docs with size 11 font, pictures, tables, and code examples ended up being 6 pages long. However, I believe that if I'd made the same proposal in Latex with a small font, I'd probably be able to fit it into 2 pages.
 
 The truth is that the proposal is ultimately more an exercise for you to clarify your own understanding of the project and its goals rather than a strict document that must adhere to a specific length.
 
@@ -295,7 +318,7 @@ This pivot meant that my original schedule became mostly irrelevant, but that's 
 
 Once your proposal is approved, it's time to actually start working on your project!
 
-I would say that on average I put in about 5 hours per week. With some weeks having 0 hours, and other weeks having 10+ hours. Additionally, I spent more time in the writing phase then needed because I was aiming to create a report that could be converted into a conference paper. This was my first time trying to write something of that quality, so it took me longer than it would normally take.
+I would say that on average I put in about 5 hours per week. With some weeks having 0 hours, and other weeks having 10+ hours. Additionally, I spent more time in the writing phase than needed because I was aiming to create a report that could be converted into a conference paper. This was my first time trying to write something of that quality, so it took me longer than it would normally take.
 
 The reality is that since every project is different, there is no one-size-fits-all approach to managing your time and work, so I don't really have any concrete advice that applies to everyone.
 
@@ -357,6 +380,22 @@ There isn't anything super special about the repository structure, but it's wort
 - `/evaluation`: All the logs and scripts used for evaluating the tool
 - `/example-service`: A sample distributed system used to demonstrate the tool
 
+### What I Learned From My Project ⭐
+
+Other than obviously learning a lot about the topics I was researching, I would say that this project taught me a lot about how to approach research projects in general.
+
+Simple things like how to more effectively read academic papers, how to structure a research paper, and how to evaluate the success of a research project are all skills that I developed through this experience.
+
+In trying to produce a report of publishable quality, I also learned a lot about the "game" of academic publishing, like finding the right conferences to submit to and how to navigate the peer review process.
+
+### What I Would Do Differently ⭐
+
+My biggest regret with my honours project was NOT considering how I would evaluate the success of my project from the beginning.
+
+Anyone can have a new idea or build a new tool, but to make a meaningful contribution to the field, you need to demonstrate that your idea or tool is effective in practice.
+
+Unfortunately, my idea was one that would be best evaluated through user studies with real developers, which I did not have the time or resources to conduct within the scope of my honours project.
+
 ## Conclusion
 
 Completing my honours project was one of the most rewarding experiences of my undergraduate degree.
@@ -366,3 +405,11 @@ I'd encourage anyone considering doing an honours project or thesis to take the 
 If I can manage to actually publish a paper based on my honours project, I'll be releasing a follow-up article detailing that experience as well.
 
 If you have any questions about my experience, feel free to reach out to me via email or by [booking a coffee chat!](https://calendly.com/matthewmacraebovell/chats)
+
+<hr/>
+<br/>
+
+Special thanks to <b><a href="https://people.scs.carleton.ca/~jeanpier/">Dr. Jean-Pierre Corriveau</a></b> for supervising my honours project and <b><a href="https://www.justinjzhang.com/">Justin Zhang</a></b> for giving me a lot of early advice on how to approach research in general.
+
+<hr/>
+<br/>
