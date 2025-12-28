@@ -20,7 +20,7 @@ To keep my personal experiences separate from general advice, I have annotated d
 ## Table of Contents
 
 - [First: Decide What You Want Out of It](#first-decide-what-you-want-out-of-it)
-  - [My Motivation ⭐](#my-motivation)
+  <!-- - [My Motivation ⭐](#my-motivation) -->
 - [Honours Project vs. Thesis](#honours-project-vs-thesis)
   - [Why I Chose an Honours Project ⭐](#why-i-chose-an-honours-project)
 - [Coming Up With a Project Topic](#coming-up-with-a-project-topic)
@@ -68,11 +68,13 @@ Some example motivations include:
 
 - Getting some credit with minimal effort (I don’t recommend this one!)
 
-### My Motivation ⭐
+How you answer this question will have a big impact on how you approach the rest of the process, so take some time to reflect on what you want to get out of this experience.
+
+<!-- ### My Motivation ⭐
 
 Having a background in Software Engineering and more specifically software usability and developer experience, my motivation was to better understand how software engineering research translates into practical tools, while also producing something genuinely useful for the developer community.
 
-Although I did not go into the project with the explicit goal of publishing a paper, this is something that became a possibility as I progressed and I was able to pivot my project towards a more research-oriented direction.
+Although I did not go into the project with the explicit goal of publishing a paper, this is something that became a possibility as I progressed and I was able to pivot my project towards a more research-oriented direction. -->
 
 <hr/>
 
@@ -94,7 +96,7 @@ At Carleton, Masters applications are due in early January, meaning that if I ha
 
 Now there is no rule that says you can't apply for a Master's program without research experience, but I felt that having a sample I could show supervisors to demonstrate my research and writing abilities would strengthen my application.
 
-While I missed out on the opportunity to do the defense component of a thesis, looking back I'm happy I went with the shorter project route because in hindsight my idea was one was not easy to evaluate easily which led to some burnout on my part.
+While I missed out on the opportunity to do the defense component of a thesis, looking back I'm happy I went with the shorter project route because in hindsight my idea had some issues which led to some burnout on my part.
 
 <hr/>
 
@@ -114,7 +116,7 @@ I've anecdotally spoken with many students who've reached out to professors with
 
 Firstly, I'd recommend going through the [Undergraduate Honours Projects and Theses Repository](https://report-hub.scs.carleton.ca/) page to get a sense of what kinds of projects other students have done in the past.
 
-I'd also recommend reflecting on your own interests by asking yourself questions like:
+I'd also recommend [thinking about your goals](#first-decide-what-you-want-out-of-it) by asking yourself questions like:
 
 - Is there an area of computer science that I am particularly passionate about? What unsolved problems exist in that area?
 
@@ -124,13 +126,9 @@ I'd also recommend reflecting on your own interests by asking yourself questions
 
 ### My Brainstorming Process ⭐
 
-Before I reached out to my eventual supervisor, I privately brainstormed a few ideas that I thought would be interesting. For each idea I'd brainstormed, I made a one page document for myself that outlined:
+Before I reached out to my eventual supervisor, I privately brainstormed a few ideas that I thought would be interesting. 
 
-- A brief description of the problem I was trying to solve
-
-- What _my_ solution might look like
-
-- What the deliverables might be
+For each idea I'd brainstormed, I made a one page document for myself with a brief description of the problem I was trying to solve and what my solution might look like.
 
 Here is a picture of the **REAL** document I created for myself while brainstorming:
 
@@ -152,7 +150,7 @@ ChaosSpec: An Assertion-Based Chaos Testing Framework For Distributed Systems
 
 ![Ideas](/images/articles/2026/making-the-most-of-honours-project/logo.png)
 
-This idea was born out of a personal pain point I experienced during one of my internships, and I saw an opportunity to build something that could benefit other developers facing similar challenges.
+This idea was born out of a personal pain point.
 
 During one of my internships, I was tasked with verifying that when one of our services experienced failure or significant network latency, the overall system would still meet speed and availability requirements.
 
@@ -208,7 +206,7 @@ Here is a _very slightly trimmed down version_ of the email I sent him:
 
 Dear Professor Corriveau,
 
-My name is Matthew, and I’m an undergrad student with a deep interest in software best practices, developer experience, and distributed system design.
+My name is Matthew and I’m an undergrad student with a deep interest in software best practices, developer experience, and distributed system design.
 
 I’m reaching out to see if you might be open to supervising my honours thesis.
 
