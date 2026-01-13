@@ -91,7 +91,7 @@ Although I did not go into the project with the explicit goal of publishing a pa
 
 <hr/>
 
-## Honours Project vs. Thesis
+<!-- ## Honours Project vs. Thesis
 
 The School of Computer Science website already does a good job of explaining the difference, but in short: The project is worth 0.5 credits and 1 term long, while the thesis is worth 1.0 credit, 2 terms long, and requires a CGPA of 9.0 or higher to enroll.
 
@@ -99,7 +99,7 @@ Generally speaking, the project is perceived to be more "applied", while the the
 
 What I wanted to throw in here is that while the project is usually implied to be practical, **_there is nothing stopping you from doing research with your honours project_** if that is what you want to do.
 
-As an example, my project ended up having both practical and research components. As you'll see later in the article, I built a practical tool as a means of demonstrating the viability of a solution to a broader research question I was exploring.
+As an example, my project ended up having both practical and research components. As you'll see later in the article, I built a practical tool as a means of demonstrating the viability of a solution to a broader research question I was exploring. -->
 
 <!-- ### Why I Chose an Honours Project ⭐
 
