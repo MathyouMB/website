@@ -9,6 +9,9 @@ const articlesCollection = defineCollection({
     date: z.date(),
     draft: z.boolean(),
     featured: z.boolean(),
+    template: z.enum(["Article", "ArticleV2"]).default("Article"),
+    titleFontSize: z.string().default("2.5rem"),
+    previewFontSize: z.string().default("1.18rem"),
   }),
 });
 

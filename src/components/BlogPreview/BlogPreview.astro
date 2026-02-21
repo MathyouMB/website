@@ -6,9 +6,10 @@ interface Props {
   title: string;
   description: string;
   image: string;
+  previewFontSize?: string;
 }
 
-const { date, title, description, image } = Astro.props;
+const { date, title, description, image, previewFontSize } = Astro.props;
 const formattedDate = new Date(date).toLocaleDateString("en-US", {
   year: "numeric",
   month: "long",
@@ -21,7 +22,9 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
     <div class="BlogPreview__date">
       {formattedDate}
     </div>
-    <div class="BlogPreview__title">{title}</div>
+    <div class="BlogPreview__title" style={`font-size: ${previewFontSize}`}>
+      {title}
+    </div>
     <div class="BlogPreview__description">
       {description}
     </div>

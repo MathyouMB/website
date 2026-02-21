@@ -1,0 +1,44 @@
+---
+import { default as Layout } from "../../layouts/Thin/Thin.astro";
+import Main from "../Main/Main.astro";
+import "./ArticleV2.scss";
+
+interface Props {
+  title: string;
+  description: string;
+  date: string;
+  imageUrl: string;
+  titleFontSize?: string;
+}
+
+const { title, description, date, imageUrl, titleFontSize } = Astro.props;
+---
+
+<Main title={title} description={description} imageUrl={imageUrl}>
+  <div class="ArticleV2">
+    <h1 class="ArticleV2__title" style={`font-size: ${titleFontSize}`}>
+      {title}
+    </h1>
+    <div class="ArticleV2__description">{description}</div>
+    <hr class="ArticleV2__hr" />
+    <div class="ArticleV2__author">
+      <div class="ArticleV2__author__left">
+        <img src="/images/me2.jpeg" alt="Author" />
+      </div>
+      <div class="ArticleV2__author__right">
+        <div class="ArticleV2__author__name">
+          <a href="/">Matthew MacRae-Bovell</a>
+        </div>
+        <div class="ArticleV2__author__date">{date}</div>
+      </div>
+    </div>
+    <hr class="ArticleV2__hr" style="margin-top:0.23rem" />
+    <div style="margin-top: 2.5rem;"></div>
+    <div class="ArticleV2__content">
+      <slot />
+      <div>
+        <div></div>
+      </div>
+    </div>
+  </div></Main
+>
