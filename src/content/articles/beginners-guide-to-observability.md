@@ -1,16 +1,18 @@
 ---
 title: "A Beginner's Guide to Observability: Logs, Metrics, and Traces Explained"
 description: "Observability can be intimidating for developers early in their career, this guide aims to fix that"
-date: 2025-07-08
-image: "/images/articles/2025/beginners-guide-to-observability/cover.png"
+date: 2026-02-21
+image: "/images/articles/2026/beginners-guide-to-observability/cover.png"
 template: "ArticleV2"
 titleFontSize: "2.4rem"
-previewFontSize: "1.135rem"
+previewFontSize: "1.1rem"
 draft: false
-featured: false
+featured: true
 ---
 
-![bird-observing](/images/articles/2025/beginners-guide-to-observability/cover.png)
+![bird-observing](/images/articles/2026/beginners-guide-to-observability/cover.png)
+
+<div style="margin-top: 2.5rem;"></div>
 
 If you're a developer early in your career, debugging a performance issue or finding a bug in a large distributed system can feel intimidating.
 
@@ -209,7 +211,7 @@ Imagine a user clicks “Checkout” and it takes 12 seconds to load. Your logs 
 
 You pull up a trace and see:
 
-![trace-example](/images/articles/2025/beginners-guide-to-observability/trace.png)
+![trace-example](/images/articles/2026/beginners-guide-to-observability/trace.png)
 
 It turns out the bottleneck wasn’t in your code at all, it was a slow response from a third-party payment provider. And now you know **exactly where** the time is going.
 
@@ -444,7 +446,7 @@ You create a simple graph visualization of the average response time for the `/d
 
 On the x-axis, you have the time (in hours) and on the y-axis, you put total_duration_s, cpu_duration_s, and db_duration_s.
 
-![before-dashboard-performance](/images/articles/2025/beginners-guide-to-observability/before.png)
+![before-dashboard-performance](/images/articles/2026/beginners-guide-to-observability/before.png)
 
 You notice that when total_duration_s spikes, so does db_duration_s, but cpu_duration_s remains relatively low.
 
@@ -500,7 +502,7 @@ After making the changes, you deploy the updated code and look at your graph vis
 
 You notice that the average response time for the `/dashboard` endpoint has dropped from 5 seconds to around 0.5 seconds.
 
-![after-dashboard-performance](/images/articles/2025/beginners-guide-to-observability/after.png)
+![after-dashboard-performance](/images/articles/2026/beginners-guide-to-observability/after.png)
 
 Congratulations! You’ve successfully diagnosed and fixed a performance issue using observability data.
 

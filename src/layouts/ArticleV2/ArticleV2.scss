@@ -3,7 +3,7 @@
 
 :root {
   --article-max: 40rem; //740px;
-  --article-pad-x: 24px;
+  --article-pad-x: 2.25rem; //36px;
 
   --text: #111827;
   --muted: #6b7280;
@@ -23,7 +23,7 @@
   color: var(--text);
   max-width: var(--article-max);
   margin: 0 auto;
-  padding: 3.25rem var(--article-pad-x) 5rem;
+  padding: 2rem var(--article-pad-x) 5rem;
 
   /* Nice reading rhythm */
   line-height: 1.65;
@@ -123,9 +123,9 @@
 
 /* Content typography */
 .ArticleV2__content {
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1.125rem;
-  line-height: 1.8;
+  line-height: 1.5;
 
   /* Make headings feel Medium-like */
   h1,
@@ -135,7 +135,7 @@
     font-family: var(--sans);
     letter-spacing: -0.01em;
     line-height: 1.25;
-    margin: 2.2rem 0 0.8rem;
+    margin: 2.5rem 0 0.8rem;
     text-wrap: balance;
   }
 
@@ -278,5 +278,106 @@
 @media (prefers-reduced-motion: reduce) {
   * {
     scroll-behavior: auto !important;
+  }
+}
+
+/* Layout: content + sticky TOC rail */
+.ArticleV2__body {
+  position: relative;
+}
+
+/* Fixed TOC on the right */
+.ArticleV2__toc {
+  position: fixed;
+  right: 2.25rem;
+  top: 9.5rem; /* tweak based on your header height */
+  width: 16rem;
+
+  max-height: calc(100vh - 12rem);
+  overflow: auto;
+
+  padding: 0.75rem 0.75rem 0.75rem 0.9rem;
+  border-left: 1px solid rgba(17, 24, 39, 0.08);
+
+  font-family: var(--sans);
+  color: var(--muted);
+
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+
+  z-index: 50;
+}
+
+.ArticleV2__toc.is-hidden {
+  display: none;
+}
+
+.ArticleV2__toc__title {
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(17, 24, 39, 0.55);
+  margin-bottom: 0.6rem;
+}
+
+.ArticleV2__toc__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ArticleV2__toc__item {
+  padding: 0.15rem 0;
+}
+
+.ArticleV2__toc__item--l2 .ArticleV2__toc__link {
+  padding-left: 0;
+  font-weight: 550;
+}
+
+.ArticleV2__toc__item--l3 .ArticleV2__toc__link {
+  padding-left: 0.75rem;
+  font-weight: 450;
+}
+
+.ArticleV2__toc__item--l4 .ArticleV2__toc__link {
+  padding-left: 1.35rem;
+  font-weight: 450;
+}
+
+.ArticleV2__toc__link {
+  display: block;
+  font-size: 0.92rem;
+  line-height: 1.25;
+
+  color: rgba(17, 24, 39, 0.62);
+  text-decoration: none;
+
+  border-radius: 8px;
+  padding: 0.3rem 0.4rem;
+
+  &:hover {
+    color: rgba(17, 24, 39, 0.82);
+    background: rgba(17, 24, 39, 0.04);
+  }
+
+  &.is-active {
+    color: rgba(17, 24, 39, 0.92);
+    background: rgba(17, 24, 39, 0.06);
+  }
+}
+
+/* Prevent overlap: give article room on the right on wide screens */
+@media (min-width: 1100px) {
+  //   .ArticleV2 {
+  //     padding-right: calc(var(--article-pad-x) + 18rem);
+  //   }
+}
+
+/* Hide TOC on smaller screens */
+@media (max-width: 1099px) {
+  .ArticleV2__toc {
+    display: none;
   }
 }
