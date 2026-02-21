@@ -1,35 +1,24 @@
 ---
 import { getCollection } from "astro:content";
-import { default as Layout } from "../layouts/Thin/Thin.astro";
-import EmailSubscribe from "../components/EmailSubscribe/EmailSubscribe.astro";
-import BlogPreview from "../components/BlogPreview/BlogPreview.astro";
-import "./blog.scss";
+import BlogCategory from "../layouts/BlogCategory/BlogCategory.astro";
 
 const articles = await getCollection("articles");
 const nonDraftArticles = articles.filter((article) => !article.data.draft);
 const sortedArticles = nonDraftArticles.sort((a, b) => {
   return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
 });
+
+const featuredArticles = sortedArticles.filter((article) => {
+  return article.data.featured;
+});
+
+const featureArticle =
+  featuredArticles.length > 0 ? featuredArticles[0] : sortedArticles[0];
 ---
 
-<Layout title="Blog">
-  <h1>Blog</h1>
-  <div style="margin-top: 0.5rem"></div>
-  <EmailSubscribe placeholder="Receive blog updates..." />
-  <div style="margin-top: 1.5rem"></div>
-  <div class="Blog__items">
-    {
-      sortedArticles.map((article) => (
-        <a href={`/blog/${article.slug}`}>
-          <BlogPreview
-            date={article.data.date}
-            title={article.data.title}
-            description={article.data.description}
-            image={article.data.image}
-            previewFontSize={article.data.previewFontSize}
-          />
-        </a>
-      ))
-    }
-  </div>
-</Layout>
+<BlogCategory
+  title="Blog"
+  description="Thoughts on software development, careers, and more."
+  articles={sortedArticles}
+  featuredArticle={featureArticle}
+/>
