@@ -2,12 +2,12 @@
 title: "How to Diagnose System Issues: A Beginner’s Guide to Observability"
 description: "Observability can be intimidating for developers early in their career, this guide aims to fix that"
 date: 2025-07-08
-image: "/images/articles/default.png"
+image: "/images/articles/2025/beginners-guide-to-observability/cover.png"
 draft: false
 featured: false
 ---
 
-![badger-developing](/images/articles/default.png)
+![bird-observing](/images/articles/2025/beginners-guide-to-observability/cover.png)
 
 If you're a developer early in your career, debugging a performance issue or finding a bug in a large distributed system can feel intimidating.
 

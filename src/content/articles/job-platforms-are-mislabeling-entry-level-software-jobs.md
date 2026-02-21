@@ -3,7 +3,7 @@ title: Job Platforms Are Mislabeling "Entry-Level" Software Jobs
 description: Platforms like LinkedIn are misusing the term “entry-level” frustrating job seekers in today’s tech industry
 date: 2025-07-27
 image: "/images/articles/2025/job-platforms-are-mislabeling-entry-level-software-jobs/cover.png"
-draft: false
+draft: true
 featured: false
 ---
 

@@ -3,7 +3,7 @@ title: Domain Knowledge Is the New Barrier to Full-Time Software Jobs
 description: To get hired, you need to understand the problem space and domain your future team operates in
 date: 2025-07-04
 image: "/images/articles/2025/you-need-domain-expertise-to-get-hired/cover.png"
-draft: false
+draft: true
 featured: false
 ---
 
