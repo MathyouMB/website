@@ -5,9 +5,10 @@ interface Props {
   title: string;
   description?: string;
   imageUrl?: string;
+  styleOverride?: string;
 }
 
-const { title, description, imageUrl } = Astro.props;
+const { title, description, imageUrl, styleOverride } = Astro.props;
 const defaultDescription =
   description || "Matthew MacRae Bovell's personal website";
 
@@ -92,7 +93,7 @@ const production = true;
     </script>
   </head>
 </html>
-<body>
+<body style={styleOverride ? `${styleOverride}` : undefined}>
   <slot />
 </body>
 
