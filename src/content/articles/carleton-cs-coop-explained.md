@@ -5,6 +5,7 @@ date: 2024-08-24
 image: "/images/articles/2024/carleton-cs-coop-explained/cover.png"
 draft: false
 featured: true
+template: "ArticleV2"
 ---
 
 ![raven-with-briefcase](/images/articles/2024/carleton-cs-coop-explained/cover.png)
@@ -355,11 +356,9 @@ Carleton's co-op program could greatly improve its student experience by revisin
 Despite these criticisms, in the current challenging job market, computer science students with no work experience should still consider starting with the co-op program to gain initial industry exposure. However, they should be prepared to navigate the system strategically and consider transitioning to independent job searches as they gain experience and confidence.
 
 <hr/>
-<br/>
 
 Special thanks to <b><a href="https://rkempe.ca/about">Rebecca Kempe</a></b> for helping edit and improve this article!
 
 <hr/>
-<br/>
 
 _Want advice or just interested in chatting? Feel free to book a chat with me [here](https://calendly.com/matthewmacraebovell/chats) to discuss career stuff, jobs searching, resumes, etc._
