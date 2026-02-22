@@ -13,6 +13,7 @@ interface Post {
   tags: string[];
   imageUrl: string;
   featured?: boolean;
+  slug?: string;
 }
 
 interface Props {
@@ -46,6 +47,7 @@ const toPost = (article: any): Post => ({
   tags: article?.data?.tags ?? [],
   imageUrl: article?.data?.image ?? "/images/default-blog.png",
   featured: Boolean(article?.data?.featured),
+  slug: article?.slug,
 });
 
 const featuredPost: Post | null = featuredArticle
@@ -84,23 +86,27 @@ const allPosts: Post[] = articles
     <section class="BlogCategory__mobileList">
       {
         featuredPost && (
-          <BlogPreview
-            title={featuredPost.title}
-            description={featuredPost.description}
-            date={new Date(featuredPost.date)}
-            image={featuredPost.imageUrl}
-          />
+          <a href={`/blog/${featuredPost.slug}`}>
+            <BlogPreview
+              title={featuredPost.title}
+              description={featuredPost.description}
+              date={new Date(featuredPost.date)}
+              image={featuredPost.imageUrl}
+            />
+          </a>
         )
       }
 
       {
         allPosts.map((post) => (
-          <BlogPreview
-            title={post.title}
-            description={post.description}
-            date={new Date(post.date)}
-            image={post.imageUrl}
-          />
+          <a href={`/blog/${post.slug}`}>
+            <BlogPreview
+              title={post.title}
+              description={post.description}
+              date={new Date(post.date)}
+              image={post.imageUrl}
+            />
+          </a>
         ))
       }
     </section>
