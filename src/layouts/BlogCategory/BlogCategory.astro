@@ -87,11 +87,8 @@ const allPosts: Post[] = articles
           <BlogPreview
             title={featuredPost.title}
             description={featuredPost.description}
-            date={featuredPost.date}
-            href={featuredPost.href}
+            date={new Date(featuredPost.date)}
             image={featuredPost.imageUrl}
-            tags={featuredPost.tags}
-            featured={true}
           />
         )
       }
@@ -101,10 +98,8 @@ const allPosts: Post[] = articles
           <BlogPreview
             title={post.title}
             description={post.description}
-            date={post.date}
-            href={post.href}
+            date={new Date(post.date)}
             image={post.imageUrl}
-            tags={post.tags}
           />
         ))
       }
