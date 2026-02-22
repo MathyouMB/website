@@ -3,6 +3,7 @@ import Main from "../Main/Main.astro";
 import "./BlogCategory.scss";
 
 import EmailSubscribe from "../../components/EmailSubscribe/EmailSubscribe.astro";
+import BlogPreview from "../../components/BlogPreview/BlogPreview.astro";
 
 interface Post {
   title: string;
@@ -43,7 +44,6 @@ const toPost = (article: any): Post => ({
     : "",
   href: article?.slug ? `/blog/${article.slug}` : "#",
   tags: article?.data?.tags ?? [],
-  // your collection uses `data.image` (from the log), not `imageUrl`
   imageUrl: article?.data?.image ?? "/images/default-blog.png",
   featured: Boolean(article?.data?.featured),
 });
@@ -52,56 +52,68 @@ const featuredPost: Post | null = featuredArticle
   ? toPost(featuredArticle)
   : null;
 
-// Filter featured out of grid by slug if present
 const allPosts: Post[] = articles
   .filter((a) => !featuredArticle?.slug || a.slug !== featuredArticle.slug)
   .map(toPost);
 ---
 
-<Main title={title} description={description} imageUrl={imageUrl}>
-  <!-- styleOverride="background-color: lab(98.2539% -.108749 -.74997);"
-  styleOverride="background-color: lab(98.2539% -.108749 -.74997);" -->
-  <!-- <div
-    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"
-  >
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/5/59/Worm_Holes%2C_By_OmniDaily.gif"
-      alt="Worm Holes"
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0.02;"
-    />
-  </div> -->
+<Main
+  title={title}
+  description={description}
+  imageUrl={imageUrl}
+  styleOverride="background-color: lab(98.2539% -.108749 -.74997);"
+>
   <div class="BlogCategory">
     <header class="BlogCategory__header">
       <div class="BlogCategory__headerText">
         <h1 class="BlogCategory__title">{title}</h1>
         {description && <p class="BlogCategory__subtitle">{description}</p>}
       </div>
-<!-- 
+
+      {/* Optional: enable when you want it back */}
+      {
+        /*
       <div style="max-width: 30rem; width: 100%;">
         <EmailSubscribe placeholder="Receive blog updates..." />
-      </div> -->
-
-      <!-- <form class="BlogCategory__subscribe" action="#" method="post">
-        <label class="BlogCategory__subscribeField">
-          <span class="BlogCategory__mailIcon" aria-hidden="true">✉︎</span>
-          <input
-            class="BlogCategory__input"
-            type="email"
-            name="email"
-            placeholder="Receive blog updates..."
-            autocomplete="email"
-          />
-        </label>
-
-        <button class="BlogCategory__button" type="submit">
-          Subscribe
-        </button>
-      </form> -->
+      </div>
+      */
+      }
     </header>
 
+    {/* Mobile-only list (Featured + All) rendered as BlogPreview */}
+    <section class="BlogCategory__mobileList">
+      {
+        featuredPost && (
+          <BlogPreview
+            title={featuredPost.title}
+            description={featuredPost.description}
+            date={featuredPost.date}
+            href={featuredPost.href}
+            image={featuredPost.imageUrl}
+            tags={featuredPost.tags}
+            featured={true}
+          />
+        )
+      }
+
+      {
+        allPosts.map((post) => (
+          <BlogPreview
+            title={post.title}
+            description={post.description}
+            date={post.date}
+            href={post.href}
+            image={post.imageUrl}
+            tags={post.tags}
+          />
+        ))
+      }
+    </section>
+
+    {/* Desktop-only featured card */}
     {
       featuredPost && (
-        <section class="BlogCategory__featured">
+        <section class="BlogCategory__featured BlogCategory__desktopOnly">
           <a class="FeaturedCard" href={featuredPost.href}>
             <div class="FeaturedCard__left">
               <div class="FeaturedCard__meta">
@@ -137,7 +149,8 @@ const allPosts: Post[] = articles
       )
     }
 
-    <section class="BlogCategory__all">
+    {/* Desktop-only grid */}
+    <section class="BlogCategory__all BlogCategory__desktopOnly">
       <div class="BlogCategory__allHeader">
         <h3>All Posts</h3>
         <div class="BlogCategory__rule"></div>
