@@ -5,6 +5,7 @@ date: 2024-12-01
 image: "/images/articles/2024/software-engineering-skills-to-stand-out/cover.png"
 draft: false
 featured: false
+template: "ArticleV2"
 ---
 
 ![tools](/images/articles/2024/software-engineering-skills-to-stand-out/cover.png)
@@ -76,7 +77,7 @@ If you’re unsure how to build this kind of experience, consider starting a **s
 
 If you’re applying to software developer internships, you need to demonstrate that you have the ability to build real software. The simplest kind of software you can cobble together is what is sarcastically referred to as a **“CRUD App.”**
 
-**CRUD** stands for **Create, Read, Update, and Delete**—the four basic operations for managing data in any software application. The term “CRUD App” is typically used for software projects that only need this functionality, like simple to-do lists, inventory management systems, contact managers, basic blogs, etc.
+**CRUD** stands for **Create, Read, Update, and Delete**, the four basic operations for managing data in any software application. The term “CRUD App” is typically used for software projects that only need this functionality, like simple to-do lists, inventory management systems, contact managers, basic blogs, etc.
 
 A CRUD app typically has three components:
 
@@ -118,7 +119,7 @@ Observability is a skill that’s rarely expected of students or new graduates b
 
 Observability is the ability to monitor how a system is behaving and identify why something might not be working.
 
-In large systems, developers rely on **monitors** to send alerts when things go wrong. For instance, a commerce platform that handles payment processing might use a monitor to track the success rate of transactions per minute. If the rate drops below a set threshold—say, 90%—the monitor triggers an alert to notify the team.
+In large systems, developers rely on **monitors** to send alerts when things go wrong. For instance, a commerce platform that handles payment processing might use a monitor to track the success rate of transactions per minute. If the rate drops below a set threshold like 90%, the monitor triggers an alert to notify the team.
 
 Learning observability as a student can feel daunting, but there are simple ways to start:
 
@@ -139,7 +140,7 @@ If you’re familiar with node and npm, a Dockerfile is similar to a package.jso
 
 If your project includes a database or another external service, use Docker Compose to define and manage multi-container environments. This tool simplifies the process of running multiple services, such as your application and its database, in separate containers.
 
-While tools like Kubernetes (K8s) are popular in industry, I personally believe that as a student, you don't need to dive into advanced orchestration unless you're particularly interested. Focus on mastering Docker and Docker Compose first—they’ll provide a solid foundation for understanding containerized workflows.
+While tools like Kubernetes (K8s) are popular in industry, I personally believe that as a student, you don't need to dive into advanced orchestration unless you're particularly interested. Focus on mastering Docker and Docker Compose first. They’ll provide a solid foundation for understanding containerized workflows.
 
 ---
 
@@ -206,11 +207,11 @@ Here are some easy projects to get started with:
 
 ## Conclusion: Build Real Software
 
-The best way to learn is to build real projects—not just projects that run on your localhost, but fully deployed pieces of software that make use of the skills I’ve mentioned above.
+The best way to learn is to build real projects, not just projects that run on your localhost. Fully deployed pieces of software that make use of the skills I’ve mentioned above.
 
 Whether it’s a personal website, a small side hustle, or a fun tool for your friends, the process of deploying an application will teach you more about software engineering than any classroom or tutorial ever could.
 
-By building software while embracing concepts like automated testing, observability, CI/CD, and cloud services, you’ll not only sharpen your technical skills but also set yourself apart as a candidate who can tackle real-world challenges. So, don’t wait—start building and shipping today!
+By building software while embracing concepts like automated testing, observability, CI/CD, and cloud services, you’ll not only sharpen your technical skills but also set yourself apart as a candidate who can tackle real-world challenges. So, don’t wait, start building and shipping today!
 
 <hr/>
 <br/>
