@@ -3,7 +3,7 @@ title: "4 Years of Work Experience Before Graduation: Working and Studying At Th
 description: My alternative path to gaining work experience as a student and what I learned along the way.
 date: 2023-05-19
 image: "/images/articles/2023/working-and-studying2.png"
-slug: "/articles/working-and-studying-at-the-same-time"
+slug: "working-and-studying-at-the-same-time"
 draft: false
 featured: true
 ---

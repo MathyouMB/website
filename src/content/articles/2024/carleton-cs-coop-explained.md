@@ -3,7 +3,7 @@ title: "Carleton Computer Science: Explaining Co-op Criticism"
 description: Why are so many computer science students so critical of Carleton's co-op program?
 date: 2024-08-24
 image: "/images/articles/2024/carleton-cs-coop-explained/cover.png"
-slug: "/articles/carleton-cs-coop-explained"
+slug: "carleton-cs-coop-explained"
 draft: false
 featured: true
 template: "ArticleV2"

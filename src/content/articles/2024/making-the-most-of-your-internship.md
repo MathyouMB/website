@@ -3,7 +3,7 @@ title: "Making The Most of Your Software Developer Internship"
 description: A guide to excelling in software developer internships and laying the groundwork for a successful tech career
 date: 2024-12-18
 image: "/images/articles/2024/making-the-most-of-your-internship/cover.png"
-slug: "/articles/making-the-most-of-your-internship"
+slug: "making-the-most-of-your-internship"
 draft: false
 featured: false
 ---

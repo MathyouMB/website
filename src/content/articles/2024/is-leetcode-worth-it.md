@@ -3,7 +3,7 @@ title: "Is LeetCode Worth Doing?"
 description: A breakdown of why LeetCode exists and why it's not the only way you should prepare for interviews
 date: 2024-12-25
 image: "/images/articles/2024/is-leetcode-worth-it/cover2.png"
-slug: "/articles/is-leetcode-worth-it"
+slug: "is-leetcode-worth-it"
 draft: false
 featured: true
 ---
