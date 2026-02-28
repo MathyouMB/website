@@ -6,7 +6,7 @@
       class="Navbar__desktop"
       href="https://matthewshouse.notion.site/Matthew-s-House-76ebf7cf587646628078405b66cba5a3"
       >House</a
-    > --> <!-- <a href="/pdfs/resumes/Matthew_MacRaeBovell_Resume_April2023.pdf">Resume</a> --> </div>  <div class="Thin">  <div class="Article"> <h1 class="Article__title">Carleton Computer Science: Maximizing Your Honours Project</h1> <div class="Article__description">What I learned from my honours project, how you can avoid common mistakes, and get more from yours</div> <hr> <div class="Article__author"> <div class="Article__author__left"> <img src="/images/me2.jpeg" alt="Author"> </div> <div class="Article__author__right"> <div class="Article__author__name"> <a href="/">Matthew MacRae-Bovell</a> </div> <div class="Article__author__date">January 1, 2026</div> </div> </div> <hr> <div style="margin-top: 2.5rem;"></div> <div class="Article__content"> <p><img src="/images/articles/default.png" alt="blank"></p>
+    > --> <!-- <a href="/pdfs/resumes/Matthew_MacRaeBovell_Resume_April2023.pdf">Resume</a> --> </div>  <div class="ArticleV2"> <h1 class="ArticleV2__title" style="font-size: 2.5rem"> Carleton Computer Science: Maximizing Your Honours Project </h1> <div class="ArticleV2__description">What I learned from my honours project, how you can avoid common mistakes, and get more from yours</div> <hr class="ArticleV2__hr" style="margin-bottom: 0.3rem"> <div class="ArticleV2__author"> <div class="ArticleV2__author__left"> <img src="/images/me2.jpeg" alt="Author"> </div> <div class="ArticleV2__author__right"> <div class="ArticleV2__author__name"> <a href="/">Matthew MacRae-Bovell</a> </div> <div class="ArticleV2__author__date">January 1, 2026</div> </div> </div> <hr class="ArticleV2__hr" style="margin-top: 0.1rem"> <div style="margin-top: 2.3rem;"></div> <div class="ArticleV2__body"> <div class="ArticleV2__content" data-article-content> <p><img src="/images/articles/default.png" alt="blank"></p>
 <p>In Carleton’s Computer Science program, the <a href="https://carleton.ca/scs/current-students/undergraduate-students/courses-and-registration/#UG_thesis_project">Honours Project / Thesis</a> has the potential to be one of the most rewarding and enriching experiences of your undergraduate degree.</p>
 <p>Having just completed my own honours project, I wanted to share some insights and strategies as well as all of the <strong>REAL</strong> documents, emails, and deliverables I actually submitted to give you an example of how I made the most of the opportunity.</p>
 <p>To keep my personal experiences separate from general advice, I have annotated descriptions of “what I did” with ⭐ icons as what I did <em>has flaws</em> and may not be the best approach for everyone.</p>
@@ -303,4 +303,111 @@ While I missed out on the opportunity to do the defense component of a thesis, l
 <br>
 <p>Special thanks to <b><a href="https://people.scs.carleton.ca/~jeanpier/">Dr. Jean-Pierre Corriveau</a></b> for supervising my honours project and <b><a href="https://www.justinjzhang.com/">Justin Zhang</a></b> for giving me a lot of early advice on how to approach research in general.</p>
 <hr>
-<br> <div> <div></div> </div> </div> </div> </div>    </body>
+<br> </div> </div> </div>     </body> <!-- <script is:inline>
+  function buildArticleToc(root) {
+    const content = root.querySelector("[data-article-content]");
+    const toc = document.querySelector(".ArticleV2__toc");
+    const tocList = document.querySelector(".ArticleV2__toc__list");
+
+    if (!content || !toc || !tocList) return;
+
+    // Include H1–H4 inside markdown content, but NOT the page title (which is outside the slot anyway)
+    const headings = Array.from(
+      content.querySelectorAll("h1, h2, h3, h4")
+    );
+
+    if (headings.length === 0) {
+      toc.classList.add("is-hidden");
+      return;
+    }
+
+    const slugify = (str) =>
+      str
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s-]/g, "")
+        .replace(/\s+/g, "-")
+        .replace(/-+/g, "-");
+
+    // Ensure each heading has a unique id
+    for (const h of headings) {
+      if (!h.id) {
+        const base = slugify(h.textContent || "");
+        if (!base) continue;
+
+        let id = base;
+        let i = 2;
+
+        while (content.querySelector(`#${CSS.escape(id)}`)) {
+          id = `${base}-${i++}`;
+        }
+
+        h.id = id;
+      }
+    }
+
+    // Build TOC list with indent based on heading level
+    tocList.innerHTML = "";
+
+    for (const h of headings) {
+      const level = Number(h.tagName.substring(1)); // 1–4
+
+      const li = document.createElement("li");
+      li.className = `ArticleV2__toc__item ArticleV2__toc__item--l${level}`;
+
+      const a = document.createElement("a");
+      a.className = "ArticleV2__toc__link";
+      a.href = `#${h.id}`;
+      a.textContent = (h.textContent || "").trim();
+
+      li.appendChild(a);
+      tocList.appendChild(li);
+    }
+
+    const links = Array.from(
+      document.querySelectorAll(".ArticleV2__toc__link")
+    );
+
+    const setActive = (id) => {
+      for (const link of links) {
+        const active = link.getAttribute("href") === `#${id}`;
+        link.classList.toggle("is-active", active);
+      }
+    };
+
+    let lastActiveId = headings[0]?.id;
+    if (lastActiveId) setActive(lastActiveId);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort(
+            (a, b) =>
+              a.boundingClientRect.top - b.boundingClientRect.top
+          );
+
+        if (visible.length > 0) {
+          lastActiveId = visible[0].target.id;
+          setActive(lastActiveId);
+        }
+      },
+      {
+        rootMargin: "-20% 0px -70% 0px",
+        threshold: [0, 1],
+      }
+    );
+
+    for (const h of headings) observer.observe(h);
+
+    window.addEventListener("hashchange", () => {
+      const id = location.hash.slice(1);
+      if (id) setActive(id);
+    });
+  }
+
+  window.addEventListener("load", () => {
+    const root = document.querySelector(".ArticleV2");
+    if (root) buildArticleToc(root);
+  });
+</script> -->
