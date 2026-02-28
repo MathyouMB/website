@@ -15,7 +15,7 @@ In Carleton's Computer Science program, the [Honours Project / Thesis](https://c
 
 Having just completed my own honours project, I wanted to share some insights and strategies as well as all of the **REAL** documents, emails, and deliverables I actually submitted to give you an example of how I made the most of the opportunity.
 
-To keep my personal experiences separate from general advice, I have annotated descriptions of "what I did" with ⭐ icons as what I did _has flaws_ and may not be the best approach for everyone.
+To keep my personal experiences separate from general advice, I have annotated descriptions of _"what I did"_ with ⭐ icons as what I did _has flaws_ and may not be the best approach for everyone.
 
 <hr/>
 
@@ -33,9 +33,7 @@ Don't have time to read the whole article? Here are all of the **REAL** delivera
 ## Table of Contents
 
 - [First: Decide What You Want Out of It](#first-decide-what-you-want-out-of-it)
-  <!-- - [My Motivation ⭐](#my-motivation) -->
 - [Honours Project vs. Thesis](#honours-project-vs-thesis)
-  <!-- - [Why I Chose an Honours Project ⭐](#why-i-chose-an-honours-project) -->
 - [Coming Up With a Project Topic](#coming-up-with-a-project-topic)
   - [Before Brainstorming Ideas](#before-brainstorming-ideas)
   - [How To Brainstorm Project Ideas](#how-to-brainstorm-project-ideas)
@@ -85,34 +83,6 @@ Some example motivations include:
 
 How you answer this question will impact how you approach the rest of the process.
 
-<!-- ### My Motivation ⭐
-
-Having a background in Software Engineering and more specifically software usability and developer experience, my motivation was to better understand how software engineering research translates into practical tools, while also producing something genuinely useful for the developer community.
-
-Although I did not go into the project with the explicit goal of publishing a paper, this is something that became a possibility as I progressed and I was able to pivot my project towards a more research-oriented direction. -->
-
-<hr/>
-
-<!-- ## Honours Project vs. Thesis
-
-The School of Computer Science website already does a good job of explaining the difference, but in short: The project is worth 0.5 credits and 1 term long, while the thesis is worth 1.0 credit, 2 terms long, and requires a CGPA of 9.0 or higher to enroll.
-
-Generally speaking, the project is perceived to be more "applied", while the thesis is more research-oriented and includes a defense component.
-
-What I wanted to throw in here is that while the project is usually implied to be practical, **_there is nothing stopping you from doing research with your honours project_** if that is what you want to do.
-
-As an example, my project ended up having both practical and research components. As you'll see later in the article, I built a practical tool as a means of demonstrating the viability of a solution to a broader research question I was exploring. -->
-
-<!-- ### Why I Chose an Honours Project ⭐
-
-At the time of enrolling, I was contemplating the idea of wanting to pursue a Master's degree, but at the time (September) did not have any real demonstrated research experience.
-
-At Carleton, Masters applications are due in early January, meaning that if I had chosen to do a thesis, I would not have had enough time to complete it before needing to submit my application.
-
-Now there is no rule that says you can't apply for a Master's program without research experience, but I felt that having a sample I could show supervisors to demonstrate my research and writing abilities would strengthen my application.
-
-While I missed out on the opportunity to do the defense component of a thesis, looking back I'm happy I went with the shorter project route because in hindsight my idea had some issues which led to some burnout on my part. -->
-
 <hr/>
 
 ## Coming Up With a Project Topic
@@ -159,9 +129,7 @@ While I brainstormed many ideas, I want to give some insight into how my eventua
 
 The idea that my supervisor decided to gravitate towards was the following:
 
-```text
-ChaosSpec: An Assertion-Based Chaos Testing Framework For Distributed Systems
-```
+_"ChaosSpec: An Assertion-Based Chaos Testing Framework For Distributed Systems"_
 
 ![Ideas](/images/articles/2026/making-the-most-of-honours-project/logo.png)
 
@@ -218,7 +186,6 @@ I reached out to my eventual supervisor, Dr. Jean Pierre Corriveau at the end of
 Here is a _very slightly trimmed down version_ of the email I sent him:
 
 ```text
-
 Dear Professor Corriveau,
 
 My name is Matthew and I’m an undergrad student with a deep interest in software best practices, developer experience, and distributed system design.
@@ -278,7 +245,7 @@ The [provided guide](https://carleton.ca/scs/current-students/undergraduate-stud
 
 Overall, I found this description to be fairly accurate. However there are a few additional points I'd like to emphasize:
 
-**Use References**: In the motivation / problem description, it's expected that if your proposal makes any claims, that references be used to back up those claims. This should really go without saying, but a lot of students in our program have never read an academic paper before, so it's worth mentioning. This might not apply to you if your project is more applied, but if you're proposing something novel, it's important to situate your work in the context of existing literature.
+**Use References**: In the motivation / problem description, it's expected that if your proposal makes any claims, that references be used to back up those claims. This should really go without saying, but a lot of students in our program have never read an academic paper before. This might not apply to you if your project is more applied, but if you're proposing something novel, it's important to situate your work in the context of existing literature.
 
 **Clearly Define Your Project Scope**: One of the most important aspects of your proposal is clearly defining what you will and will not be doing. I would suggest intentionally lowballing your scope to ensure that you can complete the project within the given timeframe. It's better to have a smaller, well-defined project than an overly ambitious one that you can't finish. I would go as far as to explicitly say what **WILL** and what **WON'T** be included in your project.
 
@@ -352,15 +319,19 @@ The original problem I had been trying to solve was simplifying "network resilie
 
 Firstly, I would highly recommend using [Zotero](https://www.zotero.org/) to manage your references and citations.
 
-Secondly, when you have references you'll quickly realize Google docs just doesn't cut it for writing academic papers. Now the de facto standard is LaTeX, but I kind of hate LaTeX and therefore I used [Typst](https://typst.app/) to write my final report.
+Secondly, when you have references you'll quickly realize Google docs just doesn't cut it for writing academic papers. Now the de facto standard is LaTeX, but I tested out [Typst](https://typst.app/) while writting my report and found it to be much simpler to use if Latex is intimidating to you.
 
-Lastly, sometimes it's just hard to find research papers that relate to your topic. For this, I found [Connected Papers](https://www.connectedpapers.com/) to be an great tool for discovering related work and [Elicit](https://elicit.org/) to be great for finding papers based on research questions.
+Lastly, sometimes searching on Google Scholar just isn't enough to find the right papers. Tools like [Elicit](https://elicit.org/) and [Connected Papers](https://www.connectedpapers.com/) definitely were additions I wish I had known about earlier.
 
 ### My Final Report ⭐
 
 The [following](/pdfs/articles/2026/making-the-most-of-honours-project/report.pdf) is my **REAL** final project report.
 
-I intentionally wrote my report to be of _"publishable quality"_ using the [IEEE conference paper template](https://www.ieee.org/conferences/publishing/templates.html), meaning that I structured it in a way that would make it easier to convert into a conference paper if I chose to pursue that route.
+I intentionally wrote my report to be of _"publishable intent"_ using the [IEEE conference paper template](https://www.ieee.org/conferences/publishing/templates.html), meaning that I structured it in a way that would make it easier to convert into a conference paper in the future.
+
+A very good piece of advice I was given early on was to "always be writing". While you won't have your results write away, forcing yourself to write early will help you clarify your thoughts and identify gaps in your understanding that you can then go and fill through research and experimentation.
+
+I would also recommend NOT writting your report in a linear fashion. Meaning don't start with the introduction, just start writing whatever section you feel most ready to write and then piece it together later. I probably rewrote my introduction atleast a dozen tiems as I kept changing the direction of my project and refining my understanding of the problem space.
 
 A few odd things you might notice about my report:
 

@@ -35,6 +35,13 @@
   /* Prevent long tokens from blowing layout */
   overflow-wrap: anywhere;
   word-break: normal;
+
+  .astro-code[data-language="text"] {
+    background-color: #f7f7f7 !important;
+    color: #111827 !important;
+    border-left-color: #e5e7eb;
+    overflow-wrap: break-word;
+  }
 }
 
 .ArticleV2__title {
@@ -161,14 +168,14 @@
 
   /* Links inside article body: subtle underline like Medium */
   a {
-    color: var(--link);
+    color: var(--theme);
     text-decoration: underline;
     text-decoration-color: rgba(17, 24, 39, 0.35);
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
 
     &:hover {
-      text-decoration-color: rgba(17, 24, 39, 0.7);
+      text-decoration-color: rgba(17, 24, 39, 0.375);
       text-decoration-thickness: 2px;
     }
   }
@@ -176,7 +183,7 @@
   /* Lists */
   ul,
   ol {
-    margin: 0 0 1.3rem;
+    // margin: 0 0 1.3rem;
     padding-left: 1.25rem;
   }
 
