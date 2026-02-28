@@ -6,6 +6,7 @@ image: "/images/articles/2024/presenting-to-elementary-students/cover.png"
 slug: "presenting-to-elementary-students"
 draft: false
 featured: false
+template: "ArticleV2"
 ---
 
 ![working-and-studying](/images/articles/2024/presenting-to-elementary-students/cover.png)
