@@ -6,6 +6,7 @@ image: "/images/articles/2024/cracking-career-fairs/cover.png"
 slug: "cracking-career-fairs"
 draft: false
 featured: false
+template: "ArticleV2"
 ---
 
 ![rat-at-career-fair](/images/articles/2024/cracking-career-fairs/cover.png)
@@ -111,7 +112,7 @@ You need to adapt the way you communicate at networking events depending on who 
 
 Recruiters are a valuable resource for learning about the company, its hiring process, and gaining general advice for candidates.
 
-When speaking with a recruiter, avoid using overly technical jargon. While recruiters may not have an in-depth technical background, they are usually familiar with the key technologies and tools their company uses—at least by name.
+When speaking with a recruiter, avoid using overly technical jargon. While recruiters may not have an in-depth technical background, they are usually familiar with the key technologies and tools their company uses (at least by name).
 
 Mention those core technologies, but keep the focus on clearly explaining your experiences in a way that aligns with what they are looking for in an ideal candidate. Highlight how your skills and background fit the role and the company’s needs.
 
