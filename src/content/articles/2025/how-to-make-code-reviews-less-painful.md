@@ -3,8 +3,10 @@ title: "Code Review Strategies Every Team Should Be Using"
 description: "Actual ways to make code reviews less frustrating, giving you more time to focus on the code itself"
 date: 2025-07-02
 image: "/images/articles/2025/how-to-make-code-reviews-less-painful/cover.png"
+slug: "/articles/how-to-make-code-reviews-less-painful"
 draft: false
 featured: true
+template: "ArticleV2"
 ---
 
 ![Code Review](/images/articles/2025/how-to-make-code-reviews-less-painful/cover.png)

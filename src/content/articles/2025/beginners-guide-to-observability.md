@@ -6,6 +6,7 @@ image: "/images/articles/2026/beginners-guide-to-observability/cover.png"
 template: "ArticleV2"
 titleFontSize: "2.4rem"
 previewFontSize: "1.1rem"
+slug: "/articles/beginners-guide-to-observability"
 draft: false
 featured: true
 ---

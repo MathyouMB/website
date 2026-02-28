@@ -3,8 +3,10 @@ title: "Carleton Computer Science: Maximizing Your Honours Project"
 description: What I learned from my honours project, how you can avoid common mistakes, and get more from yours
 date: 2026-01-01
 image: "/images/articles/default.png"
+slug: "/articles/making-the-most-of-honours-project"
 draft: true
 featured: true
+template: "ArticleV2"
 ---
 
 ![blank](/images/articles/default.png)

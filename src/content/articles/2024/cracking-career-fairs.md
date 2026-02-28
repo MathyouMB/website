@@ -3,6 +3,7 @@ title: "Navigating Career Fairs As A Computer Science Student"
 description: Essential tips for students to navigate career fairs and stand out to recruiters and developers
 date: 2024-12-19
 image: "/images/articles/2024/cracking-career-fairs/cover.png"
+slug: "/articles/cracking-career-fairs"
 draft: false
 featured: false
 ---

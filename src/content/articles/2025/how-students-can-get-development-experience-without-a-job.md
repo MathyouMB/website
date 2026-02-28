@@ -3,6 +3,7 @@ title: "How Students Can Get Developer Experience Without a Job"
 description: Strategies for students to gain software engineering experience without a formal job
 date: 2025-03-10
 image: "/images/articles/2025/how-students-can-get-development-experience-without-a-job/cover.png"
+slug: "/articles/how-students-can-get-development-experience-without-a-job"
 draft: false
 featured: false
 ---

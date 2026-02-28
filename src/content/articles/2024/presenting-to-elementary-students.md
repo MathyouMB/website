@@ -3,6 +3,7 @@ title: "Learning How To Present To Elementary School Students"
 description: How I wrote my elementary school "career day" presentation on software development.
 date: 2024-07-24
 image: "/images/articles/2024/presenting-to-elementary-students/cover.png"
+slug: "/articles/presenting-to-elementary-students"
 draft: false
 featured: false
 ---

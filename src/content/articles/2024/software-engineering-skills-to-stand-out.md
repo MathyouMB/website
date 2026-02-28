@@ -3,6 +3,7 @@ title: "Software Skills to Make Your Student Resume Stand Out"
 description: Skills not emphasized in university that will help your resume stand out to developers and hiring managers
 date: 2024-12-01
 image: "/images/articles/2024/software-engineering-skills-to-stand-out/cover.png"
+slug: "/articles/software-engineering-skills-to-stand-out"
 draft: false
 featured: false
 template: "ArticleV2"

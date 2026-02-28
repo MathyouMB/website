@@ -3,6 +3,7 @@ title: "Why Computer Science Students Are Struggling To Find Jobs"
 description: How the pandemic, rising enrollment, and AI have reshaped the job market and led to less capable university graduates.
 date: 2024-09-09
 image: "/images/articles/2024/why-computer-science-students-are-struggling-to-find-jobs/cover3.png"
+slug: "/articles/why-computer-science-students-are-struggling-to-find-jobs"
 draft: false
 featured: false
 ---
