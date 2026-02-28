@@ -6,17 +6,16 @@ image: "/images/articles/2023/working-and-studying2.png"
 slug: "working-and-studying-at-the-same-time"
 draft: false
 featured: true
+template: "ArticleV2"
 ---
 
 ![working-and-studying](/images/articles/2023/working-and-studying2.png)
 
-Have you ever seen an entry level job posting asking for 1-4 years of experience?
+Have you ever seen an "entry-level" job posting that asks for 1–4 years of experience and wondered who those roles are even for?
 
-<b>Well, I'm that guy.</b>
+For a long time, I wondered the same thing.
 
-<i>(Not that I agree with that as a hiring practice...)</i>
-
-When COVID hit and the world went online, it became possible to complete courses while working full-time remotely.
+However, when COVID hit and the world went online, it became possible to complete courses while working full-time remotely.
 
 By working and studying, I was able to obtain 4+ years of work experience before my planned graduation date.
 
