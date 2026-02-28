@@ -19,7 +19,7 @@
 <p>Those are all important, but I want to go deeper. Here are my tips in no particular order:</p>
 <br>
 <h2 id="1-resolve-comments-with-isolated-commits">1. Resolve Comments with Isolated Commits</h2>
-<p>When you update your code in response to feedback, put that fix in its own separate commit — ideally one per resolved comment or one per logical change.</p>
+<p>When you update your code in response to feedback, put that fix in its own separate commit with ideally one per resolved comment or one per logical change.</p>
 <p>Here is an example of how this might look in practice:</p>
 <p><img src="/images/articles/2025/how-to-make-code-reviews-less-painful/resolve-comments-with-isolated-commits.png" alt="badger-developing"></p>
 <p>This makes life easier for the reviewer: instead of <strong>re-reading your entire diff</strong>, they can jump straight to the isolated commit and confirm the fix, dramatically reducing the cognitive load needed to re-review the code.</p>
@@ -29,7 +29,7 @@
 <br>
 <h2 id="2-mark-blocking-vs-non-blocking-comments">2. Mark Blocking vs. Non-Blocking Comments</h2>
 <p>Sometimes it’s not clear whether a comment <strong>must</strong> be addressed before merging. This causes churn, confusion, and delay.</p>
-<p>That’s why I recommend using a system like <a href="https://conventionalcomments.org/">Conventional Comments</a> — a standard for labeling review comments clearly.</p>
+<p>That’s why I recommend using a system like <a href="https://conventionalcomments.org/">Conventional Comments</a>, a standard for labeling review comments clearly.</p>
 <p>For example:</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>suggestion (non-blocking): Update name for clarity</span></span>
 <span class="line"><span></span></span>
@@ -40,7 +40,7 @@
 <span class="line"><span></span></span>
 <span class="line"><span>Can we add a check here to avoid the crash?</span></span>
 <span class="line"><span></span></span></code></pre>
-<p>Labels like <code>issue</code>, <code>suggestion</code>, <code>question</code>, and <code>praise</code>, paired with decorations like <code>(blocking)</code> or <code>(non-blocking)</code>, make it crystal clear what kind of feedback you’re leaving — and what needs to be acted on.</p>
+<p>Labels like <code>issue</code>, <code>suggestion</code>, <code>question</code>, and <code>praise</code>, paired with decorations like <code>(blocking)</code> or <code>(non-blocking)</code>, make it crystal clear what kind of feedback you’re leaving and what needs to be acted on.</p>
 <p>It saves hours of back-and-forth and helps keep reviews focused and respectful.</p>
 <br>
 <h2 id="3-communicate-where-you-want-feedback">3. Communicate Where You Want Feedback</h2>
@@ -61,18 +61,17 @@
 <span class="line"><span></span></span></code></pre>
 <p>Additionally, don’t just add your reviewer to the PR, <strong>use @mentions to guide reviewers</strong> to the relevant parts of the code.</p>
 <p>Example:</p>
-<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Hey @janedoe — I’d love your thoughts on whether this abstraction makes sense before I build out the full implementation and write tests.</span></span>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Hey @janedoe! I’d love your thoughts on whether this abstraction makes sense before I build out the full implementation and write tests.</span></span>
 <span class="line"><span></span></span></code></pre>
 <p>This helps reviewers give more relevant, high-signal feedback — and it prevents frustration on both sides.</p>
 <p>Always mark your PRs as <strong>drafts</strong> if they are still in progress.</p>
 <br>
 <h2 id="4-use-a-git-patch-for-complex-suggestions">4. Use a Git Patch for Complex Suggestions</h2>
-<p>If you as the reviewer have a strong opinion about how a piece of code should be written, <strong>don’t</strong> just leave a comment…</p>
-<p>Suggest the change directly using a <strong>Git patch</strong>.</p>
+<p>If you as the reviewer have a strong opinion about how a piece of code should be written, <strong>don’t</strong> just leave a comment, suggest the change directly using a Git patch.</p>
 <p>Everyone <strong>hates</strong> comments where a reviewer borderline asks them to rewrite the entire PR.</p>
 <p>While it is the author’s responsibility to avoid getting to that kind of situation through early communication and drafts, it brings code reviews to a grinding halt when a reviewer suggests a change that is not only complex but also requires a lot of back-and-forth discussion.</p>
 <p>Instead of back and forth comments, create a Git patch that implements your suggestion directly.</p>
-<p>Creating a Git patch is also a great <strong>sanity check</strong> — it forces you to think through whether your suggestion is practical or whether it would require the author to rewrite half the codebase.</p>
+<p>Creating a Git patch is also a great <strong>sanity check</strong>. It forces you to think through whether your suggestion is practical or whether it would require the author to rewrite half the codebase.</p>
 <p>Suggesting in-line with <em>```suggestion</em> comments are great, but they don’t work for situations where the change is more complex or requires multiple files to be updated. A Git patch on the other hand, is a complete, self-contained change that the author can apply directly to their branch.</p>
 <p>Is it <strong>too much effort</strong> to create a Git patch? Then maybe your suggestion isn’t as important as you think it is. Or maybe you should just pair program with the author to implement the change together.</p>
 <br>
