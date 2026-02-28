@@ -6,11 +6,14 @@ image: "/images/articles/2024/is-leetcode-worth-it/cover2.png"
 slug: "is-leetcode-worth-it"
 draft: false
 featured: true
+template: "ArticleV2"
 ---
 
 ![remote-working-creatures](/images/articles/2024/is-leetcode-worth-it/cover2.png)
 
-_"Is LeetCode worth doing?"_ —The amount of LeetCode practice you need **depends entirely on your goals**.
+_"Is LeetCode worth doing?"_
+
+The amount of LeetCode practice you need **depends entirely on your goals**.
 
 If your goal is to get into some large tech company with a notable name like Google, Amazon, Microsoft, etc., or some company in the Bay Area of the United States, then yeah… you should follow a LeetCode study plan and do a minimum of 1–2 problems daily because it's very publicly known these larger companies ask these questions.
 
@@ -63,7 +66,7 @@ Your problem-solving skills, communication abilities, and attention to detail al
 
 ## What’s Wrong With LeetCode?
 
-LeetCode questions fail to evaluate a candidate’s domain knowledge or their ability to design and build **real software**—skills that actually matter when hiring for software engineering roles.
+LeetCode questions fail to evaluate a candidate’s domain knowledge or their ability to design and build **real software** (skills that actually matter when hiring for software engineering roles).
 
 If you really think about it, questions focused on optimizing time and space complexity are really just **math problems** in disguise.
 
@@ -146,7 +149,7 @@ While these questions can be challenging, demonstrating a clear thought process 
 
 A recent trend in hiring is that some companies are shifting away from straightforward algorithm-based questions because AI tools have made it way easier to cheat or easily solve these questions.
 
-To counter this, companies are designing coding problems that are intentionally challenging for AI to tackle. For example, some use overly complex or “wordy” prompts to confuse AI, while others require strong visual problem-solving skills—an area where AI still falls short.
+To counter this, companies are designing coding problems that are intentionally challenging for AI to tackle. For example, some use overly complex or “wordy” prompts to confuse AI, while others require strong visual problem-solving skills (an area where AI still falls short).
 
 ---
 
@@ -212,7 +215,7 @@ Much of the backlash against LeetCode in the broader developer community is vali
 
 LeetCode should be a part of your interview preparation, but it shouldn’t be your only focus.
 
-You are going to see LeetCode style questions throughout your career, but excelling in technical interviews requires more than just memorizing solutions—it requires showcasing strong communication skills and practical experience.
+You are going to see LeetCode style questions throughout your career, but excelling in technical interviews requires more than just memorizing solutions, it requires showcasing strong communication skills and practical experience.
 
 In summary:
 
