@@ -6,23 +6,24 @@ image: "/images/articles/2024/hidden-cost-of-remote-work-on-developer-growth/cov
 slug: "hidden-cost-of-remote-work-on-developer-growth"
 draft: false
 featured: true
+template: "ArticleV2"
 ---
 
 ![remote-working-creatures](/images/articles/2024/hidden-cost-of-remote-work-on-developer-growth/cover.png)
 
 Very recently, I’ve started to reflect on how **working remotely** as an early-career developer has shaped my professional growth.
 
-While I haven't felt stunted in growing my technical experience, it feels like there are fewer opportunities to develop the non-technical skills that are critical for long-term career progression—skills like understanding broader business goals, and adapting to different audiences.
+While I haven't felt stunted in growing my technical experience, it feels like there are fewer opportunities to develop the non-technical skills that are critical for long-term career progression. Skills like understanding broader business goals, and adapting to different audiences.
 
 Earlier this month, I had the chance to meet my fully remote team in person for the first time during a company onsite. The primary goal of this meetup was to accelerate the early planning stages of our next project.
 
-As you’d expect from the onsite, I was tasked with sharing ideas and providing real-time feedback. However, I noticed something unexpected—my contributions were not resonating as strongly with product and customer oriented folks as much as my fellow developers.
+As you’d expect from the onsite, I was tasked with sharing ideas and providing real-time feedback. However, I noticed something unexpected: my contributions were not resonating as strongly with product and customer oriented folks as much as my fellow developers.
 
-At first, I was puzzled. While I wouldn’t call myself an exceptional speaker, I’ve always felt confident in tailoring my message to suit the difference target audiences—**at least when I’ve had the time to prepare**.
+At first, I was puzzled. While I wouldn’t call myself an exceptional speaker, I’ve always felt confident in tailoring my message to suit the difference target audiences ... **at least when I’ve had the time to prepare**.
 
 But that’s exactly the problem… I realized that in my day-to-day work, I’m almost never required to adapt my communication **on the fly**.
 
-The only non discussions I regularly have are updates with our project manager, who primarily shares the outcomes of previous meetings with stakeholders to keep our development team informed. Occasionally, we present directly to stakeholders, but again, those are planned presentations—not moments that call for real-time spontaneity.
+The only non discussions I regularly have are updates with our project manager, who primarily shares the outcomes of previous meetings with stakeholders to keep our development team informed. Occasionally, we present directly to stakeholders, but again, those are planned presentations, not moments that call for real-time spontaneity.
 
 This is partly an expected outcome of remote work, where the casual, spontaneous conversations you might have in an office with people from other departments simply don’t happen.
 
@@ -30,13 +31,13 @@ Althought it's definitely true that in choosing to work remotely, I've choosen t
 
 Since starting my first “real job” in 2019, I’ve worked remotely for eight different development organizations and one consistency across them all is that **developers tend to be very meeting adverse.**
 
-And honestly, I get it. I’ve also rolled my eyes at unnecessary rituals with over-the-top names like “pre-pre refinements” or “retrospective retrospectives.” I’ve sat through countless corporate presentations and town halls, knowing full well that many of the topics—like quarterly earnings or company mission statements—would never directly impact my day-to-day work.
+And honestly, I get it. I’ve also rolled my eyes at unnecessary rituals with over-the-top names like “pre-pre refinements” or “retrospective retrospectives.” I’ve sat through countless corporate presentations and town halls, knowing full well that many of the topics like quarterly earnings or company mission statements would never directly impact my day-to-day work.
 
 However, looking back, I realize now that aside from maybe my engineering manager or tech lead, most of the engineering teams I’ve been part of were rarely included in product discussions or customer-oriented conversations.
 
 Across all my remote work experience, it feels to me like very few of the organizations have systematically prioritized making an effort to consistently include developers in this vein.
 
-While there are valid reasons for this—such as the need to protect developer time (and by extension, reduce costs)—_I can’t help but wonder if it’s also influenced by the developer culture of generally being resistant towards meetings._
+While there are valid reasons for this such as the need to protect developer time (and by extension, reduce costs), _I can’t help but wonder if it’s also influenced by the developer culture of generally being resistant towards meetings._
 
 For an early-career developer working remotely, the absence of casual “hallway chats” and exclusion from product or customer-oriented meetings **leaves very few chances** to develop skills for navigating diverse corporate interactions.
 
