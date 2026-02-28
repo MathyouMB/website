@@ -28,7 +28,7 @@ Those are all important, but I want to go deeper. Here are my tips in no particu
 
 ## 1. Resolve Comments with Isolated Commits
 
-When you update your code in response to feedback, put that fix in its own separate commit — ideally one per resolved comment or one per logical change.
+When you update your code in response to feedback, put that fix in its own separate commit with ideally one per resolved comment or one per logical change.
 
 Here is an example of how this might look in practice:
 
@@ -48,7 +48,7 @@ The only issue with this strategy is that if you have to rebase, the ids of all 
 
 Sometimes it's not clear whether a comment **must** be addressed before merging. This causes churn, confusion, and delay.
 
-That’s why I recommend using a system like [Conventional Comments](https://conventionalcomments.org/) — a standard for labeling review comments clearly.
+That’s why I recommend using a system like [Conventional Comments](https://conventionalcomments.org/), a standard for labeling review comments clearly.
 
 For example:
 
@@ -66,7 +66,7 @@ issue (blocking): This breaks on null input.
 Can we add a check here to avoid the crash?
 ```
 
-Labels like `issue`, `suggestion`, `question`, and `praise`, paired with decorations like `(blocking)` or `(non-blocking)`, make it crystal clear what kind of feedback you’re leaving — and what needs to be acted on.
+Labels like `issue`, `suggestion`, `question`, and `praise`, paired with decorations like `(blocking)` or `(non-blocking)`, make it crystal clear what kind of feedback you’re leaving and what needs to be acted on.
 
 It saves hours of back-and-forth and helps keep reviews focused and respectful.
 
@@ -103,7 +103,7 @@ Additionally, don't just add your reviewer to the PR, **use @mentions to guide r
 Example:
 
 ```text
-Hey @janedoe — I’d love your thoughts on whether this abstraction makes sense before I build out the full implementation and write tests.
+Hey @janedoe! I’d love your thoughts on whether this abstraction makes sense before I build out the full implementation and write tests.
 ```
 
 This helps reviewers give more relevant, high-signal feedback — and it prevents frustration on both sides.
@@ -114,9 +114,7 @@ Always mark your PRs as **drafts** if they are still in progress.
 
 ## 4. Use a Git Patch for Complex Suggestions
 
-If you as the reviewer have a strong opinion about how a piece of code should be written, **don’t** just leave a comment...
-
-Suggest the change directly using a **Git patch**.
+If you as the reviewer have a strong opinion about how a piece of code should be written, **don’t** just leave a comment, suggest the change directly using a Git patch.
 
 Everyone **hates** comments where a reviewer borderline asks them to rewrite the entire PR.
 
@@ -124,7 +122,7 @@ While it is the author's responsibility to avoid getting to that kind of situati
 
 Instead of back and forth comments, create a Git patch that implements your suggestion directly.
 
-Creating a Git patch is also a great **sanity check** — it forces you to think through whether your suggestion is practical or whether it would require the author to rewrite half the codebase.
+Creating a Git patch is also a great **sanity check**. It forces you to think through whether your suggestion is practical or whether it would require the author to rewrite half the codebase.
 
 Suggesting in-line with _```suggestion_ comments are great, but they don't work for situations where the change is more complex or requires multiple files to be updated. A Git patch on the other hand, is a complete, self-contained change that the author can apply directly to their branch.
 
