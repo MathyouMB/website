@@ -6,6 +6,7 @@ image: "/images/articles/2024/making-the-most-of-your-internship/cover.png"
 slug: "making-the-most-of-your-internship"
 draft: false
 featured: false
+template: "ArticleV2"
 ---
 
 ![laptop](/images/articles/2024/making-the-most-of-your-internship/cover.png)
@@ -141,7 +142,7 @@ If your workplace doesn’t naturally offer opportunities to explore different a
 
 ## Take Ownership and Clarify Details Early
 
-One of the most common pitfalls for interns, junior developers—and even seasoned programmers—is diving into implementation before fully understanding the requirements or assumptions behind a task. Instead, you should take ownership and work to fully understand a ticket's scope and ensure that all requirements are met when it's delivered.
+One of the most common pitfalls for interns, junior developers, and even seasoned programmers is diving into implementation before fully understanding the requirements or assumptions behind a task. Instead, you should take ownership and work to fully understand a ticket's scope and ensure that all requirements are met when it's delivered.
 
 You do not want to tell your team your ticket is almost done, only for your entire approach to be questioned once you submit your first draft of the code for review. You also don't want to mark a ticket complete while missing a part of an acceptance critiria and potentially derail future dependant tickets in your team's backlog.
 
@@ -187,7 +188,7 @@ If you know a ticket is going to be blocked for an extended period (e.g., over a
 
 ## Participate in Code Reviews
 
-As an intern, you might not feel comfortable or ready to contribute to code reviews. It’s natural to worry about saying the wrong thing or not understanding enough to provide valuable feedback. But remember, no one expects you to be an expert as a newcomer. Code reviews are not just about spotting issues—they’re also an excellent learning opportunity for you.
+As an intern, you might not feel comfortable or ready to contribute to code reviews. It’s natural to worry about saying the wrong thing or not understanding enough to provide valuable feedback. But remember, no one expects you to be an expert as a newcomer. Code reviews are not just about spotting issues, they’re also an excellent learning opportunity for you.
 
 A great way to get involved in code reviews is simply by asking thoughtful questions. If you’re unsure about why something was implemented a certain way, ask for clarification.
 
@@ -207,9 +208,9 @@ Come to every meeting prepared.
 
 Treat every meeting you need to speak in like a presentation.
 
-If you’re expected to speak—even for a brief update—take the time to organize your thoughts beforehand. Be concise, clear, and confident in your delivery.
+If you’re expected to speak (even for a brief update), take the time to organize your thoughts beforehand. Be concise, clear, and confident in your delivery.
 
-If you’re organizing a meeting—even a brief one—make sure you've created an agenda with clearly identified questions or outcomes you need from the meeting.
+If you’re organizing a meeting (even a brief one), make sure you've created an agenda with clearly identified questions or outcomes you need from the meeting.
 
 Meetings aren’t just about exchanging information; they’re moments to leave a positive impression, establish yourself as a valuable team member, and build trust with your team.
 
@@ -223,7 +224,7 @@ After a long time, you're going to inevitably forget what you worked on, which m
 
 ## Conclusion
 
-Making the most of your software developer internship requires more than just completing assigned tasks—it’s about taking initiative, building relationships, and continuously learning. By asking thoughtful questions, seeking out diverse opportunities, and engaging with your team, you can turn your internship into a valuable stepping stone toward a successful tech career. Remember, an internship isn’t just about proving yourself to a company; it’s also about discovering what you want from your career and setting the foundation for your future growth.
+Making the most of your software developer internship requires more than just completing assigned tasks, it’s about taking initiative, building relationships, and continuously learning. By asking thoughtful questions, seeking out diverse opportunities, and engaging with your team, you can turn your internship into a valuable stepping stone toward a successful tech career. Remember, an internship isn’t just about proving yourself to a company; it’s also about discovering what you want from your career and setting the foundation for your future growth.
 
 <hr/>
 <br/>
