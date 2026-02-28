@@ -6,19 +6,20 @@ image: "/images/articles/2024/why-computer-science-students-are-struggling-to-fi
 slug: "why-computer-science-students-are-struggling-to-find-jobs"
 draft: false
 featured: false
+template: "ArticleV2"
 ---
 
 ![Cover Image](/images/articles/2024/why-computer-science-students-are-struggling-to-find-jobs/cover3.png)
 
 Once seen as a gateway to a "guaranteed job," computer science has recently become a seemingly less secure path for students and recent graduates.
 
-Just a few years ago, landing a software development internship seemed straightforward—being likable, eager to learn, and maybe having a personal project would often be enough to get you in the door.
+Just a few years ago, landing a software development internship seemed straightforward. Being likable, eager to learn, and maybe having a personal project would often be enough to get you in the door.
 
 However, the effects of the COVID-19 pandemic, skyrocketing enrollment in university computer science programs, and rapid advancement in AI have all converged to reshape the job market.
 
-Though these factors might seem remote and out of students' hands, there's an unsettling reality that has been widely ignored: despite the broad availability of technology, the average capability of students remains unchanged—or may even be declining.
+Though these factors might seem remote and out of students' hands, there's an unsettling reality that has been widely ignored: despite the broad availability of technology, the average capability of students remains unchanged or may even be declining.
 
-From my experience as a student at Carleton University, I believe it’s more than just the changing job market that has made the journey from student to software engineer more challenging—it's the impact of overcrowded university classrooms, weakened student communities, and impact of AI on education that have all contributed to this decline.
+From my experience as a student at Carleton University, I believe it’s more than just the changing job market that has made the journey from student to software engineer more challenging, it's the impact of overcrowded university classrooms, weakened student communities, and impact of AI on education that have all contributed to this decline.
 
 Additionally, many computer science students misunderstand how computer science actually connects to the tech industry, confusing it with applications like software engineering or data science. This disconnect leaves them unprepared for industry demands and confused at why having only a computer science background may not be enough to find a job.
 
@@ -58,7 +59,7 @@ However, as the world returned to normal, the industry faced mass layoffs and us
 
 ### Impact of Mass Layoffs on Young Professionals
 
-As industry giants cut tens of thousands of jobs, many of these displaced workers—often seasoned and highly skilled—shift their focus to smaller tech firms, startups, and mid-sized companies.
+As industry giants cut tens of thousands of jobs, many of these displaced workers shift their focus to smaller tech firms, startups, and mid-sized companies.
 
 Traditionally, smaller companies have been a fertile ground for entry-level opportunities. However, with the influx of experienced professionals seeking new roles, these positions are now being filled by candidates with years of experience, leaving fewer opportunities for recent graduates.
 
@@ -72,7 +73,7 @@ This further narrows the path for students and recent graduates, who rely on int
 
 ### AI's Impact on Entry Level Developer Jobs
 
-The reality is that AI does not fully replace developers—at least, not yet.
+The reality is that AI does not fully replace developers, at least, not yet.
 
 Today, AI is simple a tool that saves developers time, kind of like how a calculator saves time in performing complex calculations. According to the [2024 Stack Overflow survey](https://survey.stackoverflow.co/2024/ai#developer-tools-ai-ben), 81% of developers agree that AI significantly boosts productivity [[7](#sources)].
 
@@ -166,7 +167,7 @@ In the coming years, it will be pivotal that educators rethink how they design a
 
 ### Damaged Student Community
 
-The impact of COVID-19 on the student community extends far beyond just missing out on social gatherings or in-person classes; it disrupted one of the most vital aspects of university life—the informal networks and relationships that form the backbone of career development. In many ways, the student community is as crucial, if not more so, than the courses themselves.
+The impact of COVID-19 on the student community extends far beyond just missing out on social gatherings or in-person classes; it disrupted one of the most vital aspects of university life: the informal networks and relationships that form the backbone of career development. In many ways, the student community is as crucial, if not more so, than the courses themselves.
 
 Upper-year students serve as mentors, offering job and career advice that goes beyond textbooks. They provide insights into navigating the job market, tips on acing interviews, and even guidance on which faculty to target or avoid. Without these connections, underclassmen miss out on a wealth of knowledge that can be pivotal in securing internships and job offers.
 
