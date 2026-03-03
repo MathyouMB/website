@@ -2,14 +2,14 @@
 title: "Carleton Computer Science: Maximizing Your Honours Project"
 description: What I learned from my honours project, how you can avoid common mistakes, and get more from yours
 date: 2026-01-01
-image: "/images/articles/default.png"
+image: "/images/articles/2026/making-the-most-of-honours-project/cover.png"
 slug: "making-the-most-of-honours-project"
-draft: true
+draft: false
 featured: true
 template: "ArticleV2"
 ---
 
-![blank](/images/articles/default.png)
+![raven-teaching](/images/articles/2026/making-the-most-of-honours-project/cover.png)
 
 In Carleton's Computer Science program, the [Honours Project / Thesis](https://carleton.ca/scs/current-students/undergraduate-students/courses-and-registration/#UG_thesis_project) has the potential to be one of the most rewarding and enriching experiences of your undergraduate degree.
 
