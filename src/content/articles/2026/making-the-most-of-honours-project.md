@@ -79,8 +79,6 @@ Some example motivations include:
 
 - Using the project as a means of building something useful for a community or cause you care about
 
-- Getting some credit with minimal effort (I don’t recommend this one!)
-
 How you answer this question will impact how you approach the rest of the process.
 
 <hr/>
