@@ -113,10 +113,6 @@ Before I reached out to my eventual supervisor, I privately brainstormed a few i
 
 For each idea I'd brainstormed, I made a one page document for myself with a brief description of the problem I was trying to solve and what my solution might look like.
 
-Here is a picture of the **REAL** document I created for myself while brainstorming:
-
-![Ideas](/images/articles/2026/making-the-most-of-honours-project/ideas.png)
-
 Some of these ideas kind of sucked, but that’s okay! The goal of this exercise was to get my brain thinking about potential topics and solutions.
 
 Another **VERY IMPORTANT** step I took was that for each idea, I validated that there wasn't an existing solution or that the reason my idea didn't already exist was not because it was impractical or because there was a better alternative.
