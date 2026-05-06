@@ -134,7 +134,7 @@ I would also highly recommend avoiding other dopamine-sucking activities during 
 
 Instead on your break, do mundane activities that don't require a lot of mental energy, like eating your lunch, going for a walk, or even just sitting outside and enjoying the weather.
 
-### 3. Consider Restructing Your Workday With Larger Break Blocks
+### 5. Consider Restructing Your Workday With Larger Break Blocks
 
 Anecdotally, when I do feel the drain, it takes me about an hour to feel like I've recharged enough to take on another demanding task.
 
