@@ -10,6 +10,7 @@
   width: min(88rem, 95%);
   padding: 1rem;
   min-height: 80vh;
+  overflow-x: clip;
 
   --text: #0f172a;
   --muted: #64748b;
@@ -121,12 +122,8 @@
 
 .ProfilePage__heroGlows {
   position: absolute;
-  /* escape the constrained container and span the full viewport */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  top: -80px; /* bleed upward behind the nav */
-  bottom: 0;
+  inset: -80px 0 0 0;
+  overflow: hidden;
   pointer-events: none;
   z-index: 0;
 }
