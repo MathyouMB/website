@@ -1,0 +1,717 @@
+---
+import Main from "../Main/Main.astro";
+import "./ProfilePage.scss";
+
+export interface ProfileLink {
+  label: string;
+  href: string;
+  /** When set, renders as an icon-only button using this SVG inner content */
+  iconSvgInner?: string;
+  primary?: boolean;
+  external?: boolean;
+}
+
+export interface ProfileDomain {
+  name: string;
+  /** Inner SVG elements (paths/polylines) rendered inside a 24×24 viewBox */
+  iconSvgInner: string;
+}
+
+export interface ProfileProject {
+  title: string;
+  description: string;
+  href: string;
+}
+
+export interface ProfileCompany {
+  name: string;
+  /** Path to logo image in /public */
+  logoSrc: string;
+  role: string;
+  dates: string;
+  description: string;
+  projects: ProfileProject[];
+  comingSoon?: boolean;
+}
+
+export interface ProfilePosition {
+  name: string;
+  logoSrc: string;
+  role: string;
+  dates: string;
+}
+
+export interface ProfileArticle {
+  title: string;
+  description: string;
+  href: string;
+  imageUrl?: string;
+  date?: string;
+}
+
+export interface ProfileSection<T> {
+  title: string;
+  items: T[];
+}
+
+export interface ProfileUpdate {
+  text: string;
+  date?: string;
+  href?: string;
+  iconSvgInner?: string;
+}
+
+export interface ProfileEducation {
+  degree: string;
+  school: string;
+  location?: string;
+  dates: string;
+  href?: string;
+  logoSrc?: string;
+}
+
+export interface ProfileTechCategory {
+  name: string;
+  items: string[];
+}
+
+export interface ProfileCommunity {
+  name: string;
+  role?: string;
+  dates: string;
+  description?: string;
+  href?: string;
+}
+
+export interface ProfileFeaturedProject {
+  title: string;
+  description?: string;
+  href: string;
+}
+
+export interface ProfilePublication {
+  title: string;
+  venue: string;
+  status: string;
+  href?: string;
+}
+
+interface Props {
+  title: string;
+  description?: string;
+
+  name: string;
+  role: string;
+  bio: string;
+  photoSrc?: string;
+  links?: ProfileLink[];
+
+  currentPosition?: ProfilePosition;
+  updates?: ProfileUpdate[];
+  latestArticle?: ProfileArticle;
+  featuredProject?: ProfileFeaturedProject;
+  featuredPublication?: ProfilePublication;
+  freelanceOpen?: boolean;
+  freelanceAvailability?: string;
+
+  domains?: ProfileSection<ProfileDomain>;
+  expertise?: ProfileSection<ProfileDomain>;
+  companies?: ProfileSection<ProfileCompany>;
+  articles?: ProfileSection<ProfileArticle>;
+  education?: ProfileEducation[];
+  techStack?: ProfileTechCategory[];
+  community?: ProfileSection<ProfileCommunity>;
+}
+
+const {
+  title,
+  description,
+  name,
+  role,
+  bio,
+  photoSrc,
+  links = [],
+  currentPosition,
+  updates,
+  latestArticle,
+  featuredProject,
+  featuredPublication,
+  freelanceOpen,
+  freelanceAvailability,
+  domains,
+  expertise,
+  companies,
+  articles,
+  education,
+  techStack,
+  community,
+} = Astro.props;
+
+const iconLinks = links.filter((l) => l.iconSvgInner);
+const textLinks = links.filter((l) => !l.iconSvgInner);
+---
+
+<Main
+  title={title}
+  description={description}
+  styleOverride="background-color: lab(98.2539% -.108749 -.74997);"
+>
+  <div class="ProfilePage">
+    <!-- Two-column top: profile info left, highlights right -->
+    <div class="ProfilePage__top">
+      <div class="ProfilePage__heroGlows" aria-hidden="true">
+        <div class="ProfilePage__glow ProfilePage__glow--a"></div>
+        <div class="ProfilePage__glow ProfilePage__glow--b"></div>
+        <div class="ProfilePage__glow ProfilePage__glow--c"></div>
+      </div>
+
+      <div class="ProfilePage__left">
+        {
+          photoSrc && (
+            <img class="ProfilePage__photo" src={photoSrc} alt={name} />
+          )
+        }
+        <h1 class="ProfilePage__name">{name}</h1>
+        <p class="ProfilePage__role">{role}</p>
+        <p class="ProfilePage__bio" set:html={bio} />
+
+        {
+          links.length > 0 && (
+            <div class="ProfilePage__links">
+              {iconLinks.length > 0 && (
+                <div class="ProfilePage__iconLinks">
+                  {iconLinks.map((link) => (
+                    <a
+                      class="ProfilePage__iconLink"
+                      href={link.href}
+                      aria-label={link.label}
+                      target={link.external ? "_blank" : undefined}
+                      rel={link.external ? "noopener noreferrer" : undefined}
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        set:html={link.iconSvgInner}
+                      />
+                    </a>
+                  ))}
+                </div>
+              )}
+              {textLinks.map((link) => (
+                <a
+                  class={`ProfilePage__link${link.primary ? " ProfilePage__link--primary" : ""}`}
+                  href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          )
+        }
+      </div>
+
+      <div class="ProfilePage__right">
+        <div class="Highlight__row">
+          {
+            currentPosition && (
+              <div class="Highlight__section">
+                <div class="Highlight__label">Current Position</div>
+                <a class="Highlight Highlight--link" href="#work">
+                  <div class="Highlight__body">
+                    <img
+                      class="Highlight__logo"
+                      src={currentPosition.logoSrc}
+                      alt={currentPosition.name}
+                    />
+                    <div class="Highlight__text">
+                      <span class="Highlight__title">
+                        {currentPosition.name}
+                      </span>
+                      <span class="Highlight__sub">{currentPosition.role}</span>
+                      <span class="Highlight__sub">
+                        {currentPosition.dates}
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )
+          }
+
+          {
+            freelanceOpen && (
+              <div class="Highlight__section">
+                <div class="Highlight__label">Availability</div>
+                <a
+                  class="Highlight Highlight--link Highlight--freelance"
+                  href="mailto:matthewmacraebovell@outlook.com"
+                >
+                  <div class="Highlight__body">
+                    <div class="Highlight__freelanceDot" aria-hidden="true" />
+                    <div class="Highlight__text">
+                      <span class="Highlight__title">Open to Freelance</span>
+                      <span class="Highlight__sub">
+                        {freelanceAvailability ?? "Available for contract work"}
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )
+          }
+        </div>
+
+        {
+          featuredPublication &&
+            (featuredPublication.href ? (
+              <a
+                class="Highlight Highlight--link"
+                href={featuredPublication.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="Highlight__label">Publication</div>
+                <span class="Highlight__title">
+                  {featuredPublication.title}
+                </span>
+                <span class="Highlight__sub">{featuredPublication.venue}</span>
+                <span class="Highlight__publicationStatus">
+                  {featuredPublication.status}
+                </span>
+              </a>
+            ) : (
+              <div class="Highlight">
+                <div class="Highlight__label">Publication</div>
+                <span class="Highlight__title">
+                  {featuredPublication.title}
+                </span>
+                <span class="Highlight__sub">{featuredPublication.venue}</span>
+                <span class="Highlight__publicationStatus">
+                  {featuredPublication.status}
+                </span>
+              </div>
+            ))
+        }
+
+        {
+          updates && updates.length > 0 && (
+            <div class="Highlight__section" style="margin-top: 0.5rem;">
+              <div class="Highlight__label">Updates</div>
+              <div class="Highlight UpdatesLog">
+                {updates.map((update) =>
+                  update.href ? (
+                    <a
+                      class="UpdatesLog__item"
+                      href={update.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {update.iconSvgInner ? (
+                        <svg
+                          class="UpdatesLog__icon"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          set:html={update.iconSvgInner}
+                        />
+                      ) : (
+                        <span class="UpdatesLog__dot" aria-hidden="true" />
+                      )}
+                      <span class="UpdatesLog__text">{update.text}</span>
+                      {update.date && (
+                        <span class="UpdatesLog__date">{update.date}</span>
+                      )}
+                    </a>
+                  ) : (
+                    <div class="UpdatesLog__item">
+                      {update.iconSvgInner ? (
+                        <svg
+                          class="UpdatesLog__icon"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          set:html={update.iconSvgInner}
+                        />
+                      ) : (
+                        <span class="UpdatesLog__dot" aria-hidden="true" />
+                      )}
+                      <span class="UpdatesLog__text">{update.text}</span>
+                      {update.date && (
+                        <span class="UpdatesLog__date">{update.date}</span>
+                      )}
+                    </div>
+                  ),
+                )}
+              </div>
+            </div>
+          )
+        }
+
+        {
+          latestArticle && (
+            <div class="Highlight__articleSection">
+              <div class="Highlight__label">Latest Article</div>
+              <a
+                class="Highlight Highlight--link Highlight--article"
+                href={latestArticle.href}
+              >
+                <div class="Highlight__body">
+                  <div class="Highlight__text">
+                    <span class="Highlight__title">{latestArticle.title}</span>
+                    <span class="Highlight__desc">
+                      {latestArticle.description}
+                    </span>
+                    <div class="Highlight__cta">
+                      <span>Read article</span>
+                      <span class="Highlight__arrow" aria-hidden="true">
+                        →
+                      </span>
+                    </div>
+                  </div>
+                  {latestArticle.imageUrl && (
+                    <div class="Highlight__articleThumb">
+                      <img src={latestArticle.imageUrl} alt="" loading="lazy" />
+                    </div>
+                  )}
+                </div>
+              </a>
+            </div>
+          )
+        }
+
+        {
+          featuredProject && (
+            <a
+              class="Highlight Highlight--link"
+              href={featuredProject.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="Highlight__label">Featured Project</div>
+              <div class="Highlight__body">
+                <svg
+                  class="Highlight__projectIcon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+                <div class="Highlight__text">
+                  <span class="Highlight__title">{featuredProject.title}</span>
+                  {featuredProject.description && (
+                    <span class="Highlight__sub">
+                      {featuredProject.description}
+                    </span>
+                  )}
+                </div>
+              </div>
+              <div class="Highlight__cta">
+                <span>View on GitHub</span>
+                <span class="Highlight__arrow" aria-hidden="true">
+                  →
+                </span>
+              </div>
+            </a>
+          )
+        }
+      </div>
+
+      <div class="ProfilePage__scrollHint" aria-hidden="true">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Detailed sections (narrower than hero) -->
+    <div class="ProfilePage__body">
+      <div class="ProfilePage__sideBySide">
+        <div class="ProfilePage__sideCol">
+          {
+            domains && domains.items.length > 0 && (
+              <section class="ProfilePage__section">
+                <div class="ProfilePage__sectionHeader">
+                  <h3>{domains.title}</h3>
+                  <div class="ProfilePage__rule" />
+                </div>
+                <div class="DomainPills">
+                  {domains.items.map((domain) => (
+                    <span class="DomainPill">
+                      <svg
+                        class="DomainPill__icon"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        set:html={domain.iconSvgInner}
+                      />
+                      {domain.name}
+                    </span>
+                  ))}
+                </div>
+              </section>
+            )
+          }
+          {
+            expertise && expertise.items.length > 0 && (
+              <section class="ProfilePage__section">
+                <div class="ProfilePage__sectionHeader">
+                  <h3>{expertise.title}</h3>
+                  <div class="ProfilePage__rule" />
+                </div>
+                <div class="DomainPills">
+                  {expertise.items.map((domain) => (
+                    <span class="DomainPill">
+                      <svg
+                        class="DomainPill__icon"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        set:html={domain.iconSvgInner}
+                      />
+                      {domain.name}
+                    </span>
+                  ))}
+                </div>
+              </section>
+            )
+          }
+          {
+            education && education.length > 0 && (
+              <section class="ProfilePage__section">
+                <div class="ProfilePage__sectionHeader">
+                  <h3>Education</h3>
+                  <div class="ProfilePage__rule" />
+                </div>
+                {education.map((item) => (
+                  <div class="EduCompact">
+                    {item.logoSrc && (
+                      <img
+                        class="EduCompact__logo"
+                        src={item.logoSrc}
+                        alt={item.school}
+                      />
+                    )}
+                    <div class="EduCompact__text">
+                      {item.href ? (
+                        <a
+                          class="EduCompact__degree"
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {item.degree}
+                        </a>
+                      ) : (
+                        <span class="EduCompact__degree">{item.degree}</span>
+                      )}
+                      <span class="EduCompact__school">
+                        {item.school}
+                        {item.location ? ` · ${item.location}` : ""}
+                      </span>
+                      <span class="EduCompact__dates">{item.dates}</span>
+                    </div>
+                  </div>
+                ))}
+              </section>
+            )
+          }
+        </div>
+        {
+          techStack && techStack.length > 0 && (
+            <section class="ProfilePage__section">
+              <div class="ProfilePage__sectionHeader">
+                <h3>Tech Stack</h3>
+                <div class="ProfilePage__rule" />
+              </div>
+              <div class="TechStack">
+                {techStack.map((category) => (
+                  <div class="TechStack__group">
+                    <span class="TechStack__label">{category.name}</span>
+                    {category.items.map((item) => (
+                      <span class="TechStack__chip">{item}</span>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </section>
+          )
+        }
+      </div>
+      {
+        companies && companies.items.length > 0 && (
+          <section id="work" class="ProfilePage__section">
+            <div class="ProfilePage__sectionHeader">
+              <h3>{companies.title}</h3>
+              <div class="ProfilePage__rule" />
+            </div>
+            <div class="CompanyList">
+              {companies.items.map((company) => (
+                <div class="CompanyBlock">
+                  <div class="CompanyBlock__info">
+                    <div class="CompanyBlock__identity">
+                      <img
+                        class="CompanyBlock__logo"
+                        src={company.logoSrc}
+                        alt={company.name}
+                      />
+                      <div class="CompanyBlock__identityText">
+                        <span class="CompanyBlock__name">{company.name}</span>
+                        <span class="CompanyBlock__role">
+                          {company.role} · {company.dates}
+                        </span>
+                      </div>
+                    </div>
+                    <p
+                      class="CompanyBlock__desc"
+                      set:html={company.description}
+                    />
+                  </div>
+                  <div class="CompanyBlock__projects">
+                    <div class="ProjectList">
+                      {company.projects.map((project) => (
+                        <a class="ProjectRow" href={project.href}>
+                          <div class="ProjectRow__body">
+                            <span class="ProjectRow__title">
+                              {project.title}
+                            </span>
+                            <span class="ProjectRow__desc">
+                              {project.description}
+                            </span>
+                          </div>
+                          <span class="ProjectRow__arrow" aria-hidden="true">
+                            →
+                          </span>
+                        </a>
+                      ))}
+                      {company.comingSoon && (
+                        <div class="ProjectRow ProjectRow--comingSoon">
+                          <span class="ProjectRow__comingSoonLabel">
+                            More coming soon
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )
+      }
+
+      {
+        freelanceOpen && (
+          <div class="FreelanceCta">
+            <div class="FreelanceCta__text">
+              <span class="FreelanceCta__badge">Available</span>
+              <h3 class="FreelanceCta__heading">Open to Freelance</h3>
+              <p class="FreelanceCta__desc">
+                I take on a limited number of freelance projects, from websites
+                and apps to larger systems, tooling, and technical architecture.
+                If you have something interesting, let's talk.
+              </p>
+            </div>
+            <div class="FreelanceCta__ctaGroup">
+              <a
+                class="FreelanceCta__cta"
+                href="mailto:matthewmacraebovell@outlook.com"
+              >
+                Get in touch
+              </a>
+              {freelanceAvailability && (
+                <span class="FreelanceCta__note">{freelanceAvailability}</span>
+              )}
+            </div>
+          </div>
+        )
+      }
+
+      {
+        articles && articles.items.length > 0 && (
+          <section class="ProfilePage__section">
+            <div class="ProfilePage__sectionHeader">
+              <h3>{articles.title}</h3>
+              <div class="ProfilePage__rule" />
+            </div>
+            <div class="ArticleGrid">
+              {articles.items.map((article) => (
+                <a class="ArticleCard" href={article.href}>
+                  {article.imageUrl && (
+                    <div class="ArticleCard__imageWrap">
+                      <img src={article.imageUrl} alt="" loading="lazy" />
+                    </div>
+                  )}
+                  {article.date && (
+                    <div class="ArticleCard__date">{article.date}</div>
+                  )}
+                  <h4 class="ArticleCard__title">{article.title}</h4>
+                  <p class="ArticleCard__desc">{article.description}</p>
+                  <div class="ArticleCard__cta">
+                    <span>Read more</span>
+                    <span class="ArticleCard__arrow" aria-hidden="true">
+                      →
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )
+      }
+
+      {
+        community && community.items.length > 0 && (
+          <section class="ProfilePage__section">
+            <div class="ProfilePage__sectionHeader">
+              <h3>{community.title}</h3>
+              <div class="ProfilePage__rule" />
+            </div>
+            <div class="CommunityList">
+              {community.items.map((item) =>
+                item.href ? (
+                  <a
+                    class="CommunityBlock"
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="CommunityBlock__header">
+                      <span class="CommunityBlock__name">{item.name}</span>
+                      <span class="CommunityBlock__dates">{item.dates}</span>
+                    </div>
+                    {item.role && (
+                      <span class="CommunityBlock__role">{item.role}</span>
+                    )}
+                    {item.description && (
+                      <p class="CommunityBlock__desc">{item.description}</p>
+                    )}
+                  </a>
+                ) : (
+                  <div class="CommunityBlock">
+                    <div class="CommunityBlock__header">
+                      <span class="CommunityBlock__name">{item.name}</span>
+                      <span class="CommunityBlock__dates">{item.dates}</span>
+                    </div>
+                    {item.role && (
+                      <span class="CommunityBlock__role">{item.role}</span>
+                    )}
+                    {item.description && (
+                      <p class="CommunityBlock__desc">{item.description}</p>
+                    )}
+                  </div>
+                ),
+              )}
+            </div>
+          </section>
+        )
+      }
+
+      <slot />
+    </div>
+  </div>
+</Main>

@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import ArticleV2 from "../../layouts/ArticleV2/ArticleV2.astro";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("engineeringProjects");
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await project.render();
+
+const date = new Date(project.data.date).toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<ArticleV2
+  title={project.data.title}
+  description={project.data.description}
+  date={date}
+  imageUrl="/images/articles/default.png"
+>
+  <Content />
+</ArticleV2>
