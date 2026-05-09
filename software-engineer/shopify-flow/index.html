@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.11.5"><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="expires" content="0"><meta http-equiv="pragma" content="no-cache"><title>Flow Schedules &amp; Data Fetching</title><!-- Primary Meta Tags --><meta name="title" content="Flow Schedules &#38; Data Fetching"><meta name="description" content="Shipped scheduled workflow triggers and data fetching capabilities for Shopify Flow, enabling merchants to automate tasks that previously required custom code."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://matthewmacraebovell.com/images/articles/default.png"><meta property="og:title" content="Flow Schedules &#38; Data Fetching"><meta property="og:description" content="Shipped scheduled workflow triggers and data fetching capabilities for Shopify Flow, enabling merchants to automate tasks that previously required custom code."><meta property="og:image" content="https://matthewmacraebovell.com/images/articles/default.png"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://matthewmacraebovell.com/images/articles/default.png"><meta property="twitter:title" content="Flow Schedules &#38; Data Fetching"><meta property="twitter:description" content="Shipped scheduled workflow triggers and data fetching capabilities for Shopify Flow, enabling merchants to automate tasks that previously required custom code."><meta property="twitter:image" content="https://matthewmacraebovell.com/images/articles/default.png"><!-- Shynet --><noscript><img src="https://shynet-mpb4.onrender.com/ingress/345502f1-3264-4423-bd99-5313dfd8a181/pixel.gif"></noscript><script defer src="https://shynet-mpb4.onrender.com/ingress/345502f1-3264-4423-bd99-5313dfd8a181/script.js?v=1"></script><!-- <script src="MeinScript.js?v=1"></script> --><link rel="stylesheet" href="/_astro/_path_.FLg2ccm8.css">
+<style>@font-face{font-family:Geist Sans;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/geist-sans-latin-400-normal.gapTbOY8.woff2) format("woff2"),url(/_astro/geist-sans-latin-400-normal.BOaIZNA2.woff) format("woff")}:root{--blue-grey-bg: rgba(11, 53, 81, .03);--black-4: rgba(0, 0, 0, .1);--black-2: rgba(0, 0, 0, .5);--black: black;--white: white;--medium-sea-green: #008d3e;--black-3: rgba(0, 0, 0, .4);--black-5: rgba(0, 0, 0, .8);--white-smoke: #f7f7f7;--red: #e91a03;--theme: #517aff;--theme-darker: #3a5fda}html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-family:sans-serif}@font-face{font-family:Geistvf;src:url(https://matthewmacraebovell.com/fonts/GeistVF.woff)}@font-face{font-family:GeistMonovf;src:url(https://matthewmacraebovell.com/fonts/GeistMonoVF.woff)}body{color:var(--black);cursor:default;background-image:none;background-position:0 0;font-family:Geistvf,sans-serif;font-size:16px;line-height:24px;padding:0;margin:0}.Navbar{margin-top:1rem;display:flex;width:98%;justify-content:flex-end;font-family:Geistvf,sans-serif;gap:1rem}@media (max-width: 768px){.Navbar{justify-content:left;margin-left:1.25rem;margin-bottom:1rem}.Navbar__desktop{display:none}}.Navbar a{text-decoration:none;color:inherit}.Navbar a:hover{text-decoration:underline}footer{text-align:center;margin-bottom:3rem;margin-top:5rem;opacity:.7}
+</style><script type="module">var o=document.cookie.split(";");for(var a=1;a<=o.length;a++){var t=o[a-1],d=t.split("=");document.cookie=d[0]+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"}window.caches.keys().then(function(e){for(let n of e)window.caches.delete(n)});const i=await window.indexedDB.databases();i.forEach(e=>{window.indexedDB.deleteDatabase(e.name)});window.localStorage.clear();window.sessionStorage.clear();
+</script></head> </html> <body>  <div class="Navbar"> <a href="/">Home</a> <a href="/blog">Blog</a> <a href="/presentations">Talks</a> <a href="/projects">Projects</a> <!-- <a
+      class="Navbar__desktop"
+      href="https://matthewshouse.notion.site/Matthew-s-House-76ebf7cf587646628078405b66cba5a3"
+      >House</a
+    > --> <!-- <a href="/pdfs/resumes/Matthew_MacRaeBovell_Resume_April2023.pdf">Resume</a> --> </div>  <div class="ArticleV2"> <h1 class="ArticleV2__title" style="font-size: undefined"> Flow Schedules &amp; Data Fetching </h1> <div class="ArticleV2__description">Shipped scheduled workflow triggers and data fetching capabilities for Shopify Flow, enabling merchants to automate tasks that previously required custom code.</div> <hr class="ArticleV2__hr" style="margin-bottom: 0.3rem"> <div class="ArticleV2__author"> <div class="ArticleV2__author__left"> <img src="/images/me2.jpeg" alt="Author"> </div> <div class="ArticleV2__author__right"> <div class="ArticleV2__author__name"> <a href="/">Matthew MacRae-Bovell</a> </div> <div class="ArticleV2__author__date">October 18, 2022</div> </div> </div> <hr class="ArticleV2__hr" style="margin-top: 0.1rem"> <div style="margin-top: 2.3rem;"></div> <div class="ArticleV2__body"> <div class="ArticleV2__content" data-article-content>    </div> </div> </div>     </body> <!-- <script is:inline>
+  function buildArticleToc(root) {
+    const content = root.querySelector("[data-article-content]");
+    const toc = document.querySelector(".ArticleV2__toc");
+    const tocList = document.querySelector(".ArticleV2__toc__list");
+
+    if (!content || !toc || !tocList) return;
+
+    // Include H1–H4 inside markdown content, but NOT the page title (which is outside the slot anyway)
+    const headings = Array.from(
+      content.querySelectorAll("h1, h2, h3, h4")
+    );
+
+    if (headings.length === 0) {
+      toc.classList.add("is-hidden");
+      return;
+    }
+
+    const slugify = (str) =>
+      str
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s-]/g, "")
+        .replace(/\s+/g, "-")
+        .replace(/-+/g, "-");
+
+    // Ensure each heading has a unique id
+    for (const h of headings) {
+      if (!h.id) {
+        const base = slugify(h.textContent || "");
+        if (!base) continue;
+
+        let id = base;
+        let i = 2;
+
+        while (content.querySelector(`#${CSS.escape(id)}`)) {
+          id = `${base}-${i++}`;
+        }
+
+        h.id = id;
+      }
+    }
+
+    // Build TOC list with indent based on heading level
+    tocList.innerHTML = "";
+
+    for (const h of headings) {
+      const level = Number(h.tagName.substring(1)); // 1–4
+
+      const li = document.createElement("li");
+      li.className = `ArticleV2__toc__item ArticleV2__toc__item--l${level}`;
+
+      const a = document.createElement("a");
+      a.className = "ArticleV2__toc__link";
+      a.href = `#${h.id}`;
+      a.textContent = (h.textContent || "").trim();
+
+      li.appendChild(a);
+      tocList.appendChild(li);
+    }
+
+    const links = Array.from(
+      document.querySelectorAll(".ArticleV2__toc__link")
+    );
+
+    const setActive = (id) => {
+      for (const link of links) {
+        const active = link.getAttribute("href") === `#${id}`;
+        link.classList.toggle("is-active", active);
+      }
+    };
+
+    let lastActiveId = headings[0]?.id;
+    if (lastActiveId) setActive(lastActiveId);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort(
+            (a, b) =>
+              a.boundingClientRect.top - b.boundingClientRect.top
+          );
+
+        if (visible.length > 0) {
+          lastActiveId = visible[0].target.id;
+          setActive(lastActiveId);
+        }
+      },
+      {
+        rootMargin: "-20% 0px -70% 0px",
+        threshold: [0, 1],
+      }
+    );
+
+    for (const h of headings) observer.observe(h);
+
+    window.addEventListener("hashchange", () => {
+      const id = location.hash.slice(1);
+      if (id) setActive(id);
+    });
+  }
+
+  window.addEventListener("load", () => {
+    const root = document.querySelector(".ArticleV2");
+    if (root) buildArticleToc(root);
+  });
+</script> -->
