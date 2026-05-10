@@ -1,116 +1,457 @@
 ---
 import { getCollection } from "astro:content";
-import EmailSubscribe from "../components/EmailSubscribe/EmailSubscribe.astro";
 import Main from "../layouts/Main/Main.astro";
-import BlogPreview from "../components/BlogPreview/BlogPreview.astro";
+import EmailSubscribe from "../components/EmailSubscribe/EmailSubscribe.astro";
 import "./index.scss";
-const articles = await getCollection("articles");
-const nonDraftArticles = articles.filter((article) => !article.data.draft);
-const sortedArticles = nonDraftArticles.sort((a, b) => {
-  return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
-});
 
-const featuredArticles = sortedArticles.filter((article) => {
-  return article.data.featured;
-});
+const [articles, presentations, projects] = await Promise.all([
+  getCollection("articles"),
+  getCollection("presentations"),
+  getCollection("projects"),
+]);
+
+type NewsItem = {
+  type: "Article" | "Talk" | "Project";
+  title: string;
+  date: Date;
+  href: string;
+};
+
+const featuredArticle = articles
+  .filter((a) => !a.data.draft)
+  .sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  )[0];
+
+const newsItems: NewsItem[] = [
+  ...articles
+    .filter((a) => !a.data.draft && a.slug !== featuredArticle?.slug)
+    .map((a) => ({
+      type: "Article" as const,
+      title: a.data.title,
+      date: new Date(a.data.date),
+      href: `/blog/${a.slug}`,
+    })),
+  ...presentations.map((p) => ({
+    type: "Talk" as const,
+    title: p.data.title,
+    date: new Date(p.data.date),
+    href: p.data.link,
+  })),
+  ...projects.map((p) => ({
+    type: "Project" as const,
+    title: p.data.title,
+    date: new Date(p.data.date),
+    href: p.data.link,
+  })),
+]
+  .sort((a, b) => b.date.getTime() - a.date.getTime())
+  .slice(0, 6);
+
+const fmtDate = (d: Date) =>
+  d.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+
+const newsIcons: Record<NewsItem["type"], string> = {
+  Article: `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>`,
+  Talk: `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
+  Project: `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
+};
 ---
 
-<Main title="Matthew MacRae-Bovell">
-  <div
-    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"
-  >
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/5/59/Worm_Holes%2C_By_OmniDaily.gif"
-      alt="Worm Holes"
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0.02;"
-    />
-  </div>
-  <div class="Home">
-    <div class="Home__left">
-      <img
-        class="Home__profile"
-        src="/images/me2.jpeg"
-        alt="Matthew MacRae-Bovell"
-      />
-      <div class="Home__name">
-        <h1 class="Home__name__h1">Matthew MacRae-Bovell</h1>
-        <h2 class="Home__name__h2">developer, creator, speaker</h2>
+<Main
+  title="Matthew MacRae-Bovell"
+  styleOverride="background-color: lab(98.2539% -.108749 -.74997);"
+>
+  <div class="Hub">
+    <!-- Hero -->
+    <section class="Hub__hero">
+      <div class="Hub__vortex" aria-hidden="true">
+        <div class="Hub__ring Hub__ring--1"></div>
+        <div class="Hub__ring Hub__ring--2"></div>
+        <div class="Hub__ring Hub__ring--3"></div>
+        <div class="Hub__ring Hub__ring--4"></div>
+        <div class="Hub__ring Hub__ring--5"></div>
+        <div class="Hub__ring Hub__ring--6"></div>
       </div>
-      <div class="Home__email">
-        <EmailSubscribe placeholder="Join my mailing list..." />
+
+      <div class="Hub__heroGlows" aria-hidden="true">
+        <div class="Hub__glow Hub__glow--a"></div>
+        <div class="Hub__glow Hub__glow--b"></div>
+        <div class="Hub__glow Hub__glow--c"></div>
       </div>
-      <div>
-        Welcome! I'm a software developer based in <a>Ottawa, Canada</a> with a passion
-        for crafting great developer experiences and sharing what I learn along the
-        way.
-      </div>
-      <div>
-        If you're interested in chatting about tech, careers, projects, or
-        anything else, feel free to book a <a
-          href="https://calendly.com/matthewmacraebovell/chats">coffee chat</a
-        > with me!
-      </div>
-      <a href="https://calendly.com/matthewmacraebovell/chats"
-        ><button class="button">Coffee Chats</button></a
-      >
-    </div>
-    <div class="Home__right">
-      <h2>About</h2>
-      <div class="Home__about">
-        <div>
-          I'm currently working with the authorization team at <a
-            id="gitlab"
-            href="https://about.gitlab.com/">GitLab</a
-          >, and I've been lucky to work with some great teams at companies like <a
-            id="shopify"
-            href="https://www.shopify.com/">Shopify</a
-          >, <a id="rbc" href="https://www.rbc.com/">RBC</a>, <a
-            id="jobber"
-            href="https://www.jobber.com/">Jobber</a
-          >, and more.
+
+      <div class="Hub__heroContent">
+        <div class="Hub__heroMeta">🇨🇦 Ottawa, Canada</div>
+        <h1 class="Hub__name">
+          Matthew<br />MacRae-Bovell
+        </h1>
+
+        <div
+          class="Hub__roleReel"
+          aria-label="Software Engineer, Writer, Speaker, Researcher, Community Builder, Game Designer, Adventurer"
+        >
+          <span class="Hub__role">Software Engineer</span>
+          <span class="Hub__role">Writer</span>
+          <span class="Hub__role">Speaker</span>
+          <span class="Hub__role">Researcher</span>
+          <span class="Hub__role">Community Builder</span>
+          <span class="Hub__role">Game Designer</span>
+          <span class="Hub__role">Adventurer</span>
+          <span class="Hub__roleStatic"
+            >Software Engineer · Writer · Speaker · Researcher · Community
+            Builder · Game Designer · Adventurer</span
+          >
         </div>
-        <div>
-          Outside of work hours, I love organizing events like <a
-            id="htt"
-            href="https://ccss.carleton.ca/hackthetunnels/">Hack The Tunnels</a
-          > and presenting at conferences or meetups. I'm the previous President
-          of the
-          <a id="ccss" href="https://ccss.carleton.ca/"
-            >Carleton Computer Science Society</a
-          > and I'm always looking for new ways to give back to the community.
+
+        <p class="Hub__bio">
+          Building things, sharing ideas, and exploring what's next.
+        </p>
+
+        <div class="Hub__heroLinks">
+          <a class="Hub__heroCta Hub__heroCta--primary" href="#work"
+            >See my work</a
+          >
+          <a
+            class="Hub__heroCta"
+            href="https://calendly.com/matthewmacraebovell/chats"
+            target="_blank"
+            rel="noopener noreferrer">Coffee chat</a
+          >
         </div>
-        <!-- <div>
-          I also became a home owner at 23 and <a
-            href="https://matthewshouse.notion.site/Matthew-s-House-76ebf7cf587646628078405b66cba5a3"
-            >rent out rooms</a
-          > for affordable prices to university students and young professionals.
-        </div> -->
       </div>
-      <!-- <div style="margin-top: 0.25rem;"></div>
-      <h2>Featured</h2>
-      <a href="https://student-to-software-engineer.org/">
-        <BlogPreview
-          date={new Date("2025-06-26")}
-          title="Student To Software Engineer"
-          description="A FREE book for students who want to land their first software job and overcome the saturated job market."
-          image="/images/student-to-software-engineer.png"
-        />
-      </a> -->
-      <h2>Blog</h2>
-      {
-        featuredArticles.map((article) => (
-          <a href={`/blog/${article.slug}`}>
-            <BlogPreview
-              date={article.data.date}
-              title={article.data.title}
-              description={article.data.description}
-              image={article.data.image}
-              previewFontSize={article.data.previewFontSize}
-            />
-          </a>
-        ))
-      }
-      <div style="margin-top: 0.5rem;"></div>
-    </div>
+
+      <div class="Hub__scrollHint" aria-hidden="true">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Facets -->
+    <section class="Hub__facets" id="work">
+      <!-- Intro row -->
+      <div class="Hub__intro">
+        <div class="Hub__introProfile">
+          <div class="Hub__introGlow" aria-hidden="true"></div>
+          <img
+            class="Hub__introPhoto"
+            src="/images/me2.jpeg"
+            alt="Matthew MacRae-Bovell"
+          />
+          <div class="Hub__introContent">
+            <span class="Hub__cardLabel Hub__cardLabel--profile"
+              >Ottawa, Canada</span
+            >
+            <h2 class="Hub__cardHeading">
+              The person<br />behind the work.
+            </h2>
+            <p class="Hub__cardDesc">
+              Builder of many things, with many more in progress.
+            </p>
+          </div>
+        </div>
+
+        {
+          featuredArticle && (
+            <a class="Hub__featuredCard" href={`/blog/${featuredArticle.slug}`}>
+              <div class="Hub__introGlow" aria-hidden="true" />
+              <div class="Hub__featuredCardContent">
+                <div class="Hub__featuredCardMeta">
+                  <span class="Hub__featuredCardLabel">
+                    {fmtDate(new Date(featuredArticle.data.date))}
+                  </span>
+                </div>
+                <h3 class="Hub__featuredCardTitle">
+                  {featuredArticle.data.title}
+                </h3>
+                <p class="Hub__featuredCardDesc">
+                  {featuredArticle.data.description}
+                </p>
+                <span class="Hub__featuredCardCta">
+                  Read article <span class="Hub__featuredCardArrow">→</span>
+                </span>
+              </div>
+              <div class="Hub__featuredCardImgWrap">
+                <img
+                  class="Hub__featuredCardImg"
+                  src={featuredArticle.data.image}
+                  alt={featuredArticle.data.title}
+                />
+              </div>
+            </a>
+          )
+        }
+
+        <div class="Hub__newsCard">
+          <div class="Hub__newsHeader">
+            <span class="Hub__newsHeading">Recent</span>
+          </div>
+          <ul class="Hub__newsFeed">
+            {
+              newsItems.map((item) => (
+                <li class="Hub__newsItem">
+                  <a
+                    class="Hub__newsLink"
+                    href={item.href}
+                    target={item.type !== "Article" ? "_blank" : undefined}
+                    rel={
+                      item.type !== "Article"
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                  >
+                    <span
+                      class={`Hub__newsIcon Hub__newsIcon--${item.type.toLowerCase()}`}
+                      title={item.type}
+                      set:html={newsIcons[item.type]}
+                    />
+                    <span class="Hub__newsTitle">{item.title}</span>
+                    <span class="Hub__newsDate">{fmtDate(item.date)}</span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+
+      <div class="Hub__bentoGrid">
+        <!-- Software Engineer — wide card -->
+        <a class="Hub__card Hub__card--engineer" href="/software-engineer">
+          <div class="Hub__cardGlow" aria-hidden="true"></div>
+          <div class="Hub__cardDecor" aria-hidden="true">
+            <pre
+              class="Hub__cardCode">fn authorize(actor, action) {"{"}
+  policy.evaluate(actor, action)
+{"}"}</pre>
+          </div>
+          <div class="Hub__cardInner">
+            <span class="Hub__cardLabel Hub__cardLabel--engineer"
+              >Software Engineer</span
+            >
+            <h2 class="Hub__cardHeading">
+              Building systems<br />that scale.
+            </h2>
+            <p class="Hub__cardDesc">
+              Shipping software used by millions of users and businesses
+              worldwide.
+            </p>
+            <span class="Hub__cardCta"
+              >Explore engineering <span class="Hub__cardArrow">→</span></span
+            >
+          </div>
+        </a>
+
+        <!-- Writer — tall card -->
+        <a class="Hub__card Hub__card--writer" href="/blog">
+          <div class="Hub__cardGlow" aria-hidden="true"></div>
+          <div class="Hub__cardInner">
+            <span class="Hub__cardLabel Hub__cardLabel--writer">Writer</span>
+            <h2 class="Hub__cardHeading">
+              Thoughts on craft<br />and career.
+            </h2>
+            <p class="Hub__cardDesc">
+              Writing on engineering, developer growth, and lessons learned the
+              hard way.
+            </p>
+            <span class="Hub__cardCta"
+              >Read the blog <span class="Hub__cardArrow">→</span></span
+            >
+          </div>
+        </a>
+
+        <!-- Speaker -->
+        <a class="Hub__card Hub__card--speaker" href="/presentations">
+          <div class="Hub__cardGlow" aria-hidden="true"></div>
+          <div class="Hub__cardInner">
+            <span class="Hub__cardLabel Hub__cardLabel--speaker">Speaker</span>
+            <h2 class="Hub__cardHeading">
+              Presenting ideas<br />to audiences.
+            </h2>
+            <p class="Hub__cardDesc">
+              Talks and workshops across universities, conferences, and meetups.
+            </p>
+            <span class="Hub__cardCta"
+              >View talks <span class="Hub__cardArrow">→</span></span
+            >
+          </div>
+        </a>
+
+        <!-- Community Builder — coming soon -->
+        <div class="Hub__card Hub__card--community Hub__card--disabled">
+          <div class="Hub__cardGlow" aria-hidden="true"></div>
+          <div class="Hub__cardInner">
+            <span class="Hub__cardLabel Hub__cardLabel--community"
+              >Community Builder</span
+            >
+            <h2 class="Hub__cardHeading">
+              Giving back,<br />building together.
+            </h2>
+            <p class="Hub__cardDesc">
+              Organizing events, leading communities, and making space for
+              others to grow.
+            </p>
+            <span class="Hub__cardCta Hub__cardCta--soon">Coming soon</span>
+          </div>
+        </div>
+
+        <!-- Researcher — coming soon -->
+        <div class="Hub__card Hub__card--researcher Hub__card--disabled">
+          <div class="Hub__cardGlow" aria-hidden="true"></div>
+          <div class="Hub__cardInner">
+            <span class="Hub__cardLabel Hub__cardLabel--researcher"
+              >Researcher</span
+            >
+            <h2 class="Hub__cardHeading">
+              Advancing the<br />discipline.
+            </h2>
+            <p class="Hub__cardDesc">
+              Paper accepted to FSE 2026 on fault injection in software systems.
+            </p>
+            <span class="Hub__cardCta Hub__cardCta--soon">Coming soon</span>
+          </div>
+        </div>
+
+        <!-- Game Designer — coming soon -->
+        <div class="Hub__card Hub__card--game Hub__card--disabled">
+          <div class="Hub__cardGlow" aria-hidden="true"></div>
+          <div class="Hub__cardInner">
+            <span class="Hub__cardLabel Hub__cardLabel--game"
+              >Game Designer</span
+            >
+            <h2 class="Hub__cardHeading">
+              Crafting worlds<br />and experiences.
+            </h2>
+            <p class="Hub__cardDesc">
+              Designing games that are playful, surprising, and worth your time.
+            </p>
+            <span class="Hub__cardCta Hub__cardCta--soon">Coming soon</span>
+          </div>
+        </div>
+
+        <!-- Freelance — coming soon -->
+        <div class="Hub__card Hub__card--freelance Hub__card--disabled">
+          <div class="Hub__cardGlow" aria-hidden="true"></div>
+          <div class="Hub__cardInner">
+            <span class="Hub__cardLabel Hub__cardLabel--freelance"
+              >Freelance</span
+            >
+            <h2 class="Hub__cardHeading">
+              Available for<br />contract work.
+            </h2>
+            <p class="Hub__cardDesc">
+              Bringing senior-level engineering to ambitious projects and teams.
+            </p>
+            <span class="Hub__cardCta Hub__cardCta--soon">Coming soon</span>
+          </div>
+        </div>
+
+        <!-- Adventurer — coming soon -->
+        <div class="Hub__card Hub__card--adventurer Hub__card--disabled">
+          <div class="Hub__cardGlow" aria-hidden="true"></div>
+          <div class="Hub__cardInner">
+            <span class="Hub__cardLabel Hub__cardLabel--adventurer"
+              >Adventurer</span
+            >
+            <h2 class="Hub__cardHeading">
+              Exploring the world,<br />one trip at a time.
+            </h2>
+            <p class="Hub__cardDesc">
+              Travel, hiking, and whatever's around the next corner.
+            </p>
+            <span class="Hub__cardCta Hub__cardCta--soon">Coming soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="Hub__footer">
+      <div class="Hub__footerInner">
+        <div class="Hub__footerSubscribe">
+          <span class="Hub__footerSubscribeLabel">Stay in the loop</span>
+          <EmailSubscribe placeholder="Your email" />
+        </div>
+        <div class="Hub__footerBottom">
+          <span class="Hub__footerName">Matthew MacRae-Bovell</span>
+          <nav class="Hub__footerNav" aria-label="Footer navigation">
+            <a href="/software-engineer">Work</a>
+            <a href="/blog">Blog</a>
+            <a href="/presentations">Talks</a>
+            <a href="/projects">Projects</a>
+            <a
+              href="https://github.com/mattvb91"
+              target="_blank"
+              rel="noopener noreferrer">GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/matthewmacraebovell/"
+              target="_blank"
+              rel="noopener noreferrer">LinkedIn</a
+            >
+          </nav>
+          <span class="Hub__footerCopy">© {new Date().getFullYear()}</span>
+        </div>
+      </div>
+    </footer>
   </div>
 </Main>
+
+<script>
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+  const cards = document.querySelectorAll<HTMLElement>(".Hub__card");
+
+  if (prefersReducedMotion) {
+    cards.forEach((card) => card.classList.add("is-visible"));
+  } else {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+    );
+    cards.forEach((card) => observer.observe(card));
+  }
+
+  // Mouse-tracking glow — glow follows cursor within each active card
+  const activeCards = document.querySelectorAll<HTMLElement>(
+    ".Hub__card:not(.Hub__card--disabled), .Hub__introProfile",
+  );
+  activeCards.forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty("--glow-x", `${x}%`);
+      card.style.setProperty("--glow-y", `${y}%`);
+    });
+    card.addEventListener("mouseleave", () => {
+      card.style.removeProperty("--glow-x");
+      card.style.removeProperty("--glow-y");
+    });
+  });
+
+  document
+    .querySelector<HTMLAnchorElement>('a[href="#work"]')
+    ?.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
+    });
+</script>
