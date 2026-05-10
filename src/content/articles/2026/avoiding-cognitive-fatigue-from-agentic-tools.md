@@ -17,7 +17,7 @@ This drain is called ["cognitive fatigue"](https://www.medicalnewstoday.com/arti
 
 This problem is not entirely new. Fatigue and cognitive workload have been studied for years in professions like air traffic control [[1](https://doi.org/10.1016/j.ssci.2024.106545)]. What's different now is that AI and agentic tooling are exposing more everyday desk workers to similar high-monitoring, high-context-switching conditions.
 
-Having felt the drain myself, I wouldn't be surprised if in the near future the tech industry starts formally recognizing **AI-induced cognitive fatigue as a workplace wellness concern** in the same way we recognize desk ergonomics, eye strain, carpal tunnel, etc. 
+Having felt the drain myself, I wouldn't be surprised if in the near future the tech industry starts formally recognizing **AI-induced cognitive fatigue as a workplace wellness concern** in the same way we recognize desk ergonomics, eye strain, carpal tunnel, etc.
 
 While we've extensively studied the physical side of desk work and developed frameworks like [Hedge's sit-stand-stretch cycle](https://ergo.human.cornell.edu/CUESitStandPrograms.html) [[2](https://ergo.human.cornell.edu/CUESitStandPrograms.html)], we are only just beginning to understand how to manage cognitive fatigue in the era of AI.
 
@@ -31,7 +31,7 @@ So what specifically is causing this fatigue and what strategies can we use to a
 
 ### 1. More of the Hard, Less of the Easy
 
-Before agentic tooling, I never really thought about how much mental energy I was spending on different tasks. 
+Before agentic tooling, I never really thought about how much mental energy I was spending on different tasks.
 
 I just did the work and if it was hard... it was hard.
 
@@ -45,13 +45,13 @@ Applying this to our work, now that we're doing more of the hard and less of the
 
 ### 2. Compounded Cognitive Debt
 
-Now that code is so easy to generate, we're spitting out more of it and, as a result, spending less time processing why the code is the way it is. 
+Now that code is so easy to generate, we're spitting out more of it and, as a result, spending less time processing why the code is the way it is.
 
-This creates what researchers have started calling [Cognitive Debt](https://doi.org/10.48550/arXiv.2506.08872) [[4](https://doi.org/10.48550/arXiv.2506.08872)]: the deferred cost of  offloading thinking to an external system, where short-term ease comes at the expense of deeper understanding, memory, ownership, and independent critical thought.
+This creates what researchers have started calling [Cognitive Debt](https://doi.org/10.48550/arXiv.2506.08872) [[4](https://doi.org/10.48550/arXiv.2506.08872)]: the deferred cost of offloading thinking to an external system, where short-term ease comes at the expense of deeper understanding, memory, ownership, and independent critical thought.
 
-Similar to technical debt, where you would take on long term technical maintenance to deliver customer value in the short term, cognitive debt is the mental equivalent of that. 
+Similar to technical debt, where you would take on long term technical maintenance to deliver customer value in the short term, cognitive debt is the mental equivalent of that.
 
-You vibe code something out, and it gets the job done, but you haven't really processed why the code is the way it is. 
+You vibe code something out, and it gets the job done, but you haven't really processed why the code is the way it is.
 
 This means that when code review comes around, when something needs to be debugged, or worst of all, when an incident occurs, you have to do far more work to understand the code and the decisions that led to it, taking a significantly higher toll on your cognitive stamina.
 
@@ -59,10 +59,9 @@ This is further compounded when your entire team is also generating mass amounts
 
 An unfortunate trend has emerged: developers are opening PRs for code they have essentially _"not written"_ themselves, shifting the burden of understanding, validating, and debugging that code onto their reviewers.
 
-[Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/) has coined the anti pattern: _"Don't file pull requests with code you haven't reviewed yourself."_ [[5](https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/)]". The idea being:  _"If you open a PR with hundreds (or thousands) of lines of code that an agent produced for you, and you haven't done the work to ensure that code is functional yourself, you are delegating the actual work to other people."_
+[Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/) has coined the anti pattern: _"Don't file pull requests with code you haven't reviewed yourself."_ [[5](https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/)]". The idea being: _"If you open a PR with hundreds (or thousands) of lines of code that an agent produced for you, and you haven't done the work to ensure that code is functional yourself, you are delegating the actual work to other people."_
 
 While a review heavy culture is not necessarily a bad thing, a lot of developers are not used to doing that level of review which when compounded with the authored code not necessarily being processed by a human, can lead to high cognitive drain for reviewers.
-
 
 ### 3. Unrealistic Corporate Performance Expectations
 
@@ -72,7 +71,7 @@ Estimating engineering work has always been notoriously difficult, and now that 
 
 What this has done is put an added performative pressure on developers, without necessarily giving them the support to do so in a sustainable way.
 
-The reality is that it's human nature to not work as well under pressure. When you have a looming deadline, it's easy to fall into the trap pushing yourself harder than you should. 
+The reality is that it's human nature to not work as well under pressure. When you have a looming deadline, it's easy to fall into the trap pushing yourself harder than you should.
 
 While that might have used to meant working longer hours, that might now mean trying to run more agents in parallel, or trying to do more cognitively demanding work in a day than you used to.
 
@@ -116,7 +115,7 @@ A lot of people you see running dozens of Claude terminals are not working on co
 
 A [microbreak](https://workplacenl.ca/site/uploads/2019/09/Microbreaks-Presentation-20191118.pdf) is a short, 1-2 minutes break that you take during work [[6](https://workplacenl.ca/site/uploads/2019/09/Microbreaks-Presentation-20191118.pdf)]. I typically try to take them just before large context switches.
 
-Research on microbreaks suggests that short breaks can reduce fatigue and improve well-being during work [[7](https://doi.org/10.1371/journal.pone.0272460)] and have been shown to prevent the onset and progression of repetitive strain injuries in office workers [[8](https://doi.org/10.1016/S0003-6870(00)00071-5)].
+Research on microbreaks suggests that short breaks can reduce fatigue and improve well-being during work [[7](https://doi.org/10.1371/journal.pone.0272460)] and have been shown to prevent the onset and progression of repetitive strain injuries in office workers [[8](<https://doi.org/10.1016/S0003-6870(00)00071-5>)].
 
 In other words, the goal is not just to “take a break” once you are already exhausted. The goal is to build small moments of recovery into the workflow so your cognitive stamina has a chance to recharge throughout the day.
 
@@ -124,7 +123,7 @@ For agentic work, I think microbreaks are especially useful between phases of at
 
 ### 4. Avoid Notification Induced Context Switching
 
-Notifications grab our attention and force us to context switch away from our current work to verify the ping isn't of high importance. 
+Notifications grab our attention and force us to context switch away from our current work to verify the ping isn't of high importance.
 
 In a world where we're trying to measure and pressure our cognitive stamina, it's important to be mindful of the cost of checking Slack messages, emails, social media, etc.
 
@@ -158,23 +157,22 @@ By being more mindful of our cognitive load and how we schedule our work, I beli
 
 ## References
 
-[[0](https://www.medicalnewstoday.com/articles/cognitive-fatigue)] West, M. (2025, August 1). [What to know about cognitive fatigue](https://www.medicalnewstoday.com/articles/cognitive-fatigue). *Medical News Today*.
+[[0](https://www.medicalnewstoday.com/articles/cognitive-fatigue)] West, M. (2025, August 1). [What to know about cognitive fatigue](https://www.medicalnewstoday.com/articles/cognitive-fatigue). _Medical News Today_.
 
-[[1](https://doi.org/10.1016/j.ssci.2024.106545)] Zamarreño Suárez, M., Arnaldo Valdés, R. M., Pérez Moreno, F., Delgado-Aguilera Jurado, R., López de Frutos, P. M., & Gómez Comendador, V. F. (2024). [Understanding the research on air traffic controller workload and its implications for safety: A science mapping-based analysis](https://doi.org/10.1016/j.ssci.2024.106545). *Safety Science, 176*, 106545.
+[[1](https://doi.org/10.1016/j.ssci.2024.106545)] Zamarreño Suárez, M., Arnaldo Valdés, R. M., Pérez Moreno, F., Delgado-Aguilera Jurado, R., López de Frutos, P. M., & Gómez Comendador, V. F. (2024). [Understanding the research on air traffic controller workload and its implications for safety: A science mapping-based analysis](https://doi.org/10.1016/j.ssci.2024.106545). _Safety Science, 176_, 106545.
 
 [[2](https://ergo.human.cornell.edu/CUESitStandPrograms.html)] Cornell Human Factors and Ergonomics Research Group. [Sit-Stand Working](https://ergo.human.cornell.edu/CUESitStandPrograms.html). Cornell University Ergonomics Web.
 
-[[3](https://doi.org/10.1207/s15516709cog1202_4)] Sweller, J. (1988). [Cognitive Load During Problem Solving: Effects on Learning](https://doi.org/10.1207/s15516709cog1202_4). *Cognitive Science, 12*, 257–285.
+[[3](https://doi.org/10.1207/s15516709cog1202_4)] Sweller, J. (1988). [Cognitive Load During Problem Solving: Effects on Learning](https://doi.org/10.1207/s15516709cog1202_4). _Cognitive Science, 12_, 257–285.
 
-[[4](https://doi.org/10.48550/arXiv.2506.08872)] Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., & Maes, P. (2025). [Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://doi.org/10.48550/arXiv.2506.08872). *arXiv preprint arXiv:2506.08872*.
+[[4](https://doi.org/10.48550/arXiv.2506.08872)] Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., & Maes, P. (2025). [Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://doi.org/10.48550/arXiv.2506.08872). _arXiv preprint arXiv:2506.08872_.
 
-[[5](https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/)] Willison, S. (2026). [Anti-patterns: things to avoid](https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/). In *Agentic Engineering Patterns*. Simon Willison’s Weblog.
+[[5](https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/)] Willison, S. (2026). [Anti-patterns: things to avoid](https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/). In _Agentic Engineering Patterns_. Simon Willison’s Weblog.
 
 <!-- [[6](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/)] Shapiro, D. (2026, January 23). [The Five Levels: from Spicy Autocomplete to the Dark Factory](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/). *Dan Shapiro’s Blog*. -->
 
+[[6](https://workplacenl.ca/site/uploads/2019/09/Microbreaks-Presentation-20191118.pdf)] WorkplaceNL. (2019). [_A Guide to Microbreaks with Practical Exercises: What are Microbreaks?_](https://workplacenl.ca/site/uploads/2019/09/Microbreaks-Presentation-20191118.pdf).
 
-[[6](https://workplacenl.ca/site/uploads/2019/09/Microbreaks-Presentation-20191118.pdf)] WorkplaceNL. (2019). [*A Guide to Microbreaks with Practical Exercises: What are Microbreaks?*](https://workplacenl.ca/site/uploads/2019/09/Microbreaks-Presentation-20191118.pdf).
+[[7](https://doi.org/10.1371/journal.pone.0272460)] Albulescu, P., Macsinga, I., Rusu, A., Sulea, C., Bodnaru, A., & Tulbure, B. T. (2022). [“Give me a break!” A systematic review and meta-analysis on the efficacy of micro-breaks for increasing well-being and performance](https://doi.org/10.1371/journal.pone.0272460). _PLOS ONE, 17_(8), e0272460.
 
-[[7](https://doi.org/10.1371/journal.pone.0272460)] Albulescu, P., Macsinga, I., Rusu, A., Sulea, C., Bodnaru, A., & Tulbure, B. T. (2022). [“Give me a break!” A systematic review and meta-analysis on the efficacy of micro-breaks for increasing well-being and performance](https://doi.org/10.1371/journal.pone.0272460). *PLOS ONE, 17*(8), e0272460.
-
-[[8](https://doi.org/10.1016/S0003-6870(00)00071-5)] McLean, L., Tingley, M., Scott, R. N., & Rickards, J. (2001). [Computer terminal work and the benefit of microbreaks](https://doi.org/10.1016/S0003-6870(00)00071-5). *Applied Ergonomics, 32*(3), 225–237.
+[[8](<https://doi.org/10.1016/S0003-6870(00)00071-5>)] McLean, L., Tingley, M., Scott, R. N., & Rickards, J. (2001). [Computer terminal work and the benefit of microbreaks](<https://doi.org/10.1016/S0003-6870(00)00071-5>). _Applied Ergonomics, 32_(3), 225–237.
