@@ -49,9 +49,29 @@ const engineeringProjectsCollection = defineCollection({
   }),
 });
 
+const tripsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.date(),
+    country: z.string(),
+    image: z.string(),
+    tags: z.array(z.string()).default([]),
+    locations: z.array(
+      z.object({
+        name: z.string(),
+        lat: z.number(),
+        lng: z.number(),
+      }),
+    ),
+  }),
+});
+
 export const collections = {
   articles: articlesCollection,
   presentations: presentationCollection,
   projects: projectsCollection,
   engineeringProjects: engineeringProjectsCollection,
+  trips: tripsCollection,
 };
