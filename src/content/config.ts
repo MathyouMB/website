@@ -24,6 +24,7 @@ const presentationCollection = defineCollection({
     date: z.date(),
     link: z.string(),
     featured: z.boolean(),
+    location: z.string().optional(),
   }),
 });
 
