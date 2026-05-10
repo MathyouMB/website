@@ -107,6 +107,8 @@ interface Props {
   links?: ProfileLink[];
 
   currentPosition?: ProfilePosition;
+  currentPositionHref?: string;
+  currentPositionExternal?: boolean;
   updates?: ProfileUpdate[];
   latestArticle?: ProfileArticle;
   featuredProject?: ProfileFeaturedProject;
@@ -132,6 +134,8 @@ const {
   photoSrc,
   links = [],
   currentPosition,
+  currentPositionHref,
+  currentPositionExternal,
   updates,
   latestArticle,
   featuredProject,
@@ -218,7 +222,14 @@ const textLinks = links.filter((l) => !l.iconSvgInner);
             currentPosition && (
               <div class="Highlight__section">
                 <div class="Highlight__label">Current Position</div>
-                <a class="Highlight Highlight--link" href="#work">
+                <a
+                  class="Highlight Highlight--link"
+                  href={currentPositionHref ?? "#work"}
+                  target={currentPositionExternal ? "_blank" : undefined}
+                  rel={
+                    currentPositionExternal ? "noopener noreferrer" : undefined
+                  }
+                >
                   <div class="Highlight__body">
                     <img
                       class="Highlight__logo"
