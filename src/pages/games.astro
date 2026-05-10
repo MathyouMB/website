@@ -1,0 +1,149 @@
+---
+import Main from "../layouts/Main/Main.astro";
+import "./games.scss";
+
+const games = [
+  {
+    id: "hello",
+    title: "hello.",
+    tags: ["Bullet Hell", "Action"],
+    desc: "A fast-paced bullet hell where reflexes are everything and every second counts.",
+    gif: "/images/hello.gif",
+  },
+  {
+    id: "last-light",
+    title: "Last Light",
+    tags: ["Narrative", "Platformer"],
+    desc: "A narrative platformer following a journey through light and darkness.",
+    gif: "/images/lastlight.gif",
+  },
+];
+---
+
+<Main
+  title="Games | Matthew MacRae-Bovell"
+  description="Games designed and built by Matthew MacRae-Bovell."
+  styleOverride="background-color: lab(98.2539% -.108749 -.74997);"
+>
+  <div class="Games">
+    <!-- ── Hero ── -->
+    <section class="Games__hero">
+      <div class="Games__vortex" aria-hidden="true">
+        <div class="Games__ring Games__ring--1"></div>
+        <div class="Games__ring Games__ring--2"></div>
+        <div class="Games__ring Games__ring--3"></div>
+        <div class="Games__ring Games__ring--4"></div>
+        <div class="Games__ring Games__ring--5"></div>
+        <div class="Games__ring Games__ring--6"></div>
+      </div>
+
+      <div class="Games__heroGlows" aria-hidden="true">
+        <div class="Games__glow Games__glow--a"></div>
+        <div class="Games__glow Games__glow--b"></div>
+      </div>
+
+      <div class="Games__heroContent">
+        <div class="Games__heroMeta">Game Designer</div>
+        <h1 class="Games__heading">
+          Crafting worlds<br /><span class="Games__headingAccent"
+            >and experiences.</span
+          >
+        </h1>
+        <p class="Games__subtext">
+          Designing games that are playful, surprising, and worth your time.
+        </p>
+      </div>
+
+      <div class="Games__scrollHint" aria-hidden="true">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── Body ── -->
+    <div class="Games__body">
+      <section class="Games__section">
+        <div class="Games__sectionIntro">
+          <span class="Games__sectionLabel">What I've built</span>
+          <h2 class="Games__sectionHeading">Games</h2>
+          <p class="Games__sectionDesc">
+            A selection of games designed and built from scratch.
+          </p>
+        </div>
+
+        <div class="Games__grid">
+          {
+            games.map((game) => (
+              <article class="Games__card" id={`game-${game.id}`}>
+                <div class="Games__cardPreview">
+                  <img class="Games__cardGif" src={game.gif} alt={game.title} />
+                </div>
+                <div class="Games__cardBody">
+                  <div class="Games__cardMeta">
+                    <ul class="Games__cardTags" aria-label="Tags">
+                      {game.tags.map((tag) => (
+                        <li class="Games__cardTag">{tag}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <h3 class="Games__cardTitle">{game.title}</h3>
+                  <p class="Games__cardDesc">{game.desc}</p>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+    </div>
+  </div>
+</Main>
+
+<script>
+  // Entrance animations
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+  const cards = document.querySelectorAll<HTMLElement>(".Games__card");
+
+  if (prefersReducedMotion) {
+    cards.forEach((card) => card.classList.add("is-visible"));
+  } else {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+    );
+    cards.forEach((card) => observer.observe(card));
+  }
+
+  // 3D tilt on cards
+  if (!prefersReducedMotion) {
+    cards.forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const rx = ((e.clientY - rect.top) / rect.height - 0.5) * -12;
+        const ry = ((e.clientX - rect.left) / rect.width - 0.5) * 12;
+        card.style.setProperty("--rx", `${rx}deg`);
+        card.style.setProperty("--ry", `${ry}deg`);
+      });
+      card.addEventListener("mouseleave", () => {
+        card.style.removeProperty("--rx");
+        card.style.removeProperty("--ry");
+      });
+    });
+  }
+</script>
