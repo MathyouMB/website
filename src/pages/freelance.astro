@@ -1,0 +1,437 @@
+---
+import Main from "../layouts/Main/Main.astro";
+import "./freelance.scss";
+
+const calendly = "https://calendly.com/matthewmacraebovell/chats";
+
+const services = [
+  {
+    id: "websites",
+    label: "Websites",
+    heading: "Fast, beautiful websites.",
+    desc: "From landing pages to full marketing sites. Mobile-first, SEO-ready, and built to convert.",
+    color: "#517aff",
+    iconPath: `<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>`,
+  },
+  {
+    id: "apps",
+    label: "Applications",
+    heading: "Apps that just work.",
+    desc: "Full-stack applications with clean UX, solid architecture, and room to grow.",
+    color: "#a855f7",
+    iconPath: `<rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>`,
+  },
+  {
+    id: "ai",
+    label: "AI Automation",
+    heading: "Intelligent workflows.",
+    desc: "Custom AI pipelines, automations, and agents that save time and unlock new capabilities.",
+    color: "#14b8a6",
+    iconPath: `<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>`,
+  },
+  {
+    id: "consulting",
+    label: "Technical Consulting",
+    heading: "Build the right thing.",
+    desc: "Clarity on what to build, what stack to use, and where AI fits in.",
+    color: "#0ea5e9",
+    iconPath: `<circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>`,
+  },
+  {
+    id: "custom",
+    label: "Custom Projects",
+    heading: "Something else entirely.",
+    desc: "Research tools, data platforms, internal systems. If you can imagine it, let's build it.",
+    color: "#f59e0b",
+    iconPath: `<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>`,
+  },
+];
+
+const steps = [
+  {
+    n: "01",
+    title: "Discovery Call",
+    desc: "A 30-minute call to understand your goals, timeline, and budget. No commitment, just a conversation.",
+  },
+  {
+    n: "02",
+    title: "Rapid Prototype",
+    desc: "Using AI, I turn ideas into working prototypes in days, not weeks. You see it before we build it.",
+  },
+  {
+    n: "03",
+    title: "Development",
+    desc: "Agile, tested, and built to last. Regular demos keep you in the loop at every stage.",
+  },
+  {
+    n: "04",
+    title: "Deploy & Maintain",
+    desc: "Launch with confidence. Ongoing security updates, backups, and support keep things running smoothly.",
+  },
+];
+
+const showcase = [
+  {
+    title: "Unified Dashboard",
+    url: "Custom project",
+    href: "#",
+    desc: "A personal task and event aggregator that pulls in data from dozens of sources into one clean, unified view.",
+    gradient: "linear-gradient(135deg, #1e1b4b 0%, #4f46e5 100%)",
+  },
+  {
+    title: "Math Trainer",
+    url: "Web Application",
+    href: "https://mathtrainer.mrbovell.ca/exercises/custom/?exercises=add-up-to-ten,subtract-up-to-ten,add-up-to-100,subtract-up-to-100,multiply-from-1-10,divide-from-1-10,multiply-by-11-12,divide-by-11-12,squares-up-to-16,roots-up-to-16,common-fractions-to-percentages,percentages-of-whole-numbers-below-100,percentages-of-whole-numbers-over-100",
+    desc: "Adaptive math practice app covering arithmetic through percentages.",
+    gradient: "linear-gradient(135deg, #064e3b 0%, #059669 100%)",
+  },
+];
+---
+
+<Main
+  title="Freelance | Matthew MacRae-Bovell"
+  description="Websites, apps, and AI automations built fast. Book a free discovery call."
+  styleOverride="background-color: lab(98.2539% -.108749 -.74997);"
+  hideNav
+>
+  <div class="Hire">
+    <!-- ── Hero ── -->
+    <section class="Hire__hero">
+      <div class="Hire__vortex" aria-hidden="true">
+        <div class="Hire__ring Hire__ring--1"></div>
+        <div class="Hire__ring Hire__ring--2"></div>
+        <div class="Hire__ring Hire__ring--3"></div>
+        <div class="Hire__ring Hire__ring--4"></div>
+        <div class="Hire__ring Hire__ring--5"></div>
+        <div class="Hire__ring Hire__ring--6"></div>
+      </div>
+
+      <div class="Hire__heroGlows" aria-hidden="true">
+        <div class="Hire__glow Hire__glow--a"></div>
+        <div class="Hire__glow Hire__glow--b"></div>
+        <div class="Hire__glow Hire__glow--c"></div>
+      </div>
+
+      <div class="Hire__heroContent">
+        <div class="Hire__heroMeta">Available for hire</div>
+        <h1 class="Hire__heading">
+          Let's build<br /><span class="Hire__headingAccent"
+            >something remarkable.</span
+          >
+        </h1>
+        <p class="Hire__subtext">
+          Websites, apps, and AI automations. Shipped fast, built to last.
+        </p>
+        <div class="Hire__heroCtas">
+          <a
+            class="Hire__heroCta Hire__heroCta--primary"
+            href={calendly}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book a discovery call
+            <span class="Hire__heroCtaArrow">→</span>
+          </a>
+          <a class="Hire__heroCta" href="#showcase">See my work</a>
+        </div>
+      </div>
+
+      <div class="Hire__scrollHint" aria-hidden="true">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ── Body ── -->
+    <div class="Hire__body">
+      <!-- Services -->
+      <section class="Hire__section">
+        <div class="Hire__sectionIntro">
+          <span class="Hire__sectionLabel">What I build</span>
+          <h2 class="Hire__sectionHeading">Services</h2>
+          <p class="Hire__sectionDesc">
+            From idea to launch, I handle the full stack.
+          </p>
+        </div>
+
+        <div class="Hire__serviceGrid">
+          {
+            services.map((s) => (
+              <div
+                class={`Hire__card Hire__card--${s.id}`}
+                style={`--card-color: ${s.color};`}
+              >
+                <div class="Hire__cardGlow" aria-hidden="true" />
+                <div class="Hire__cardInner">
+                  <div class="Hire__cardIcon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.75"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      set:html={s.iconPath}
+                    />
+                  </div>
+                  <span class="Hire__cardLabel">{s.label}</span>
+                  <h3 class="Hire__cardHeading">{s.heading}</h3>
+                  <p class="Hire__cardDesc">{s.desc}</p>
+                  <span class="Hire__cardCta">
+                    Learn more <span class="Hire__cardArrow">→</span>
+                  </span>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section class="Hire__section">
+        <div class="Hire__sectionIntro">
+          <span class="Hire__sectionLabel">How it works</span>
+          <h2 class="Hire__sectionHeading">The Process</h2>
+          <p class="Hire__sectionDesc">
+            Simple, transparent, and built around your needs.
+          </p>
+        </div>
+
+        <div class="Hire__steps">
+          {
+            steps.map((step) => (
+              <div class="Hire__step">
+                <span class="Hire__stepNum">{step.n}</span>
+                <h3 class="Hire__stepTitle">{step.title}</h3>
+                <p class="Hire__stepDesc">{step.desc}</p>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Showcase -->
+      <section class="Hire__section" id="showcase">
+        <div class="Hire__sectionIntro">
+          <span class="Hire__sectionLabel">Recent work</span>
+          <h2 class="Hire__sectionHeading">Showcase</h2>
+          <p class="Hire__sectionDesc">
+            A selection of projects built for real users.
+          </p>
+        </div>
+
+        <div class="Hire__showcaseGrid">
+          {
+            showcase.map((site) => (
+              <a
+                class="Hire__showcaseCard"
+                href={site.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div
+                  class="Hire__showcasePreview"
+                  style={`background: ${site.gradient};`}
+                >
+                  <div class="Hire__showcaseBrowserBar">
+                    <span class="Hire__showcaseDot" />
+                    <span class="Hire__showcaseDot" />
+                    <span class="Hire__showcaseDot" />
+                    <span class="Hire__showcaseUrlBar">{site.url}</span>
+                  </div>
+                </div>
+                <div class="Hire__showcaseBody">
+                  <span class="Hire__showcaseUrl">{site.url}</span>
+                  <h3 class="Hire__showcaseTitle">{site.title}</h3>
+                  <p class="Hire__showcaseDesc">{site.desc}</p>
+                  <span class="Hire__showcaseCta">
+                    Visit site <span class="Hire__cardArrow">→</span>
+                  </span>
+                </div>
+              </a>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="Hire__section">
+        <div class="Hire__about">
+          <div class="Hire__aboutPhotoWrap">
+            <a
+              class="Hire__aboutPhoto"
+              href="https://matthewmacraebovell.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/images/me2.jpeg" alt="Matthew MacRae-Bovell" />
+            </a>
+            <span class="Hire__aboutLocation">🇨🇦 Ottawa, Canada</span>
+          </div>
+          <div class="Hire__aboutText">
+            <div class="Hire__sectionIntro">
+              <span class="Hire__sectionLabel">Who I am</span>
+              <h2 class="Hire__sectionHeading">
+                Based in Ottawa, built for the web.
+              </h2>
+            </div>
+            <p class="Hire__aboutDesc">
+              I'm a software engineer from Ottawa, Canada with experience
+              building production systems at companies like Shopify and RBC. I
+              bring that same standard of craft to every freelance project.
+            </p>
+            <p class="Hire__aboutDesc">
+              Whether you're a startup looking to ship fast or an established
+              business modernizing your stack, I work directly with you from
+              idea to launch.
+            </p>
+            <a
+              class="Hire__aboutLearnMore"
+              href="https://matthewmacraebovell.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn more <span class="Hire__cardArrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom CTA -->
+      <section class="Hire__ctaSection">
+        <div class="Hire__ctaInner">
+          <div class="Hire__ctaGlow" aria-hidden="true"></div>
+          <span class="Hire__sectionLabel">Let's work together</span>
+          <h2 class="Hire__ctaHeading">Ready to get started?</h2>
+          <p class="Hire__ctaDesc">
+            Book a free 30-minute discovery call. No commitment, just a
+            conversation about what you want to build.
+          </p>
+          <a
+            class="Hire__heroCta Hire__heroCta--primary Hire__heroCta--large"
+            href={calendly}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book a discovery call
+            <span class="Hire__heroCtaArrow">→</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="Hire__footer">
+      <div class="Hire__footerInner">
+        <div class="Hire__footerBottom">
+          <span class="Hire__footerName">Matthew MacRae-Bovell</span>
+          <nav class="Hire__footerNav" aria-label="Footer navigation">
+            <a href="/blog">Blog</a>
+            <a
+              href="https://github.com/MathyouMB"
+              target="_blank"
+              rel="noopener noreferrer">GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/matthewmacraebovell/"
+              target="_blank"
+              rel="noopener noreferrer">LinkedIn</a
+            >
+          </nav>
+          <span class="Hire__footerCopy">© {new Date().getFullYear()}</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</Main>
+
+<script>
+  // Smooth scroll for "See my work"
+  document
+    .querySelector<HTMLAnchorElement>('a[href="#showcase"]')
+    ?.addEventListener("click", (e) => {
+      e.preventDefault();
+      document
+        .getElementById("showcase")
+        ?.scrollIntoView({ behavior: "smooth" });
+    });
+
+  // Entrance animations
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+  const animated = document.querySelectorAll<HTMLElement>(
+    ".Hire__card, .Hire__step, .Hire__showcaseCard",
+  );
+
+  if (prefersReducedMotion) {
+    animated.forEach((el) => el.classList.add("is-visible"));
+  } else {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+    );
+    animated.forEach((el) => observer.observe(el));
+  }
+
+  // Mouse-tracking gradient on hero heading (lerped for smoothness)
+  const accentEl = document.querySelector<HTMLElement>(".Hire__headingAccent");
+  if (accentEl) {
+    let targetX = 0.5,
+      targetY = 0.5;
+    let currentX = 0.5,
+      currentY = 0.5;
+    const ease = 0.03;
+
+    document.addEventListener("mousemove", (e) => {
+      targetX = e.clientX / window.innerWidth;
+      targetY = e.clientY / window.innerHeight;
+    });
+
+    (function tick() {
+      currentX += (targetX - currentX) * ease;
+      currentY += (targetY - currentY) * ease;
+      accentEl.style.setProperty("--grad-angle", `${90 + currentX * 120}deg`);
+      accentEl.style.setProperty("--grad-stop1", `${10 + currentX * 25}%`);
+      accentEl.style.setProperty("--grad-stop2", `${70 + currentY * 20}%`);
+      requestAnimationFrame(tick);
+    })();
+  }
+
+  // Mouse-tracking glow on service cards
+  const cards = document.querySelectorAll<HTMLElement>(".Hire__card");
+  cards.forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty(
+        "--glow-x",
+        `${((e.clientX - rect.left) / rect.width) * 100}%`,
+      );
+      card.style.setProperty(
+        "--glow-y",
+        `${((e.clientY - rect.top) / rect.height) * 100}%`,
+      );
+    });
+    card.addEventListener("mouseleave", () => {
+      card.style.removeProperty("--glow-x");
+      card.style.removeProperty("--glow-y");
+    });
+  });
+</script>

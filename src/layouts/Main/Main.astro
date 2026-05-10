@@ -7,9 +7,10 @@ interface Props {
   description?: string;
   imageUrl?: string;
   styleOverride?: string;
+  hideNav?: boolean;
 }
 
-const { title, description, imageUrl, styleOverride } = Astro.props;
+const { title, description, imageUrl, styleOverride, hideNav } = Astro.props;
 ---
 
 <Layout
@@ -18,18 +19,16 @@ const { title, description, imageUrl, styleOverride } = Astro.props;
   imageUrl={imageUrl}
   styleOverride={styleOverride}
 >
-  <div class="Navbar">
-    <a href="/">Home</a>
-    <a href="/blog">Blog</a>
-    <a href="/presentations">Talks</a>
-    <a href="/projects">Projects</a>
-    <!-- <a
-      class="Navbar__desktop"
-      href="https://matthewshouse.notion.site/Matthew-s-House-76ebf7cf587646628078405b66cba5a3"
-      >House</a
-    > -->
-    <!-- <a href="/pdfs/resumes/Matthew_MacRaeBovell_Resume_April2023.pdf">Resume</a> -->
-  </div>
+  {
+    !hideNav && (
+      <div class="Navbar">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/presentations">Talks</a>
+        <a href="/projects">Projects</a>
+      </div>
+    )
+  }
   <slot />
   <!-- <footer class="Footer">
     <p>© {currentYear} Matthew MacRae Bovell</p>
