@@ -44,7 +44,7 @@
   --text: #0f172a;
   --muted: #64748b;
   --border: rgba(15, 23, 42, 0.1);
-  --accent: #14b8a6;
+  --accent: #517aff;
 
   color: var(--text);
 }
@@ -54,7 +54,7 @@
 .Talks__hero {
   position: relative;
   overflow: hidden;
-  padding: 5rem 1.5rem 4rem;
+  padding: 3rem 1.5rem 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,7 @@
     height: 480px;
     background: radial-gradient(
       circle,
-      rgba(20, 184, 166, 0.28) 0%,
+      rgba(81, 122, 255, 0.1) 0%,
       transparent 70%
     );
     top: 60%;
@@ -90,7 +90,7 @@
     height: 320px;
     background: radial-gradient(
       circle,
-      rgba(20, 184, 166, 0.15) 0%,
+      rgba(81, 122, 255, 0.06) 0%,
       transparent 70%
     );
     top: 20%;
@@ -117,8 +117,8 @@
   display: flex;
   align-items: flex-end;
   gap: 4px;
-  height: 36px;
-  margin-bottom: 1.5rem;
+  height: 24px;
+  margin-bottom: 1.25rem;
 
   span {
     display: block;
@@ -276,10 +276,10 @@
   }
 
   &:hover {
-    background: rgba(20, 184, 166, 0.03);
+    background: rgba(81, 122, 255, 0.03);
     box-shadow:
-      0 0 0 1px rgba(20, 184, 166, 0.14),
-      0 4px 20px rgba(20, 184, 166, 0.07);
+      0 0 0 1px rgba(81, 122, 255, 0.14),
+      0 4px 20px rgba(81, 122, 255, 0.07);
     transform: translateY(-1px);
   }
 
@@ -371,7 +371,7 @@
 
   &:hover {
     color: var(--accent);
-    border-color: rgba(20, 184, 166, 0.4);
-    background: rgba(20, 184, 166, 0.07);
+    border-color: rgba(81, 122, 255, 0.4);
+    background: rgba(81, 122, 255, 0.07);
   }
 }
