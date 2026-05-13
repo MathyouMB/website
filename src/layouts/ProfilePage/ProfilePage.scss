@@ -7,7 +7,7 @@
   flex-direction: column;
   gap: 0;
   margin: 0 auto;
-  width: min(88rem, 95%);
+  width: min(77rem, 92%);
   padding: 1rem;
   min-height: 80vh;
   overflow-x: clip;
@@ -661,6 +661,10 @@
   line-height: 1.4;
   flex: 1;
   transition: color 0.15s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
 .UpdatesLog__date {
