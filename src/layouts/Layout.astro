@@ -14,7 +14,9 @@ const defaultDescription =
 
 const defaultImgUrl = imageUrl || "/images/headshot.png";
 const img = `https://matthewmacraebovell.com${defaultImgUrl}`;
-const production = true;
+// Analytics are on unless .env explicitly sets ENABLE_ANALYTICS=false,
+// so production needs no env configuration
+const production = import.meta.env.ENABLE_ANALYTICS !== "false";
 ---
 
 <!doctype html>
