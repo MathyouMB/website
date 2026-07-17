@@ -1,0 +1,46 @@
+---
+import "./Navbar.scss";
+
+interface Props {
+  overlay?: boolean;
+}
+
+const { overlay } = Astro.props;
+
+const links = [
+  { label: "Home", href: "/" },
+  { label: "Blog", href: "/blog" },
+  { label: "Talks", href: "/presentations" },
+  { label: "Projects", href: "/projects" },
+];
+
+const pathname = Astro.url.pathname.replace(/\/+$/, "") || "/";
+const isActive = (href: string) =>
+  pathname === href || pathname.startsWith(`${href}/`);
+---
+
+<header class:list={["Navbar", { "Navbar--overlay": overlay }]}>
+  <nav class="Navbar__inner" aria-label="Primary">
+    <div class="Navbar__links">
+      {
+        links.map(({ label, href }) => (
+          <a
+            class:list={["Navbar__link", { "is-active": isActive(href) }]}
+            href={href}
+            aria-current={isActive(href) ? "page" : undefined}
+          >
+            {label}
+          </a>
+        ))
+      }
+    </div>
+  </nav>
+</header>
+
+<script>
+  const nav = document.querySelector(".Navbar");
+  const onScroll = () =>
+    nav?.classList.toggle("is-scrolled", window.scrollY > 8);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+</script>

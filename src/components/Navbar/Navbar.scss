@@ -1,0 +1,78 @@
+.Navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: Geistvf, sans-serif;
+
+  // Floats over the page instead of taking layout space, so full-screen
+  // heroes start at the very top of the viewport.
+  &--overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+
+  // Glass backdrop, faded in only once the page is scrolled.
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+
+  &.is-scrolled::before {
+    opacity: 1;
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: min(65rem, 92%);
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 0.9rem;
+    letter-spacing: -0.01em;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: #0f172a;
+    }
+
+    &.is-active {
+      color: #0f172a;
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__inner {
+      padding: 0.85rem 0;
+    }
+
+    &__links {
+      gap: 1.1rem;
+    }
+
+    &__link {
+      font-size: 0.85rem;
+    }
+  }
+}

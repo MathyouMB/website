@@ -1,5 +1,6 @@
 ---
 import Layout from "../Layout.astro";
+import Navbar from "../../components/Navbar/Navbar.astro";
 import "./Main.scss";
 
 interface Props {
@@ -8,9 +9,11 @@ interface Props {
   imageUrl?: string;
   styleOverride?: string;
   hideNav?: boolean;
+  overlayNav?: boolean;
 }
 
-const { title, description, imageUrl, styleOverride, hideNav } = Astro.props;
+const { title, description, imageUrl, styleOverride, hideNav, overlayNav } =
+  Astro.props;
 ---
 
 <Layout
@@ -19,16 +22,7 @@ const { title, description, imageUrl, styleOverride, hideNav } = Astro.props;
   imageUrl={imageUrl}
   styleOverride={styleOverride}
 >
-  {
-    !hideNav && (
-      <div class="Navbar">
-        <a href="/">Home</a>
-        <a href="/blog">Blog</a>
-        <a href="/presentations">Talks</a>
-        <a href="/projects">Projects</a>
-      </div>
-    )
-  }
+  {!hideNav && <Navbar overlay={overlayNav} />}
   <slot />
   <!-- <footer class="Footer">
     <p>© {currentYear} Matthew MacRae Bovell</p>
