@@ -44,118 +44,59 @@ const years = Object.keys(byYear)
   styleOverride="background-color: lab(98.2539% -.108749 -.74997);"
 >
   <div class="Talks">
-    <!-- ── Hero ── -->
-    <section class="Talks__hero">
-      <div class="Talks__heroGlows" aria-hidden="true">
-        <div class="Talks__glow Talks__glow--a"></div>
-        <div class="Talks__glow Talks__glow--b"></div>
-      </div>
+    <header class="Talks__header">
+      <h1 class="Talks__title">Talks</h1>
+      <p class="Talks__subtitle">
+        Talks at conferences, universities, and more.
+      </p>
+    </header>
 
-      <div class="Talks__heroContent">
-        <div class="Talks__wave" aria-hidden="true">
-          <span></span><span></span><span></span>
-          <span></span><span></span><span></span>
-          <span></span><span></span><span></span>
-        </div>
-
-        <div class="Talks__heroMeta">Talks &amp; Workshops</div>
-        <h1 class="Talks__heading">
-          Words that move<br /><span class="Talks__headingAccent">people.</span>
-        </h1>
-        <p class="Talks__subtext">
-          Talks at conferences, universities, and more.
-        </p>
-      </div>
-    </section>
-
-    <!-- ── Body ── -->
-    <div class="Talks__body">
-      {
-        years.map((year) => (
-          <section class="Talks__yearGroup">
-            <div class="Talks__yearLabel">{year}</div>
-            <div class="Talks__list">
-              {byYear[year].map((talk) => {
-                const d = new Date(talk.data.date);
-                const month = MONTHS[d.getUTCMonth()];
-                const day = d.getUTCDate();
-                return (
-                  <article class="Talks__card">
-                    <div class="Talks__cardDate">
-                      <span class="Talks__cardDateMonth">{month}</span>
-                      <span class="Talks__cardDateDay">{day}</span>
-                    </div>
-                    <div class="Talks__cardBody">
-                      {talk.data.location && (
-                        <div class="Talks__cardLocation">
-                          {talk.data.location}
-                        </div>
-                      )}
-                      <h3 class="Talks__cardTitle">{talk.data.title}</h3>
-                      <p class="Talks__cardDesc">{talk.data.description}</p>
-                    </div>
-                    <a
-                      href={talk.data.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="Talks__cardLink"
-                      aria-label={`View ${talk.data.title}`}
-                    >
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <line x1="7" y1="17" x2="17" y2="7" />
-                        <polyline points="7 7 17 7 17 17" />
-                      </svg>
-                    </a>
-                  </article>
-                );
-              })}
-            </div>
-          </section>
-        ))
-      }
-    </div>
+    {
+      years.map((year) => (
+        <section class="Talks__yearGroup">
+          <div class="Talks__yearLabel">{year}</div>
+          <div class="Talks__list">
+            {byYear[year].map((talk) => {
+              const d = new Date(talk.data.date);
+              const month = MONTHS[d.getUTCMonth()];
+              const day = d.getUTCDate();
+              return (
+                <a
+                  class="Talks__row"
+                  href={talk.data.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="Talks__rowDate">
+                    <span class="Talks__rowDateMonth">{month}</span>
+                    <span class="Talks__rowDateDay">{day}</span>
+                  </div>
+                  <div class="Talks__rowBody">
+                    {talk.data.location && (
+                      <div class="Talks__rowLocation">{talk.data.location}</div>
+                    )}
+                    <h3 class="Talks__rowTitle">{talk.data.title}</h3>
+                    <p class="Talks__rowDesc">{talk.data.description}</p>
+                  </div>
+                  <svg
+                    class="Talks__rowArrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+      ))
+    }
   </div>
 </Main>
-
-<script>
-  const prefersReducedMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)",
-  ).matches;
-
-  const wave = document.querySelector<HTMLElement>(".Talks__wave");
-  const cards = document.querySelectorAll<HTMLElement>(".Talks__card");
-
-  if (prefersReducedMotion && wave) {
-    wave.classList.add("is-paused");
-  }
-
-  if (prefersReducedMotion) {
-    cards.forEach((card) => card.classList.add("is-visible"));
-  } else {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry, i) => {
-          if (entry.isIntersecting) {
-            const el = entry.target as HTMLElement;
-            const delay = i * 60;
-            el.style.transitionDelay = `${delay}ms`;
-            el.classList.add("is-visible");
-            setTimeout(() => {
-              el.style.transitionDelay = "";
-            }, 500 + delay);
-            observer.unobserve(el);
-          }
-        });
-      },
-      { threshold: 0.05, rootMargin: "0px 0px -32px 0px" },
-    );
-    cards.forEach((card) => observer.observe(card));
-  }
-</script>
