@@ -10,56 +10,65 @@ const [articles, presentations, projects] = await Promise.all([
   getCollection("projects"),
 ]);
 
-type NewsItem = {
+type TimelineItem = {
   type: "Article" | "Talk" | "Project";
   title: string;
   date: Date;
   href: string;
+  external: boolean;
 };
 
-const featuredArticle = articles
+const sortedArticles = articles
   .filter((a) => !a.data.draft)
   .sort(
     (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
-  )[0];
+  );
 
-const newsItems: NewsItem[] = [
-  ...articles
-    .filter((a) => !a.data.draft && a.slug !== featuredArticle?.slug)
+const featured =
+  sortedArticles.find((a) => a.data.featured) ?? sortedArticles[0];
+
+const timelineItems: TimelineItem[] = [
+  ...sortedArticles
+    .filter((a) => a.slug !== featured?.slug)
     .map((a) => ({
       type: "Article" as const,
       title: a.data.title,
       date: new Date(a.data.date),
       href: `/blog/${a.slug}`,
+      external: false,
     })),
   ...presentations.map((p) => ({
     type: "Talk" as const,
     title: p.data.title,
     date: new Date(p.data.date),
     href: p.data.link,
+    external: true,
   })),
   ...projects.map((p) => ({
     type: "Project" as const,
     title: p.data.title,
     date: new Date(p.data.date),
     href: p.data.link,
+    external: true,
   })),
 ]
   .sort((a, b) => b.date.getTime() - a.date.getTime())
   .slice(0, 6);
 
-const fmtDate = (d: Date) =>
+const fmtMonthYear = (d: Date) =>
   d.toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",
-    day: "numeric",
+    timeZone: "UTC",
   });
 
-const newsIcons: Record<NewsItem["type"], string> = {
-  Article: `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>`,
-  Talk: `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
-  Project: `<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
-};
+const fmtFullDate = (d: Date) =>
+  d.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  });
 ---
 
 <Main
@@ -141,91 +150,90 @@ const newsIcons: Record<NewsItem["type"], string> = {
 
     <!-- Facets -->
     <section class="Hub__facets" id="work">
-      <!-- Intro row -->
-      <div class="Hub__intro">
-        <div class="Hub__introProfile">
-          <div class="Hub__introGlow" aria-hidden="true"></div>
-          <img
-            class="Hub__introPhoto"
-            src="/images/me2.jpeg"
-            alt="Matthew MacRae-Bovell"
-          />
-          <div class="Hub__introContent">
-            <span class="Hub__cardLabel Hub__cardLabel--profile"
-              >Ottawa, Canada</span
-            >
-            <h2 class="Hub__cardHeading">
-              The person<br />behind the work.
-            </h2>
-            <p class="Hub__cardDesc">
-              Builder of many things, with many more in progress.
-            </p>
-          </div>
+      <!-- About -->
+      <div class="Hub__about">
+        <div class="Hub__aboutGlows" aria-hidden="true">
+          <div class="Hub__aboutGlow Hub__aboutGlow--a"></div>
+          <div class="Hub__aboutGlow Hub__aboutGlow--b"></div>
+          <div class="Hub__aboutGlow Hub__aboutGlow--c"></div>
         </div>
-
-        {
-          featuredArticle && (
-            <a class="Hub__featuredCard" href={`/blog/${featuredArticle.slug}`}>
-              <div class="Hub__introGlow" aria-hidden="true" />
-              <div class="Hub__featuredCardContent">
-                <div class="Hub__featuredCardMeta">
-                  <span class="Hub__featuredCardLabel">
-                    {fmtDate(new Date(featuredArticle.data.date))}
-                  </span>
-                </div>
-                <h3 class="Hub__featuredCardTitle">
-                  {featuredArticle.data.title}
-                </h3>
-                <p class="Hub__featuredCardDesc">
-                  {featuredArticle.data.description}
-                </p>
-                <span class="Hub__featuredCardCta">
-                  Read article <span class="Hub__featuredCardArrow">→</span>
-                </span>
-              </div>
-              <div class="Hub__featuredCardImgWrap">
-                <img
-                  class="Hub__featuredCardImg"
-                  src={featuredArticle.data.image}
-                  alt={featuredArticle.data.title}
-                />
-              </div>
-            </a>
-          )
-        }
-
-        <div class="Hub__newsCard">
-          <div class="Hub__newsHeader">
-            <span class="Hub__newsHeading">Recent</span>
-          </div>
-          <ul class="Hub__newsFeed">
-            {
-              newsItems.map((item) => (
-                <li class="Hub__newsItem">
-                  <a
-                    class="Hub__newsLink"
-                    href={item.href}
-                    target={item.type !== "Article" ? "_blank" : undefined}
-                    rel={
-                      item.type !== "Article"
-                        ? "noopener noreferrer"
-                        : undefined
-                    }
-                  >
-                    <span
-                      class={`Hub__newsIcon Hub__newsIcon--${item.type.toLowerCase()}`}
-                      title={item.type}
-                      set:html={newsIcons[item.type]}
-                    />
-                    <span class="Hub__newsTitle">{item.title}</span>
-                    <span class="Hub__newsDate">{fmtDate(item.date)}</span>
-                  </a>
-                </li>
-              ))
-            }
-          </ul>
+        <img
+          class="Hub__aboutPhoto"
+          src="/images/me2.jpeg"
+          alt="Matthew MacRae-Bovell"
+        />
+        <div class="Hub__aboutText">
+          <h2 class="Hub__aboutHeading">Hey, I'm Matthew 👋</h2>
+          <p class="Hub__aboutDesc">
+            I'm a software engineer from Ottawa, Canada, currently working on
+            authorization at GitLab, with experience building production systems
+            at companies like Shopify and RBC.
+          </p>
+          <p class="Hub__aboutDesc">
+            Outside of work you'll find me writing, speaking, researching,
+            designing games, and exploring whatever's next.
+          </p>
         </div>
       </div>
+
+      <!-- Recent: featured + activity rail -->
+      <section class="Hub__recent">
+        <div class="Hub__recentGrid">
+          {
+            featured && (
+              <a class="Hub__recentFeatured" href={`/blog/${featured.slug}`}>
+                <span class="Hub__recentFeaturedImgWrap">
+                  <img
+                    class="Hub__recentFeaturedImg"
+                    src={featured.data.image}
+                    alt=""
+                    loading="lazy"
+                  />
+                </span>
+                <span class="Hub__recentFeaturedMeta">
+                  {fmtFullDate(new Date(featured.data.date))}
+                </span>
+                <span class="Hub__recentFeaturedTitle">
+                  {featured.data.title}
+                </span>
+                <span class="Hub__recentFeaturedDesc">
+                  {featured.data.description}
+                </span>
+                <span class="Hub__recentFeaturedCta">
+                  Read more <span aria-hidden="true">→</span>
+                </span>
+              </a>
+            )
+          }
+
+          <div class="Hub__recentRail">
+            <div class="Hub__railGlow" aria-hidden="true"></div>
+            <span class="Hub__recentColLabel">Activity</span>
+            <ol class="Hub__timelineList">
+              {
+                timelineItems.map((item) => (
+                  <li class="Hub__timelineItem">
+                    <a
+                      class="Hub__timelineLink"
+                      href={item.href}
+                      target={item.external ? "_blank" : undefined}
+                      rel={item.external ? "noopener noreferrer" : undefined}
+                    >
+                      <span class="Hub__timelineMeta">
+                        <span class="Hub__timelineDate">
+                          {fmtMonthYear(item.date)}
+                        </span>
+                        <span class="Hub__timelineType">{item.type}</span>
+                      </span>
+                      <span class="Hub__timelineTitle">{item.title}</span>
+                    </a>
+                  </li>
+                ))
+              }
+            </ol>
+          </div>
+        </div>
+      </section>
 
       <div class="Hub__bentoGrid">
         <!-- Software Engineer — wide card -->
@@ -414,7 +422,9 @@ const newsIcons: Record<NewsItem["type"], string> = {
   const prefersReducedMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)",
   ).matches;
-  const cards = document.querySelectorAll<HTMLElement>(".Hub__card");
+  const cards = document.querySelectorAll<HTMLElement>(
+    ".Hub__card, .Hub__about, .Hub__recentFeatured, .Hub__recentRail",
+  );
 
   if (prefersReducedMotion) {
     cards.forEach((card) => card.classList.add("is-visible"));
@@ -435,7 +445,7 @@ const newsIcons: Record<NewsItem["type"], string> = {
 
   // Mouse-tracking glow — glow follows cursor within each active card
   const activeCards = document.querySelectorAll<HTMLElement>(
-    ".Hub__card:not(.Hub__card--disabled), .Hub__introProfile",
+    ".Hub__card:not(.Hub__card--disabled), .Hub__recentRail",
   );
   activeCards.forEach((card) => {
     card.addEventListener("mousemove", (e) => {
