@@ -390,6 +390,56 @@
   }
 }
 
+// Row variant whose body is a link but carries extra actions (e.g. BibTeX)
+.Research__pubRow--split {
+  padding: 0;
+}
+
+.Research__pubMain {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  min-width: 0;
+  padding: 1.25rem 0 1.25rem 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.Research__pubArrow--link {
+  text-decoration: none;
+  margin-right: 0.75rem;
+}
+
+.Research__bibBtn {
+  flex-shrink: 0;
+  padding: 0.4rem 0.7rem;
+  font-family: GeistMonovf, "Geist Mono", monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+
+  &:hover {
+    color: var(--accent);
+    border-color: rgba(79, 70, 229, 0.35);
+    background: rgba(79, 70, 229, 0.05);
+  }
+
+  &.is-copied {
+    color: #008d3e;
+    border-color: rgba(0, 141, 62, 0.4);
+  }
+}
+
 .Research__pubComingSoon {
   padding: 1rem 0.75rem;
   font-size: 0.82rem;
