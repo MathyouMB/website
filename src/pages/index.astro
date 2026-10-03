@@ -4,14 +4,15 @@ import Main from "../layouts/Main/Main.astro";
 import EmailSubscribe from "../components/EmailSubscribe/EmailSubscribe.astro";
 import "./index.scss";
 
-const [articles, presentations, projects] = await Promise.all([
+const [articles, presentations, projects, research] = await Promise.all([
   getCollection("articles"),
   getCollection("presentations"),
   getCollection("projects"),
+  getCollection("research"),
 ]);
 
 type TimelineItem = {
-  type: "Article" | "Talk" | "Project";
+  type: "Article" | "Talk" | "Project" | "Research";
   title: string;
   date: Date;
   href: string;
@@ -49,6 +50,13 @@ const timelineItems: TimelineItem[] = [
     title: p.data.title,
     date: new Date(p.data.date),
     href: p.data.link,
+    external: true,
+  })),
+  ...research.map((item) => ({
+    type: "Research" as const,
+    title: item.data.title,
+    date: new Date(item.data.date),
+    href: item.data.link,
     external: true,
   })),
 ]

@@ -1,24 +1,22 @@
 ---
+import { getCollection } from "astro:content";
 import Main from "../../layouts/Main/Main.astro";
 import "./research.scss";
 
-const FSE_BIBTEX = `@inproceedings{10.1145/3803437.3804442,
-author = {MacRae-Bovell, Matthew},
-title = {Declarative Test-Native Software Fault Injection},
-year = {2026},
-isbn = {9798400726361},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3803437.3804442},
-doi = {10.1145/3803437.3804442},
-abstract = {Software fault injection (SFI) is a powerful resilience testing technique for validating how systems behave under adverse conditions such as network latency, dependency outages, and resource exhaustion. However, fault injection remains uncommon outside enterprise software development teams due to the operational complexity of existing tools, which often rely on specialized infrastructure and workflows that differ substantially from regular automated tests. As a result, resilience testing is frequently treated as a specialized activity rather than an integrated part of everyday software development. In this work, we present an approach that integrates fault injection scenario orchestration directly into familiar automated test suites. We introduce ChaosSpec, a prototype test framework that enables developers to declaratively orchestrate services and failure scenarios without specialized infrastructure knowledge.},
-booktitle = {Proceedings of the 34th ACM International Conference on the Foundations of Software Engineering},
-pages = {91–93},
-numpages = {3},
-keywords = {resilience testing, software fault injection},
-location = {Concordia University, Montreal, QC, Canada},
-series = {FSE Companion '26}
-}`;
+const researchItems = (await getCollection("research")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+
+const researchSections = [
+  {
+    title: "Peer-Reviewed Publications",
+    items: researchItems.filter((item) => item.data.kind === "Publication"),
+  },
+  {
+    title: "Preprints & Misc Projects",
+    items: researchItems.filter((item) => item.data.kind !== "Publication"),
+  },
+];
 ---
 
 <Main
@@ -217,74 +215,99 @@ series = {FSE Companion '26}
         </p>
       </section>
 
-      <!-- Publications & Projects -->
-      <section class="Research__section">
-        <div class="Research__sectionHeader">
-          <h3>Publications &amp; Projects</h3>
-          <div class="Research__rule"></div>
-        </div>
-        <div class="Research__pubList">
-          <div class="Research__pubRow Research__pubRow--split">
-            <a
-              class="Research__pubMain"
-              href="https://doi.org/10.1145/3803437.3804442"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="Research__pubBody">
-                <span class="Research__pubKind Research__pubKind--publication"
-                  >Publication</span
-                >
-                <span class="Research__pubTitle"
-                  >Declarative Test-Native Software Fault Injection</span
-                >
-                <span class="Research__pubAuthors">Matthew MacRae-Bovell</span>
-                <span class="Research__pubVenue"
-                  >In Proceedings of FSE 2026</span
-                >
-              </div>
-            </a>
-            <button
-              class="Research__bibBtn"
-              type="button"
-              data-bibtex={FSE_BIBTEX}
-              aria-label="Copy BibTeX citation to clipboard"
-            >
-              BibTeX
-            </button>
-            <a
-              class="Research__pubArrow Research__pubArrow--link"
-              href="https://doi.org/10.1145/3803437.3804442"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-hidden="true"
-              tabindex="-1">→</a
-            >
-          </div>
-          <a
-            class="Research__pubRow"
-            href="https://science.carleton.ca/data-day/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="Research__pubBody">
-              <span class="Research__pubKind Research__pubKind--project"
-                >Project</span
-              >
-              <span class="Research__pubTitle"
-                >Evaluating Emoji Semantics: A Comparison of Computational
-                Embeddings and Human Valence Judgements</span
-              >
-              <span class="Research__pubAuthors"
-                >Peggy Liaw, Tal Friedman, Matthew MacRae-Bovell</span
-              >
-              <span class="Research__pubVenue">Carleton Data Day 12</span>
+      <!-- Research output -->
+      {
+        researchSections.map((section) => (
+          <section class="Research__section">
+            <div class="Research__sectionHeader">
+              <h3>{section.title}</h3>
+              <div class="Research__rule" />
             </div>
-            <span class="Research__pubArrow" aria-hidden="true">→</span>
-          </a>
-          <div class="Research__pubComingSoon">More coming soon</div>
-        </div>
-      </section>
+            <div class="Research__pubList">
+              {section.items.map((item) =>
+                item.data.bibtex ? (
+                  <div class="Research__pubRow Research__pubRow--split">
+                    <a
+                      class="Research__pubMain"
+                      href={item.data.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div class="Research__pubBody">
+                        <span
+                          class:list={[
+                            "Research__pubKind",
+                            item.data.kind === "Project"
+                              ? "Research__pubKind--project"
+                              : "Research__pubKind--publication",
+                          ]}
+                        >
+                          {item.data.kind}
+                        </span>
+                        <span class="Research__pubTitle">
+                          {item.data.title}
+                        </span>
+                        <span class="Research__pubAuthors">
+                          {item.data.authors.join(", ")}
+                        </span>
+                        <span class="Research__pubVenue">
+                          {item.data.venue}
+                        </span>
+                      </div>
+                    </a>
+                    <button
+                      class="Research__bibBtn"
+                      type="button"
+                      data-bibtex={item.data.bibtex}
+                      aria-label={`Copy BibTeX citation for ${item.data.title} to clipboard`}
+                    >
+                      BibTeX
+                    </button>
+                    <a
+                      class="Research__pubArrow Research__pubArrow--link"
+                      href={item.data.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-hidden="true"
+                      tabindex="-1"
+                    >
+                      →
+                    </a>
+                  </div>
+                ) : (
+                  <a
+                    class="Research__pubRow"
+                    href={item.data.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="Research__pubBody">
+                      <span
+                        class:list={[
+                          "Research__pubKind",
+                          item.data.kind === "Project"
+                            ? "Research__pubKind--project"
+                            : "Research__pubKind--publication",
+                        ]}
+                      >
+                        {item.data.kind}
+                      </span>
+                      <span class="Research__pubTitle">{item.data.title}</span>
+                      <span class="Research__pubAuthors">
+                        {item.data.authors.join(", ")}
+                      </span>
+                      <span class="Research__pubVenue">{item.data.venue}</span>
+                    </div>
+                    <span class="Research__pubArrow" aria-hidden="true">
+                      →
+                    </span>
+                  </a>
+                ),
+              )}
+            </div>
+          </section>
+        ))
+      }
     </div>
   </div>
 </Main>

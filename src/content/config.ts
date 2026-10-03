@@ -38,6 +38,20 @@ const projectsCollection = defineCollection({
   }),
 });
 
+const researchCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.date(),
+    link: z.string(),
+    kind: z.enum(["Preprint", "Publication", "Project"]),
+    authors: z.array(z.string()),
+    venue: z.string(),
+    bibtex: z.string().optional(),
+  }),
+});
+
 const engineeringProjectsCollection = defineCollection({
   type: "content",
   schema: z.object({
@@ -73,6 +87,7 @@ export const collections = {
   articles: articlesCollection,
   presentations: presentationCollection,
   projects: projectsCollection,
+  research: researchCollection,
   engineeringProjects: engineeringProjectsCollection,
   trips: tripsCollection,
 };
