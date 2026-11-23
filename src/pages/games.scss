@@ -469,6 +469,12 @@
   &:nth-child(2).is-visible {
     animation-delay: 100ms;
   }
+  &:nth-child(3).is-visible {
+    animation-delay: 200ms;
+  }
+  &:nth-child(4).is-visible {
+    animation-delay: 300ms;
+  }
 
   &:hover {
     box-shadow:
@@ -580,6 +586,34 @@
   color: var(--muted);
   line-height: 1.6;
   margin: 0.1rem 0 0;
+}
+
+.Games__cardLinks {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 0.9rem;
+}
+
+.Games__cardLink {
+  font-family: GeistMonovf, "Geist Mono", monospace;
+  font-size: 0.78rem;
+  font-variation-settings: "wght" 600;
+  text-decoration: none;
+  color: #fff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.45rem 0.9rem;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+
+  &:hover {
+    background: #db2777;
+    border-color: #db2777;
+  }
 }
 
 /* ── Reduced motion ── */

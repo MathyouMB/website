@@ -4,6 +4,22 @@ import "./games.scss";
 
 const games = [
   {
+    id: "project-22",
+    title: "Project 22",
+    tags: ["Arcade", "Web"],
+    desc: "Steer a never-stopping square into the coin. Every turn costs HP, and every coin makes you faster. A TypeScript rebuild of my 24-hour GameMaker game.",
+    gif: "/images/games/project-22.png",
+    play: "https://project22.matthewmacraebovell.com",
+  },
+  {
+    id: "connect-fources",
+    title: "Connect Fources",
+    tags: ["Strategy", "Web"],
+    desc: "Four in a row, except on your turn you can bend gravity and send every disc on the board sliding. Play a friend or the computer.",
+    gif: "/images/games/connect-fources.png",
+    play: "https://connectfources.matthewmacraebovell.com",
+  },
+  {
     id: "hello",
     title: "hello.",
     tags: ["Bullet Hell", "Action"],
@@ -96,6 +112,18 @@ const games = [
                   </div>
                   <h3 class="Games__cardTitle">{game.title}</h3>
                   <p class="Games__cardDesc">{game.desc}</p>
+                  {game.play && (
+                    <div class="Games__cardLinks">
+                      <a
+                        class="Games__cardLink"
+                        href={game.play}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Play
+                      </a>
+                    </div>
+                  )}
                 </div>
               </article>
             ))
